@@ -7,12 +7,12 @@
     
 -- 1.- Criação da tabela de exemplo:
 	CREATE DATABASE db_escola;
-    USE db_escola;
-    CREATE TABLE tb_alunos(
-    id_aluno int(11) not null,
-    nome_aluno varchar(50) not null,
-    email_aluno varchar(40) not null
-    );
+	USE db_escola;
+	CREATE TABLE tb_alunos(
+	id_aluno int(11) not null,
+	nome_aluno varchar(50) not null,
+	email_aluno varchar(40) not null
+	);
     
 	INSERT INTO tb_alunos(id_aluno,nome_aluno,email_aluno) 
 	VALUES 
