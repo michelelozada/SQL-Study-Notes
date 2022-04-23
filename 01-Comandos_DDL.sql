@@ -12,7 +12,11 @@
 		CREATE DATABASE db_escola;
 
 	-- 2.2. Criação de uma tabela:
-		CREATE TABLE tb_alunos;
+		CREATE TABLE tb_alunos(
+		id_aluno int(11) not null,
+		nome_aluno varchar(50) not null,
+		email_aluno varchar(40) not null
+		);
 
 
 -- 2.  DROP: 
@@ -29,14 +33,18 @@
 	-- para alterar objetos já existentes; 
     -- esta alteração pode ser através de adição, modificação ou exclusão.
         
-	-- 3.1. Alteração da tabela através de adição de uma coluna:
+	-- 3.1. Alteração da tabela através da adição de uma coluna:
 		ALTER TABLE tb_alunos
-		ADD column email_aluno varchar(50) not null AFTER telefone_aluno;
-    
-    -- 3.2. Alteração da tabela através de modificação de uma definição da mesma:
-	-- (Imagine que ao atributo email_aluno foi atribuído acidentalmente o tipo de dado int e agora necessito consertar isso...)
+		ADD COLUMN endereco_aluno varchar(50) not null AFTER telefone_aluno;
+        
+     -- 3.2. Alteração da tabela através da adição de uma chave primária:   
+        ALTER TABLE tb_alunos
+		ADD PRIMARY KEY (id_aluno);
+		       
+    -- 3.2. Alteração da tabela através da modificação de uma definição da mesma:
+	-- (Imagine que foi atribuído acidentalmente o tipo de dado int ao atributo email_aluno e agora necessito consertar isso...)
 		ALTER TABLE tb_alunos
-		MODIFY column email_aluno varchar(50);
+		MODIFY COLUMN email_aluno varchar(50);
     
     -- 3.3. Alteração da tabela através da exclusão de uma coluna:
 		ALTER TABLE tb_professores
