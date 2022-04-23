@@ -95,6 +95,12 @@
 	/* Retorna:
 	2	Mariana Fernandes	marifernandes@gmail.com
 	4	Marcos Góes			marcosgoes@gmail.com  */
+    
+    id_aluno | nome_aluno | email_aluno
+	:---: | :---
+	2 |	Mariana Fernandes |	marifernandes@gmail.com
+	4 | Marcos Góes		  | marcosgoes@gmail.com  */
+        
         
 	SELECT * from tb_alunos WHERE nome_aluno LIKE '%M%'; -- filtra registros presentes na tabela que tem palavras (no campo nome_aluno) que contêm a letra 'M' 
 	/* Retorna:
