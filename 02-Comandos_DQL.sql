@@ -6,11 +6,12 @@
 
 
 -- SELECT: 
-	-- É o único comando DQL;
-	-- Para consultar dados peretencentes a uma tabela.
+-- É o único comando DQL;
+-- Para consultar dados pertencentes a uma tabela;
+-- Deve ser utilizado com a cláusula FROM.
     
-	-- 1. Para consultar todos os dados de uma tabela de uma só vez:
-		SELECT * FROM tb_alunos;
+-- 1. Para consultar todos os dados de uma tabela de uma só vez:
+SELECT * FROM tb_aluno;
     
-    -- 2. Para consultar dados específicos de uma tabela:
-		SELECT telefone_aluno FROM tb_alunos;	
+-- 2. Para consultar dados específicos de uma tabela:
+SELECT telefoneAluno FROM tb_aluno;	
