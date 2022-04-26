@@ -29,31 +29,31 @@
     
 	SELECT * FROM tb_aluno;
 	/* Retorna:
-	1 | Luana Borba | luanab@gmail.com
-	2 |	Mariana Fernandes | marifernandes@gmail.com
-	3 |	Cátia Marcondes | catiamarcondes@gmail.com
-	4 |	Marcos Góes | marcosgoes@gmail.com
-	5 |	Sônia de Morais | sonia_morais@gmail.com
-	6 |	Andréa Santos | asantos@gmail.com
-	7 |	Silvio Soares | ssoares@gmail.com
-	8 |	Daniele Santana | danisantana@gmail.com
-	9 |	Luis Garcia | lgarcia@gmail.com
-	10 | Heloísa Bormann | hbormann@gmail.com  */
+	1 |Luana Borba |luanab@gmail.com
+	2 |Mariana Fernandes |marifernandes@gmail.com
+	3 |Cátia Marcondes |catiamarcondes@gmail.com
+	4 |Marcos Góes |marcosgoes@gmail.com
+	5 |Sônia de Morais |sonia_morais@gmail.com
+	6 |Andréa Santos |asantos@gmail.com
+	7 |Silvio Soares |ssoares@gmail.com
+	8 |Daniele Santana |danisantana@gmail.com
+	9 |Luis Garcia |lgarcia@gmail.com
+	10 |Heloísa Bormann |hbormann@gmail.com  */
     
 	
 -- 2 - A Cláusula ORDER BY:
 	SELECT * FROM tb_aluno ORDER BY nomeAluno; -- ordenação default é em ordem crescente
 	/* Retorna:
-	6 |	Andréa Santos | asantos@gmail.com
-	3 |	Cátia Marcondes | catiamarcondes@gmail.com
-	8 |	Daniele Santana | danisantana@gmail.com
-	10 | Heloísa Bormann | hbormann@gmail.com
-	1 |	Luana Borba | luanab@gmail.com
-	9 |	Luis Garcia	| lgarcia@gmail.com
-	4 |	Marcos Góes | marcosgoes@gmail.com
-	2 |	Mariana Fernandes | marifernandes@gmail.com
-	7 |	Silvio Soares | ssoares@gmail.com
-	5 |	Sônia de Morais | sonia_morais@gmail.com */
+	6 |Andréa Santos |asantos@gmail.com
+	3 |Cátia Marcondes |catiamarcondes@gmail.com
+	8 |Daniele Santana |danisantana@gmail.com
+	10 |Heloísa Bormann |hbormann@gmail.com
+	1 |Luana Borba |luanab@gmail.com
+	9 |Luis Garcia	|lgarcia@gmail.com
+	4 |Marcos Góes |marcosgoes@gmail.com
+	2 |Mariana Fernandes |marifernandes@gmail.com
+	7 |Silvio Soares |ssoares@gmail.com
+	5 |Sônia de Morais |sonia_morais@gmail.com */
 		
 	SELECT nomeAluno FROM tb_aluno ORDER BY nomeAluno desc;
 	/* Retorna:
@@ -72,34 +72,34 @@
 -- 3. A Cláusula WHERE:
 	SELECT idAluno, nomeAluno FROM tb_aluno WHERE idAluno = '5';
 	/* Retorna:
-	5 |	Sônia de Morais */
+	5 |Sônia de Morais */
         
 	SELECT idAluno, nomeAluno FROM tb_aluno WHERE idAluno >= '5' ORDER BY nomeAluno;
 	/* Retorna:
-	6 | Andréa Santos
-	8 |	Daniele Santana
-	10 | Heloísa Bormann
-	9 |	Luis Garcia
-	7 |	Silvio Soares
-	5 |	Sônia de Morais */
+	6 |Andréa Santos
+	8 |Daniele Santana
+	10 |Heloísa Bormann
+	9 |Luis Garcia
+	7 |Silvio Soares
+	5 |Sônia de Morais */
         
         
 -- 4. O Operador LIKE:
 	SELECT * from tb_aluno WHERE nomeAluno LIKE '%A'; -- filtra registros presentes na tabela que tem palavras (no campo nomeAluno) que terminam com a letra 'A' 
 	/* Retorna:
-	1 |	Luana Borba	| luanab@gmail.com
-	8 |	Daniele Santana | danisantana@gmail.com
-	9 |	Luis Garcia	| lgarcia@gmail.com */
+	1 |Luana Borba	|luanab@gmail.com
+	8 |Daniele Santana |danisantana@gmail.com
+	9 |Luis Garcia	|lgarcia@gmail.com */
 			
 	SELECT * from tb_aluno WHERE nomeAluno LIKE 'M%';  -- filtra registros presentes na tabela que tem palavras (no campo nomeAluno) que começam com a letra 'M' 
 	/* Retorna:
-	2 |	Mariana Fernandes |	marifernandes@gmail.com
-	4 |	Marcos Góes | marcosgoes@gmail.com  */
+	2 |Mariana Fernandes |marifernandes@gmail.com
+	4 |Marcos Góes |marcosgoes@gmail.com  */
          
 	SELECT * from tb_aluno WHERE nomeAluno LIKE '%M%'; -- filtra registros presentes na tabela que tem palavras (no campo nomeAluno) que contêm a letra 'M' 
 	/* Retorna:
-	2 |	Mariana Fernandes |	marifernandes@gmail.com
-	3 |	Cátia Marcondes	| catiamarcondes@gmail.com
-	4 |	Marcos Góes	| marcosgoes@gmail.com
-	5 |	Sônia de Morais | sonia_morais@gmail.com
-	10 | Heloísa Bormann | hbormann@gmail.com */     
+	2 |Mariana Fernandes |marifernandes@gmail.com
+	3 |Cátia Marcondes	|catiamarcondes@gmail.com
+	4 |Marcos Góes	|marcosgoes@gmail.com
+	5 |Sônia de Morais |sonia_morais@gmail.com
+	10 |Heloísa Bormann |hbormann@gmail.com */     
