@@ -1,6 +1,6 @@
 /*
  *  DQL - Linguagem de Consulta de Dados Armazenados (aka Data Query Language)
- *  Repositório: Banco-de-Dados-MySQL_Fundamentos
+ *  Repositório: Banco de Dados MySQL - Fundamentos 
  *  GitHub: @michelelozada
  */
 

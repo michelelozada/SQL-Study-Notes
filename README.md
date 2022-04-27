@@ -1,6 +1,6 @@
-# Banco de Dados MySQL: Fundamentos
+# Banco de Dados MySQL - Fundamentos
  
-Repositório em andamento decorrente do meu estudo dos conceitos fundamentais de banco de dados MySQL.
+Repositório em andamento decorrente do meu estudo dos conceitos fundamentais de banco de dados MySQL. 
 
 
 Script | Descrição 

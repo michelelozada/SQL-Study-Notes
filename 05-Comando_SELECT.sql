@@ -1,6 +1,6 @@
 /*
  *  Comando SELECT (com suas cláusulas e operadores)
- *  Repositório: Banco-de-Dados-MySQL_Fundamentos
+ *  Repositório: Banco de Dados MySQL - Fundamentos 
  *  GitHub: @michelelozada
  */
     
@@ -70,18 +70,18 @@
 
 
 -- 3. A Cláusula WHERE:
-	SELECT idAluno, nomeAluno FROM tb_aluno WHERE idAluno = '5';
+	SELECT nomeAluno FROM tb_aluno WHERE idAluno = '5';
 	/* Retorna:
-	5 |Sônia de Morais */
+	Sônia de Morais */
         
-	SELECT idAluno, nomeAluno FROM tb_aluno WHERE idAluno >= '5' ORDER BY nomeAluno;
+	SELECT nomeAluno FROM tb_aluno WHERE idAluno >= '5' ORDER BY nomeAluno;
 	/* Retorna:
-	6 |Andréa Santos
-	8 |Daniele Santana
-	10 |Heloísa Bormann
-	9 |Luis Garcia
-	7 |Silvio Soares
-	5 |Sônia de Morais */
+	Andréa Santos
+	Daniele Santana
+	Heloísa Bormann
+	Luis Garcia
+	Silvio Soares
+	Sônia de Morais */
         
         
 -- 4. O Operador LIKE:

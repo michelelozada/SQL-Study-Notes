@@ -1,6 +1,6 @@
 /*
  *  Comandos SQL diversos
- *  Repositório: Banco-de-Dados-MySQL_Fundamentos
+ *  Repositório: Banco de Dados MySQL - Fundamentos 
  *  GitHub: @michelelozada
  */
 

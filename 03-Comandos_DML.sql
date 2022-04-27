@@ -1,6 +1,6 @@
 /*
  *  DML - Linguagem de Manipulação de Dados (aka Data Manipulation Language)
- *  Repositório: Banco-de-Dados-MySQL_Fundamentos
+ *  Repositório: Banco de Dados MySQL - Fundamentos 
  *  GitHub: @michelelozada
  */
 
@@ -9,10 +9,10 @@
 -- Para inserir dados em uma tabela do banco de dados;
 -- Deve ser utilizado em conjunto com a cláusula INTO e a cláusula VALUES.
   	
--- 1.1. - Inserção de apenas um valor:
+-- 1.1. - Inserção de apenas um registro:
 INSERT INTO tb_aluno(idAluno,nomeAluno,emailAluno) VALUES (150, 'Lorenzo Martins', 'lorenzomartins@gmail.com');
 	
--- 1.2. - Inserção de mais valores:
+-- 1.2. - Inserção de mais registros:
 INSERT INTO tb_aluno(idAluno,nomeAluno,emailAluno) 
 VALUES 
 (151, 'Luana Borba', 'luanab@gmail.com'),

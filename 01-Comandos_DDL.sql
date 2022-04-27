@@ -1,6 +1,6 @@
 /*
  *  DDL - Linguagem de Definição dos Dados (aka Data Definition Language)
- *  Repositório: Banco-de-Dados-MySQL_Fundamentos 
+ *  Repositório: Banco de Dados MySQL - Fundamentos 
  *  GitHub: @michelelozada
  */
 
