@@ -11,6 +11,10 @@
 -- 1.1. Criação de um banco de dados:
 CREATE DATABASE db_escola;
 
+-- A inclusão de IF NOT EXISTS é opcional
+CREATE DATABASE IF NOT EXISTS db_escola;
+
+
 -- 2.2. Criação de uma tabela:
 CREATE TABLE tb_aluno(
 idAluno int(11) not null,
@@ -24,6 +28,10 @@ emailAluno varchar(40) not null
 
 -- 2.1. Exclusão de um banco de dados:
 DROP DATABASE db_escola;
+
+-- A inclusão de IF NOT EXISTS é opcional
+DROP DATABASE IF EXISTS db_escola;
+
 
 -- 2.2. Exclusão de uma tabela:
 DROP TABLE tb_professor;

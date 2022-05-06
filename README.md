@@ -10,3 +10,4 @@ Script | Descrição
 03 | [DML - Linguagem de Manipulação de Dados (aka Data Manipulation Language)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/03-Comandos-DML.sql)
 04 | [Comandos SQL diversos](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/04-Comandos-SQL-Diversos.sql)
 05 | [Comando SELECT (com suas cláusulas e operadores)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/05-Comando-SELECT.sql)
+06 | [Restrições (constraints)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/06-Restricoes.sql)
