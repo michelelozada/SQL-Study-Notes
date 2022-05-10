@@ -7,19 +7,16 @@
 
 -- 1. CREATE: 
 -- Para a criação de objetos (banco de dados e tabelas) 'vazios'
+-- A inclusão da cláusula 'IF NOT EXISTS' é opcional
 
 -- 1.1. Criação de um banco de dados:
-CREATE DATABASE db_escola;
-
--- A inclusão de IF NOT EXISTS é opcional
 CREATE DATABASE IF NOT EXISTS db_escola;
 
-
 -- 2.2. Criação de uma tabela:
-CREATE TABLE tb_aluno(
-idAluno int(11) not null,
-nomeAluno varchar(50) not null,
-emailAluno varchar(40) not null
+CREATE TABLE IF NOT EXISTS tb_aluno(
+	idAluno int(11) not null,
+	nomeAluno varchar(50) not null,
+	emailAluno varchar(40) not null
 );
 
 
@@ -29,7 +26,7 @@ emailAluno varchar(40) not null
 -- 2.1. Exclusão de um banco de dados:
 DROP DATABASE db_escola;
 
--- A inclusão de IF NOT EXISTS é opcional
+-- A inclusão de IF EXISTS é opcional
 DROP DATABASE IF EXISTS db_escola;
 
 
