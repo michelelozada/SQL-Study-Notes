@@ -12,3 +12,5 @@ Script | Descrição
 05 | [Comando SELECT (com suas cláusulas e operadores)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/05-Comando-SELECT.sql)
 06 | [Restrições (constraints)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/06-Restricoes.sql)
 07 | [Auto-incremento](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/07-Auto-incremento.sql)
+08 | [Tipos de dados no MySQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/08-Tipos-de-dados.md)
+09 | [Alterando a estrutura de uma tabela (comando ALTER)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/09-Alterando-tabelas.md)

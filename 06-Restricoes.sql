@@ -20,14 +20,16 @@ CREATE TABLE tb_aluno(
    
 -- 2. FOREIGN KEY (aka Chave Estrangeira)
 -- Campo de uma tabela que aponta para o campo primário de uma outra tabela que contém a chave primária.
--- Imaginando uma tabela chamada Contrato, cujo campo idContrato estará vinculado ao campo primário da tabela Aluno, seria assim criada uma chave estrangeira:
+-- Imaginando uma tabela chamada Contrato, cujo campo idAluno estará vinculado ao campo primário da tabela Aluno, seria assim criada uma chave estrangeira:
 CREATE TABLE tb_contrato(
 	idContrato int(11) PRIMARY KEY NOT NULL,
 	idAluno int(11),
 	CONSTRAINT fk_idAluno FOREIGN KEY (idAluno) REFERENCES tb_aluno(idAluno)
 );
+
 -- Alteração para aplicar a chave estrangeira numa tabela já criada:
 ALTER TABLE tb_contrato ADD CONSTRAINT fk_idAluno FOREIGN KEY (idAluno) REFERENCES tb_aluno(idAluno);
+
 -- Exclusão de uma chave estrangeira:
 ALTER TABLE tb_contrato DROP CONSTRAINT fk_idAluno;
 
