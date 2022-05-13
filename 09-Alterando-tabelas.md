@@ -1,5 +1,5 @@
 > Alterando a estrutura de uma tabela (comando ALTER)  
-> Repositório: Banco de Dados MySQL - Fundamentos
+> Repositório: Banco de Dados MySQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;
      
