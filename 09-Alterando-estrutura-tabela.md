@@ -1,10 +1,18 @@
-> Alterando a estrutura de uma tabela (comando ALTER)  
+> Alterando a estrutura de uma tabela (comando ALTER TABLE)  
 > Repositório: Banco de Dados MySQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;
      
 &nbsp;     
-**As tabelas para o exemplo**   
+**ALTER TABLE**  
+Comando utilizado para modificar as características de uma tabela já existente, através da:  
+	- Inclusão ou exclusão de colunas desta tabela;  
+	- Adição, alteração ou remoção de restrições (ex: PRIMARY KEY, UNIQUE, NOT NULL, etc.) de uma coluna;  
+	- Alteração do tipo de dado definido para uma coluna.  
+&nbsp;
+     
+&nbsp;
+**As tabelas para o exemplo:**   
 
 ```
 CREATE TABLE tb_aluno(
@@ -24,7 +32,7 @@ CREATE TABLE tb_contrato(
 &nbsp;
      
 &nbsp;
-**1. 'Dropando' uma coluna da tabela**  
+**1. 'Dropando' uma das colunas da tabela**  
 ```
 ALTER TABLE tb_aluno
 DROP COLUMN foneAluno;
@@ -74,12 +82,12 @@ DROP CONSTRAINT fk_idAluno;
 &nbsp;
      
 &nbsp;
-**7. Modificando o tipo de dado ou restrição de uma coluna**  
+**7. Modificando o tipo de dado ou a restrição de uma coluna**  
 ```
 ALTER TABLE tb_ALUNO
 MODIFY COLUMN foneAluno int(11);
 ```
 ```
 ALTER TABLE tb_ALUNO
-MODIFY COLUMN cpfAluno varchar(15) UNIQUE;
+MODIFY COLUMN cpfAluno varchar(15) UNIQUE; -- aqui foi adicionada uma constraint à coluna
 ```
