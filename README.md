@@ -1,8 +1,5 @@
 # Banco de Dados MySQL - Fundamentos
  
-Repositório em andamento decorrente do meu estudo dos conceitos fundamentais de banco de dados MySQL. 
-
-
 Script | Descrição 
 :---: | :---
 01 | [DDL - Linguagem de Definição dos Dados *(aka Data Definition Language)*](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/01-Comandos-DDL.sql)
@@ -12,6 +9,12 @@ Script | Descrição
 05 | [Tipos de dados no MySQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/05-Tipos-de-dados.md)
 06 | [Restrições *(constraints)*](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/06-Restricoes.md)
 07 | [Auto-incremento](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/07-Auto-incremento.md)
+<<<<<<< HEAD
 08 | [Alterando a estrutura de uma tabela *(comando ALTER TABLE)*](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/08-Alterando-estrutura-tabela.md)
 09 | [Inserindo valores em uma tabela *(comando INSERT)*](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/09-Inserindo-valores-tabela.md)
 10 | [Consultando valores em uma tabela *(comando SELECT)*](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/10-Consultando-valores-tabela.md)
+=======
+08 | [Tipos de dados no MySQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/08-Tipos-de-dados.md)
+09 | [Alterando a estrutura de uma tabela *(comando ALTER TABLE)*](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/09-Alterando-estrutura-tabela.md)
+10 | [Inserindo valores em uma tabela *(comando INSERT)*](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/10-Inserindo-valores-tabela.md)
+>>>>>>> a6846ec877d55b87052d4b366dfcf320661dc9ac
