@@ -1,8 +1,5 @@
 # Banco de Dados MySQL - Fundamentos
  
-Repositório em andamento decorrente do meu estudo dos conceitos fundamentais de banco de dados MySQL. 
-
-
 Script | Descrição 
 :---: | :---
 01 | [DDL - Linguagem de Definição dos Dados *(aka Data Definition Language)*](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/01-Comandos-DDL.sql)
