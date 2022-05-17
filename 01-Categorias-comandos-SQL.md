@@ -20,7 +20,7 @@
 
 &nbsp;
 &nbsp;   
-**Comandos DML (Data Manipulation Language ou Linguagem de Manipulação de Dados**   
+**Comandos DML (Data Manipulation Language ou Linguagem de Manipulação de Dados)**   
 | Comandos | Função |
 | ---      | ---    |
 | INSERT | Para inserção de dados em uma tabela do banco de dados. |

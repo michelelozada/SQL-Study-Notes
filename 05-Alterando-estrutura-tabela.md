@@ -1,4 +1,4 @@
-> Alterando a estrutura de uma tabela (comando ALTER TABLE)  
+> **Alterando a estrutura de uma tabela (comando ALTER TABLE)**    
 > Repositório: Banco de Dados MySQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;

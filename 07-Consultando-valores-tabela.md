@@ -1,4 +1,4 @@
-> Consultando valores de uma tabela (comando SELECT)   
+> **Consultando valores de uma tabela (comando SELECT)**     
 > Repositório: Banco de Dados MySQL - Fundamentos    
 > GitHub: @michelelozada
 &nbsp;

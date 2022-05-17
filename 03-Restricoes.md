@@ -1,4 +1,4 @@
-> Restrições (Constraints)  
+> **Restrições (Constraints)**     
 > Repositório: Banco de Dados MySQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;

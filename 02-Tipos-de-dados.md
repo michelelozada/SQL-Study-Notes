@@ -1,4 +1,4 @@
-> Tipos de dados no MySQL      
+> **Tipos de dados no MySQL**  
 > Repositório: Banco de Dados MySQL - Fundamentos   
 > GitHub: @michelelozada
 &nbsp;
