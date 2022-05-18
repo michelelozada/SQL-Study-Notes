@@ -1,6 +1,6 @@
 # Banco de Dados MySQL - Fundamentos
  
-Script | Descrição 
+Índice | Descrição 
 :---: | :---
 01 | [Categorias de comandos SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/01-Categorias-comandos-SQL.md)
 02 | [Tipos de dados no MySQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/02-Tipos-de-dados.md)
