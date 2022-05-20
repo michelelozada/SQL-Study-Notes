@@ -85,7 +85,7 @@ DROP CONSTRAINT fk_idAluno;
 **7. Modificando o tipo de dado ou a restrição de uma coluna**  
 ```
 ALTER TABLE tb_ALUNO
-MODIFY COLUMN foneAluno int(11);
+MODIFY COLUMN foneAluno int(11); -- imaginando que eu quisesse alterar o tipo de dado de varchar para int
 ```
 ```
 ALTER TABLE tb_ALUNO

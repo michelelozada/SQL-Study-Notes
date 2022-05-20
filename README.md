@@ -12,4 +12,5 @@
 | 06 | [Alterando a estrutura de uma tabela (comando ALTER TABLE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/06-Alterando-estrutura-tabela.md) |
 | 07 | [Inserindo valores em uma tabela (comando INSERT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/07-Inserindo-valores-tabela.md) |
 | 08 | [Consultando valores em uma tabela (comando SELECT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/08-Consultando-valores-tabela.md) |
+| 09 | [Atualizando valores em uma tabela (comando UPDATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/09-Atualizando-valores-tabela.md) |
 </div> 

@@ -6,7 +6,7 @@
 &nbsp;  
 **INSERT**  
 - Utilizado para inserir novo(s) registro(s) de dados em uma tabela já existente.  
-- Deve ser utilizado em conjunto com a cláusula INTO e a CLÁUSULA VALUE.  
+- Deve ser utilizado em conjunto com a cláusula INTO e a CLÁUSULA VALUES.  
 &nbsp;
      
 &nbsp;
@@ -39,7 +39,7 @@ VALUES
 (default, 'Mariana Fernandes','4199652-xx25', 'marifernandes@email.com'),
 (default, 'Henrique Bormann','4199987-xx45', 'hbormann@email.com');
 ```
-###### Output:  
+###### * Output:  
 | ID Aluno | Nome aluno | Telefone   | E-mail       |
 | ------   | -----      | -----      | -----        |
 | 1	| Lorenzo Martins   | 4199956-xx88  | lorenzomartins@gmail.com |

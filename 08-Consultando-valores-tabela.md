@@ -5,8 +5,9 @@
      
 &nbsp;  
 **SELECT**  
-- Utilizado para realizar consultas a valores inseridos em uma tabela no banco de dados.  
+- Utilizado para realizar consultas a valores inseridos em uma tabela ou mais tabelas do banco de dados.  
 - Tal consulta pode ser refinada se for utilizada em conjunto com outras cláusulas e operadores, adiante listados.
+- Deve ser utilizado em conjunto com a cláusula FROM.
 &nbsp;
      
 &nbsp;  
@@ -91,7 +92,7 @@ SELECT nomeAluno FROM tb_aluno ORDER BY nomeAluno DESC;
 
 &nbsp;
 &nbsp;  
-A ordenação default é em ordem crescente, portanto o uso de ASC é opcional.
+Por default, a ordenação é em ordem crescente; portanto o uso de ASC é opcional.
 ```
 SELECT * FROM tb_aluno ORDER BY nomeAluno; 
 ```
