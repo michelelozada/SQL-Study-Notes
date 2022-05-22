@@ -46,7 +46,6 @@ TRUNCATE TABLE tb_aluno; -- removerá os dados de todos os alunos   
 Há várias diferenças entre os dois comandos, sendo que uma delas se refere ao que acontece a campos
 definidos com AUTO_INCREMENT, depois que DELETE ou TRUNCATE são aplicados.  
 &nbsp;
-     
 &nbsp;  
 Depois de todos os registros de uma tabela terem sido apagados com **DELETE**, veja o que acontece 
 no campo *idAluno* quando novos dados são inseridos na tabela: 
@@ -58,7 +57,6 @@ no campo *idAluno* quando novos dados são inseridos na tabela:
 | 8 | Paulo Figueiredo	| Erechim	    | RS |
 
 &nbsp;
-     
 &nbsp;   
 Agora veja o que acontece com a tabela que teve seus dados eliminados com **TRUNCATE** e agora recebe novos 
 dados: 
@@ -70,7 +68,6 @@ dados:
 | 4 | Paulo Figueiredo	| Erechim	    | RS |
 
 &nbsp;
-     
 &nbsp;  
 **Portanto:**  
 * Com o DELETE, a tabela não é ‘resetada’ e novos dados têm seus novos índices contados a partir do último 
