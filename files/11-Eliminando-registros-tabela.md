@@ -24,7 +24,7 @@
 * Permite apagar os registros de uma tabela.  
 * Se utilizado *com* a cláusula WHERE, removerá dados apenas da tupla especificada.  
 ```
-DELETE FROM tb_aluno WHERE idAluno = '4'; -- apagará registros apenas da aluna Cátia
+DELETE FROM tb_aluno WHERE idAluno = '3'; -- apagará registros apenas da aluna Cátia
 ```
 * Se utilizado *sem* o filtro WHERE, apagará todos os registros da tabela.  
 ```
@@ -32,8 +32,8 @@ DELETE FROM tb_aluno; -- irá apagar os dados de todos os alunos
 ```
 &nbsp;
      
-&nbsp;  
-**3. O comando TRUNCATE **  
+&nbsp;   
+**3. O comando TRUNCATE**  
 * Elimina completamente os registros de uma tabela.  
 * Não utiliza a cláusula WHERE, portanto atuará sobre todos os registros ali inseridos.  
 ```
@@ -41,10 +41,13 @@ TRUNCATE TABLE tb_aluno; -- removerá os dados de todos os alunos   
 ```
 &nbsp;
      
-&nbsp;  
+&nbsp;    
 **4. Qual a diferença entre DELETE e TRUNCATE?**    
 Há várias diferenças entre os dois comandos, sendo que uma delas se refere ao que acontece a campos
 definidos com AUTO_INCREMENT, depois que DELETE ou TRUNCATE são aplicados.  
+&nbsp;
+     
+&nbsp;  
 Depois de todos os registros de uma tabela terem sido apagados com **DELETE**, veja o que acontece 
 no campo *idAluno* quando novos dados são inseridos na tabela: 
 | ID Aluno | Nome aluno | Cidade   | Estado  |
@@ -56,7 +59,7 @@ no campo *idAluno* quando novos dados são inseridos na tabela:
 
 &nbsp;
      
-&nbsp; 
+&nbsp;   
 Agora veja o que acontece com a tabela que teve seus dados eliminados com **TRUNCATE** e agora recebe novos 
 dados: 
 | ID Aluno | Nome aluno | Cidade   | Estado  |
@@ -68,7 +71,7 @@ dados:
 
 &nbsp;
      
-&nbsp; 
+&nbsp;  
 **Portanto:**  
 * Com o DELETE, a tabela não é ‘resetada’ e novos dados têm seus novos índices contados a partir do último 
 índice anteriormente em vigor.  
