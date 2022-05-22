@@ -6,7 +6,7 @@
 &nbsp;  
 **AUTO_INCREMENT**  
 - Propicia que um número único seja gerado assim que um novo registro é inserido numa tabela.  
-- O valor incial padrão começa em 1, sendo que o incremento ocorre de 1 em 1 (porém o valor inicial pode ser alterado, conforme explicado abaixo).  
+- O valor inicial padrão começa em 1, sendo que o incremento ocorre de 1 em 1 (porém o valor inicial pode ser alterado, conforme explicado abaixo).  
 - Apenas um campo da tabela pode ser auto-incrementado, sendo que ele necessariamente deve vir acompanhado da constraint NOT NULL.  
 &nbsp;
      
