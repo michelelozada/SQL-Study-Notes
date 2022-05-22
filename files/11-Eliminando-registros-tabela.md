@@ -73,4 +73,4 @@ dados:
 * Com o DELETE, a tabela não é ‘resetada’ e novos dados têm seus novos índices contados a partir do último 
 índice anteriormente em vigor.  
 * Com TRUNCATE, a tabela é apagada e recriada, sendo que seus novos dados têm o valor de seu índice inicial 
-começando em 1, por dafault.
+começando em 1, por default.
