@@ -34,14 +34,14 @@ Seguem abaixo alguns comandos úteis relacionados à criação da base de dados 
 &nbsp;   
 **1. Comando USE**  
 Após ter sido criado, é imprescindível indicar ao servidor qual banco de dados será utilizado:    
-```mysql
+```sql
 USE db_escola;
 ```
 &nbsp;
 &nbsp;  
 **2. Comando SHOW**  
 2.1. Lista quais as bases de dados existentes no servidor:        
-```mysql
+```sql
 SHOW DATABASES;
 ```
 ###### >> Output:  
@@ -52,7 +52,7 @@ SHOW DATABASES;
 &nbsp;
 &nbsp;  
 2.2 Exibe todas as tabelas existentes na base de dados em uso:     
-```mysql
+```sql
 SHOW TABLES;
 ```
 ###### >> Output:  
@@ -64,7 +64,7 @@ SHOW TABLES;
 &nbsp;  
 **3. Comando SELECT DATABASE()**  
 Informa qual a base de dados está em uso no momento:    
-```mysql
+```sql
 SELECT DATABASE();
 ```
 ###### >> Output:  
@@ -76,7 +76,7 @@ SELECT DATABASE();
 &nbsp;  
 **4. Comando DESCRIBE**  
 Apresenta a estrutura da tabela especificada com seus campos, tipo de dados e demais características: 
-```mysql
+```sql
 DESCRIBE tb_aluno;
 ```
 ###### >> Output:  
