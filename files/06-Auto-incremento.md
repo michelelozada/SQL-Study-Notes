@@ -12,7 +12,7 @@
      
 &nbsp;
 **1. Utilizando o AUTO_INCREMENT:**  
-```
+```mysql
 CREATE DATABASE db_escola;
 USE db_escola;
 CREATE TABLE tb_aluno(
@@ -52,7 +52,7 @@ VALUES
      
 &nbsp;
 **2. Caso haja a necessidade de setar o valor default do AUTO_INCREMENT para começar com um valor diferente:**  
-```
+```mysql
 CREATE TABLE tb_aluno(
 	idAluno int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
 	nomeAluno varchar(50) NOT NULL,
@@ -77,7 +77,7 @@ CREATE TABLE tb_aluno(
      
 &nbsp;
 **3. Após a tabela já ter sido criada, caso seja necessário que a próxima sequência de registros na tabela comece com um valor de incremento diferente:**  
-```
+```mysql
 ALTER TABLE tb_Aluno AUTO_INCREMENT = 200;
 
 INSERT INTO tb_aluno(idAluno,nomeAluno,emailAluno) 
@@ -111,7 +111,7 @@ VALUES
      
 &nbsp;
 **4. Para verificação do último valor inserido no campo que utilizou o AUTO_INCREMENT:**  
-```
+```mysql
 SELECT MAX(idAluno) FROM tb_Aluno;
 ```
 ###### Output:  

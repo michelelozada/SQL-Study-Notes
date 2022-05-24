@@ -23,11 +23,11 @@
 **2. O comando DELETE**  
 * Permite apagar os registros de uma tabela.  
 * Se utilizado *com* a cláusula WHERE, removerá dados apenas da tupla especificada.  
-```
+```mysql
 DELETE FROM tb_aluno WHERE idAluno = '3'; -- apagará registros apenas da aluna Cátia
 ```
 * Se utilizado *sem* o filtro WHERE, apagará todos os registros da tabela.  
-```
+```mysql
 DELETE FROM tb_aluno; -- irá apagar os dados de todos os alunos  
 ```
 &nbsp;
@@ -36,7 +36,7 @@ DELETE FROM tb_aluno; -- irá apagar os dados de todos os alunos
 **3. O comando TRUNCATE**  
 * Elimina completamente os registros de uma tabela.  
 * Não utiliza a cláusula WHERE, portanto atuará sobre todos os registros ali inseridos.  
-```
+```mysql
 TRUNCATE TABLE tb_aluno; -- removerá os dados de todos os alunos   
 ```
 &nbsp;

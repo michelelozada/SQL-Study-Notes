@@ -12,7 +12,7 @@
      
 &nbsp;  
 **1. A tabela de exemplo:**  
-```
+```mysql
 CREATE TABLE tb_aluno(
     idAluno int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nomeAluno varchar(50) NOT NULL,
@@ -31,7 +31,7 @@ VALUES
 
 &nbsp;
 **2.1. Consultando todos os registros da tabela acima:**  
-```
+```mysql
 SELECT * FROM tb_aluno;
 ```
 ###### Output:  
@@ -46,7 +46,7 @@ SELECT * FROM tb_aluno;
 &nbsp;
 &nbsp;  
 **2.2. Consultando registros de apenas uma coluna desta tabela:**  
-```
+```mysql
 SELECT nomeAluno FROM tb_aluno;
 ```	
 ###### Output:  
@@ -61,7 +61,7 @@ SELECT nomeAluno FROM tb_aluno;
 &nbsp;
 &nbsp;  
 **2.3. Consultando registros de duas colunas específicas da tabela:** 
-```
+```mysql
 SELECT nomeAluno, emailAluno FROM tb_aluno;
 ```	
 ###### * Output:  
@@ -78,7 +78,7 @@ SELECT nomeAluno, emailAluno FROM tb_aluno;
 &nbsp;  
 **3. Utilizando a cláusula ORDER BY:**  
 Apresenta os valores consultados em ordem sequencial crescente ou decrescente, bastando acrescentar ASC ou DESC.
-```
+```mysql
 SELECT nomeAluno FROM tb_aluno ORDER BY nomeAluno DESC;
 ```
 ###### * Output:  	
@@ -93,7 +93,7 @@ SELECT nomeAluno FROM tb_aluno ORDER BY nomeAluno DESC;
 &nbsp;
 &nbsp;  
 Por default, a ordenação é em ordem crescente; portanto o uso de ASC é opcional.
-```
+```mysql
 SELECT * FROM tb_aluno ORDER BY nomeAluno; 
 ```
 ###### * Output:  
@@ -110,7 +110,7 @@ SELECT * FROM tb_aluno ORDER BY nomeAluno;
 &nbsp;  
 **4. Utilizando a cláusula WHERE:**  
 Ao incluir esta cláusula, apenas os registros que obedecerem às condições ali especificadas serão retornados.
-```
+```mysql
 SELECT nomeAluno FROM tb_aluno WHERE idAluno = '5';
 ```
 ###### * Output:  
@@ -119,7 +119,7 @@ SELECT nomeAluno FROM tb_aluno WHERE idAluno = '5';
 
 &nbsp;
 &nbsp;  
-```        
+```mysql
 SELECT nomeAluno FROM tb_aluno WHERE idAluno <= '3' ORDER BY nomeAluno DESC;
 ```
 ###### * Output:  
@@ -134,7 +134,7 @@ SELECT nomeAluno FROM tb_aluno WHERE idAluno <= '3' ORDER BY nomeAluno DESC;
 &nbsp;        
 **5. Utilizando o Operador LIKE:**  
 No exemplo abaixo: filtra registros presentes na tabela que tem palavras (no campo nomeAluno) que terminam com a letra 'A' .
-```
+```mysql
 SELECT * from tb_aluno WHERE nomeAluno LIKE '%A';
 ```
 ###### * Output:  	
@@ -145,7 +145,7 @@ SELECT * from tb_aluno WHERE nomeAluno LIKE '%A';
 &nbsp;
 &nbsp;   
 No exemplo abaixo: filtra registros presentes na tabela que tem palavras (no campo nomeAluno) que começam com a letra 'M' 
-```
+```mysql
 SELECT * from tb_aluno WHERE nomeAluno LIKE 'M%';  
 ```
 ###### * Output:  	
@@ -157,7 +157,7 @@ SELECT * from tb_aluno WHERE nomeAluno LIKE 'M%';
 &nbsp;
 &nbsp;   
 No exemplo abaixo: filtra registros presentes na tabela que tem palavras (no campo nomeAluno) que contêm a letra 'M' 
-```      
+```mysql
 SELECT * from tb_aluno WHERE nomeAluno LIKE '%M%'; 
 ```
 ###### * Output:  	

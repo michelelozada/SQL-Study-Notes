@@ -14,7 +14,7 @@ Comando utilizado para modificar as características de uma tabela já existente
 &nbsp;
 **As tabelas para o exemplo:**   
 
-```
+```mysql
 CREATE TABLE tb_aluno(
    idAluno int(11) PRIMARY KEY NOT NULL,
    nomeAluno varchar(40),
@@ -23,7 +23,7 @@ CREATE TABLE tb_aluno(
    emailAluno varchar(50)
 );
 ```
-```
+```mysql
 CREATE TABLE tb_contrato(
    idContrato int(11) PRIMARY KEY NOT NULL,
    idAluno int(11) NOT NULL
@@ -33,7 +33,7 @@ CREATE TABLE tb_contrato(
      
 &nbsp;
 **1. 'Dropando' uma das colunas da tabela**  
-```
+```mysql
 ALTER TABLE tb_aluno
 DROP COLUMN foneAluno;
 ```
@@ -41,7 +41,7 @@ DROP COLUMN foneAluno;
      
 &nbsp;
 **2. Adicionando uma coluna à tabela**  
-```
+```mysql
 ALTER TABLE tb_aluno
 ADD COLUMN foneAluno varchar(11) AFTER emailAluno;
 ```
@@ -49,7 +49,7 @@ ADD COLUMN foneAluno varchar(11) AFTER emailAluno;
      
 &nbsp;
 **3. Removendo uma chave primária**  
-```
+```mysql
 ALTER TABLE tb_aluno
 DROP PRIMARY KEY;
 ```
@@ -57,7 +57,7 @@ DROP PRIMARY KEY;
      
 &nbsp;
 **4. Adicionando uma chave primária**  
-```
+```mysql
 ALTER TABLE tb_aluno
 ADD PRIMARY KEY (idAluno);
 ```
@@ -65,7 +65,7 @@ ADD PRIMARY KEY (idAluno);
      
 &nbsp;
 **5. Adicionando uma chave estrangeira**  
-```
+```mysql
 ALTER TABLE tb_contrato
 ADD CONSTRAINT fk_idAluno
 FOREIGN KEY (idAluno)
@@ -75,7 +75,7 @@ REFERENCES tb_aluno(idAluno);
      
 &nbsp;
 **6. Removendo uma chave estrangeira**  
-```
+```mysql
 ALTER TABLE tb_contrato
 DROP CONSTRAINT fk_idAluno;
 ```
@@ -83,11 +83,11 @@ DROP CONSTRAINT fk_idAluno;
      
 &nbsp;
 **7. Modificando o tipo de dado ou a restrição de uma coluna**  
-```
+```mysql
 ALTER TABLE tb_ALUNO
 MODIFY COLUMN foneAluno int(11); -- imaginando que eu quisesse alterar o tipo de dado de varchar para int
 ```
-```
+```mysql
 ALTER TABLE tb_ALUNO
 MODIFY COLUMN cpfAluno varchar(15) UNIQUE; -- aqui foi adicionada uma constraint à coluna
 ```

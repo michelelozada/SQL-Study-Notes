@@ -11,7 +11,7 @@
      
 &nbsp;
 **A tabela de exemplo:**  
-```
+```mysql
 CREATE TABLE tb_aluno(
     idAluno int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nomeAluno varchar(40),
@@ -23,7 +23,7 @@ CREATE TABLE tb_aluno(
      
 &nbsp;
 **1. Utilizando o comando INSERT para inclusão de apenas um registro:**  
-```
+```mysql
 INSERT INTO tb_aluno(idAluno,nomeAluno,foneAluno,emailAluno) 
 VALUES 
 (default, 'Lorenzo Martins', '4199956-xx88','lorenzomartins@gmail.com');
@@ -32,7 +32,7 @@ VALUES
      
 &nbsp;
 **2. Para inclusão de mais registros:**  
-```
+```mysql
 INSERT INTO tb_aluno(idAluno,nomeAluno,foneAluno,emailAluno) 
 VALUES 
 (default, 'Luana Borba','4199956-xx56', 'luanab@email.com'),

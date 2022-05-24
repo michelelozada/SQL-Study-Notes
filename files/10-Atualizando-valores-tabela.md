@@ -11,7 +11,7 @@
      
 &nbsp;  
 **1. A tabela de exemplo:**  
-```
+```mysql
 CREATE TABLE tb_aluno(
     idAluno int(11) PRIMARY KEY NOT NULL,
     nomeAluno varchar(50) NOT NULL,
@@ -31,7 +31,7 @@ VALUES
 &nbsp;
 **1. Atualizando um dos registros:**  
 - Deve ser utilizado juntamente com a cláusula WHERE, quando for necessária a especificação de qual registro terá seus dados atualizados.
-```
+```mysql
 UPDATE tb_aluno SET nomeAluno = 'Marcos Góes Filho' WHERE idAluno = '4';
 ```
 ###### * Output:  
@@ -45,7 +45,7 @@ UPDATE tb_aluno SET nomeAluno = 'Marcos Góes Filho' WHERE idAluno = '4';
 &nbsp;
 &nbsp;  
 * ATT: Caso não seja utilizada a cláusula WHERE, todos os registros da tabela serão atualizados com a mesma informação!
-```
+```mysql
 UPDATE tb_aluno SET cidadeAluno = 'Curitiba', estadoAluno="PR";
 ```
 ###### * Output:  
