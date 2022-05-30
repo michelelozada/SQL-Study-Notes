@@ -89,3 +89,15 @@ CREATE TABLE tb_aluno(
 ```mysql
 ALTER TABLE tb_aluno ALTER cidadeAluno SET DEFAULT 'Curitiba';
 ```
+&nbsp;
+     
+&nbsp
+**6. CHECK** 
+Define a validação dos dados inseridos em uma coluna, através da especificação de uma condição.  
+Portanto: apenas dados, cujo resultado da avaliação da condição seja verdadeiro, serão aceitos.
+```mysql
+CREATE TABLE tb_aluno(
+    idAluno int(11),
+    idadeAluno int(2) NOT NULL CHECK(idadeAluno >= 0 AND idadeAluno <= 99)
+);
+```

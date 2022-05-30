@@ -13,6 +13,7 @@
 | 07 | [Alterando a estrutura de uma tabela (comando ALTER TABLE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/07-Alterando-estrutura-tabela.md) |
 | 08 | [Inserindo valores em uma tabela (comando INSERT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/08-Inserindo-valores-tabela.md) |
 | 09 | [Consultando valores em uma tabela (comando SELECT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/09-Consultando-valores-tabela.md) |
-| 10 | [Atualizando valores em uma tabela (comando UPDATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/10-Atualizando-valores-tabela.md) |
-| 11 | [Eliminando registros de uma tabela (comandos DELETE e TRUNCATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/11-Eliminando-registros-tabela.md) |
+| 10 | [Adicionando filtros às consultas (operadores AND, OR, NOT, IN e NOT IN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/10-Adicionando-filtros-consultas.md) |
+| 11 | [Atualizando valores em uma tabela (comando UPDATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/11-Atualizando-valores-tabela.md) |
+| 12 | [Eliminando registros de uma tabela (comandos DELETE e TRUNCATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/12-Eliminando-registros-tabela.md) |
 </div> 
