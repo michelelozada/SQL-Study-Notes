@@ -75,7 +75,7 @@ ALTER TABLE tb_aluno MODIFY nomeAluno varchar(40) NULL;
 ```
 &nbsp;
      
-&nbsp; 
+&nbsp;     
 **5. DEFAULT**  
 Define que - caso não seja especificado um valor pelo usuário - será associado um valor pré-definido à coluna.
 ```mysql
@@ -91,7 +91,7 @@ ALTER TABLE tb_aluno ALTER cidadeAluno SET DEFAULT 'Curitiba';
 ```
 &nbsp;
      
-&nbsp
+&nbsp;     
 **6. CHECK** 
 Define a validação dos dados inseridos em uma coluna, através da especificação de uma condição.  
 Portanto: apenas dados, cujo resultado da avaliação da condição seja verdadeiro, serão aceitos.
