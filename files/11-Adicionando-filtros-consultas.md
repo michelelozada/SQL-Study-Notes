@@ -19,8 +19,8 @@
 | 10      |	Vinícius Motta    | M         | Porto Alegre   | RS           |
 
 &nbsp;
-     
-&nbsp;    
+
+&nbsp;  
 **1. Operadores AND, OR e NOT**  
 São operadores lógicos que - utilizados juntamente com a cláusula WHERE - filtram registros, através da comparação de duas ou mais condições.
 &nbsp;
