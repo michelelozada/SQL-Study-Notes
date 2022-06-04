@@ -11,7 +11,6 @@ Utilizado para explicar instruções ou evitar a execução de alguma parte do c
 
 -- Esta é outra forma de marcação para comentários inline
 
-
 /* Para comentários
 em múltiplas linhas
 utilize esta marcação */

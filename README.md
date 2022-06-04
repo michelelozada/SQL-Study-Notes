@@ -14,13 +14,15 @@
 | 08 | [Alterando nome de tabelas e colunas existentes (comando RENAME)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/08-Alterando-nome-tabelas.md) |
 | 09 | [Inserindo valores em uma tabela (comando INSERT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/09-Inserindo-valores-tabela.md) |
 | 10 | [Consultando valores em uma tabela (comando SELECT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/10-Consultando-valores-tabela.md) |
-| 11 | [Adicionando filtros às consultas (operadores AND, OR, NOT, IN e NOT IN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/11-Adicionando-filtros-consultas.md) |
+| 11 | [Adicionando filtros às consultas (operadores AND, OR, NOT, IN, NOT IN e BETWEEN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/11-Adicionando-filtros-consultas.md) |
 | 12 | [Atualizando valores em uma tabela (comando UPDATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/12-Atualizando-valores-tabela.md) |
 | 13 | [Eliminando registros de uma tabela (comandos DELETE e TRUNCATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/13-Eliminando-registros-tabela.md) |
 | 14 | [Funções de agregação (COUNT, MAX, MIN, SUM e AVG)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/14-Funcoes-de-agregacao.md) |
-| 15 | [Comentando código SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/15-Comentando-codigo-SQL.md) |
+| 15 | [Resumindo dados resultantes de uma seleção (cláusula GROUP BY)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/15-Resumindo-dados-seleção.md) |
+| 16 | [Comentando código SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/16-Comentando-codigo-SQL.md) |
 
 &nbsp;   
-:computer: &nbsp; **Fonte consultada:**  
+:bookmark_tabs: **Fontes consultadas:**  
 [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)  
+[Sistemas de Banco de Dados (Ramez Elmasri e Shamkant B. Navathe)](https://www.bvirtual.com.br/NossoAcervo/Publicacao/168492)  
 </div> 

@@ -4,7 +4,7 @@
 &nbsp;
      
 &nbsp;  
-**RENAME**
+**RENAME**  
 Para renomear tabelas ou colunas já existentes no banco de dados.
 &nbsp;
      
@@ -30,8 +30,8 @@ RENAME TABLE
 &nbsp;  
 **2 – Renomeando colunas**  
 ```mysql
-ALTER TABLE tb_alunos -- aqui o nome da coluna a ser alterado
-RENAME COLUMN nomeAluno TO nome_aluno; -- aqui o novo nome da tabela  
+ALTER TABLE tb_alunos 
+RENAME COLUMN nomeAluno TO nome_aluno; -- antes, o nome da coluna a ser alterado; depois o novo nome da coluna
 ```
 Ou alternativamente:
 ```mysql 

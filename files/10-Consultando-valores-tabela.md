@@ -25,7 +25,10 @@ VALUES
 (default, 'Mariana Fernandes', 'marifernandes@email.com'),
 (default, 'Cátia Marcondes', 'catiamarcondes@email.com'),
 (default, 'Marcos Góes', 'marcosgoes@email.com'),
-(default, 'Sônia de Morais', 'sonia_morais@email.com');
+(default, 'Sônia de Morais', 'sonia_morais@email.com'),
+(default, 'Enzo Freitas', 'efreitas@email.com'),
+(default, 'Rodrigo Mattos', 'rodrigo.mattos@email.com'),
+(default, 'Paula Souza', 'paula_souza@email.com');
 ```
 &nbsp;
 
@@ -35,13 +38,16 @@ VALUES
 SELECT * FROM tb_aluno;
 ```
 ###### Output:  
-| ID Aluno | Nome aluno | E-mail   | 
-| ------   | -----      | -----    | 
-| 1  | Luana Borba | luanab@email.com |
-| 2  | Mariana Fernandes | marifernandes@email.com |
-| 3  | Cátia Marcondes | catiamarcondes@email.com |
-| 4  | Marcos Góes | marcosgoes@email.com |
-| 5  | Sônia de Morais | sonia_morais@email.com |
+| ID Aluno | Nome aluno        | E-mail                   | 
+| ------   | -----             | -----                    | 
+| 1        | Luana Borba       | luanab@email.com         |
+| 2        | Mariana Fernandes | marifernandes@email.com  |
+| 3        | Cátia Marcondes   | catiamarcondes@email.com |
+| 4        | Marcos Góes       | marcosgoes@email.com     |
+| 5        | Sônia de Morais   | sonia_morais@email.com   |
+| 6		   | Enzo Freitas      | efreitas@email.com	      |
+| 7		   | Rodrigo Mattos    | rodrigo.mattos@email.com |
+| 8        | Paula Souza       | paula_souza@email.com    |
 
 &nbsp;
 &nbsp;  
@@ -50,13 +56,13 @@ SELECT * FROM tb_aluno;
 SELECT nomeAluno FROM tb_aluno;
 ```	
 ###### Output:  
-| Nome aluno |
-| ------     |
-| Luana Borba | 
+| Nome aluno        |
+| ------            |
+| Luana Borba       | 
 | Mariana Fernandes |
-| Cátia Marcondes |
-| Marcos Góes |
-| Sônia de Morais |
+| Cátia Marcondes   |
+| Marcos Góes       |
+| Sônia de Morais   |
 
 &nbsp;
 &nbsp;  
@@ -65,13 +71,17 @@ SELECT nomeAluno FROM tb_aluno;
 SELECT nomeAluno, emailAluno FROM tb_aluno;
 ```	
 ###### * Output:  
-| Nome aluno | E-mail   | 
-| ------   | -----      |
-| Luana Borba | luanab@email.com |
-| Mariana Fernandes | marifernandes@email.com |
-| Cátia Marcondes | catiamarcondes@email.com |
-| Marcos Góes | marcosgoes@email.com |
-| Sônia de Morais | sonia_morais@email.com |
+| Nome aluno        | E-mail                   | 
+| -----             | -----                    | 
+| Luana Borba       | luanab@email.com         |
+| Mariana Fernandes | marifernandes@email.com  |
+| Cátia Marcondes   | catiamarcondes@email.com |
+| Marcos Góes       | marcosgoes@email.com     |
+| Sônia de Morais   | sonia_morais@email.com   |
+| Enzo Freitas      | efreitas@email.com	   |
+| Rodrigo Mattos    | rodrigo.mattos@email.com |
+| Paula Souza       | paula_souza@email.com    |
+
 
 &nbsp;
 
@@ -82,28 +92,34 @@ Apresenta os valores consultados em ordem sequencial crescente ou decrescente, b
 SELECT nomeAluno FROM tb_aluno ORDER BY nomeAluno DESC;
 ```
 ###### * Output:  	
-| Nome aluno | 
-| ------     | 
-| Sônia de Morais |
-| Mariana Fernandes |
-| Marcos Góes |
-| Luana Borba |
-| Cátia Marcondes |
+| Nome aluno        | 
+| -----             | 
+| Sônia de Morais   | 
+| Rodrigo Mattos    | 
+| Paula Souza       | 
+| Mariana Fernandes | 
+| Marcos Góes       | 
+| Luana Borba       | 
+| Enzo Freitas      | 
+| Cátia Marcondes   | 
 
 &nbsp;
 &nbsp;  
 Por default, a ordenação é em ordem crescente; portanto o uso de ASC é opcional.
 ```mysql
-SELECT * FROM tb_aluno ORDER BY nomeAluno; 
+SELECT nomeAluno FROM tb_aluno ORDER BY nomeAluno;
 ```
 ###### * Output:  
-| ID Aluno | Nome aluno | E-mail   | 
-| ------   | -----      | -----    | 
-| 3  | Cátia Marcondes | catiamarcondes@email.com |
-| 1  | Luana Borba | luanab@email.com |
-| 4  | Marcos Góes | marcosgoes@email.com |
-| 2  | Mariana Fernandes | marifernandes@email.com |
-| 5  | Sônia de Morais | sonia_morais@email.com |
+| Nome aluno        | 
+| -----             | 
+| Cátia Marcondes   | 
+| Enzo Freitas      |
+| Luana Borba       | 
+| Marcos Góes       | 
+| Mariana Fernandes | 
+| Paula Souza       | 
+| Rodrigo Mattos    | 
+| Sônia de Morais   | 
 
 &nbsp;
 
@@ -111,58 +127,102 @@ SELECT * FROM tb_aluno ORDER BY nomeAluno;
 **4. Utilizando a cláusula WHERE:**  
 Ao incluir esta cláusula, apenas os registros que obedecerem às condições ali especificadas serão retornados.
 ```mysql
-SELECT nomeAluno FROM tb_aluno WHERE idAluno = '5';
+SELECT idAluno, nomeAluno FROM tb_aluno WHERE idAluno = '5';
 ```
 ###### * Output:  
-| Sônia de Morais |
-| ------          |
+| ID Aluno  | Nome aluno        | 
+| ------    | ------   			| 
+| 5     	| Sônia de Morais   |
 
 &nbsp;
 &nbsp;  
 ```mysql
-SELECT nomeAluno FROM tb_aluno WHERE idAluno <= '3' ORDER BY nomeAluno DESC;
+SELECT idAluno, nomeAluno FROM tb_aluno WHERE idAluno <= '3' ORDER BY nomeAluno DESC;
 ```
 ###### * Output:  
-| Nome aluno | 
-| ------     | 
-| Mariana Fernandes |
-| Luana Borba |
-| Cátia Marcondes |
+| ID Aluno  | Nome aluno        | 
+| ------    | ------            | 
+| 2			| Mariana Fernandes |
+| 1			| Luana Borba       |
+| 3			| Cátia Marcondes   |
 
 &nbsp;
 
 &nbsp;        
 **5. Utilizando o Operador LIKE:**  
-No exemplo abaixo: filtra registros presentes na tabela que tem palavras (no campo nomeAluno) que terminam com a letra 'A' .
+Ao incluir esta cláusula, junto ao coringa "%", são realizadas comparações de letras ou palavras de uma string.  
+&nbsp;
+&nbsp;  
+No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) terminam com a letra 'A'.
 ```mysql
-SELECT * from tb_aluno WHERE nomeAluno LIKE '%A';
+SELECT idAluno, nomeAluno from tb_aluno WHERE nomeAluno LIKE '%A';
 ```
 ###### * Output:  	
-| ID Aluno | Nome aluno | E-mail   | 
-| ------   | -----      | -----    | 
-| 1 |Luana Borba |luanab@email.com |
+| ID Aluno | Nome aluno  | 
+| ------   | -----       | 
+| 1        | Luana Borba |
+| 8        | Paula Souza |
 
 &nbsp;
 &nbsp;   
-No exemplo abaixo: filtra registros presentes na tabela que tem palavras (no campo nomeAluno) que começam com a letra 'M' 
+No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) começa, com a letra 'M'. 
 ```mysql
-SELECT * from tb_aluno WHERE nomeAluno LIKE 'M%';  
+SELECT idAluno, nomeAluno from tb_aluno WHERE nomeAluno LIKE 'M%';  
 ```
 ###### * Output:  	
-| ID Aluno | Nome aluno | E-mail   | 
-| ------   | -----      | -----    | 
-| 2 |Mariana Fernandes |marifernandes@email.com |
-| 4 |Marcos Góes |marcosgoes@email.com |
+| ID Aluno | Nome aluno        | 
+| ------   | -----             |
+| 2        | Mariana Fernandes |
+| 4        | Marcos Góes       |
 
 &nbsp;
 &nbsp;   
-No exemplo abaixo: filtra registros presentes na tabela que tem palavras (no campo nomeAluno) que contêm a letra 'M' 
+No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) contêm a letra 'M'. 
 ```mysql
-SELECT * from tb_aluno WHERE nomeAluno LIKE '%M%'; 
+SELECT idAluno, nomeAluno from tb_aluno WHERE nomeAluno LIKE '%M%'; 
 ```
 ###### * Output:  	
-| ID Aluno | Nome aluno | E-mail   | 
-| ------   | -----      | -----    | 
-| 2 |Mariana Fernandes | marifernandes@email.com |
-| 3 |Cátia Marcondes | catiamarcondes@email.com |
-| 4 |Marcos Góes | marcosgoes@email.com |
+| ID Aluno | Nome aluno        |  
+| ------   | -----             |  
+| 2        | Mariana Fernandes | 
+| 3        | Cátia Marcondes   | 
+| 4        | Marcos Góes       | 
+| 5        | Sonia Morais      | 
+| 7        | Rodrigo Mattos	   |	
+
+&nbsp;
+&nbsp;   
+No exemplo abaixo: retorna registros presentes na tabela, cuja terceira letra da string (do campo nomeAluno) é a letra 'r'.
+```mysql
+SELECT idAluno, nomeAluno from tb_aluno WHERE nomeAluno LIKE '__R%'; 
+```
+###### * Output:  	
+| ID Aluno | Nome aluno        |  
+| ------   | -----             |  
+| 2        | Mariana Fernandes | 
+| 4        | Marcos Góes       |
+
+&nbsp;
+&nbsp;   
+No exemplo abaixo: retorna registros presentes na tabela, cuja string (do campo nomeAluno) termina com 'ndes'. 
+```mysql
+SELECT idAluno, nomeAluno from tb_aluno WHERE nomeAluno LIKE '%NDES'; 
+```
+###### * Output:  	
+| ID Aluno | Nome aluno        |  
+| ------   | -----             |  
+| 2        | Mariana Fernandes | 
+| 3        | Cátia Marcondes   | 
+
+&nbsp;
+
+&nbsp; 
+**6. Utilizando o Operador NOT LIKE:**  
+No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) **não** contêm a letra 'R'. 
+```mysql
+SELECT idAluno, nomeAluno from tb_aluno WHERE nomeAluno NOT LIKE '%R%'; 
+```
+###### * Output:  	
+| ID Aluno | Nome aluno  | 
+| ------   | -----       | 
+| 8        | Paula Souza |

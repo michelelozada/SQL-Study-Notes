@@ -1,22 +1,22 @@
-> **Utilizando os operadores AND, OR, NOT, IN e NOT IN**     
+> **Utilizando os operadores AND, OR, NOT, IN, NOT IN e BETWEEN**     
 > Repositório: Banco de Dados MySQL - Fundamentos    
 > GitHub: @michelelozada
 &nbsp;
      
 &nbsp;   
 **A tabela para exemplo:** 
-| idAluno | nomeAluno         |	sexoAluno | cidadeAluno    | estado Aluno |
-| ------  | ------            | ------    | ------  	   | ------       |
-| 1       | Luana Borba       |	F         |	Curitiba       | PR           |
-| 2	      | Mariana Fernandes | F         | Rio de Janeiro | RJ           |
-| 3	      | Cátia Marcondes   |	F         |	Pato Branco    | PR           |
-| 4	      | Marcos Góes       |	M         |	Florianópolis  | SC           |
-| 5	      | Enzo Marques      | M         | Curitiba       | PR           |
-| 6	      | Carla Santana     | F         | Santo André    | SP           |
-| 7	      | Sandra de Paula   | F         |	Curitiba       | PR           |
-| 8	      | Paulo Figueiredo  | M         | Erechim        | RS           |
-| 9	      | Larissa Torres    | F         | Paranaguá      | PR           |
-| 10      |	Vinícius Motta    | M         | Porto Alegre   | RS           |
+| idAluno | nomeAluno         |	sexoAluno | dNascimentoAluno | cidadeAluno    | estado Aluno |
+| ------  | ------            | ------    | ------           | ------  	    | ------       |
+| 1       | Luana Borba       |	F         | 2004-02-10		 | Curitiba       | PR           |
+| 2	      | Mariana Fernandes | F         | 1991-03-23		 | Rio de Janeiro | RJ           |
+| 3	      | Cátia Marcondes   |	F         |	2000-01-05		 | Pato Branco    | PR           |
+| 4	      | Marcos Góes       |	M         |	1987-03-18		 | Florianópolis  | SC           |
+| 5	      | Enzo Marques      | M         | 2002-05-14 		 | Curitiba       | PR           |
+| 6	      | Carla Santana     | F         | 1986-01-24 		 | Santo André    | SP           |
+| 7	      | Sandra de Paula   | F         | 1997-02-12		 | Curitiba       | PR           |
+| 8	      | Paulo Figueiredo  | M         | 1999-06-02  	 | Erechim        | RS           |
+| 9	      | Larissa Torres    | F         |	2003-04-07		 | Paranaguá      | PR           |
+| 10      |	Vinícius Motta    | M         | 1994-02-13		 | Porto Alegre   | RS           |
 
 &nbsp;
 
@@ -42,7 +42,7 @@ WHERE idAluno > 2 AND sexoAluno = 'F' AND estadoAluno='PR';
 &nbsp;
      
 &nbsp;     
-**1.2. Operador OR ('OU' lógico)**
+**1.2. Operador OR ('OU' lógico)**  
 Retorna registro(s), desde que alguma das condições comparadas seja verdadeira
 ```mysql
 SELECT idAluno, nomeAluno, sexoAluno, estadoAluno FROM tb_aluno 
@@ -62,20 +62,19 @@ WHERE estadoAluno='PR' OR sexoAluno = 'F';
 &nbsp;
      
 &nbsp;    
-**1.3. Operador NOT (Negação lógica)**
+**1.3. Operador NOT (Negação lógica)**  
 Nega o filtro aplicado, conforme demonstrado no exemplo abaixo.
 ```mysql
-SELECT * FROM tb_aluno 
+SELECT nomeAluno, sexoAluno FROM tb_aluno 
 WHERE idAluno > 2 AND NOT sexoAluno = 'F';
 ```
 ###### * Output:  
-| idAluno | nomeAluno         |	sexoAluno | cidadeAluno    | estado Aluno |
-| ------  | ------            | ------    | ------  	   | ------       |
-| 4	      | Marcos Góes       |	M         |	Florianópolis  | SC           |
-| 5	      | Enzo Marques      | M         | Curitiba       | PR           |
-| 8	      | Paulo Figueiredo  | M         | Erechim        | RS           |
-| 10      |	Vinícius Motta    | M         | Porto Alegre   | RS           |
-
+| idAluno | nomeAluno         |	sexoAluno | 
+| ------  | ------            | ------    |
+| 4	      | Marcos Góes       |	M         |	
+| 5	      | Enzo Marques      | M         | 
+| 8	      | Paulo Figueiredo  | M         | 
+| 10      |	Vinícius Motta    | M         | 
 &nbsp;
      
 &nbsp;     
@@ -114,3 +113,20 @@ WHERE estadoAluno NOT IN ('PR','RS','SC');
 | ------            | ------       |
 | Mariana Fernandes | RJ           |
 | Carla Santana     | SP           |
+
+&nbsp;
+     
+&nbsp;    
+**3. OPERADOR BETWEEN**  
+- Especifica uma faixa de valores a serem retornados.
+```mysql
+SELECT nomeAluno, dNascimentoAluno FROM tb_aluno
+WHERE dNascimentoAluno BETWEEN '2000-01-01' AND '2004-12-31' ORDER BY dNascimentoAluno DESC; 
+```
+###### * Output: 
+| nomeAluno         | dNascimentoAluno | 
+| ------            | ------           |  
+| Luana Borba		| 2004-02-10       |
+| Larissa Torres	| 2003-04-07       |
+| Enzo Marques		| 2002-05-14       |
+| Cátia Marcondes	| 2000-01-05       |

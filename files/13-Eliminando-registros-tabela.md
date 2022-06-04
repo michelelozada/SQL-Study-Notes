@@ -10,12 +10,12 @@
      
 &nbsp;  
 **1. A tabela de exemplo:**  
-| ID Aluno | Nome aluno | Cidade   | Estado |
-| ------   | -----      | -----    | -----  |
-| 1        | Luana Borba       | Curitiba       | PR |
-| 2        | Mariana Fernandes | Rio de Janeiro | RJ |
-| 3        | Cátia Marcondes   | Santo André    | SP |
-| 4        | Marcos Góes Filho | Florianópolis  | SC |
+| ID Aluno | Nome aluno        | Cidade         | Estado |
+| ------   | -----             | -----          | -----  |
+| 1        | Luana Borba       | Curitiba       | PR     |
+| 2        | Mariana Fernandes | Rio de Janeiro | RJ     |
+| 3        | Cátia Marcondes   | Santo André    | SP     |
+| 4        | Marcos Góes Filho | Florianópolis  | SC     |
 
 &nbsp;
      
@@ -49,23 +49,23 @@ definidos com AUTO_INCREMENT, depois que DELETE ou TRUNCATE são aplicados.
 &nbsp;  
 Depois de todos os registros de uma tabela terem sido apagados com **DELETE**, veja o que acontece 
 no campo *idAluno* quando novos dados são inseridos na tabela: 
-| ID Aluno | Nome aluno | Cidade   | Estado  |
-| ------   | -----      | -----    | -----   |
-| 5	| Enzo Marques	    | Pato Branco   | PR |
-| 6 | Carla Santana     | Maricá	    | RJ |
-| 7 | Sandra de Paula   | Riberão Preto	| SP |
-| 8 | Paulo Figueiredo	| Erechim	    | RS |
+| ID Aluno | Nome aluno         | Cidade         | Estado  |
+| ------   | -----              | -----          | -----   |
+| 5	       | Enzo Marques	    | Pato Branco    | PR      |
+| 6        | Carla Santana      | Maricá	     | RJ      |
+| 7        | Sandra de Paula    | Riberão Preto	 | SP      |
+| 8        | Paulo Figueiredo	| Erechim	     | RS      |
 
 &nbsp;
 &nbsp;   
 Agora veja o que acontece com a tabela que teve seus dados eliminados com **TRUNCATE** e agora recebe novos 
 dados: 
-| ID Aluno | Nome aluno | Cidade   | Estado  |
-| ------   | -----      | -----    | -----   |
-| 1	| Enzo Marques	    | Pato Branco   | PR |
-| 2 | Carla Santana     | Maricá	    | RJ |
-| 3 | Sandra de Paula   | Riberão Preto	| SP |
-| 4 | Paulo Figueiredo	| Erechim	    | RS |
+| ID Aluno | Nome aluno       | Cidade        | Estado  |
+| ------   | -----            | -----         | -----   |
+| 1	       | Enzo Marques	  | Pato Branco   | PR      |
+| 2        | Carla Santana    | Maricá	      | RJ      |
+| 3        | Sandra de Paula  | Riberão Preto | SP      |
+| 4        | Paulo Figueiredo | Erechim	      | RS      |
 
 &nbsp;
 &nbsp;  
