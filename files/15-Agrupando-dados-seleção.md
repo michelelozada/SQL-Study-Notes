@@ -1,4 +1,4 @@
-> **Resumindo dados resultantes de uma seleção (cláusula GROUP BY)**     
+> **Agrupando dados resultantes de uma seleção (cláusula GROUP BY)**     
 > Repositório: Banco de Dados MySQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;
