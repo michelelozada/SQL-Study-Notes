@@ -20,7 +20,7 @@
 | 14 | [Funções de agregação (COUNT, MAX, MIN, SUM e AVG)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/14-Funcoes-de-agregacao.md) |
 | 15 | [Agrupando dados resultantes de uma seleção (cláusula GROUP BY)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/15-Agrupando-dados-seleção.md) |
 | 16 | [Filtrando registros após terem sido agrupados (cláusula HAVING)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/16-Filtrando-dados-agrupados.md) |
-| 17 | [Comentando código SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/16-Comentando-codigo-SQL.md) |
+| 17 | [Comentando código SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/17-Comentando-codigo-SQL.md) |
 
 &nbsp;   
 :bookmark_tabs: **Fontes consultadas:**  
