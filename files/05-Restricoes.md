@@ -31,17 +31,17 @@ Campo de uma tabela que aponta para o campo primário de uma outra tabela que co
 ```mysql
 CREATE TABLE tb_contrato(
     idContrato int(11) PRIMARY KEY NOT NULL,
-    idAluno int(11),
-    CONSTRAINT fk_idAluno FOREIGN KEY (idAluno) REFERENCES tb_aluno(idAluno)
+    idAluno_fk int(11),
+    CONSTRAINT idAluno FOREIGN KEY (idAluno_fk) REFERENCES tb_aluno(idAluno)
 );
 ```
 * Alteração para aplicar a chave estrangeira numa tabela já criada:
 ```mysql
-ALTER TABLE tb_contrato ADD CONSTRAINT fk_idAluno FOREIGN KEY (idAluno) REFERENCES tb_aluno(idAluno);
+ALTER TABLE tb_contrato ADD CONSTRAINT idAluno FOREIGN KEY (idAluno_fk) REFERENCES tb_aluno(idAluno);
 ```
 * Exclusão de uma chave estrangeira:
 ```mysql
-ALTER TABLE tb_contrato DROP CONSTRAINT fk_idAluno;
+ALTER TABLE tb_contrato DROP CONSTRAINT idAluno;
 ```
 &nbsp;
      
