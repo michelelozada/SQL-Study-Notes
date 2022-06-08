@@ -55,7 +55,7 @@
 &nbsp;
 
 &nbsp;  
-**A aplicação do INNER JOIN nas três tabelas acima:**   
+**Aplicando o INNER JOIN nas três tabelas acima:**   
 ```mysql
 SELECT idProduto AS Código, nomeProduto As Produto, nomeMarca AS Marca, nomeCategoria AS Categoria
 FROM tb_produto
