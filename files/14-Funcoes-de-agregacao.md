@@ -111,5 +111,5 @@ SELECT SUM(mensalidadeCurso) FROM tb_curso WHERE idCurso <= 5;
 Retona a média aritmética dos valores de uma coluna
 ```mysql
 SELECT AVG(mensalidadeCurso) FROM tb_curso; 
-# retorna 587.224375 (médias das mensalidades dos cursos)
+# retorna 587.224375 (média das mensalidades dos cursos)
 ```
