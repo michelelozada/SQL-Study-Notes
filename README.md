@@ -22,7 +22,8 @@
 | 16 | [Filtrando registros após terem sido agrupados (cláusula HAVING)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/16-Filtrando-dados-agrupados.md) |
 | 17 | [Junção de duas ou mais tabelas (cláusula INNER JOIN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/17-Juncao-de-tabelas-I.md) |
 | 18 | [Junção de duas ou mais tabelas (cláusulas LEFT JOIN e RIGHT JOIN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/18-Juncao-de-tabelas-II.md) |
-| 19 | [Comentando código SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/19-Comentando-codigo-SQL.md) |
+| 19 | [Criando visões ou 'tabelas virtuais' (comando CREATE VIEW)] (https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/19-Criando-views.md) |
+| 20 | [Comentando código SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/20-Comentando-codigo-SQL.md) |
 
 &nbsp;   
 :bookmark_tabs: **Fontes consultadas:**  

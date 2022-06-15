@@ -72,7 +72,7 @@ GROUP BY idVendedor;
 &nbsp;
 
 &nbsp;  
-No exemplo abaixo, desejo saber se algum vendedor realizou 4 vendas até esse momento *(aqui utilizada a clásula HAVING)*:
+No exemplo abaixo, desejo saber se algum vendedor realizou 4 (ou mais) vendas até esse momento *(aqui utilizada a clásula HAVING)*:
 ```mysql
 SELECT idVendedor AS 'Id Vendedor', COUNT(idVenda) AS 'Quantidade de Vendas'
 FROM tb_venda
