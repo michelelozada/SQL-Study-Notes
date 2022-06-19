@@ -127,7 +127,7 @@ SELECT nomeAluno FROM tb_aluno ORDER BY nomeAluno;
 **4. Utilizando a cláusula WHERE:**  
 Ao incluir esta cláusula, apenas os registros que obedecerem às condições ali especificadas serão retornados.
 ```mysql
-SELECT idAluno, nomeAluno FROM tb_aluno WHERE idAluno = '5';
+SELECT idAluno, nomeAluno FROM tb_aluno WHERE idAluno = 5;
 ```
 ###### * Output:  
 | ID Aluno  | Nome aluno        | 
@@ -137,7 +137,7 @@ SELECT idAluno, nomeAluno FROM tb_aluno WHERE idAluno = '5';
 &nbsp;
 &nbsp;  
 ```mysql
-SELECT idAluno, nomeAluno FROM tb_aluno WHERE idAluno <= '3' ORDER BY nomeAluno DESC;
+SELECT idAluno, nomeAluno FROM tb_aluno WHERE idAluno <= 3 ORDER BY nomeAluno DESC;
 ```
 ###### * Output:  
 | ID Aluno  | Nome aluno        | 
@@ -145,6 +145,30 @@ SELECT idAluno, nomeAluno FROM tb_aluno WHERE idAluno <= '3' ORDER BY nomeAluno 
 | 2			| Mariana Fernandes |
 | 1			| Luana Borba       |
 | 3			| Cátia Marcondes   |
+
+&nbsp;
+&nbsp;  
+```mysql
+SELECT idAluno, nomeAluno FROM tb_aluno WHERE NOT idAluno > 4;
+```
+###### * Output:  
+| ID Aluno  | Nome aluno        | 
+| ------    | ------            | 
+| 1			| Luana Borba       |
+| 2			| Mariana Fernandes |
+| 3			| Cátia Marcondes   |
+| 4			| Marcos Góes       |
+
+&nbsp;
+&nbsp;  
+```mysql
+SELECT idAluno, nomeAluno FROM tb_aluno 
+WHERE (idAluno = 8 AND nomeAluno = "Paulinha") OR (idAluno = 7 AND nomeAluno = "Rodrigo Mattos");
+```
+###### * Output:  
+| ID Aluno  | Nome aluno        | 
+| ------    | ------            | 
+| 7			| Rodrigo Mattos    |
 
 &nbsp;
 

@@ -14,19 +14,22 @@
 | 08 | [Alterando nome de tabelas e colunas existentes (comando RENAME)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/08-Alterando-nome-tabelas.md) |
 | 09 | [Inserindo valores em uma tabela (comando INSERT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/09-Inserindo-valores-tabela.md) |
 | 10 | [Consultando valores em uma tabela (comando SELECT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/10-Consultando-valores-tabela.md) |
-| 11 | [Adicionando filtros às consultas (operadores AND, OR, NOT, IN, NOT IN e BETWEEN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/11-Adicionando-filtros-consultas.md) |
-| 12 | [Atualizando valores em uma tabela (comando UPDATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/12-Atualizando-valores-tabela.md) |
-| 13 | [Eliminando registros de uma tabela (comandos DELETE e TRUNCATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/13-Eliminando-registros-tabela.md) |
-| 14 | [Funções de agregação (COUNT, MAX, MIN, SUM e AVG)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/14-Funcoes-de-agregacao.md) |
-| 15 | [Agrupando dados resultantes de uma seleção (cláusula GROUP BY)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/15-Agrupando-dados-seleção.md) |
-| 16 | [Filtrando registros após terem sido agrupados (cláusula HAVING)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/16-Filtrando-dados-agrupados.md) |
-| 17 | [Junção de duas ou mais tabelas (cláusula INNER JOIN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/17-Juncao-de-tabelas-I.md) |
-| 18 | [Junção de duas ou mais tabelas (cláusulas LEFT JOIN e RIGHT JOIN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/18-Juncao-de-tabelas-II.md) |
-| 19 | [Criando visões ou 'tabelas virtuais' (comando CREATE VIEW)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/19-Criando-views.md) |
-| 20 | [Comentando código SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/20-Comentando-codigo-SQL.md) |
+| 11 | [Eliminando repetições de linhas em uma seleção (cláusula DISTINCT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/11-Eliminando-repeticoes-linhas) |
+| 12 | [Adicionando filtros às consultas (operadores AND, OR, NOT, IN, NOT IN e BETWEEN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/12-Adicionando-filtros-consultas.md) |
+| 13 | [Atualizando valores em uma tabela (comando UPDATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/13-Atualizando-valores-tabela.md) |
+| 14 | [Eliminando registros de uma tabela (comandos DELETE e TRUNCATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/14-Eliminando-registros-tabela.md) |
+| 15 | [Funções de agregação (COUNT, MAX, MIN, SUM e AVG)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/15-Funcoes-de-agregacao.md) |
+| 16 | [Agrupando dados resultantes de uma seleção (cláusula GROUP BY)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/16-Agrupando-dados-seleção.md) |
+| 17 | [Filtrando registros após terem sido agrupados (cláusula HAVING)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/17-Filtrando-dados-agrupados.md) |
+| 18 | [Junção de duas ou mais tabelas (cláusula INNER JOIN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/18-Juncao-de-tabelas-I.md) |
+| 19 | [Junção de duas ou mais tabelas (cláusulas LEFT JOIN e RIGHT JOIN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/19-Juncao-de-tabelas-II.md) |
+| 20 | [Criando visões ou 'tabelas virtuais' (comando CREATE VIEW)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/20-Criando-views.md) |
+| 21 | [Concatenando campos de uma tabela (cláusula CONCAT](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/21-Concatenando-campos-tabela.md) |
+| 22 | [Comentando código SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/22-Comentando-codigo-SQL.md) |
 
 &nbsp;   
 :bookmark_tabs: **Fontes consultadas:**  
 [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)  
+[MySQL - Curso Completo (Fábio dos Reis)](http://www.bosontreinamentos.com.br/curso-completo-de-mysql/)
 [Sistemas de Banco de Dados (Ramez Elmasri e Shamkant B. Navathe)](https://www.bvirtual.com.br/NossoAcervo/Publicacao/168492)  
 </div> 
