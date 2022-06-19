@@ -14,7 +14,7 @@
 | 08 | [Alterando nome de tabelas e colunas existentes (comando RENAME)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/08-Alterando-nome-tabelas.md) |
 | 09 | [Inserindo valores em uma tabela (comando INSERT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/09-Inserindo-valores-tabela.md) |
 | 10 | [Consultando valores em uma tabela (comando SELECT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/10-Consultando-valores-tabela.md) |
-| 11 | [Eliminando repetições de linhas em uma seleção (cláusula DISTINCT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/11-Eliminando-repeticoes-linhas) |
+| 11 | [Eliminando repetições de linhas em uma seleção (cláusula DISTINCT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/11-Eliminando-repeticoes-linhas.md) |
 | 12 | [Adicionando filtros às consultas (operadores AND, OR, NOT, IN, NOT IN e BETWEEN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/12-Adicionando-filtros-consultas.md) |
 | 13 | [Atualizando valores em uma tabela (comando UPDATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/13-Atualizando-valores-tabela.md) |
 | 14 | [Eliminando registros de uma tabela (comandos DELETE e TRUNCATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/14-Eliminando-registros-tabela.md) |
@@ -24,7 +24,7 @@
 | 18 | [Junção de duas ou mais tabelas (cláusula INNER JOIN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/18-Juncao-de-tabelas-I.md) |
 | 19 | [Junção de duas ou mais tabelas (cláusulas LEFT JOIN e RIGHT JOIN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/19-Juncao-de-tabelas-II.md) |
 | 20 | [Criando visões ou 'tabelas virtuais' (comando CREATE VIEW)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/20-Criando-views.md) |
-| 21 | [Concatenando campos de uma tabela (cláusula CONCAT](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/21-Concatenando-campos-tabela.md) |
+| 21 | [Concatenando campos de uma tabela (cláusula CONCAT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/21-Concatenando-campos-tabela.md) |
 | 22 | [Comentando código SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/22-Comentando-codigo-SQL.md) |
 
 &nbsp;   
