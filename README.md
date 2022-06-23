@@ -21,11 +21,13 @@
 | 15 | [Funções de agregação (COUNT, MAX, MIN, SUM e AVG)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/15-Funcoes-de-agregacao.md) |
 | 16 | [Agrupando dados resultantes de uma seleção (cláusula GROUP BY)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/16-Agrupando-dados-seleção.md) |
 | 17 | [Filtrando registros após terem sido agrupados (cláusula HAVING)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/17-Filtrando-dados-agrupados.md) |
-| 18 | [Junção de duas ou mais tabelas (cláusula INNER JOIN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/18-Juncao-de-tabelas-I.md) |
-| 19 | [Junção de duas ou mais tabelas (cláusulas LEFT JOIN e RIGHT JOIN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/19-Juncao-de-tabelas-II.md) |
-| 20 | [Criando visões ou 'tabelas virtuais' (comando CREATE VIEW)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/20-Criando-views.md) |
-| 21 | [Concatenando campos de uma tabela (cláusula CONCAT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/21-Concatenando-campos-tabela.md) |
-| 22 | [Comentando código SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/22-Comentando-codigo-SQL.md) |
+| 18 | [Testando valores NULL (operadores IS NULL e IS NOT NULL)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/18-Testando-valores-null.md) |
+| 19 | [Junção de duas ou mais tabelas (cláusula INNER JOIN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/19-Juncao-de-tabelas-I.md) |
+| 20 | [Junção de duas ou mais tabelas (cláusulas LEFT JOIN e RIGHT JOIN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/20-Juncao-de-tabelas-II.md) |
+| 21 | [Criando visões ou 'tabelas virtuais' (comando CREATE VIEW)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/21-Criando-views.md) |
+| 22 | [Concatenando campos de uma tabela (cláusula CONCAT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/22-Concatenando-campos-tabela.md) |
+| 23 | [Operações e funções matemáticas](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/23-Operacoes-e-funcoes-matematicas.md) |
+| 24 | [Comentando código SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/24-Comentando-codigo-SQL.md) |
 
 &nbsp;   
 :bookmark_tabs: **Fontes consultadas:**  
