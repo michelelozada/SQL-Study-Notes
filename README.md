@@ -13,7 +13,7 @@
 | 07 | [Alterando a estrutura de uma tabela (comando ALTER TABLE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/07-Alterando-estrutura-tabela.md) |
 | 08 | [Alterando nome de tabelas e colunas existentes (comando RENAME)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/08-Alterando-nome-tabelas.md) |
 | 09 | [Inserindo valores em uma tabela (comando INSERT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/09-Inserindo-valores-tabela.md) |
-| 10 | [Consultando valores em uma tabela (comando SELECT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/10-Consultando-valores-tabela.md) |
+| 10 | [Consultando valores em uma tabela (comando SELECT e suas principais cláusulas)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/10-Consultando-valores-tabela.md) |
 | 11 | [Eliminando repetições de linhas em uma seleção (cláusula DISTINCT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/11-Eliminando-repeticoes-linhas.md) |
 | 12 | [Adicionando filtros às consultas (operadores AND, OR, NOT, IN, NOT IN e BETWEEN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/12-Adicionando-filtros-consultas.md) |
 | 13 | [Atualizando valores em uma tabela (comando UPDATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/13-Atualizando-valores-tabela.md) |

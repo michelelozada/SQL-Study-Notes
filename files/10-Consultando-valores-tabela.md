@@ -1,4 +1,4 @@
-> **Consultando valores de uma tabela (comando SELECT)**     
+> **Consultando valores de uma tabela (comando SELECT e suas principais cláusulas)**     
 > Repositório: Banco de Dados MySQL - Fundamentos    
 > GitHub: @michelelozada
 &nbsp;
@@ -237,6 +237,18 @@ SELECT idAluno, nomeAluno from tb_aluno WHERE nomeAluno LIKE '%NDES';
 | ------   | -----             |  
 | 2        | Mariana Fernandes | 
 | 3        | Cátia Marcondes   | 
+
+&nbsp;
+&nbsp;   
+No exemplo abaixo: retorna registros presentes na tabela, cuja string (do campo nomeAluno) começa com 'm' e termina com 's'. 
+```mysql
+SELECT idAluno, nomeAluno from tb_aluno WHERE nomeAluno LIKE 'm%s'; 
+```
+###### * Output:  	
+| ID Aluno | Nome aluno        |  
+| ------   | -----             |  
+| 2        | Mariana Fernandes | 
+| 4        | Marcos Góes       |
 
 &nbsp;
 

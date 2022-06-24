@@ -50,7 +50,7 @@ SELECT COUNT(DISTINCT nomecurso) AS Numero_de_Cursos FROM tb_curso;
 Fazendo a contagem de cursos, baseada em uma condição especificada:
 ```mysql
 SELECT COUNT(nomeCurso) FROM tb_curso WHERE mensalidadeCurso < 300.00;  
-# retorna: 2  (Tabela só dois cursos com mensalidade inferior a R$ 300,00)
+# retorna: 2  (Tabela só tem dois cursos com mensalidade inferior a R$ 300,00)
 ```
 Fazendo a contagem dos turnos dos cursos:
 ```mysql
@@ -93,7 +93,7 @@ SELECT MAX(mensalidadeCurso), MIN(mensalidadeCurso) FROM tb_curso;
 &nbsp;
      
 &nbsp;  
-**4- Função SUM**
+**4- Função SUM**  
 Retona a soma dos valores de uma coluna
 ```mysql
 SELECT SUM(mensalidadeCurso) FROM tb_curso; 
