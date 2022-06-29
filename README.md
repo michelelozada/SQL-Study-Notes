@@ -27,9 +27,9 @@
 | 21 | [Criando visões ou 'tabelas virtuais' (comando CREATE VIEW)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/21-Criando-views.md) |
 | 22 | [Concatenando campos de uma tabela (cláusula CONCAT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/22-Concatenando-campos-tabela.md) |
 | 23 | [Operações e funções matemáticas](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/23-Operacoes-e-funcoes-matematicas.md) |
-| 24 | [Implementando funções (comando CREATE FUNCTION)](files/24-Implementando-funcoes.md) |
-| 25 | [Implementando procedimentos (comando CREATE PROCEDURE)](files/25-Implementando-procedimentos.md) |
-| 26 | [Comentando código SQL](files/26-Comentando-codigo-SQL.md) |
+| 24 | [Implementando funções (comando CREATE FUNCTION)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/24-Implementando-funcoes.md) |
+| 25 | [Implementando procedimentos (comando CREATE PROCEDURE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/25-Implementando-procedimentos.md) |
+| 26 | [Comentando código SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/26-Comentando-codigo-SQL.md) |
 
 &nbsp;   
 :bookmark_tabs: **Fontes consultadas:**  
