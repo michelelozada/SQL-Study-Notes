@@ -4,10 +4,10 @@
 &nbsp;
      
 &nbsp;  
-**FUNÇÕES (ROTINAS OU SUBPROGRAMAS)**  
-- São segmentos de programa que executam uma determinada tarefa.   
-- A função é uma rotina armazenada de maneira persistente no SGBD.   
-- Uma função *sempre* retorna algum valor, confome o exemplo abaixo.  
+**FUNÇÕES**  
+- São rotinas ou subprogramas, armazenadas de maneira persistente no SGBD, que executam uma determinada tarefa.   
+- São identificadas por um nome, pelo qual são invocadas.  
+- Uma função recebe parâmetros e retorna algum valor, confome o exemplo abaixo.  
 &nbsp;
      
 &nbsp;  
@@ -65,3 +65,10 @@ FROM tb_aluno;
 | Luana Borba	    | 7.5	        | 8.5         | 8.0			|
 | Marcos Góes	    | 8.9	        | 9.8         | 9.4			|
 | Mariana Fernandes | 5.4	        | 6.2         | 5.8			|
+
+&nbsp;
+&nbsp;    
+**Excluindo uma função**
+```mysql
+DROP FUNCTION fn_calculoMedia;
+```

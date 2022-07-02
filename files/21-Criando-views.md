@@ -13,13 +13,13 @@ chamadas de tabelas (ou relações da base)".[^1]
 virtuais, "distintas das relações da base" e que "podem ou não corresponder a um arquivo
 físico real".[^1]    
 &nbsp; 
-- Portanto, uma view *(ou visão)* é uma tabela virtual - criada com base em declarações SELECT - que, 
+- Portanto, uma view *(ou visão)* é uma tabela virtual - criada com base em declarações `SELECT` - que, 
 quando evocada, tem como base tabelas reais ou mesmo outras views.  
 &nbsp;  
 - Outras caracteríticas da VIEW: 
 	- "mostra sempre resultados de dados atualizados, pois o motor do banco de dados recria os dados toda vez que um usuário consulta a visão;
 	- simplifica o acesso a dados que estão armazenados em múltiplas tabelas relacionadas;
-	- implementa segurança nos dados de uma tabela, por exemplo criando uma visão que limite os dados que podem ser acessados, por meio de uma cláusula WHERE;
+	- implementa segurança nos dados de uma tabela, por exemplo criando uma visão que limite os dados que podem ser acessados, por meio de uma cláusula `WHERE`;
 	- provê isolamento de uma aplicação da estrutura específica de tabelas do banco acessado".[^2]
 &nbsp;    
 [^1]: Citações retiradas da página 59 do livro [Sistemas de Banco de Dados](https://www.bvirtual.com.br/NossoAcervo/Publicacao/168492), dos autores Ramez Elmasri e Shamkant B. Navathe.  
@@ -27,11 +27,11 @@ quando evocada, tem como base tabelas reais ou mesmo outras views.
 &nbsp;
      
 &nbsp;  
-**1. As tabelas de exemplo:**  
+**As tabelas de exemplo:**  
 &nbsp; 
 *tb_produto:*
 | idProduto	 | nomeProduto			        | marcaProduto_fk	| categoriaProduto_fk |
-| ----	     | ----			                | ----	            | ----                |
+| :---	     | :---			                | :---	            | :---                |
 | 1	         | Webcam HD C270				| 2	                | 1                   |
 | 2	         | Mouse Sem Fio WM126 Preto	| 5	                | 4                   |
 | 3	         | Pen Drive 32GB USB 3.0 Prata | 6	                | 5                   |
@@ -46,7 +46,7 @@ quando evocada, tem como base tabelas reais ou mesmo outras views.
 &nbsp;    
 *tb_marca:*  
 | idMarca | nomeMarca  | 
-| ----	  | ----       |
+| :---	  | :---       |
 | 1	      | JBL        |
 | 2	      | Logitech   |
 | 3	      | Multilaser |
@@ -58,7 +58,7 @@ quando evocada, tem como base tabelas reais ou mesmo outras views.
 &nbsp;    
 *tb_categoria:* 
 | idCategoria | nomeCategoria	| 
-| ----	      | ----            |
+| :---	      | :---            |
 | 1	          | Webcams		    |
 | 2	          | Fones de Ouvido |
 | 3	          | Teclados        |
@@ -87,7 +87,7 @@ ORDER BY Produto;
 ```
 ##### * Output:
 | Produto	    				| Marca      |
-| ----	    					| ----     	 |
+| :---	    					| :---     	 |
 | Caixa de Som Bluetooth	    | JBL        |
 | Caixa de Som Bluetooth	    | JBL        |
 | Headphone Bluetooth Preto	    | Philco     |
@@ -104,7 +104,7 @@ ORDER BY Produto;
 
 &nbsp;  
 **2.1. Alterando uma view:**  
-*(Foi feita inclusão do campo *nomeCategoria no* SELECT)*
+*(Foi feita inclusão do campo *nomeCategoria* junto ao `SELECT`)*
 ```mysql
 ALTER VIEW vw_catalogo AS 
 SELECT nomeProduto As Produto, nomeMarca AS Marca, nomeCategoria AS Categoria
@@ -122,7 +122,7 @@ ORDER BY marca;
 ```
 ##### * Output:
 | Produto	    				| Marca      | Categoria       |
-| ----	    					| ----     	 | ----            |
+| :--	    					| :---     	 | :---            |
 | Caixa de Som Bluetooth	    | JBL        | Caixas de Som   |
 | Headphone Bluetooth Preto	    | Philco     | Fones de Ouvido |
 | Headphone Com Fio Preto	    | Sony       | Fones de Ouvido |

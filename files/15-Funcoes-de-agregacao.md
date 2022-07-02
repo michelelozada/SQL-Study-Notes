@@ -6,13 +6,13 @@
 &nbsp;  
 **FUNÇÕES DE AGREGAÇÃO**  
 - Agregam em uma única linha valores dos registros, tais como contagem, média, soma, mínimo ou máximo. 
-- São utilizadas junto às cláusulas SELECT.
+- São utilizadas junto às cláusulas `SELECT`.
 &nbsp;
      
 &nbsp;  
 **A tabela de exemplo:**  
 | ID Curso | Nome curso 							| Turno | Mensalidade |
-| ------   | -----      							| ----- | -----       |
+| :---     | :---      							    | :---  | :---        |
 | 1        | Direito                               	| M     | 876.28      |
 | 2	       | Direito	                            | N     | 950.28      |
 | 3	       | Análise e Desenvolvimento de Sistemas 	| M     | 503.20      |
@@ -38,23 +38,28 @@ Retorna a quantidade de registros de uma tabela.
 &nbsp;  
 Fazendo a contagem dos cursos regitrados na tabela:
 ```mysql
-SELECT COUNT(ALL nomeCurso) FROM tb_curso;  
+SELECT COUNT(ALL nomeCurso) AS Numero_de_Cursos  
+FROM tb_curso;  
 # retorna: 16 (Tabela tem 16 registros ao todo)
 # O uso de ALL é opcional. Também poderia ter sido usado SELECT (*) FROM tb_curso; 
 ```
 Fazendo a contagem dos cursos, porém agora sem contar o nome dos cursos que se repetem na tabela:
 ```mysql
-SELECT COUNT(DISTINCT nomecurso) AS Numero_de_Cursos FROM tb_curso;  
+SELECT COUNT(DISTINCT nomeCurso) AS Numero_de_Cursos 
+FROM tb_curso;  
 # retorna: 10 (Tabela tem apenas 10 cursos)
 ```
 Fazendo a contagem de cursos, baseada em uma condição especificada:
 ```mysql
-SELECT COUNT(nomeCurso) FROM tb_curso WHERE mensalidadeCurso < 300.00;  
+SELECT COUNT(nomeCurso) 
+FROM tb_curso 
+WHERE mensalidadeCurso < 300.00;  
 # retorna: 2  (Tabela só tem dois cursos com mensalidade inferior a R$ 300,00)
 ```
 Fazendo a contagem dos turnos dos cursos:
 ```mysql
-SELECT COUNT(DISTINCT turnoCurso) AS Turnos_escola FROM tb_curso;
+SELECT COUNT(DISTINCT turnoCurso) AS Turnos_escola 
+FROM tb_curso;
 # retorna: 2  (Manhã e Tarde)
 ```
 &nbsp;
@@ -63,12 +68,15 @@ SELECT COUNT(DISTINCT turnoCurso) AS Turnos_escola FROM tb_curso;
 **2 - Função MAX**  
 Retorna o maior valor dentre os elementos de uma coluna:
 ```mysql
-SELECT MAX(mensalidadeCurso) FROM tb_curso; 
+SELECT MAX(mensalidadeCurso) 
+FROM tb_curso; 
 # retorna 950.28  (mensalidade do curso de Direito - N)
 ```
 Retornando o maior valor de mensalidade dentre uma faixa estipulada:
 ```mysql
-SELECT MAX(mensalidadeCurso) FROM tb_curso WHERE mensalidadeCurso> 600.00 AND mensalidadeCurso< 700.00;  
+SELECT MAX(mensalidadeCurso) 
+FROM tb_curso 
+WHERE mensalidadeCurso> 600.00 AND mensalidadeCurso< 700.00;  
 -- retorna 680.00 (mensalidade do curso de Administração - N)
 ```
 &nbsp;
@@ -77,17 +85,21 @@ SELECT MAX(mensalidadeCurso) FROM tb_curso WHERE mensalidadeCurso> 600.00 AND me
 **3 - Função MIN**  
 Retorna o menor valor dentre os elementos de uma coluna.
 ```mysql
-SELECT MIN(mensalidadeCurso) FROM tb_curso; 
+SELECT MIN(mensalidadeCurso) 
+FROM tb_curso; 
 # retorna 249.50 (mensalidade do curso de Pedagogia - M)
 ```
 Retornando o menor valor de mensalidade dentre uma faixa estipulada:
 ```mysql
-SELECT MIN(mensalidadeCurso) FROM tb_curso WHERE mensalidadeCurso> 600.00 AND mensalidadeCurso< 700.00;  
+SELECT MIN(mensalidadeCurso)
+FROM tb_curso 
+WHERE mensalidadeCurso> 600.00 AND mensalidadeCurso< 700.00;  
 # retorna 622.05 (mensalidade do curso de Design Gráfico - N)
 ```
 Consulta com o retorno dos dois valores:
 ```mysql
-SELECT MAX(mensalidadeCurso), MIN(mensalidadeCurso) FROM tb_curso;   
+SELECT MAX(mensalidadeCurso), MIN(mensalidadeCurso) 
+FROM tb_curso;   
 # Retorna 950.28 (MAX) e 249.50 (MIN)
 ```
 &nbsp;
@@ -96,12 +108,15 @@ SELECT MAX(mensalidadeCurso), MIN(mensalidadeCurso) FROM tb_curso;
 **4- Função SUM**  
 Retona a soma dos valores de uma coluna
 ```mysql
-SELECT SUM(mensalidadeCurso) FROM tb_curso; 
+SELECT SUM(mensalidadeCurso) 
+FROM tb_curso; 
 # retona 9395,59 (soma de todas as mensalidades)
 ```
 No exemplo abaixo, realizando a soma apenas dos cursos com ID menor ou igual a 5:
 ```mysql
-SELECT SUM(mensalidadeCurso) FROM tb_curso WHERE idCurso <= 5;
+SELECT SUM(mensalidadeCurso) 
+FROM tb_curso 
+WHERE idCurso <= 5;
 # retona 3534.12 (soma das 5 primeiras mensalidades da tabela)
 ```
 &nbsp;
@@ -110,6 +125,7 @@ SELECT SUM(mensalidadeCurso) FROM tb_curso WHERE idCurso <= 5;
 **5 - Função AVG**  
 Retona a média aritmética dos valores de uma coluna
 ```mysql
-SELECT AVG(mensalidadeCurso) FROM tb_curso; 
+SELECT AVG(mensalidadeCurso) 
+FROM tb_curso; 
 # retorna 587.224375 (média das mensalidades dos cursos)
 ```

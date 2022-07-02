@@ -7,7 +7,7 @@
 **AUTO_INCREMENT**  
 - Propicia que um número único seja gerado assim que um novo registro é inserido numa tabela.  
 - O valor inicial padrão começa em 1, sendo que o incremento ocorre de 1 em 1 (porém o valor inicial pode ser alterado, conforme explicado abaixo).  
-- Apenas um campo da tabela pode ser auto-incrementado, sendo que ele necessariamente deve vir acompanhado da constraint NOT NULL.  
+- Apenas um campo da tabela pode ser auto-incrementado, sendo que ele necessariamente deve vir acompanhado da constraint `NOT NULL`.  
 &nbsp;
      
 &nbsp;
@@ -23,16 +23,16 @@ CREATE TABLE tb_aluno(
 
 INSERT INTO tb_aluno(idAluno,nomeAluno,emailAluno) 
 VALUES 
-(default, 'Luana Borba', 'luanab@email.com'),
-(default, 'Mariana Fernandes', 'marifernandes@email.com'),
-(default, 'Cátia Marcondes', 'catiamarcondes@email.com'),
-(default, 'Marcos Góes', 'marcosgoes@email.com'),
-(default, 'Sônia de Morais', 'sonia_morais@email.com'),
-(default, 'Andréa Santos', 'asantos@email.com'),
-(default, 'Silvio Soares', 'ssoares@email.com'),
-(default, 'Daniele Santana', 'danisantana@email.com'),
-(default, 'Luis Garcia', 'lgarcia@email.com'),
-(default, 'Heloísa Bormann', 'hbormann@email.com');
+	(default, 'Luana Borba', 'luanab@email.com'),
+	(default, 'Mariana Fernandes', 'marifernandes@email.com'),
+	(default, 'Cátia Marcondes', 'catiamarcondes@email.com'),
+	(default, 'Marcos Góes', 'marcosgoes@email.com'),
+	(default, 'Sônia de Morais', 'sonia_morais@email.com'),
+	(default, 'Andréa Santos', 'asantos@email.com'),
+	(default, 'Silvio Soares', 'ssoares@email.com'),
+	(default, 'Daniele Santana', 'danisantana@email.com'),
+	(default, 'Luis Garcia', 'lgarcia@email.com'),
+	(default, 'Heloísa Bormann', 'hbormann@email.com');
 ```
 ###### Output:  
 | ID Aluno | Nome aluno | E-mail aluno |
@@ -82,11 +82,11 @@ ALTER TABLE tb_Aluno AUTO_INCREMENT = 200;
 
 INSERT INTO tb_aluno(idAluno,nomeAluno,emailAluno) 
 VALUES 
-(default, 'Marianne Marques', 'marim@email.com'),
-(default, 'Renato Passos', 'rpassos@email.com'),
-(default, 'Frederico Fernandes', 'fredfernandes@email.com'),
-(default, 'Marcela Guedes', 'mar_guedes@email.com'),
-(default, 'Lúcia Freitas', 'luciafreitas@email.com');
+	(default, 'Marianne Marques', 'marim@email.com'),
+	(default, 'Renato Passos', 'rpassos@email.com'),
+	(default, 'Frederico Fernandes', 'fredfernandes@email.com'),
+	(default, 'Marcela Guedes', 'mar_guedes@email.com'),
+	(default, 'Lúcia Freitas', 'luciafreitas@email.com');
 ```
 ###### Output:  
 | ID Aluno | Nome aluno | E-mail aluno |

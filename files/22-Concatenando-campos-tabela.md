@@ -11,7 +11,7 @@
 &nbsp;
 **A tabela para o exemplo:**   
 | idCliente | nomeCliente | sobrenomeCliente | scoreCliente |
-| ----      | ----	      | ----	         | ----         |
+| :---      | :---	      | :---	         | :---         |
 | 1         | Luana	      | Borba	         | 300          |
 | 2	        | Mariana	  | Fernandes        | 710          |
 | 3	        | Cátia	      | Marcondes	     | NULL         |
@@ -35,7 +35,7 @@ ORDER BY nomeCliente;
 ###### * Output:  
 
 | Nome do Cliente   |
-| ----              |
+| :---              |
 | Carla Santana     |
 | Cátia Marcondes   |
 | Enzo Marques      |
@@ -57,7 +57,7 @@ WHERE idCliente = '2';
 ```
 ###### * Output:  
 | Consulta sobre clientes                            |
-| ----                                               |
+| :---                                               |
 | Score do(a) cliente Mariana Fernandes: 710 pontos. |
 
 &nbsp;
@@ -70,7 +70,7 @@ WHERE idCliente = '10';
 ```
 ###### * Output:  
 | Consulta sobre clientes |
-| ----                    |
+| :---                    |
 | NULL 					  |	
 
 &nbsp;
@@ -87,5 +87,5 @@ WHERE idCliente = '10';
 ```
 ###### * Output:  
 | Consulta sobre clientes 									|
-| ----                    									|
+| :---                    									|
 | Score do(a) cliente Vinícius Motta: ainda não computado.  |

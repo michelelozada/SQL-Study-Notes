@@ -9,9 +9,9 @@
 &nbsp;
      
 &nbsp;  
-**1. A tabela de exemplo:**  
+**A tabela de exemplo:**  
 | ID Aluno | Nome aluno        | Cidade         | Estado |
-| ------   | -----             | -----          | -----  |
+| :---     | :---              | :---           | :---   |
 | 1        | Luana Borba       | Curitiba       | PR     |
 | 2        | Mariana Fernandes | Rio de Janeiro | RJ     |
 | 3        | Cátia Marcondes   | Santo André    | SP     |
@@ -22,11 +22,11 @@
 &nbsp;  
 **2. O comando DELETE**  
 * Permite apagar os registros de uma tabela.  
-* Se utilizado *com* a cláusula WHERE, removerá dados apenas da tupla especificada.  
+* Se utilizado *com* a cláusula `WHERE`, removerá dados apenas da tupla especificada.  
 ```mysql
-DELETE FROM tb_aluno WHERE idAluno = '3'; -- apagará registro apenas da aluna Cátia
+DELETE FROM tb_aluno WHERE idAluno = 3; -- apagará registro apenas da aluna Cátia
 ```
-* Se utilizado *sem* o filtro WHERE, apagará todos os registros da tabela.  
+* Se utilizado *sem* o filtro `WHERE`, apagará todos os registros da tabela.  
 ```mysql
 DELETE FROM tb_aluno; -- irá apagar os dados de todos os alunos  
 ```
@@ -35,7 +35,7 @@ DELETE FROM tb_aluno; -- irá apagar os dados de todos os alunos
 &nbsp;   
 **3. O comando TRUNCATE**  
 * Elimina completamente os registros de uma tabela.  
-* Não utiliza a cláusula WHERE, portanto atuará sobre todos os registros ali inseridos.  
+* Não utiliza a cláusula `WHERE`, portanto atuará sobre todos os registros ali inseridos.  
 ```mysql
 TRUNCATE TABLE tb_aluno; -- removerá os dados de todos os alunos   
 ```
@@ -44,13 +44,13 @@ TRUNCATE TABLE tb_aluno; -- removerá os dados de todos os alunos   
 &nbsp;    
 **4. Qual a diferença entre DELETE e TRUNCATE?**    
 Há várias diferenças entre os dois comandos, sendo que uma delas se refere ao que acontece a campos
-definidos com AUTO_INCREMENT, depois que DELETE ou TRUNCATE são aplicados.  
+definidos com `AUTO_INCREMENT`, depois que `DELETE` ou `TRUNCATE` são aplicados.  
 &nbsp;
 &nbsp;  
-Depois de todos os registros de uma tabela terem sido apagados com **DELETE**, veja o que acontece 
+Depois de todos os registros de uma tabela terem sido apagados com **`DELETE`**, veja o que acontece 
 no campo *idAluno* quando novos dados são inseridos na tabela: 
 | ID Aluno | Nome aluno         | Cidade         | Estado  |
-| ------   | -----              | -----          | -----   |
+| :---     | :---               | :---           | :---    |
 | 5	       | Enzo Marques	    | Pato Branco    | PR      |
 | 6        | Carla Santana      | Maricá	     | RJ      |
 | 7        | Sandra de Paula    | Riberão Preto	 | SP      |
@@ -58,10 +58,10 @@ no campo *idAluno* quando novos dados são inseridos na tabela:
 
 &nbsp;
 &nbsp;   
-Agora veja o que acontece com a tabela que teve seus dados eliminados com **TRUNCATE** e agora recebe novos 
+Agora veja o que acontece com a tabela que teve seus dados eliminados com **`TRUNCATE`** e agora recebe novos 
 dados: 
 | ID Aluno | Nome aluno       | Cidade        | Estado  |
-| ------   | -----            | -----         | -----   |
+| :---     | :---             | :---          | :---    |
 | 1	       | Enzo Marques	  | Pato Branco   | PR      |
 | 2        | Carla Santana    | Maricá	      | RJ      |
 | 3        | Sandra de Paula  | Riberão Preto | SP      |
@@ -70,7 +70,7 @@ dados:
 &nbsp;
 &nbsp;  
 **Portanto:**  
-* Com o DELETE, a tabela não é ‘resetada’ e novos dados têm seus novos índices contados a partir do último 
+* Com o `DELETE`, a tabela não é ‘resetada’ e novos dados têm seus novos índices contados a partir do último 
 índice anteriormente em vigor.  
-* Com TRUNCATE, a tabela é apagada e recriada, sendo que seus novos dados têm o valor de seu índice inicial 
+* Com `TRUNCATE`, a tabela é apagada e recriada, sendo que seus novos dados têm o valor de seu índice inicial 
 começando em 1, por default.

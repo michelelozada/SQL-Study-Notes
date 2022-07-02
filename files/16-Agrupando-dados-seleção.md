@@ -5,15 +5,15 @@
      
 &nbsp;     
 **GROUP BY**  
-- Resume os dados resultantes de uma seleção de 'subgrupos de tuplas' com um mesmo valor. 
-- Para tanto, a cláusula SELECT deverá possuir uma função de agregação para processamento destas informações.
+- Resume os dados resultantes de uma seleção de 'subgrupos de tuplas' que possuam um mesmo valor. 
+- Para tanto, a cláusula `SELECT` deverá possuir uma função de agregação para processamento destas informações.
 &nbsp;
      
 &nbsp;  
 **A tabela para exemplo:** 
 
-| id Venda | id Vendedor | valorVenda | tipoCliente |
-| ----     | ----   	 | ----       | ----        | 
+| idVenda  | idVendedor  | valorVenda | tipoCliente |
+| :---     | :---   	 | :---       | :---        | 
 | 1		   | 3			 |  760.00 	  | PJ          |
 | 2		   | 2	         |  350.00    | PF          |
 | 3	       | 3           | 1000.00    | PJ          |
@@ -28,14 +28,14 @@
 &nbsp;
 
 &nbsp;  
-No exemplo abaixo, desejo retornar o valor total das vendas de cada um dos vendedores *(repare que não foi inclusa a clásula WHERE)*:
+No exemplo abaixo, desejo retornar o valor total das vendas de cada um dos vendedores *(repare que não foi inclusa a clásula `WHERE`)*:
 ```mysql
 SELECT idVendedor AS 'Id Vendedor', SUM(valorVenda) AS 'Valor total das vendas'
 FROM tb_venda
 GROUP BY idVendedor;
 ```
-| Id Vendedor | Valor total das vendas |
-| ----        | ----   				   |
+| idVendedor  | Valor total das vendas |
+| :---        | :---   				   |
 | 1			  |	1300.00				   |	
 | 2	          | 4250.00				   |	
 | 3		      | 5860.00				   |
@@ -43,15 +43,15 @@ GROUP BY idVendedor;
 &nbsp;
 
 &nbsp;  
-No exemplo abaixo, desejo retornar apenas o valor total das vendas do vendedor com a Id nº 2 *(aqui inclusa a clásula WHERE)*:
+No exemplo abaixo, desejo retornar apenas o valor total das vendas do vendedor com a Id nº 2 *(aqui inclusa a clásula `WHERE`)*:
 ```mysql
 SELECT idVendedor AS 'Id Vendedor', SUM(valorVenda) AS 'Valor total das vendas'
 FROM tb_venda
 WHERE idVendedor = '2'
 GROUP BY idVendedor;
 ```
-| Id Vendedor | Valor total das vendas |
-| ----        | ----   				   |
+| idVendedor  | Valor total das vendas |
+| :---        | :---   				   |
 | 2	          | 4250.00				   |	
 
 &nbsp;
@@ -64,8 +64,8 @@ FROM tb_venda
 WHERE idVendedor = '3'
 GROUP BY idVendedor;
 ```
-| Id Vendedor | Quantidade de vendas |
-| ----        | ----   				 |
+| idVendedor  | Quantidade de vendas |
+| :---        | :---   				 |
 | 3	          | 4				     |
 
 &nbsp;
@@ -78,8 +78,8 @@ FROM tb_venda
 WHERE tipoCliente = 'PJ'
 GROUP BY idVendedor;
 ```
-| Id Vendedor | Vendas para clientes do tipo PJ |
-| ----        | ----   				            |
+| idVendedor  | Vendas para clientes do tipo PJ |
+| :---        | :---   				            |
 | 1	          | 2				                |
 | 2	          | 1				                |
 | 3	          | 4				                |

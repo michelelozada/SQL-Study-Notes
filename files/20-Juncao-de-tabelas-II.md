@@ -5,25 +5,25 @@
      
 &nbsp;  
 **LEFT OUTER JOIN e RIGHT OUTER JOIN**  
-- As junções (JOINS) permitem que sejam realizadas consultas com informações contidas em duas ou mais tabelas e através de um único SELECT.  
+- As junções (JOINS) permitem que sejam realizadas consultas com informações contidas em duas ou mais tabelas e através de um único `SELECT`.  
 &nbsp;  
 - As ligações acontecem através da relação da chave primária de uma tabela com a(s) chave(s) estantangeira(s) da(s) outra(s) tabela(s).  
 &nbsp;  
-- O LEFT OUTER JOIN é um tipo de junção que retorna *todos* os registros da tabela colocada à esquerda da junção/termo LEFT JOIN, 
+- O `LEFT OUTER JOIN` é um tipo de junção que retorna *todos* os registros da tabela colocada à esquerda da junção/termo `LEFT JOIN`, 
 independentemente dos registros possuírem ou não correspondência com a(s) outra(s) tabela(s).   
 &nbsp;  
-- Já o RIGHT OUTER JOIN é um tipo de junção que retorna *todos* os registros da tabela colocada à direita da junção/termo RIGHT JOIN,
+- Já o `RIGHT OUTER JOIN` é um tipo de junção que retorna *todos* os registros da tabela colocada à direita da junção/termo `RIGHT JOIN`,
 independentemente dos registros possuírem ou não correspondência com a(s) outra(s) tabela(s).  
 &nbsp;  
-- Portanto: tanto no LEFT quanto no RIGHT JOIN os registros 'excedentes' são exibidos; o que não acontece quando é aplicado o INNER JOIN.  
+- Portanto: tanto no `LEFT JOIN` quanto no `RIGHT JOIN` os registros 'excedentes' são exibidos; o que não acontece quando é aplicado o `INNER JOIN`.  
 &nbsp;  
-- Observação: A utilização do termo OUTER é opcional.
+- Observação: A utilização do termo `OUTER` é opcional.
 &nbsp;
      
 &nbsp;  
 **A primeira tabela para exemplo - Produtos *(tb_produto):***  
-| idProduto | nomeProduto   			   | marcaProduto_fk |	categoriaProduto_fk |	
-| ----		| ----		    			   | ----		     | ----					|
+| idProduto | nomeProduto   			   | marcaProduto_fk | categoriaProduto_fk |	
+| :---		| :---		    			   | :---		     | :---					|
 | 1			| Webcam HD C270			   | 2				 |	1					|
 | 2			| Mouse Sem Fio WM126 Preto	   | 5				 |	4					|
 | 3			| Pen Drive 32GB USB 3.0 Prata | 6			     |	5					|
@@ -42,7 +42,7 @@ independentemente dos registros possuírem ou não correspondência com a(s) out
 &nbsp;  
 **A segunda tabela - Categoria *(tb_categoria):***  
 | idCategoria | nomeCategoria   |
-| ----		  |	 ----		    |
+| :---		  |	:---		    |
 | 1			  |	Webcams			|
 | 2	          | Fones de Ouvido |
 | 3			  | Teclados        |
@@ -57,7 +57,7 @@ independentemente dos registros possuírem ou não correspondência com a(s) out
 &nbsp;  
 **A terceira tabela - Marcas *(tb_marca):***  
 | idMarca 	  | nomeMarca       |
-| ----		  |	 ----		    |
+| :---		  |	:---		    |
 | 1			  |	JBL	            |
 | 2	          | Logitech        |
 | 3	          | Multilaser      |

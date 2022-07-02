@@ -5,7 +5,7 @@
      
 &nbsp;  
 **DISTINCT**  
-- O comando `SELECT`, por padrão, é acompanhado do cláusula `ALL`, que apresenta todos os resultados retornados, ainda que contenham repetições.
+- O comando `SELECT`, por padrão, é acompanhado implicitamente da cláusula `ALL`, que apresenta todos os resultados retornados, ainda que contenham repetições.
 - Quando se deseja o retono de *apenas* valores únicos de um determinado campo, basta que se utilize o modificador `DISTINCT`, logo após o comando `SELECT`.
 &nbsp;
      
@@ -13,7 +13,7 @@
 
 **A tabela de exemplo:**  
 | idAula | nomeAula      | turnoAula | modalidadeAula |
-| ----   | ----          | ----      | ----           |
+| :---   | :---          | :---      | :---           |
 | 1		 | Yoga		     | M	     | online         |
 | 2	     | Yoga		     | M	     | presencial	  | 	
 | 3	     | Yoga		     | N	     | online		  |	
@@ -28,7 +28,7 @@
 &nbsp;
      
 &nbsp;
-**Utilizando a cláusula `DISTINCT`:**  
+**Utilizando a cláusula DISTINCT:**  
 ```mysql
 SELECT DISTINCT nomeAula AS Aulas_ofertadas
 FROM tb_aulas
@@ -61,7 +61,7 @@ ORDER BY nomeAula;
 &nbsp;   
 **É possível também informar mais de um campo, conforme demonstrado abaixo:**
 ```mysql
-SELECT DISTINCT nomeAula, modalidadeAula AS Modalidades_das_Aulas
+SELECT DISTINCT nomeAula, modalidadeAula
 FROM tb_aulas
 ORDER BY nomeAula;
 ```

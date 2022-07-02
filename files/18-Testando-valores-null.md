@@ -30,7 +30,8 @@
 **1. Utilizando o operador IS NULL:**  
 * Retorna registros com valores vazios da coluna identificada
 ```mysql
-SELECT * FROM tb_cliente 
+SELECT * 
+FROM tb_cliente 
 WHERE scoreCliente IS NULL;
 ```
 ###### * Output:  
@@ -48,7 +49,8 @@ WHERE scoreCliente IS NULL;
 **2. Utilizando o operador IS NOT NULL:**  
 * Retorna registros com valores não-vazios da coluna identificada  
 ```mysql
-SELECT * FROM tb_cliente 
+SELECT * 
+FROM tb_cliente 
 WHERE scoreCliente IS NOT NULL
 ORDER BY scoreCliente DESC;
 ```

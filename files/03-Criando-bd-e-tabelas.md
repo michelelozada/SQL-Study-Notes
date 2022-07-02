@@ -6,7 +6,7 @@
 &nbsp;     
 **CREATE**  
 * Comando para a criação de objetos: banco de dados e tabelas.
-* A inclusão da cláusula 'IF NOT EXISTS' é opcional.
+* A inclusão da cláusula `IF NOT EXISTS` é opcional.
 &nbsp;
      
 &nbsp;    
@@ -46,7 +46,7 @@ SHOW DATABASES;
 ```
 ###### >> Output:  
 | Database  |
-| ------    |
+| :---      |
 | db_escola | 
 
 &nbsp;
@@ -57,19 +57,19 @@ SHOW TABLES;
 ```
 ###### >> Output:  
 | Tables_in_db_escola  |
-| ------    		   |
+| :---    		       |
 | tb_aluno             | 
 
 &nbsp;
 &nbsp;  
-**3. Comando SELECT DATABASE()**  
+**3. Comando SELECT DATABASE**  
 Informa qual a base de dados está em uso no momento:    
 ```mysql
 SELECT DATABASE();
 ```
 ###### >> Output:  
 | DATABASE()  |
-| ------      |
+| :---        |
 | db_escola   | 
 
 &nbsp;
@@ -81,7 +81,7 @@ DESCRIBE tb_aluno;
 ```
 ###### >> Output:  
 | Field  | Type | Null | Key  | Default |
-| -----  | ---- | ---- | ---- | ----    |
+| :---   | :--  | :--- | :--- | :---    |
 | idAluno	  | int(11)	   | NO  | PRI | NULL |	
 | nomeAluno   | varchar(50) | NO  |    | NULL |			
 | emailAluno  | varchar(40) | YES |	   | NULL |		

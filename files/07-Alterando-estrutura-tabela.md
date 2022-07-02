@@ -7,7 +7,7 @@
 **ALTER TABLE**  
 Comando utilizado para modificar as características de uma tabela já existente, através da:  
 	- Inclusão ou exclusão de colunas desta tabela;  
-	- Adição, alteração ou remoção de restrições (ex: PRIMARY KEY, UNIQUE, NOT NULL, etc.) de uma coluna;  
+	- Adição, alteração ou remoção de restrições (ex: `PRIMARY KEY`, `UNIQUE`, `NOT NULL`, etc.) de uma coluna;  
 	- Alteração do tipo de dado definido para uma coluna.  
 &nbsp;
      
@@ -43,7 +43,8 @@ DROP COLUMN foneAluno;
 **2. Adicionando uma coluna à tabela**  
 ```mysql
 ALTER TABLE tb_aluno
-ADD COLUMN foneAluno varchar(11) AFTER emailAluno;
+ADD COLUMN foneAluno varchar(11) 
+AFTER emailAluno;
 ```
 &nbsp;
      
@@ -85,7 +86,7 @@ DROP CONSTRAINT fk_idAluno;
 **7. Modificando o tipo de dado ou a restrição de uma coluna**  
 ```mysql
 ALTER TABLE tb_ALUNO
-MODIFY COLUMN foneAluno int(11); -- imaginando que eu quisesse alterar o tipo de dado de varchar para int
+MODIFY COLUMN foneAluno int(11); -- ex: quis alterar o tipo de dado de varchar para int
 ```
 ```mysql
 ALTER TABLE tb_ALUNO

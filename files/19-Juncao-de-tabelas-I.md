@@ -5,19 +5,19 @@
      
 &nbsp;  
 **INNER JOIN**  
-- As junções (JOINS) permitem que sejam realizadas consultas com informações contidas em duas ou mais tabelas e através de um único SELECT.  
+- As junções (JOINS) permitem que sejam realizadas consultas com informações contidas em duas ou mais tabelas e através de um único `SELECT`.  
 &nbsp;  
 - As ligações acontecem através da relação da chave primária de uma tabela com a(s) chave(s) estantangeira(s) da(s) outra(s) tabela(s).  
 &nbsp;  
-- O INNER JOIN é um tipo de junção que retorna *apenas* registros que possuam correspondência entre duas ou mais tabelas.  
+- O `INNER JOIN` é um tipo de junção que retorna *apenas* registros que possuam correspondência entre duas ou mais tabelas.  
 &nbsp;  
-- Portanto: registros 'excedentes' não são exibidos neste tipo de consulta; esta exibição acontecerá, porém, quando aplicados o LEFT JOIN e RIGHT JOIN.  
+- Portanto: registros 'excedentes' não são exibidos neste tipo de consulta; esta exibição acontecerá, porém, quando aplicados o `LEFT JOIN` e `RIGHT JOIN`.  
 &nbsp;
      
 &nbsp;  
 **A primeira tabela para exemplo - Produtos *(tb_produto):***  
 | idProduto	 | nomeProduto			        | marcaProduto_fk	| categoriaProduto_fk |
-| ----	     | ----			                | ----	            | ----                |
+| :---	     | :---			                | :---	            | :---                |
 | 1	         | Webcam HD C270				| 2	                | 1                   |
 | 2	         | Mouse Sem Fio WM126 Preto	| 5	                | 4                   |
 | 3	         | Pen Drive 32GB USB 3.0 Prata | 6	                | 5                   |
@@ -34,7 +34,7 @@
 &nbsp;  
 **A segunda tabela - Marcas *(tb_marca):***  
 | idMarca | nomeMarca  | 
-| ----	  | ----       |
+| :---	  | :---       |
 | 1	      | JBL        |
 | 2	      | Logitech   |
 | 3	      | Multilaser |
@@ -48,7 +48,7 @@
 &nbsp;  
 **A terceira tabela - Categorias *(tb_categoria):*** 
 | idCategoria | nomeCategoria	| 
-| ----	      | ----            |
+| :---	      | :---            |
 | 1	          | Webcams		    |
 | 2	          | Fones de Ouvido |
 | 3	          | Teclados        |
@@ -69,8 +69,8 @@ INNER JOIN tb_categoria
 ON tb_produto.categoriaProduto_fk = tb_categoria.idCategoria;
 ```
 ##### * Output:
-| Código | Produto                      |  Marca     | Categoria       |
-| ----	 | ----                         | ----	     | ----            |
+| Código | Produto                      | Marca      | Categoria       |
+| :---	 | :---                         | :---	     | :---            |
 | 1	     | Webcam HD C270	            | Logitech   | Webcams         |
 | 2	     | Mouse Sem Fio WM126 Preto	| Dell       | Mouses          |
 | 3	     | Pen Drive 32GB USB 3.0 Prata | SanDisk    | Pen Drives      |

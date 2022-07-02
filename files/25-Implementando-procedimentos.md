@@ -4,10 +4,9 @@
 &nbsp;
      
 &nbsp;  
-**PROCEDIMENTO ARMAZENADO (STORE PROCEDURE)**  
-- É um bloco de instruções organizado para receber parâmetros e executar uma ou mais tarefas.  
-- Assim como a função, um procedimento também é uma rotina armazenada de maneira persistente no SGBD.  
-- O comando `CALL` é utilizado para evocar o procedimento armazenado.  
+**PROCEDIMENTO ARMAZENADO (AKA STORE PROCEDURE)**  
+- É uma subrotina, armazenada de maneira persistente no SGBD, organizada para receber parâmetros e executar uma ou mais tarefas.    
+- É o comando `CALL`, que junto ao nome de identificação, invoca o procedimento armazenado.  
 &nbsp;
      
 &nbsp;  
