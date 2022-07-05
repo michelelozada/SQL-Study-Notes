@@ -81,3 +81,54 @@ ON tb_produto.categoriaProduto_fk = tb_categoria.idCategoria;
 | 8	     | Caixa de Som Bluetooth	    | JBL	     | Caixas de Som   |
 | 9	     | Mouse Sem Fio M720 Bluetooth | Logitech	 | Mouses          |
 |10	     | Headphone Com Fio Preto	    | Sony	     | Fones de Ouvido |
+
+&nbsp;
+
+&nbsp;  
+**Mesma consulta acima, mas agora utilizando aliases (apelidos) para sintetizar o código:**   
+```mysql
+SELECT idProduto AS Código, nomeProduto As Produto, nomeMarca AS Marca, nomeCategoria AS Categoria
+FROM tb_produto AS p
+INNER JOIN tb_marca AS m
+ON p.marcaProduto_fk = m.idMarca
+INNER JOIN tb_categoria AS c
+ON p.categoriaProduto_fk = c.idCategoria;
+```
+&nbsp;
+
+&nbsp;  
+**Utilizando a cláusula `GROUP BY` para descobrir quantos itens de produtos existem em cada tipo de categoria:**   
+```mysql
+SELECT nomeCategoria AS Categorias, COUNT(idProduto) AS Itens
+FROM tb_produto AS p
+INNER JOIN tb_categoria AS c
+ON p.categoriaProduto_fk = c.idCategoria
+GROUP BY nomeCategoria
+ORDER BY Itens DESC;
+```
+##### * Output:
+| Categorias      | Itens | 
+| :---            | :---  | 
+| Mouses          | 3     |
+| Teclados        | 2     |
+| Fones de Ouvido |	2     |
+| Webcams	      | 1     |
+| Caixas de Som	  | 1     |
+| Pen Drives      |	1     |
+
+&nbsp;
+
+&nbsp;  
+**Utilizando a cláusula `HAVING` para descobrir qual marca possui mais ou ao menos 3 itens de produto:**  
+```mysql
+SELECT nomeMarca AS Marcas, COUNT(idProduto) AS Itens
+FROM tb_produto AS p
+INNER JOIN tb_marca AS m
+ON p.marcaProduto_fk = m.idMarca
+GROUP BY nomeMarca
+HAVING COUNT(idProduto) >= 3;
+```
+##### * Output:
+| Marcas     | Itens | 
+| :---       | :---  | 
+| Multilaser | 3     |

@@ -11,15 +11,15 @@
 &nbsp;
      
 &nbsp;  
-A. Declarando uma função
+**Exemplo 1 - Declarando uma função**
 ```mysql
 CREATE FUNCTION fn_primeiraFuncao(a INT,b INT)
 RETURNS INT
 RETURN a + b;
 ```
 &nbsp;
-&nbsp;
-B. Invocando esta função
+&nbsp;    
+**Invocando esta função**
 ```mysql
 SELECT fn_primeiraFuncao(5,4) AS Resultado; 
 ```
@@ -29,9 +29,15 @@ SELECT fn_primeiraFuncao(5,4) AS Resultado;
 | 9			|
 
 &nbsp;
+&nbsp;    
+**Excluindo esta função**
+```mysql
+DROP FUNCTION fn_primeiraFuncao;
+```
+&nbsp;
      
 &nbsp;  
-**Um novo exemplo, utilizando agora a tabela abaixo. A ideia aqui é a criação de uma função que calcule a média das notas dos alunos:**    
+**Exemplo 2 - A ideia aqui é a criação de uma função que calcule a média das notas dos alunos:**    
 | idAluno | nomeAluno         | notaObtida1 | notaObtida2 |
 | :---    | :---              | :---        | :---        |
 | 1	      | Carla Santana	  | 5.5	        | 7.1         |
@@ -42,16 +48,16 @@ SELECT fn_primeiraFuncao(5,4) AS Resultado;
 | 6	      | Mariana Fernandes |	5.4	        | 6.2         |
 
 &nbsp;
-&nbsp;  
-A. Declarando a função
+&nbsp;     
+**Declarando a função**
 ```mysql
 CREATE FUNCTION fn_calculoMedia(notaObtida1 DECIMAL(2,1), notaObtida2 DECIMAL(2,1))
 RETURNS DECIMAL(2,1)
 RETURN (notaObtida1 + notaObtida2) / 2;
 ```
 &nbsp;
-&nbsp;
-B. Evocando a função
+&nbsp;    
+**Invocando a função**
 ```mysql
 SELECT nomeAluno, notaObtida1, notaObtida2, fn_calculoMedia(notaObtida1,notaobtida2) AS mediaObtida
 FROM tb_aluno;
@@ -68,7 +74,7 @@ FROM tb_aluno;
 
 &nbsp;
 &nbsp;    
-**Excluindo uma função**
+**Excluindo esta função**
 ```mysql
 DROP FUNCTION fn_calculoMedia;
 ```

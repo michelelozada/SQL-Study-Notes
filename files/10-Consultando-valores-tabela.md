@@ -194,17 +194,16 @@ Ao incluir esta cláusula, o número de registros retornados obedecerá ao núme
 ```mysql
 SELECT nomeAluno   
 FROM tb_aluno 
+WHERE sexoAluno = 'F';
 ORDER BY nomeAluno   
-LIMIT 5;
+LIMIT 3;
 ```
 ###### * Output:  
 | Nome aluno        |
 | :---              |
 | Cátia Marcondes   |
 | Luana Borba       |
-| Marcos Góes       |
 | Mariana Fernandes |
-| Sônia de Morais   |
 
 &nbsp;
 

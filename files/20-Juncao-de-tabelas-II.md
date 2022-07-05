@@ -121,7 +121,7 @@ RIGHT JOIN tb_categoria
 ON tb_produto.categoriaProduto_fk = tb_categoria.idCategoria;
 ```
 ##### * Output:
-| Produto 			           | Marca 			 |
+| Produto 			           | Categoria		 |
 | ----		                   | ----            |
 | Webcam HD C270			   | Webcams         |
 | Headphone Bluetooth Preto	   | Fones de Ouvido |

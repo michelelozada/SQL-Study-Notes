@@ -5,8 +5,9 @@
      
 &nbsp;     
 **HAVING**  
-- Pode ser aplicado um filtro apenas aos dados resultantes de um agrupamento feito através da cláusula `GROUP BY` (bastante similar à cláusula `WHERE`). 
-- Para tanto, basta usar a cláusula `HAVING`, junto à função de agregação que foi utilizada junto ao comando `SELECT`.
+- Pode ser aplicado um filtro apenas aos dados resultantes de um agrupamento feito através da cláusula `GROUP BY`.  
+- Para tanto, basta usar a cláusula `HAVING`, junto à função de agregação que foi utilizada junto ao comando `SELECT`.  
+- Apesar da cláusula `WHERE` ser bastante similar à cláusula `GROUP BY`, a primeira não funciona junto a resultados de funções de agregação.
 &nbsp;
      
 &nbsp;  

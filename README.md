@@ -14,8 +14,8 @@
 | 08 | [Alterando nome de tabelas e colunas existentes (comando RENAME)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/08-Alterando-nome-tabelas.md) |
 | 09 | [Inserindo valores em uma tabela (comando INSERT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/09-Inserindo-valores-tabela.md) |
 | 10 | [Consultando valores em uma tabela (comando SELECT e suas principais cláusulas)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/10-Consultando-valores-tabela.md) |
-| 11 | [Eliminando repetições de linhas em uma seleção (cláusula DISTINCT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/11-Eliminando-repeticoes-linhas.md) |
-| 12 | [Adicionando filtros às consultas (operadores AND, OR, NOT, IN, NOT IN e BETWEEN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/12-Adicionando-filtros-consultas.md) |
+| 11 | [Adicionando filtros às consultas (operadores AND, OR, NOT, IN, NOT IN e BETWEEN)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/11-Adicionando-filtros-consultas.md) |
+| 12 | [Eliminando repetições de linhas em uma seleção (cláusula DISTINCT)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/12-Eliminando-repeticoes-linhas.md) |
 | 13 | [Atualizando valores em uma tabela (comando UPDATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/13-Atualizando-valores-tabela.md) |
 | 14 | [Eliminando registros de uma tabela (comandos DELETE e TRUNCATE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/14-Eliminando-registros-tabela.md) |
 | 15 | [Funções de agregação (COUNT, MAX, MIN, SUM e AVG)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/15-Funcoes-de-agregacao.md) |
@@ -29,10 +29,12 @@
 | 23 | [Operações e funções matemáticas](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/23-Operacoes-e-funcoes-matematicas.md) |
 | 24 | [Implementando funções (comando CREATE FUNCTION)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/24-Implementando-funcoes.md) |
 | 25 | [Implementando procedimentos (comando CREATE PROCEDURE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/25-Implementando-procedimentos.md) |
-| 26 | [Comentando código SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/26-Comentando-codigo-SQL.md) |
+| 26 | [Delimitando funções e procedimentos armazenados (bloco BEGIN ... END)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/26-Bloco-begin-end.md) |
+| 27 | [Comentando código SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/27-Comentando-codigo-SQL.md) |
+| 28 | [Ordem escrita da instrução SELECT](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/Ordem-escrita-instrucao-select.md) |
 
 &nbsp;   
-:bookmark_tabs: **Fontes consultadas:**  
+:bookmark_tabs: **Referências consultadas para criação deste repositório:**  
 [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)  
 [MySQL - Curso Completo (Fábio dos Reis)](http://www.bosontreinamentos.com.br/curso-completo-de-mysql/)  
 [Sistemas de Banco de Dados (Ramez Elmasri e Shamkant B. Navathe)](https://www.bvirtual.com.br/NossoAcervo/Publicacao/168492)  

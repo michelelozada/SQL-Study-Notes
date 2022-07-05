@@ -10,7 +10,7 @@
 &nbsp;
      
 &nbsp;  
-**A. A tabela para exemplo**  
+**A tabela para exemplo**  
 | idCurso | nomeCurso 	   | Turno | Mensalidade |
 | :---    | :---      	   | :---  | :---        |
 | 1       | Direito        | M     | 876.28      |
@@ -22,7 +22,7 @@
 
 &nbsp;
 &nbsp;      
-**B. Declarando um procedimento**
+**Declarando um procedimento**
 ```mysql
 CREATE PROCEDURE consultaMensalidade(pesquisaCurso varchar(50))
 SELECT CONCAT('O valor da mensalidade do curso ' , nomeCurso , ' (turno ' , turnoCurso , ') é R$ ', mensalidadeCurso , '.') AS Consulta_Mensalidade
@@ -31,7 +31,7 @@ WHERE nomeCurso = pesquisaCurso;
 ```
 &nbsp;
 &nbsp;    
-**C. Invocando o procedimento**
+**Invocando o procedimento**
 ```mysql
 CALL consultaMensalidade('Direito');
 ```
@@ -43,7 +43,7 @@ CALL consultaMensalidade('Direito');
 
 &nbsp;
 &nbsp;  
-**D. Invocando o procedimento novamente**
+**Invocando o procedimento novamente, usando outro argumento**
 ```mysql
 CALL consultaMensalidade('Design Gráfico');
 ```
@@ -55,7 +55,7 @@ CALL consultaMensalidade('Design Gráfico');
 
 &nbsp;
 &nbsp;    
-**E. Excluindo o procedimento acima**
+**Excluindo o procedimento acima**
 ```mysql
 DROP PROCEDURE consultaMensalidade;
 ```
