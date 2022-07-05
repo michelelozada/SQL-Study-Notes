@@ -4,7 +4,7 @@
 &nbsp;
      
 &nbsp;  
-A instrução `SELECT` deve ser escrita com suas cláusulas obdecendo à seguinte ordem:
+A instrução `SELECT` deve ser escrita com suas cláusulas obedecendo à seguinte ordem:
 
 ```mermaid
 flowchart TD
