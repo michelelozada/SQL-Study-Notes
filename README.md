@@ -31,7 +31,7 @@
 | 25 | [Implementando procedimentos (comando CREATE PROCEDURE)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/25-Implementando-procedimentos.md) |
 | 26 | [Delimitando funções e procedimentos armazenados (bloco BEGIN ... END)](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/26-Bloco-begin-end.md) |
 | 27 | [Comentando código SQL](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/27-Comentando-codigo-SQL.md) |
-| 28 | [Ordem escrita da instrução SELECT](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/Ordem-escrita-instrucao-select.md) |
+| 28 | [Ordem escrita da instrução SELECT](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/28-Ordem-escrita-instrucao-select.md) |
 
 &nbsp;   
 :bookmark_tabs: **Referências consultadas para criação deste repositório:**  
