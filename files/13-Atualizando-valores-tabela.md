@@ -26,7 +26,7 @@
 ```mysql
 UPDATE tb_aluno 
 SET nomeAluno = 'Marcos Góes Filho' 
-WHERE idAluno = 4;  -- foi retificado o nome do aluno
+WHERE idAluno = 4;  -- foi retificado o nome deste aluno
 ```
 ###### * Output:  
 | idAluno  | nomeAluno         | cidadeAluno    | estadoAluno |

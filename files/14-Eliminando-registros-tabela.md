@@ -20,7 +20,7 @@
 &nbsp;
      
 &nbsp;  
-**2. O comando DELETE**  
+**1. O comando DELETE**  
 * Permite apagar os registros de uma tabela.  
 * Se utilizado *com* a cláusula `WHERE`, removerá dados apenas da tupla especificada.  
 ```mysql
@@ -33,7 +33,7 @@ DELETE FROM tb_aluno; -- irá apagar os dados de todos os alunos
 &nbsp;
      
 &nbsp;   
-**3. O comando TRUNCATE**  
+**2. O comando TRUNCATE**  
 * Elimina completamente os registros de uma tabela.  
 * Não utiliza a cláusula `WHERE`, portanto atuará sobre todos os registros ali inseridos.  
 ```mysql
@@ -42,7 +42,7 @@ TRUNCATE TABLE tb_aluno; -- removerá os dados de todos os alunos   
 &nbsp;
      
 &nbsp;    
-**4. Qual a diferença entre DELETE e TRUNCATE?**    
+**3. Qual a diferença entre DELETE e TRUNCATE?**    
 Há várias diferenças entre os dois comandos, sendo que uma delas se refere ao que acontece a campos
 definidos com `AUTO_INCREMENT`, depois que `DELETE` ou `TRUNCATE` são aplicados.  
 &nbsp;
