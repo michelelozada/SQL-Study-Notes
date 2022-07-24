@@ -9,16 +9,17 @@
 O programa chamador passa seus argumentos para os parâmetros do procedimento armazenado, sendo que estes podem ser de três 
 tipos:
 - **Procedimentos com parâmetro IN**
-	- Este é o tipo de parâmetro default os para procedimentos armazenados, portanto sua identificação `IN` pode permanecer implicita;  
-	- Aqui, ao ser feita a chamada, será passado o valor do argumento ao parâmetro do procedimento, sendo que não haverá nenhuma alteração destes valores durante o processo.  
+	- Este é o tipo de parâmetro default para os procedimentos armazenados, portanto sua identificação `IN` pode permanecer implicita;  
+	- Aqui, ao ser feita a chamada, será passado o valor do argumento ao parâmetro, sendo que não haverá nenhuma alteração deste valor dentro do procedimento. 
 &nbsp;      
 - **Procedimentos com parâmetro OUT**
-	- Aqui, o parâmetro é inicialmente passado como NULL, sendo modificado ao longo do procedimento.  
-	- Portanto, valor passado ao parâmetro será diferente ao fim desse processo.  
+	- Aqui, o parâmetro é inicialmente passado como NULL, sendo o valor passado ao longo do procedimento;  
+	- Portanto, o valor passado ao parâmetro será diferente ao fim da execução do procedimento.   
 &nbsp;    
 - **Procedimentos com parâmetro INOUT**
-	- Aqui, ao ser feita a chamada, será passado o valor do argumento ao parâmetro do procedimento (não será passado como NULL, como no tipo `OUT`).   
-	- Ao fim, este valor pasado ao parâmetro será retornado processado.
+	- É uma combinação dos parâmetros do tipo `IN` e `OUT`;
+	- Aqui, ao ser feita a chamada, será passado o valor do argumento ao parâmetro do procedimento (não será passado valor NULL, como em parâmetros do tipo `OUT`);   
+	- Ao fim, este valor pasado ao parâmetro será retornado processado/computado (diferente do que acontece em parâmetros do tipo `IN`);
 	
 &nbsp;
 &nbsp;    
