@@ -33,8 +33,9 @@
 | [27](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/27-Bloco-begin-end.md) | Delimitando funções e procedimentos armazenados (bloco BEGIN ... END) |
 | [28](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/28-Tipos-de-parametros.md) | Tipos de parâmetros em procedimentos armazenados (IN, OUT e INOUT) |
 | [29](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/29-Variaveis-escopo-local.md) | Trabalhando com variáveis de escopo local |
-| [30](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/30-Comentando-codigo-SQL.md) | Comentando código SQL |
-| [31](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/31-Ordem-escrita-instrucao-select.md) | Ordem escrita da instrução SELECT |
+| [30](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/30-Estruturas-if-case.md) | Estruturas condicionais IF e CASE |
+| [31](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/31-Comentando-codigo-SQL.md) | Comentando código SQL |
+| [32](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/32-Ordem-escrita-instrucao-select.md) | Ordem escrita da instrução SELECT |
 
 &nbsp;   
 :bookmark_tabs: **Referências consultadas para criação deste repositório:**  
