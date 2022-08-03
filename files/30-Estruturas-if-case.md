@@ -16,7 +16,7 @@
 **A. Declarando a função**
 ```mysql
 DELIMITER //
-CREATE FUNCTION Desconto(total_compra DEC(5,2))
+CREATE FUNCTION informaDesconto(total_compra DEC(5,2))
 RETURNS DEC(5,2)
 BEGIN
 	DECLARE valor_desconto DEC(5,2);
@@ -53,7 +53,7 @@ SELECT informaDesconto(650.00) AS 'Valor do desconto (R$)';  -- Retorna => Valor
 &nbsp;  
 **EXEMPLO 2 - Utilizando a estrutura CASE**  
 &nbsp;  
-**Objetivo:** Criar uma função que informe o valor final de uma compra, após aplicação do desconto, aplicado por faixa de valores.  
+**Objetivo:** Criar uma função que informe o valor final de uma compra, após cálculo do desconto (aplicado por faixa de valores).  
 &nbsp;  
 **A. Declarando a função**
 ```mysql
