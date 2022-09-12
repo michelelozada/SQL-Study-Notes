@@ -40,7 +40,7 @@
 
 &nbsp;   
 **Referências consultadas para criação deste repositório:**  
-| Link | Nome |
+| Link   | Nome |
 | :---:  | :---	|
 | [:bookmark_tabs:](https://dev.mysql.com/doc/refman/8.0/en/) | MySQL 8.0 Reference Manual
 | [:bookmark_tabs:](http://www.bosontreinamentos.com.br/curso-completo-de-mysql/)  | MySQL - Curso Completo (Fábio dos Reis)
