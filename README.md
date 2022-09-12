@@ -14,32 +14,35 @@
 | [08](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/08-Alterando-nome-tabelas.md) | Alterando nome de tabelas e colunas existentes (comando RENAME) |
 | [09](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/09-Inserindo-valores-tabela.md)  | Inserindo valores em uma tabela (comando INSERT) |
 | [10](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/10-Consultando-valores-tabela.md) | Consultando valores em uma tabela (comando SELECT e suas principais cláusulas) |
-| [11](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/11-Adicionando-filtros-consultas.md) | Adicionando filtros às consultas (operadores AND, OR, NOT, IN, NOT IN e BETWEEN) |
-| [12](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/12-Eliminando-repeticoes-linhas.md) | Eliminando repetições de linhas em uma seleção (cláusula DISTINCT) |
-| [13](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/13-Atualizando-valores-tabela.md) | Atualizando valores em uma tabela (comando UPDATE) |
-| [14](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/14-Eliminando-registros-tabela.md) | Eliminando registros de uma tabela (comandos DELETE e TRUNCATE) |
-| [15](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/15-Funcoes-de-agregacao.md) | Funções de agregação (COUNT, MAX, MIN, SUM e AVG) |
-| [16](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/16-Agrupando-dados-seleção.md) | Agrupando dados resultantes de uma seleção (cláusula GROUP BY) |
-| [17](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/17-Filtrando-dados-agrupados.md) | Filtrando registros após terem sido agrupados (cláusula HAVING) |
-| [18](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/18-Testando-valores-null.md) | Testando valores NULL (operadores IS NULL e IS NOT NULL) |
-| [19](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/19-Juncao-de-tabelas-I.md) | Junção de duas ou mais tabelas (cláusula INNER JOIN) |
-| [20](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/20-Juncao-de-tabelas-II.md)  | Junção de duas ou mais tabelas (cláusulas LEFT JOIN e RIGHT JOIN) |
-| [21](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/21-Criando-views.md) | Criando visões ou 'tabelas virtuais' (comando CREATE VIEW) |
-| [22](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/22-Copiando-dados-tabela.md) | Copiando dados de uma tabela para outra (comando INSERT ... SELECT) |
-| [23](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/23-Concatenando-campos-tabela.md) | Concatenando campos de uma tabela (cláusula CONCAT) |
-| [24](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/24-Operacoes-e-funcoes-matematicas.md) | Operações e funções matemáticas |
-| [25](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/25-Implementando-funcoes.md)  | Implementando funções (comando CREATE FUNCTION) |
-| [26](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/26-Implementando-procedimentos.md) | Implementando procedimentos (comando CREATE PROCEDURE) |
-| [27](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/27-Bloco-begin-end.md) | Delimitando funções e procedimentos armazenados (bloco BEGIN ... END) |
-| [28](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/28-Tipos-de-parametros.md) | Tipos de parâmetros em procedimentos armazenados (IN, OUT e INOUT) |
-| [29](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/29-Variaveis-escopo-local.md) | Trabalhando com variáveis de escopo local |
-| [30](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/30-Estruturas-if-case.md) | Estruturas condicionais IF e CASE |
-| [31](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/31-Comentando-codigo-SQL.md) | Comentando código SQL |
-| [32](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/32-Ordem-escrita-instrucao-select.md) | Ordem escrita da instrução SELECT |
+| [11](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/11-Utilizando-expressoes-regulares.md) | Utilizando expressões regulares no MySQL (operador REGEXP) |
+| [12](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/12-Adicionando-filtros-consultas.md) | Adicionando filtros às consultas (operadores AND, OR, NOT, IN, NOT IN e BETWEEN) |
+| [13](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/13-Eliminando-repeticoes-linhas.md) | Eliminando repetições de linhas em uma seleção (cláusula DISTINCT) |
+| [14](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/14-Atualizando-valores-tabela.md) | Atualizando valores em uma tabela (comando UPDATE) |
+| [15](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/15-Eliminando-registros-tabela.md) | Eliminando registros de uma tabela (comandos DELETE e TRUNCATE) |
+| [16](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/16-Funcoes-de-agregacao.md) | Funções de agregação (COUNT, MAX, MIN, SUM e AVG) |
+| [17](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/17-Agrupando-dados-seleção.md) | Agrupando dados resultantes de uma seleção (cláusula GROUP BY) |
+| [18](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/18-Filtrando-dados-agrupados.md) | Filtrando registros após terem sido agrupados (cláusula HAVING) |
+| [19](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/19-Testando-valores-null.md) | Testando valores NULL (operadores IS NULL e IS NOT NULL) |
+| [20](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/20-Juncao-de-tabelas-I.md) | Junção de duas ou mais tabelas (cláusula INNER JOIN) |
+| [21](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/21-Juncao-de-tabelas-II.md)  | Junção de duas ou mais tabelas (cláusulas LEFT JOIN e RIGHT JOIN) |
+| [22](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/22-Criando-views.md) | Criando visões ou 'tabelas virtuais' (comando CREATE VIEW) |
+| [23](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/23-Copiando-dados-tabela.md) | Copiando dados de uma tabela para outra (comando INSERT ... SELECT) |
+| [24](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/24-Concatenando-campos-tabela.md) | Concatenando campos de uma tabela (cláusula CONCAT) |
+| [25](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/25-Operacoes-e-funcoes-matematicas.md) | Operações e funções matemáticas |
+| [26](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/26-Implementando-funcoes.md)  | Implementando funções (comando CREATE FUNCTION) |
+| [27](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/27-Implementando-procedimentos.md) | Implementando procedimentos (comando CREATE PROCEDURE) |
+| [28](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/28-Bloco-begin-end.md) | Delimitando funções e procedimentos armazenados (bloco BEGIN ... END) |
+| [29](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/29-Tipos-de-parametros.md) | Tipos de parâmetros em procedimentos armazenados (IN, OUT e INOUT) |
+| [30](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/30-Variaveis-escopo-local.md) | Trabalhando com variáveis de escopo local |
+| [31](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/31-Estruturas-if-case.md) | Estruturas condicionais IF e CASE |
+| [32](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/32-Comentando-codigo-SQL.md) | Comentando código SQL |
+| [33](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/33-Ordem-escrita-instrucao-select.md) | Ordem escrita da instrução SELECT |
 
 &nbsp;   
-:bookmark_tabs: **Referências consultadas para criação deste repositório:**  
-[MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)  
-[MySQL - Curso Completo (Fábio dos Reis)](http://www.bosontreinamentos.com.br/curso-completo-de-mysql/)  
-[Sistemas de Banco de Dados (Ramez Elmasri e Shamkant B. Navathe)](https://www.bvirtual.com.br/NossoAcervo/Publicacao/168492)  
+**Referências consultadas para criação deste repositório:**  
+| Link | Nome |
+| :---:  | :---	|
+| [:bookmark_tabs:](https://dev.mysql.com/doc/refman/8.0/en/) | MySQL 8.0 Reference Manual
+| [:bookmark_tabs:](http://www.bosontreinamentos.com.br/curso-completo-de-mysql/)  | MySQL - Curso Completo (Fábio dos Reis)
+| [:bookmark_tabs:](https://www.bvirtual.com.br/NossoAcervo/Publicacao/168492) | Sistemas de Banco de Dados (Ramez Elmasri e Shamkant B. Navathe)
 </div> 
