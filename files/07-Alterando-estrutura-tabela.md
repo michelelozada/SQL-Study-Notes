@@ -83,10 +83,14 @@ DROP CONSTRAINT fk_idAluno;
 &nbsp;
      
 &nbsp;
-**7. Modificando o tipo de dado ou a restrição de uma coluna**  
+**7. Modificando o tipo de dado, tamanho ou a restrição de uma coluna**  
 ```mysql
 ALTER TABLE tb_ALUNO
 MODIFY COLUMN foneAluno int(11); -- aqui quis alterar o tipo de dado de varchar para int
+```
+```mysql
+ALTER TABLE tb_ALUNO
+MODIFY COLUMN nomeAluno varchar(60); -- aqui aumentei o tamano da coluna
 ```
 ```mysql
 ALTER TABLE tb_ALUNO
