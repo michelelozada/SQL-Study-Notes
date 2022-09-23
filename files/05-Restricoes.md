@@ -20,7 +20,7 @@ Define o atributo (ou conjunto de atributos) que indentificará de forma única 
 CREATE TABLE tb_aluno(
     idAluno int(11) AUTO_INCREMENT NOT NULL,
     nomeAluno varchar(40),
-	PRIMARY KEY (idAluno)
+    PRIMARY KEY (idAluno)
 );
 ```
 &nbsp;
@@ -34,7 +34,7 @@ CREATE TABLE tb_contrato(
     idContrato int(11) PRIMARY KEY NOT NULL,
     idAluno_fk int(11),
     CONSTRAINT idAluno FOREIGN KEY (idAluno_fk) 
-	REFERENCES tb_aluno(idAluno)
+    REFERENCES tb_aluno(idAluno)
 );
 ```
 * Alteração para aplicar a chave estrangeira numa tabela já criada:

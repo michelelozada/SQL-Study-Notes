@@ -19,7 +19,7 @@ CREATE TABLE tb_aluno(
 	idAluno int(11) AUTO_INCREMENT NOT NULL,
 	nomeAluno varchar(50) NOT NULL,
 	emailAluno varchar(40) NOT NULL,
-    PRIMARY KEY(idAluno)
+	PRIMARY KEY(idAluno)
 );
 
 INSERT INTO tb_aluno(idAluno,nomeAluno,emailAluno) 
@@ -58,7 +58,7 @@ CREATE TABLE tb_aluno(
 	idAluno int(11) AUTO_INCREMENT NOT NULL,
 	nomeAluno varchar(50) NOT NULL,
 	emailAluno varchar(40) NOT NULL,
-    PRIMARY KEY(idAluno)
+	PRIMARY KEY(idAluno)
 ) AUTO_INCREMENT = 100;
 ```
 ###### Output:  
