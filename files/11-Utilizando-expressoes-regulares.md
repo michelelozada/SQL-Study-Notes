@@ -17,16 +17,16 @@ regulares. Para isso, deve ser utilizado o operador `REGEXP`, junto da seguinte 
 &nbsp;  
 
 **A tabela a ser usada para os exemplos abaixo:**  
-| idCurso | nomeCurso |
-| :---    | :---      | 
-| 1	| Design  |
-| 2	| Direito |
-| 3	| Engenharia Civil |
-| 4	| Engenharia da Computação |
-| 5	| Jornalismo |
-| 6	| Moda |
-| 7	| Pedagogia |
-| 8	| Psicologia | 
+| idCurso | nomeCurso                |
+| :---    | :---                     | 
+| 1	      | Design                   |
+| 2	      | Direito                  |
+| 3	      | Engenharia Civil         |
+| 4	      | Engenharia da Computação |
+| 5	      | Jornalismo               |
+| 6	      | Moda                     |
+| 7	      | Pedagogia                |
+| 8	      | Psicologia               | 
 
 &nbsp;
 &nbsp;  

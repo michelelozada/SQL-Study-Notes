@@ -16,17 +16,19 @@ Comando utilizado para modificar as características de uma tabela já existente
 
 ```mysql
 CREATE TABLE tb_aluno(
-   idAluno int(11) PRIMARY KEY NOT NULL,
+   idAluno int(11) AUTO_INCREMENT NOT NULL,
    nomeAluno varchar(40),
    cpfAluno varchar(15),
    foneAluno varchar(11),
-   emailAluno varchar(50)
+   emailAluno varchar(50),
+   PRIMARY KEY(idAluno)
 );
 ```
 ```mysql
 CREATE TABLE tb_contrato(
-   idContrato int(11) PRIMARY KEY NOT NULL,
-   idAluno int(11) NOT NULL
+   idContrato int(11) AUTO_INCREMENT NOT NULL,
+   idAluno int(11) NOT NULL,
+   PRIMARY KEY(idContrato)
 );
 ```
 &nbsp;

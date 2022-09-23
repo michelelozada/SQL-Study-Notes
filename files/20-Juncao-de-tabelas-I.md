@@ -7,6 +7,8 @@
 **INNER JOIN**  
 - As junções (JOINS) permitem que sejam realizadas consultas com informações contidas em duas ou mais tabelas e através de um único `SELECT`.  
 &nbsp;  
+- No MySQL, `INNER JOIN`, `JOIN` e `CROSS JOIN`são equivalentes sintáticos (eles podem substituir um ao outro).
+&nbsp;  
 - As ligações acontecem através da relação da chave primária de uma tabela com a(s) chave(s) estantangeira(s) da(s) outra(s) tabela(s).  
 &nbsp;  
 - O `INNER JOIN` é um tipo de junção que retorna *apenas* registros que possuam correspondência entre duas ou mais tabelas.  
@@ -62,9 +64,11 @@
 **Aplicando o INNER JOIN nas três tabelas acima:**   
 ```mysql
 SELECT idProduto AS Código, nomeProduto As Produto, nomeMarca AS Marca, nomeCategoria AS Categoria
+-- acima estão os campos que desejo que sejam exibidos na consulta
 FROM tb_produto
 INNER JOIN tb_marca
 ON tb_produto.marcaProduto_fk = tb_marca.idMarca
+-- acima está representado onde as 2 tabelas (produto e marca) se comunicam
 INNER JOIN tb_categoria 
 ON tb_produto.categoriaProduto_fk = tb_categoria.idCategoria;
 ```

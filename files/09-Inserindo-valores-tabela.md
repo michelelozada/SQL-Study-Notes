@@ -13,10 +13,11 @@
 **A tabela de exemplo:**  
 ```mysql
 CREATE TABLE tb_aluno(
-    idAluno int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    idAluno int(11) NOT NULL AUTO_INCREMENT,
     nomeAluno varchar(40),
     foneAluno varchar(15),
-    emailAluno varchar(50)
+    emailAluno varchar(50),
+    PRIMARY KEY(idAluno)
 );
 ```
 &nbsp;

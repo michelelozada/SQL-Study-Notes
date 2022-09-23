@@ -14,9 +14,10 @@
 **A tabela de exemplo:**  
 ```mysql
 CREATE TABLE tb_aluno(
-    idAluno int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    idAluno int(11) NOT NULL AUTO_INCREMENT,
     nomeAluno varchar(50) NOT NULL,
-    emailAluno varchar(40) NOT NULL
+    emailAluno varchar(40) NOT NULL,
+    PRIMARY KEY(idAluno)
 );
 
 INSERT INTO tb_aluno(idAluno,nomeAluno,emailAluno) 

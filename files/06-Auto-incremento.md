@@ -16,9 +16,10 @@
 CREATE DATABASE db_escola;
 USE db_escola;
 CREATE TABLE tb_aluno(
-	idAluno int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	idAluno int(11) AUTO_INCREMENT NOT NULL,
 	nomeAluno varchar(50) NOT NULL,
-	emailAluno varchar(40) NOT NULL
+	emailAluno varchar(40) NOT NULL,
+    PRIMARY KEY(idAluno)
 );
 
 INSERT INTO tb_aluno(idAluno,nomeAluno,emailAluno) 
@@ -54,24 +55,25 @@ VALUES
 **2. Caso haja a necessidade de setar o valor default do AUTO_INCREMENT para começar com um valor diferente:**  
 ```mysql
 CREATE TABLE tb_aluno(
-	idAluno int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	idAluno int(11) AUTO_INCREMENT NOT NULL,
 	nomeAluno varchar(50) NOT NULL,
-	emailAluno varchar(40) NOT NULL
+	emailAluno varchar(40) NOT NULL,
+    PRIMARY KEY(idAluno)
 ) AUTO_INCREMENT = 100;
 ```
 ###### Output:  
-| ID Aluno | Nome aluno | E-mail aluno |
-| ------   | -----      | -----        |
-| 100 | Luana Borba | luanab@email.com |
-| 101	| Mariana Fernandes | marifernandes@email.com |
-| 102	| Cátia Marcondes | catiamarcondes@email.com |
-| 103	| Marcos Góes | marcosgoes@email.com |
-| 104	| Sônia de Morais | sonia_morais@email.com |
-| 105	| Andréa Santos | asantos@email.com |
-| 106	| Silvio Soares | ssoares@email.com |
-| 107	| Daniele Santana | danisantana@email.com |
-| 108	| Luis Garcia | lgarcia@email.com |
-| 109	| Heloísa Bormann | hbormann@email.com |
+| ID Aluno | Nome aluno        | E-mail aluno             |
+| ------   | -----             | -----                    |
+| 100      | Luana Borba       | luanab@email.com         |
+| 101	   | Mariana Fernandes | marifernandes@email.com  |
+| 102	   | Cátia Marcondes   | catiamarcondes@email.com |
+| 103	   | Marcos Góes       | marcosgoes@email.com     |
+| 104	   | Sônia de Morais   | sonia_morais@email.com   |
+| 105	   | Andréa Santos     | asantos@email.com        |
+| 106	   | Silvio Soares     | ssoares@email.com        |
+| 107	   | Daniele Santana   | danisantana@email.com    |
+| 108	   | Luis Garcia       | lgarcia@email.com        |
+| 109	   | Heloísa Bormann   | hbormann@email.com       |
 
 &nbsp;
      

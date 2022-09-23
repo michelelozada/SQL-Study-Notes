@@ -19,9 +19,10 @@ CREATE DATABASE IF NOT EXISTS db_escola;
 **2. Criando uma tabela:**
 ```mysql
 CREATE TABLE IF NOT EXISTS tb_aluno(
-	idAluno int(11) PRIMARY KEY NOT NULL,
+	idAluno int(11) AUTO_INCREMENT NOT NULL,
 	nomeAluno varchar(50) NOT NULL,
-	emailAluno varchar(40) 
+	emailAluno varchar(40), 
+	PRIMARY KEY (idAluno)
 );
 ```
 &nbsp;
@@ -80,8 +81,8 @@ Apresenta a estrutura da tabela especificada com seus campos, tipo de dados e de
 DESCRIBE tb_aluno;
 ```
 ###### >> Output:  
-| Field  | Type | Null | Key  | Default |
-| :---   | :--  | :--- | :--- | :---    |
-| idAluno	  | int(11)	   | NO  | PRI | NULL |	
-| nomeAluno   | varchar(50) | NO  |    | NULL |			
-| emailAluno  | varchar(40) | YES |	   | NULL |		
+| Field       | Type        | Null | Key  | Default | Extra          |
+| :---        | :--         | :--- | :--- | :---    | :---           |
+| idAluno	  | int(11)	    | NO   | PRI  | NULL    | auto_increment |	
+| nomeAluno   | varchar(50) | NO   |      | NULL    |			     |
+| emailAluno  | varchar(40) | YES  |	  | NULL    |		         |

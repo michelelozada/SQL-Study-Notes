@@ -18,8 +18,9 @@ Define o atributo (ou conjunto de atributos) que indentificará de forma única 
 * Necessário ser declarada em conjunto com a cláusula `NOT NULL`, já que chaves primárias não podem receber valores nulos.
 ```mysql
 CREATE TABLE tb_aluno(
-    idAluno int(11) PRIMARY KEY NOT NULL,
-    nomeAluno varchar(40)
+    idAluno int(11) AUTO_INCREMENT NOT NULL,
+    nomeAluno varchar(40),
+	PRIMARY KEY (idAluno)
 );
 ```
 &nbsp;
@@ -65,8 +66,9 @@ CREATE TABLE tb_aluno(
 Define que não serão admitidos valores nulos/dados vazios na coluna (lembrando que o valor default é `NULL`).
 ```mysql
 CREATE TABLE tb_aluno(
-    idAluno int(11) PRIMARY KEY NOT NULL,
-    nomeAluno varchar(40) NOT NULL
+    idAluno int(11) AUTO_INCREMENT NOT NULL,
+    nomeAluno varchar(40),
+    PRIMARY KEY(idAluno)
 );
 ```
 * Caso a restrição não tenha sido definida no momento da criação da tabela:
