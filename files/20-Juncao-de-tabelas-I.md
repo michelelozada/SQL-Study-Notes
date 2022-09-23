@@ -7,7 +7,7 @@
 **INNER JOIN**  
 - As junções (JOINS) permitem que sejam realizadas consultas com informações contidas em duas ou mais tabelas e através de um único `SELECT`.  
 &nbsp;  
-- No MySQL, `INNER JOIN`, `JOIN` e `CROSS JOIN`são equivalentes sintáticos (eles podem substituir um ao outro).
+- No MySQL, `INNER JOIN`, `JOIN` e `CROSS JOIN`são equivalentes sintáticos (eles podem substituir um ao outro).  
 &nbsp;  
 - As ligações acontecem através da relação da chave primária de uma tabela com a(s) chave(s) estantangeira(s) da(s) outra(s) tabela(s).  
 &nbsp;  

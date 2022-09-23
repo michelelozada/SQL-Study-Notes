@@ -42,7 +42,6 @@ SELECT COUNT(ALL nomeCurso) AS Numero_de_Cursos
 FROM tb_curso;  
 # retorna: 16 (Há 16 cursos registrados na tabela)
 # O uso de ALL é opcional: também poderia ter sido usado acima SELECT COUNT(*) AS Numero_de_Cursos;
-FROM tb_curso;  
 ```
 Fazendo a contagem dos cursos, porém agora sem contar o nome dos cursos que se repetem na tabela:
 ```mysql
