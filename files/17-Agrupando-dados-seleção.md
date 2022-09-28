@@ -50,7 +50,7 @@ FROM tb_venda
 WHERE idVendedor = '2'
 GROUP BY idVendedor;
 ```
-| idVendedor  | Valor total das vendas |
+| id Vendedor | Valor total das vendas |
 | :---        | :---   				   |
 | 2	          | 4250.00				   |	
 
