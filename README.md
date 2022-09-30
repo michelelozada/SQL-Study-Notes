@@ -36,8 +36,9 @@
 | [30](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/30-Variaveis-escopo-local.md) | Trabalhando com variáveis de escopo local |
 | [31](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/31-Estruturas-if-case.md) | Estruturas condicionais IF e CASE |
 | [32](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/32-Gerenciando-usuarios.md) | Gerenciando usuários do sistema |
-| [33](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/33-Comentando-codigo-SQL.md) | Comentando código SQL |
-| [34](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/34-Ordem-escrita-instrucao-select.md) | Ordem escrita da instrução SELECT |
+| [33](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/33-Privilegios-de-acesso.md) | Atribuindo e revogando privilégios de acesso (comandos GRANT e REVOKE) |
+| [34](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/34-Comentando-codigo-SQL.md) | Comentando código SQL |
+| [35](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/35-Ordem-escrita-instrucao-select.md) | Ordem escrita da instrução SELECT |
 
 &nbsp;   
 **Referências consultadas para criação deste repositório:**  

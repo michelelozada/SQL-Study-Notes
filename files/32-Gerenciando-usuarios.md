@@ -1,4 +1,4 @@
-> **Gerenciando usuários do sistemma**  
+> **Gerenciando usuários do sistema**  
 > Repositório: Banco de Dados MySQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;
