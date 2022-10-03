@@ -23,7 +23,7 @@ SHOW GRANTS FOR 'enzo'; -- sem @'localhost' significa que usuário também pode 
 ```mysql
 
 GRANT ALL 
-ON *.* -- notação *.* representa todos os bancos de dados e todas as tabelas. 
+ON *.* -- notação *.* representa todos os bancos de dados e todas as tabelas
 TO 'daniel'@'localhost'; 
 ```
 ```mysql
@@ -31,7 +31,13 @@ TO 'daniel'@'localhost';
 GRANT ALL 
 ON *.* 
 TO 'murilo'@'localhost' 
-WITH GRANT OPTION; -- com esta adição, usuário tem tb. privilégio de conceder privilégios a outros usuários
+WITH GRANT OPTION; -- permite que este usuário conceda ou revogue privilégios de outros usuários (iguais aos meus)
+```
+```mysql
+
+GRANT ALL 
+ON bd_empresa.tb_clientes 
+TO 'marcos'@'localhost' ; -- todos os privilégios, porém relacionados tão somente à tabela especificada
 ```
      
 &nbsp;     
@@ -45,7 +51,7 @@ TO 'rogerio';
 ```mysql
 
 GRANT SELECT, INSERT, UPDATE, DELETE
-ON bd_empresa.tb_clientes  -- significa que apenas a tabela especificada poderá ser visualizadas e ter dados inseridos, atualizados e removidos
+ON bd_empresa.tb_clientes -- significa que apenas a tabela especificada poderá ser visualizada e ter dados inseridos, atualizados e removidos
 TO 'rogerio';
 ```
      
@@ -73,6 +79,12 @@ FROM 'rogerio';
 
 REVOKE ALL
 FROM 'daniel'@'localhost';
+```
+```mysql
+
+REVOKE ALL 
+on bd_empresa.tb_clientes  -- revogando privégios apenas em uma tabela da base de dados
+FROM 'marcos'@'localhost';
 ```
 ```mysql
 

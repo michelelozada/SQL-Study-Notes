@@ -9,7 +9,7 @@
 SELECT User FROM mysql.user;
 ```
 &nbsp;  
-**2 - Consultando os usuários existentes junto aos hosts de que eles podem se conectar ao sistema**
+**2 - Consultando os usuários existentes, junto à informação dos hosts com os quais eles podem se conectar ao sistema**
 ```mysql
 SELECT User, Host FROM mysql.user;
 ```
@@ -31,12 +31,12 @@ CREATE USER 'laura'@'localhost' IDENTIFIED BY '1234';
 CREATE USER 'davi' IDENTIFIED BY '1234';
 ```
 &nbsp;  
-**4 - Para criar um usuário sem uma senha no momento da sua criação**
+**4 - Para gerar um usuário sem uma senha no momento da sua criação**
 ```mysql
 CREATE USER 'enzo'@'localhost';
 ```
 &nbsp;  
-**5 - Criando uma senha para um usuário previamente criado**
+**5 - Atribuindo uma senha para um usuário previamente criado**
 ```mysql
 SET PASSWORD FOR 'enzo'@'localhost' = PASSWORD('4321');
 ```
