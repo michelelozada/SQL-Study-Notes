@@ -32,3 +32,12 @@
 | Comando | Função                                                       |
 | :---    | :---                                                         |
 | [SELECT](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/10-Consultando-valores-tabela.md)  | Para consultar registros pertencentes a uma ou mais tabelas. |
+
+&nbsp;
+&nbsp;   
+**Comandos DCL (Data Control Language ou Linguagem de Controle de Dados)**
+*Dizem respeito ao controle de quais usuários podem ter permissão (e quais as suas atribuições) em um banco de dados*
+| Comandos | Função                                                       |
+| :---     | :---    
+| [GRANT](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/33-Privilegios-de-acesso.md) | Para permitir que usuários especificados realizem tarefas especificadas |
+| [SELECT](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/33-Privilegios-de-acesso.md)| Para cancelar as permissões previamente concedidas aos usuários |
