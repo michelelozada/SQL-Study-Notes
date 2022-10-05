@@ -35,7 +35,7 @@
 
 &nbsp;
 &nbsp;   
-**Comandos DCL (Data Control Language ou Linguagem de Controle de Dados)**
+**Comandos DCL (Data Control Language ou Linguagem de Controle de Dados)**  
 *Dizem respeito ao controle de quais usuários podem ter permissão (e quais as suas atribuições) em um banco de dados*
 | Comandos | Função                                                       |
 | :---     | :---    
