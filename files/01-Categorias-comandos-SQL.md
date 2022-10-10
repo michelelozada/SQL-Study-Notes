@@ -40,4 +40,4 @@
 | Comandos | Função                                                       |
 | :---     | :---    
 | [GRANT](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/33-Privilegios-de-acesso.md) | Para permitir que usuários especificados realizem tarefas especificadas |
-| [SELECT](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/33-Privilegios-de-acesso.md)| Para cancelar as permissões previamente concedidas aos usuários |
+| [REVOKE](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/33-Privilegios-de-acesso.md)| Para cancelar as permissões previamente concedidas aos usuários |
