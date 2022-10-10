@@ -63,15 +63,18 @@
 &nbsp;  
 **Aplicando o INNER JOIN nas três tabelas acima:**   
 ```mysql
-SELECT idProduto AS Código, nomeProduto As Produto, nomeMarca AS Marca, nomeCategoria AS Categoria
+SELECT tb_produto.idProduto AS Código, tb_produto.nomeProduto As Produto, tb_marca.nomeMarca AS Marca, tb_categoria.nomeCategoria AS Categoria
 -- acima estão os campos que desejo que sejam exibidos na consulta
 FROM tb_produto
 INNER JOIN tb_marca
 ON tb_produto.marcaProduto_fk = tb_marca.idMarca
 -- acima está representado onde as 2 tabelas (produto e marca) se comunicam
-INNER JOIN tb_categoria 
-ON tb_produto.categoriaProduto_fk = tb_categoria.idCategoria;
+INNER JOIN tb_categoria
+ON tb_produto.categoriaProduto_fk = tb_categoria.idCategoria
+-- acima está representado onde as 2 tabelas (produto e categoria) se comunicam
+ORDER BY Código ASC;
 ```
+
 ##### * Output:
 | Código | Produto                      | Marca      | Categoria       |
 | :---	 | :---                         | :---	     | :---            |
@@ -89,27 +92,29 @@ ON tb_produto.categoriaProduto_fk = tb_categoria.idCategoria;
 &nbsp;
 
 &nbsp;  
-**Mesma consulta acima, mas agora utilizando aliases (apelidos) para sintetizar o código:**   
+**Mesma consulta acima, mas agora utilizando aliases (apelidos) junto aos nomes das colunas para sintetizar o código:**   
 ```mysql
-SELECT idProduto AS Código, nomeProduto As Produto, nomeMarca AS Marca, nomeCategoria AS Categoria
+SELECT p.idProduto AS Código, p.nomeProduto As Produto, m.nomeMarca AS Marca, c.nomeCategoria AS Categoria
 FROM tb_produto AS p
 INNER JOIN tb_marca AS m
 ON p.marcaProduto_fk = m.idMarca
 INNER JOIN tb_categoria AS c
-ON p.categoriaProduto_fk = c.idCategoria;
+ON p.categoriaProduto_fk = c.idCategoria
+ORDER BY Código ASC;
 ```
 &nbsp;
 
 &nbsp;  
 **Utilizando a cláusula `GROUP BY` para descobrir quantos itens de produtos existem em cada tipo de categoria:**   
 ```mysql
-SELECT nomeCategoria AS Categorias, COUNT(idProduto) AS Itens
+SELECT c.nomeCategoria AS Categorias, COUNT(p.idProduto) AS Itens
 FROM tb_produto AS p
 INNER JOIN tb_categoria AS c
 ON p.categoriaProduto_fk = c.idCategoria
 GROUP BY nomeCategoria
 ORDER BY Itens DESC;
 ```
+
 ##### * Output:
 | Categorias      | Itens | 
 | :---            | :---  | 
@@ -125,13 +130,14 @@ ORDER BY Itens DESC;
 &nbsp;  
 **Utilizando a cláusula `HAVING` para descobrir qual marca possui mais ou ao menos 3 itens de produto:**  
 ```mysql
-SELECT nomeMarca AS Marcas, COUNT(idProduto) AS Itens
+SELECT m.nomeMarca AS Marcas, COUNT(p.idProduto) AS Itens
 FROM tb_produto AS p
 INNER JOIN tb_marca AS m
 ON p.marcaProduto_fk = m.idMarca
-GROUP BY nomeMarca
-HAVING COUNT(idProduto) >= 3;
+GROUP BY Marcas
+HAVING COUNT(Itens) >= 3;
 ```
+
 ##### * Output:
 | Marcas     | Itens | 
 | :---       | :---  | 

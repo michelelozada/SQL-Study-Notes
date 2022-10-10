@@ -72,23 +72,25 @@ quando evocada, tem como base tabelas reais ou mesmo outras views.
 **1.1. Criando uma view:**  
 ```mysql
 CREATE VIEW vw_catalogo AS 
-SELECT nomeProduto As Produto, nomeMarca AS Marca
-FROM tb_produto
-INNER JOIN tb_marca
-ON tb_produto.marcaProduto_fk = tb_marca.idMarca
-INNER JOIN tb_categoria 
-ON tb_produto.categoriaProduto_fk = tb_categoria.idCategoria;
+SELECT p.nomeProduto As Produto, m.nomeMarca AS Marca
+FROM tb_produto AS p
+INNER JOIN tb_marca AS m
+ON p.marcaProduto_fk = m.idMarca
+INNER JOIN tb_categoria AS c
+ON p.categoriaProduto_fk = c.idCategoria;
 ```
-**1.2. Evocando a view:** 
+&nbsp;
+&nbsp;  
+**1.2. Evocando a view acima:** 
 ```mysql
 SELECT Produto, Marca
 FROM vw_catalogo
 ORDER BY Produto;
 ```
+
 ##### * Output:
 | Produto	    				| Marca      |
 | :---	    					| :---     	 |
-| Caixa de Som Bluetooth	    | JBL        |
 | Caixa de Som Bluetooth	    | JBL        |
 | Headphone Bluetooth Preto	    | Philco     |
 | Headphone Com Fio Preto	    | Sony       |
@@ -107,19 +109,21 @@ ORDER BY Produto;
 *(Foi feita inclusão do campo *nomeCategoria* junto ao `SELECT`)*
 ```mysql
 ALTER VIEW vw_catalogo AS 
-SELECT nomeProduto As Produto, nomeMarca AS Marca, nomeCategoria AS Categoria
-FROM tb_produto
-INNER JOIN tb_marca
-ON tb_produto.marcaProduto_fk = tb_marca.idMarca
-INNER JOIN tb_categoria 
-ON tb_produto.categoriaProduto_fk = tb_categoria.idCategoria;
+SELECT p.nomeProduto As Produto, m.nomeMarca AS Marca, c.nomeCategoria AS Categoria
+FROM tb_produto AS p
+INNER JOIN tb_marca AS m
+ON p.marcaProduto_fk = m.idMarca
+INNER JOIN tb_categoria AS c
+ON p.categoriaProduto_fk = c.idCategoria;
 ```
+
 **2.2. Evocando a view:** 
 ```mysql
 SELECT Produto, Marca, Categoria
 FROM vw_catalogo
-ORDER BY marca;
+ORDER BY Produto;
 ```
+
 ##### * Output:
 | Produto	    				| Marca      | Categoria       |
 | :--	    					| :---     	 | :---            |

@@ -110,7 +110,7 @@ Retona a soma dos valores de uma coluna
 ```mysql
 SELECT SUM(mensalidadeCurso) AS Soma_mensalidades
 FROM tb_curso; 
-# retona 9395,59 (soma de todas as mensalidades)
+# retona 9395.59 (soma de todas as mensalidades)
 ```
 No exemplo abaixo, realizando a soma apenas dos cursos com ID menor ou igual a 5:
 ```mysql

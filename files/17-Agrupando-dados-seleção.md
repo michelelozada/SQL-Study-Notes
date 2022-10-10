@@ -30,27 +30,27 @@
 &nbsp;  
 No exemplo abaixo, desejo retornar o valor total das vendas de cada um dos vendedores *(repare que não foi inclusa a clásula `WHERE`)*:
 ```mysql
-SELECT idVendedor AS 'Id Vendedor', SUM(valorVenda) AS 'Valor total das vendas'
+SELECT idVendedor AS 'ID Vendedor', SUM(valorVenda) AS 'Valor total das vendas'
 FROM tb_venda
 GROUP BY idVendedor;
 ```
-| idVendedor  | Valor total das vendas |
-| :---        | :---   				   |
-| 1			  |	1300.00				   |	
-| 2	          | 4250.00				   |	
-| 3		      | 5860.00				   |
+| ID Vendedor  | Valor total das vendas    |
+| :---         | :---   				   |
+| 1			   | 1300.00				   |	
+| 2	           | 4250.00				   |	
+| 3		       | 5860.00				   |
 
 &nbsp;
 
 &nbsp;  
 No exemplo abaixo, desejo retornar *apenas* o valor total das vendas do vendedor com a Id nº 2 *(aqui inclusa a clásula `WHERE`)*:
 ```mysql
-SELECT idVendedor AS 'Id Vendedor', SUM(valorVenda) AS 'Valor total das vendas'
+SELECT idVendedor AS 'ID Vendedor', SUM(valorVenda) AS 'Valor total das vendas'
 FROM tb_venda
 WHERE idVendedor = '2'
 GROUP BY idVendedor;
 ```
-| id Vendedor | Valor total das vendas |
+| ID Vendedor | Valor total das vendas |
 | :---        | :---   				   |
 | 2	          | 4250.00				   |	
 
@@ -59,27 +59,27 @@ GROUP BY idVendedor;
 &nbsp;  
 No exemplo abaixo, desejo retornar quantas vendas foram realizadas apenas pelo vendedor com a Id nº 3:
 ```mysql
-SELECT idVendedor AS 'Id Vendedor', COUNT(idVenda) AS 'Quantidade de Vendas'
+SELECT idVendedor AS 'ID Vendedor', COUNT(idVenda) AS 'Quantidade de Vendas'
 FROM tb_venda
 WHERE idVendedor = '3'
 GROUP BY idVendedor;
 ```
-| idVendedor  | Quantidade de vendas |
-| :---        | :---   				 |
-| 3	          | 4				     |
+| ID Vendedor  | Quantidade de vendas |
+| :---         | :---   			  |
+| 3	           | 4				      |
 
 &nbsp;
 
 &nbsp;  
 No exemplo abaixo, desejo retornar quantas vendas foram realizadas pelos vendedores a clientes do tipo PJ:
 ```mysql
-SELECT idVendedor AS 'Id Vendedor', COUNT(tipoCliente) AS 'Vendas para clientes do tipo PJ'
+SELECT idVendedor AS 'ID Vendedor', COUNT(tipoCliente) AS 'Vendas para clientes do tipo PJ'
 FROM tb_venda
 WHERE tipoCliente = 'PJ'
 GROUP BY idVendedor;
 ```
-| idVendedor  | Vendas para clientes do tipo PJ |
-| :---        | :---   				            |
-| 1	          | 2				                |
-| 2	          | 1				                |
-| 3	          | 4				                |
+| iD Vendedor  | Vendas para clientes do tipo PJ |
+| :---         | :---   				         |
+| 1	           | 2				                 |
+| 2	           | 1				                 |
+| 3	           | 4				                 |

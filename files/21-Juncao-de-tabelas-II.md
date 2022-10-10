@@ -71,11 +71,12 @@ independentemente dos registros possuírem ou não correspondência com a(s) out
 &nbsp;  
 **1.1. Aplicando o LEFT JOIN em duas das tabelas acima:**   
 ```mysql
-SELECT nomeProduto As Produto, nomeMarca AS Marca
-FROM tb_produto
-LEFT JOIN tb_marca
-ON tb_produto.marcaProduto_fk = tb_marca.idMarca;
+SELECT p.nomeProduto As Produto, m.nomeMarca AS Marca
+FROM tb_produto AS p
+LEFT JOIN tb_marca AS m
+ON p.marcaProduto_fk = m.idMarca;
 ```
+
 ##### * Output:
 | Produto 			           | Marca 			 |
 | ----		                   | ----            |
@@ -95,13 +96,13 @@ ON tb_produto.marcaProduto_fk = tb_marca.idMarca;
 &nbsp;
 
 &nbsp; 
-**1.2. Nova consulta, retornando agora apenas os dados que não possuem correspondência/nulos:**
+**1.2. Nova consulta, retornando agora apenas os dados que não possuem correspondência (nulos):**
 ```mysql
-SELECT nomeProduto As Produto, nomeMarca AS Marca
-FROM tb_produto
-LEFT JOIN tb_marca
-ON tb_produto.marcaProduto_fk = tb_marca.idMarca
-WHERE tb_marca.idMarca IS NULL; 
+SELECT p.nomeProduto As Produto, m.nomeMarca AS Marca
+FROM tb_produto AS p
+LEFT JOIN tb_marca AS m
+ON p.marcaProduto_fk = m.idMarca
+WHERE m.idMarca IS NULL; 
 ```
 
 ##### * Output:
@@ -115,11 +116,12 @@ WHERE tb_marca.idMarca IS NULL;
 &nbsp;  
 **2.1. Aplicando o RIGHT JOIN em duas das tabelas acima:**   
 ```mysql
-SELECT nomeProduto As Produto, nomeCategoria AS Categoria
-FROM tb_produto
-RIGHT JOIN tb_categoria
-ON tb_produto.categoriaProduto_fk = tb_categoria.idCategoria;
+SELECT p.nomeProduto As Produto, c.nomeCategoria AS Categoria
+FROM tb_produto AS p
+RIGHT JOIN tb_categoria AS c
+ON p.categoriaProduto_fk = c.idCategoria;
 ```
+
 ##### * Output:
 | Produto 			           | Categoria		 |
 | ----		                   | ----            |
@@ -141,12 +143,13 @@ ON tb_produto.categoriaProduto_fk = tb_categoria.idCategoria;
 &nbsp;  
 **2.2. Nova consulta, retornando apenas os dados que não possuem correspondência/nulos:**
 ```mysql
-SELECT nomeProduto As Produto, nomeCategoria AS Categoria
-FROM tb_produto
-RIGHT JOIN tb_categoria
-ON tb_produto.categoriaProduto_fk = tb_categoria.idCategoria
-WHERE tb_produto.idProduto IS NULL; -- retona dados onde dados são nulos/ excluindo correspondências
+SELECT p.nomeProduto As Produto, c.nomeCategoria AS Categoria
+FROM tb_produto as p
+RIGHT JOIN tb_categoria as c
+ON p.categoriaProduto_fk = c.idCategoria
+WHERE p.idProduto IS NULL; -- irá excluir correspondências
 ```
+
 ##### * Output:
 | Produto | Categoria |
 | ----	  | ----      |
