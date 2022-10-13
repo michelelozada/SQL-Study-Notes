@@ -4,10 +4,12 @@
 &nbsp;
      
 &nbsp;  
-Para fins de segurança, SGBDs oferecem recursos para conceder acesso parcial ou mesmo limitar o acesso ao mesmo.  
+Para fins de segurança, os SGBDs oferecem recursos para conceder ou limitar direitos dos usuários junto a tabelas e visões de um banco de dados.  
 &nbsp;  
-Para isso são utilizados dois comandos principais: o **`GRANT`** para atribuição de privilégios e o **`REVOKE`** para a revogação
-dos mesmos.  
+Para isso são utilizados dois comandos principais: o **`GRANT`** para atribuição de permissões e o **`REVOKE`** para a 
+revogação destes priviégios.  
+&nbsp;  
+Para criar usuários para a posterior atribuição de privilégios, [seguir estes procedimentos](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/32-Gerenciando-usuarios.md). 
 &nbsp;
      
 &nbsp;  
@@ -15,29 +17,29 @@ dos mesmos.
 ```mysql
 
 SHOW GRANTS FOR 'michele'@'localhost';
-SHOW GRANTS FOR 'enzo'; -- sem @'localhost' significa que usuário também pode acessar sistema remotamente
+SHOW GRANTS FOR 'enzo'; -- sem @'localhost' significa que usuário também pode acessar o sistema remotamente
 ```
      
 &nbsp;   
 **2 - Criando um usuário com privilégios globais** 
 ```mysql
 
-GRANT ALL 
-ON *.* -- notação *.* representa todos os bancos de dados e todas as tabelas
+GRANT ALL PRIVILEGES -- ou seja, representa todos os direitos
+ON *.*     -- notação *.* representa todas as bases de dados e todas as suas tabelas/visões
 TO 'daniel'@'localhost'; 
 ```
 ```mysql
 
-GRANT ALL 
+GRANT ALL PRIVILEGES
 ON *.* 
 TO 'murilo'@'localhost' 
-WITH GRANT OPTION; -- permite que este usuário conceda ou revogue privilégios de outros usuários (iguais aos meus)
+WITH GRANT OPTION;  -- permite que este usuário conceda ou revogue privilégios de outros usuários (iguais aos usuário root)
 ```
 ```mysql
 
-GRANT ALL 
+GRANT ALL PRIVILEGES
 ON bd_empresa.tb_clientes 
-TO 'marcos'@'localhost' ; -- todos os privilégios, porém relacionados tão somente à tabela especificada
+TO 'marcos'@'localhost' ;  -- todos os privilégios, porém relacionados tão somente à tabela especificada
 ```
      
 &nbsp;     
@@ -51,7 +53,7 @@ TO 'rogerio';
 ```mysql
 
 GRANT SELECT, INSERT, UPDATE, DELETE
-ON bd_empresa.tb_clientes -- significa que apenas a tabela especificada poderá ser visualizada e ter dados inseridos, atualizados e removidos
+ON bd_empresa.tb_clientes  -- significa que apenas a tabela especificada poderá ser visualizada e ter dados inseridos, atualizados e removidos
 TO 'rogerio';
 ```
      
@@ -82,12 +84,12 @@ FROM 'daniel'@'localhost';
 ```
 ```mysql
 
-REVOKE ALL 
+REVOKE ALL PRIVILEGES
 on bd_empresa.tb_clientes  -- revogando privégios apenas em uma tabela da base de dados
 FROM 'marcos'@'localhost';
 ```
 ```mysql
 
-REVOKE ALL, GRANT OPTION  -- use esta opção para usuários a quem foi concedido o privilégio WITH GRANT OPTION
+REVOKE ALL PRIVILEGES, GRANT OPTION  -- use esta opção para usuários a quem foi concedido o privilégio WITH GRANT OPTION
 FROM 'murilo'@'localhost';
 ```

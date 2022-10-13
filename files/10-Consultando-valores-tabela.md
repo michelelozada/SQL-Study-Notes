@@ -20,16 +20,16 @@ CREATE TABLE tb_aluno(
     PRIMARY KEY(idAluno)
 );
 
-INSERT INTO tb_aluno(idAluno,nomeAluno,emailAluno) 
+INSERT INTO tb_aluno(nomeAluno,emailAluno) 
 VALUES 
-	(default, 'Luana Borba', 'luanab@email.com'),
-	(default, 'Mariana Fernandes', 'marifernandes@email.com'),
-	(default, 'Cátia Marcondes', 'catiamarcondes@email.com'),
-	(default, 'Marcos Góes', 'marcosgoes@email.com'),
-	(default, 'Sônia de Morais', 'sonia_morais@email.com'),
-	(default, 'Enzo Freitas', 'efreitas@email.com'),
-	(default, 'Rodrigo Mattos', 'rodrigo.mattos@email.com'),
-	(default, 'Paula Souza', 'paula_souza@email.com');
+	('Luana Borba', 'luanab@email.com'),
+	('Mariana Fernandes', 'marifernandes@email.com'),
+	('Cátia Marcondes', 'catiamarcondes@email.com'),
+	('Marcos Góes', 'marcosgoes@email.com'),
+	('Sônia de Morais', 'sonia_morais@email.com'),
+	('Enzo Freitas', 'efreitas@email.com'),
+	('Rodrigo Mattos', 'rodrigo.mattos@email.com'),
+	('Paula Souza', 'paula_souza@email.com');
 ```
 &nbsp;
 

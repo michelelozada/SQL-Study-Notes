@@ -7,13 +7,13 @@
 | [01](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/01-Categorias-comandos-SQL.md) | Categorias de comandos SQL |
 | [02](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/02-Tipos-de-dados.md)| Tipos de dados no MySQL |
 | [03](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/03-Criando-bd-e-tabelas.md)| Criando banco de dados e tabelas (comando CREATE) |
-| [04](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/04-Excluindo-bd-e-tabelas.md) | Excluindo banco de dados e tabelas (comando DROP) |
+| [04](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/04-Excluindo-bd-e-tabelas.md) | Excluindo bancos de dados e tabelas (comando DROP) |
 | [05](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/05-Restricoes.md) | Restrições (constraints) |
 | [06](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/06-Auto-incremento.md) | Auto-incremento |
 | [07](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/07-Alterando-estrutura-tabela.md) | Alterando a estrutura de uma tabela (comando ALTER TABLE) |
 | [08](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/08-Alterando-nome-tabelas.md) | Alterando nome de tabelas e colunas existentes (comando RENAME) |
 | [09](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/09-Inserindo-valores-tabela.md)  | Inserindo valores em uma tabela (comando INSERT) |
-| [10](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/10-Consultando-valores-tabela.md) | Consultando valores em uma tabela (comando SELECT e suas principais cláusulas) |
+| [10](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/10-Consultando-valores-tabela.md) | Consultando valores em uma tabela (comando SELECT) e suas principais cláusulas<br>(ORDER BY, WHERE, LIMIT e LIKE) |
 | [11](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/11-Utilizando-expressoes-regulares.md) | Utilizando expressões regulares no MySQL (operador REGEXP) |
 | [12](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/12-Adicionando-filtros-consultas.md) | Adicionando filtros às consultas (operadores AND, OR, NOT, IN, NOT IN e BETWEEN) |
 | [13](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/13-Eliminando-repeticoes-linhas.md) | Eliminando repetições de linhas em uma seleção (cláusula DISTINCT) |

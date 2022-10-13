@@ -10,18 +10,20 @@ São estruturas associadas às tabelas que, uma vez aplicadas, podem ajudar a me
 banco de dados.   
 &nbsp;
 &nbsp;     
-**A tabela para exemplo**
+**1 - Criando um índice em uma tabela, no momento da sua criação** 
 ```mysql
 CREATE TABLE tb_aluno(
     id_aluno int(11) AUTO_INCREMENT NOT NULL,
-    nome_aluno varchar(60) not null,
+    nome_aluno varchar(20) not null,
+    sobrenome_aluno varchar(60) not null,
     telefone_aluno varchar(15) not null,
-    PRIMARY KEY (id_aluno)
+    PRIMARY KEY (id_aluno),
+    INDEX idx_nome_aluno(nome_aluno)
 );
 ```
 &nbsp;
 &nbsp;      
-**1 - Criando um índice em uma tabela, após a mesma já ter sido criada** 
+**2 - Criando um índice em uma tabela, após a mesma já ter sido criada** 
 ```mysql
 CREATE INDEX idx_nome_aluno
 ON tb_aluno(nome_aluno);
@@ -34,14 +36,21 @@ ALTER TABLE tb_aluno
 ADD INDEX idx_nome_aluno(nome_aluno); 
 ```
 &nbsp;
-&nbsp;     
-**2 - Exibindo os índices já criados nas tabelas do banco de dados**
+&nbsp;  
+**3 - Criando um índice multicoluna** 
+```mysql
+CREATE INDEX idx_nome_completo
+ON tb_aluno(sobrenome_aluno,nome_aluno);
+```
+&nbsp;
+&nbsp;  
+**4 - Exibindo os índices já criados nas tabelas do banco de dados**
 ```mysql
 SHOW INDEX FROM tb_aluno;
 ```
 &nbsp;
 &nbsp;     
-**3 - Excluindo o índice de uma coluna da tabela**
+**5 - Excluindo o índice de uma coluna da tabela**
 ```mysql
 DROP INDEX idx_nome_aluno
 ON tb_aluno;
@@ -59,13 +68,15 @@ ON tb_aluno;
 
 &nbsp;
 &nbsp;    
-Se antes da aplicação do indíce, for executado o comando **`EXPLAIN SELECT`** abaixo: 
+Se antes da aplicação do índice, for executado o comando **`EXPLAIN SELECT`** abaixo: 
 ```mysql 
 EXPLAIN SELECT * FROM tb_aluno
 WHERE nome_aluno = "Elaine"; 
 ```
 &nbsp;
 &nbsp;    
-É informado que para encontrar a informação solicitada (ou seja, a aluna de nome Elaine), foi preciso percorrer 5 linhas; ao passo 
-que - após a aplicação do indice **`idx_nome_aluno`**, conforme o que foi feito acima -  ao ser executado novamente o comando **`EXPLAIN SELECT`**, é retornado
-que agora foi preciso percorrer apenas 1 linha para encontrar a informação solicitada.
+É informado que para encontrar a informação solicitada (ou seja, a aluna de nome *Elaine*), foi preciso percorrer 5 linhas.
+&nbsp;    
+Ao passo que - depois que se aplica o indice **`idx_nome_aluno`**, conforme o que foi feito acima -  ao ser executado novamente o 
+comando **`EXPLAIN SELECT`**, é retornado que agora o servidor precisou percorrer apenas 1 linha para encontrar a informação 
+solicitada.

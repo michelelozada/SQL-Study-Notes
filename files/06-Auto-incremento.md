@@ -22,18 +22,18 @@ CREATE TABLE tb_aluno(
 	PRIMARY KEY(idAluno)
 );
 
-INSERT INTO tb_aluno(idAluno,nomeAluno,emailAluno) 
+INSERT INTO tb_aluno(nomeAluno,emailAluno) 
 VALUES 
-	(default, 'Luana Borba', 'luanab@email.com'),
-	(default, 'Mariana Fernandes', 'marifernandes@email.com'),
-	(default, 'Cátia Marcondes', 'catiamarcondes@email.com'),
-	(default, 'Marcos Góes', 'marcosgoes@email.com'),
-	(default, 'Sônia de Morais', 'sonia_morais@email.com'),
-	(default, 'Andréa Santos', 'asantos@email.com'),
-	(default, 'Silvio Soares', 'ssoares@email.com'),
-	(default, 'Daniele Santana', 'danisantana@email.com'),
-	(default, 'Luis Garcia', 'lgarcia@email.com'),
-	(default, 'Heloísa Bormann', 'hbormann@email.com');
+	('Luana Borba', 'luanab@email.com'),
+	('Mariana Fernandes', 'marifernandes@email.com'),
+	('Cátia Marcondes', 'catiamarcondes@email.com'),
+	('Marcos Góes', 'marcosgoes@email.com'),
+	('Sônia de Morais', 'sonia_morais@email.com'),
+	('Andréa Santos', 'asantos@email.com'),
+	('Silvio Soares', 'ssoares@email.com'),
+	('Daniele Santana', 'danisantana@email.com'),
+	('Luis Garcia', 'lgarcia@email.com'),
+	('Heloísa Bormann', 'hbormann@email.com');
 ```
 ###### Output:  
 | ID Aluno | Nome aluno | E-mail aluno |
@@ -82,13 +82,13 @@ CREATE TABLE tb_aluno(
 ```mysql
 ALTER TABLE tb_Aluno AUTO_INCREMENT = 200;
 
-INSERT INTO tb_aluno(idAluno,nomeAluno,emailAluno) 
+INSERT INTO tb_aluno(nomeAluno,emailAluno) 
 VALUES 
-	(default, 'Marianne Marques', 'marim@email.com'),
-	(default, 'Renato Passos', 'rpassos@email.com'),
-	(default, 'Frederico Fernandes', 'fredfernandes@email.com'),
-	(default, 'Marcela Guedes', 'mar_guedes@email.com'),
-	(default, 'Lúcia Freitas', 'luciafreitas@email.com');
+	('Marianne Marques', 'marim@email.com'),
+	('Renato Passos', 'rpassos@email.com'),
+	('Frederico Fernandes', 'fredfernandes@email.com'),
+	('Marcela Guedes', 'mar_guedes@email.com'),
+	('Lúcia Freitas', 'luciafreitas@email.com');
 ```
 ###### Output:  
 | ID Aluno | Nome aluno | E-mail aluno |

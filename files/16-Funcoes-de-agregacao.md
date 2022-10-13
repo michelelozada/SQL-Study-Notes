@@ -36,29 +36,29 @@
 **1- Função COUNT**  
 Retorna a quantidade de registros de uma tabela.  
 &nbsp;  
-Fazendo a contagem dos cursos regitrados na tabela:
+Fazendo a contagem dos cursos registrados na tabela:
 ```mysql
-SELECT COUNT(ALL nomeCurso) AS Numero_de_Cursos  
+SELECT COUNT(ALL nomeCurso) AS 'Número de Cursos'  
 FROM tb_curso;  
 # retorna: 16 (Há 16 cursos registrados na tabela)
-# O uso de ALL é opcional: também poderia ter sido usado acima SELECT COUNT(*) AS Numero_de_Cursos;
+# O uso de ALL é opcional. Também poderia ter sido usada acima a seguinte sintaxe: SELECT COUNT(*) AS 'Número de Cursos'  
 ```
 Fazendo a contagem dos cursos, porém agora sem contar o nome dos cursos que se repetem na tabela:
 ```mysql
-SELECT COUNT(DISTINCT nomeCurso) AS Numero_de_Cursos 
+SELECT COUNT(DISTINCT nomeCurso) AS 'Nomes dos Cursos'
 FROM tb_curso;  
 # retorna: 10 (Há 10 cursos registrados na tabela - sem repetições)
 ```
 Fazendo a contagem de cursos, baseada em uma condição especificada:
 ```mysql
-SELECT COUNT(nomeCurso) AS Numero_de_Cursos 
+SELECT COUNT(nomeCurso) AS 'Número de Cursos' 
 FROM tb_curso 
 WHERE mensalidadeCurso < 300.00;  
-# retorna: 2  (Há somente tem dois cursos com mensalidade inferior a R$ 300,00)
+# retorna: 2  (Há 2 cursos com mensalidade inferior a R$ 300,00)
 ```
 Fazendo a contagem dos turnos dos cursos:
 ```mysql
-SELECT COUNT(DISTINCT turnoCurso) AS Turnos_escola 
+SELECT COUNT(DISTINCT turnoCurso) AS 'Turnos da escola' 
 FROM tb_curso;
 # retorna: 2  (Há dois turnos de cursos: Manhã e Tarde)
 ```
@@ -68,16 +68,16 @@ FROM tb_curso;
 **2 - Função MAX**  
 Retorna o maior valor dentre os elementos de uma coluna:
 ```mysql
-SELECT MAX(mensalidadeCurso) AS Maior_valor_mensalidade
+SELECT MAX(mensalidadeCurso) AS 'Maior valor de mensalidade'
 FROM tb_curso; 
 # retorna 950.28  (mensalidade do curso de Direito - N)
 ```
 Retornando o maior valor de mensalidade dentre uma faixa estipulada:
 ```mysql
-SELECT MAX(mensalidadeCurso) AS Maior_valor_mensalidade
+SELECT MAX(mensalidadeCurso) AS 'Maior valor de mensalidade'
 FROM tb_curso 
 WHERE mensalidadeCurso> 600.00 AND mensalidadeCurso< 700.00;  
--- retorna 680.00 (mensalidade do curso de Administração - N)
+# retorna 680.00 (mensalidade do curso de Administração - N)
 ```
 &nbsp;
      
@@ -85,20 +85,20 @@ WHERE mensalidadeCurso> 600.00 AND mensalidadeCurso< 700.00;
 **3 - Função MIN**  
 Retorna o menor valor dentre os elementos de uma coluna.
 ```mysql
-SELECT MIN(mensalidadeCurso) AS Menor_valor_mensalidade
+SELECT MIN(mensalidadeCurso) AS 'Menor valor de mensalidade'
 FROM tb_curso; 
 # retorna 249.50 (mensalidade do curso de Pedagogia - M)
 ```
 Retornando o menor valor de mensalidade dentre uma faixa estipulada:
 ```mysql
-SELECT MIN(mensalidadeCurso) AS Menor_valor_mensalidade
+SELECT MIN(mensalidadeCurso) AS 'Menor valor de mensalidade'
 FROM tb_curso 
 WHERE mensalidadeCurso> 600.00 AND mensalidadeCurso< 700.00;  
 # retorna 622.05 (mensalidade do curso de Design Gráfico - N)
 ```
 Consulta com o retorno dos dois valores:
 ```mysql
-SELECT MAX(mensalidadeCurso) AS Maior_valor_mensalidade, MIN(mensalidadeCurso) AS Menor_valor_mensalidade
+SELECT MAX(mensalidadeCurso) AS 'Maior valor de mensalidade', MIN(mensalidadeCurso) AS 'Menor valor de mensalidade'
 FROM tb_curso;   
 # Retorna 950.28 (Maior_valor_mensalidade) e 249.50 (Menor_valor_mensalidade)
 ```
@@ -108,13 +108,13 @@ FROM tb_curso;
 **4- Função SUM**  
 Retona a soma dos valores de uma coluna
 ```mysql
-SELECT SUM(mensalidadeCurso) AS Soma_mensalidades
+SELECT SUM(mensalidadeCurso) AS 'Soma das mensalidades'
 FROM tb_curso; 
 # retona 9395.59 (soma de todas as mensalidades)
 ```
 No exemplo abaixo, realizando a soma apenas dos cursos com ID menor ou igual a 5:
 ```mysql
-SELECT SUM(mensalidadeCurso) AS Soma_mensalidades
+SELECT SUM(mensalidadeCurso) AS 'Soma das mensalidades'
 FROM tb_curso 
 WHERE idCurso <= 5;
 # retona 3534.12 (soma das 5 primeiras mensalidades da tabela)
