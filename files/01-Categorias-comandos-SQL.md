@@ -22,8 +22,8 @@
 | Comandos | Função                                                                    |
 | :--      | :---                                                                      |
 | [INSERT](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/09-Inserindo-valores-tabela.md)    | Para inserção de dados em uma tabela do banco de dados.                   |
-| [UPDATE](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/14-Atualizando-valores-tabela.md)  | Para atualização de dados pré-existentes em uma tabela do banco de dados. |
-| [DELETE](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/15-Eliminando-registros-tabela.md) | Para exclusão de registros de uma tabela do banco de dados.               |
+| [UPDATE](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/14-Atualizando-valores-tabela.md)  | Para atualização de dados pré-existentes em uma tabela no banco de dados. |
+| [DELETE](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/15-Eliminando-registros-tabela.md) | Para exclusão de registros de uma tabela no banco de dados.               |
 
 &nbsp;
 &nbsp;   
@@ -31,7 +31,7 @@
 *Diz respeito à consulta aos dados de uma base/banco de dados*
 | Comando | Função                                                       |
 | :---    | :---                                                         |
-| [SELECT](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/10-Consultando-valores-tabela.md)  | Para consultar registros pertencentes a uma ou mais tabelas. |
+| [SELECT](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/10-Consultando-valores-tabela.md)  | Para consultar registros pertencentes a uma ou mais tabelas no banco de dados. |
 
 &nbsp;
 &nbsp;   

@@ -1,6 +1,9 @@
 <div align="center">
 <img src="./assets/mysql.png">
-<h1>Banco de Dados MySQL - Fundamentos</h1>
+<h2>Banco de Dados MySQL - Fundamentos</h2>
+<h3>⬝&nbsp; Tela Inicial &nbsp;⬝</h3>
+&nbsp;
+&nbsp;
 
 | Índice | Descrição |
 | :---:  | :---		 |
@@ -42,10 +45,14 @@
 | [36](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/36-Ordem-escrita-instrucao-select.md) | Ordem escrita da instrução SELECT |
 
 &nbsp;   
-**Referências consultadas para criação deste repositório:**  
-| Link   | Nome |
-| :---:  | :---	|
-| [:bookmark_tabs:](https://dev.mysql.com/doc/refman/8.0/en/) | MySQL 8.0 Reference Manual
-| [:bookmark_tabs:](http://www.bosontreinamentos.com.br/curso-completo-de-mysql/)  | MySQL - Curso Completo (Fábio dos Reis)
-| [:bookmark_tabs:](https://www.bvirtual.com.br/NossoAcervo/Publicacao/168492) | Sistemas de Banco de Dados (Ramez Elmasri e Shamkant B. Navathe)
+ <details>
+ <summary>Clique aqui para ver as referências consultadas para criação deste repositório</summary>
+
+  &nbsp;
+  &nbsp;   
+  [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)   
+  [MySQL - Curso Completo (Fábio dos Reis)](http://www.bosontreinamentos.com.br/curso-completo-de-mysql/)  
+  [Sistemas de Banco de Dados (Ramez Elmasri e Shamkant B. Navathe)](https://www.bvirtual.com.br/NossoAcervo/Publicacao/168492)  
+
+ </details>
 </div> 
