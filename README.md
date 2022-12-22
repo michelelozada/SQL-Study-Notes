@@ -46,7 +46,7 @@
 
 &nbsp;   
  <details>
- <summary>Clique aqui para ver as referências consultadas para criação deste repositório</summary>
+ <summary><strong>Clique aqui para ver as referências consultadas para criação deste repositório</strong></summary>
 
   &nbsp;
   &nbsp;   
@@ -55,4 +55,7 @@
   [Sistemas de Banco de Dados (Ramez Elmasri e Shamkant B. Navathe)](https://www.bvirtual.com.br/NossoAcervo/Publicacao/168492)  
 
  </details>
+   
+&nbsp;    
+[[Voltar ao topo]](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos#banco-de-dados-mysql---fundamentos)
 </div> 
