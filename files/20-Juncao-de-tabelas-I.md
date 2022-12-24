@@ -142,3 +142,9 @@ HAVING COUNT(Itens) >= 3;
 | Marcas     | Itens | 
 | :---       | :---  | 
 | Multilaser | 3     |
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

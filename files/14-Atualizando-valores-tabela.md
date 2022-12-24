@@ -66,3 +66,9 @@ SET cidadeAluno = 'Curitiba', estadoAluno="PR";
 | 2        | Mariana Fernandes  | Curitiba    | PR          |
 | 3        | Cátia Marcondes    | Curitiba    | PR          |
 | 4        | Marcos Góes Filho	| Curitiba    | PR          |
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

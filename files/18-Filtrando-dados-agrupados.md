@@ -98,3 +98,9 @@ HAVING COUNT(tipoCliente) > 3;
 | Id Vendedor | Vendas para cliente do tipo PJ |
 | ----        | ----   		                   |
 | 3	          | 4				               |
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

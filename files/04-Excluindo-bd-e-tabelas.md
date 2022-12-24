@@ -28,3 +28,10 @@ restrições e dados existentes nela.
 ```mysql
 DROP TABLE nome_da_tabela;
 ```
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>
+

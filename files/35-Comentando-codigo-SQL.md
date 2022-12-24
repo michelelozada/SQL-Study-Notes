@@ -15,3 +15,9 @@ Utilizado para explicar instruções ou evitar a execução de alguma parte do c
 em múltiplas linhas
 utilize esta marcação */
 ```
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

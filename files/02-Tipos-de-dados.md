@@ -40,3 +40,9 @@ TIME		| Formato: HH:MM:SS	| horaEntrada TIME |
 YEAR		| Formato: YYYY | anoNascimento YEAR |
 
 *Obs: DATETIME armazena datas; TIMESTAMP faz um 'carimbo digital', registrando um ponto específico no tempo.*  
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

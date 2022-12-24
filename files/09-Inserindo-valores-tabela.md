@@ -67,6 +67,12 @@ VALUES
 | ID Aluno | Nome aluno         | Telefone      | E-mail                   |
 | :---     | :---               | :---          | :---                     |
 | 1	       | Lorenzo Martins    | 4199956-xx88  | lorenzomartins@gmail.com |
-| 2	       | Luana Borba	      | 4199956-xx56	| luanab@email.com         |
+| 2	       | Luana Borba	      | 4199956-xx56	| luanab@email.com     |
 | 3	       | Mariana Fernandes	| 4199652-xx25	| marifernandes@email.com  | 
 | 4	       | Henrique Bormann  	| 4199987-xx45	| hbormann@email.com       |
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

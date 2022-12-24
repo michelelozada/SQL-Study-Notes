@@ -138,3 +138,9 @@ ORDER BY dNascimentoAluno DESC;
 | Larissa Torres	| 2003-04-07       |
 | Enzo Marques		| 2002-05-14       |
 | Cátia Marcondes	| 2000-01-05       |
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

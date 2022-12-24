@@ -41,3 +41,9 @@
 | :---     | :---    
 | [GRANT](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/33-Privilegios-de-acesso.md) | Para permitir que usuários especificados realizem tarefas especificadas |
 | [REVOKE](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/33-Privilegios-de-acesso.md)| Para cancelar as permissões previamente concedidas aos usuários |
+
+&nbsp;
+  
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

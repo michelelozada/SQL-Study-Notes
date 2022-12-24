@@ -62,3 +62,9 @@ ORDER BY scoreCliente DESC;
 | 9	        | Larissa Torres	| 520          |
 | 5	        | Enzo Marques	    | 500          |
 | 1         | Luana Borba	    | 300          |
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

@@ -33,7 +33,7 @@ VALUES
 ```
 &nbsp;
 
-&nbsp;
+&nbsp;    
 **1.a. Consultando todos os registros da tabela acima:**  
 ```mysql
 SELECT * 
@@ -52,7 +52,7 @@ FROM tb_aluno;
 | 8        | Paula Souza       | paula_souza@email.com    |
 
 &nbsp;
-&nbsp;  
+&nbsp;    
 **1.b. Consultando registros de apenas uma coluna desta tabela:**  
 ```mysql
 SELECT nomeAluno 
@@ -68,7 +68,7 @@ FROM tb_aluno;
 | Sônia de Morais   |
 
 &nbsp;
-&nbsp;  
+&nbsp;    
 **1.c. Consultando registros de duas colunas específicas da tabela:** 
 ```mysql
 SELECT nomeAluno, emailAluno 
@@ -85,7 +85,6 @@ FROM tb_aluno;
 | Enzo Freitas      | efreitas@email.com	   |
 | Rodrigo Mattos    | rodrigo.mattos@email.com |
 | Paula Souza       | paula_souza@email.com    |
-
 
 &nbsp;
 
@@ -300,7 +299,7 @@ WHERE nomeAluno LIKE 'm%s';
 
 &nbsp;
 
-&nbsp; 
+&nbsp;    
 **6. Utilizando o Operador NOT LIKE:**  
 No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) **não** contêm a letra 'R'. 
 ```mysql
@@ -312,3 +311,9 @@ WHERE nomeAluno NOT LIKE '%R%';
 | ID Aluno | Nome aluno  | 
 | :---     | :---        | 
 | 8        | Paula Souza |
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

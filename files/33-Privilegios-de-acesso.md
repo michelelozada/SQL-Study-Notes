@@ -93,3 +93,9 @@ FROM 'marcos'@'localhost';
 REVOKE ALL PRIVILEGES, GRANT OPTION  -- use esta opção para usuários a quem foi concedido o privilégio WITH GRANT OPTION
 FROM 'murilo'@'localhost';
 ```
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

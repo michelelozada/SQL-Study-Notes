@@ -139,3 +139,9 @@ SELECT TRUNCATE(PI(),2);  -- Retorna: 3.14
 -- Caso não se indique o número de casas decimais:
 SELECT TRUNCATE(1.6548,0); -- Retorna: 1
 ```
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

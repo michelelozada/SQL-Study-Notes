@@ -90,3 +90,9 @@ SELECT aplicaDesconto(400.00) AS 'Valor final da compra (R$)'; -- Retorna => Val
 ```mysql
 SELECT aplicaDesconto(650.00) AS 'Valor final da compra (R$)'; -- Retorna => Valor final da compra (R$): 550.00
 ```
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

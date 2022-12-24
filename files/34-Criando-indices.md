@@ -80,3 +80,9 @@ WHERE nome_aluno = "Elaine";
 Ao passo que - depois que se aplica o indice **`idx_nome_aluno`**, conforme o que foi feito acima -  ao ser executado novamente o 
 comando **`EXPLAIN SELECT`**, é retornado que agora o servidor precisou percorrer apenas 1 linha para encontrar a informação 
 solicitada.
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

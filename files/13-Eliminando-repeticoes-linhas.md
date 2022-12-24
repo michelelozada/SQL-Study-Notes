@@ -75,3 +75,9 @@ ORDER BY nomeAula;
 | Tai chi chuan	 | presencial     |
 | Yoga	         | online         |
 | Yoga	         | presencial     |
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

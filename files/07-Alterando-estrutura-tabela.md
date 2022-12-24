@@ -40,7 +40,7 @@ ALTER TABLE tb_aluno
 DROP COLUMN foneAluno;
 ```
 &nbsp;
-     
+
 &nbsp;
 **2. Adicionando uma coluna à tabela**  
 ```mysql
@@ -98,3 +98,9 @@ MODIFY COLUMN nomeAluno varchar(60); -- aqui aumentei o tamano da coluna
 ALTER TABLE tb_ALUNO
 MODIFY COLUMN cpfAluno varchar(15) UNIQUE; -- aqui foi adicionada uma constraint à coluna
 ```
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

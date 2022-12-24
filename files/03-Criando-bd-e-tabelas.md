@@ -6,16 +6,17 @@
 &nbsp;     
 **CREATE**  
 * Comando para a criação de objetos: banco de dados e tabelas.
-* A inclusão da cláusula `IF NOT EXISTS` é opcional.
+* A inclusão da cláusula `IF NOT EXISTS` é opcional.  
 &nbsp;
      
-&nbsp;    
+&nbsp;      
 **1. Criando um banco de dados:**
 ```mysql
 CREATE DATABASE IF NOT EXISTS db_escola;
 ```
 &nbsp;
-&nbsp;    
+     
+&nbsp;  
 **2. Criando uma tabela:**
 ```mysql
 CREATE TABLE IF NOT EXISTS tb_aluno(
@@ -39,7 +40,8 @@ Após ter sido criado, é imprescindível indicar ao servidor qual banco de dado
 USE db_escola;
 ```
 &nbsp;
-&nbsp;  
+     
+&nbsp;   
 **2. Comando SHOW**  
 2.1. Lista quais as bases de dados existentes no servidor:        
 ```mysql
@@ -62,6 +64,7 @@ SHOW TABLES;
 | tb_aluno             | 
 
 &nbsp;
+     
 &nbsp;  
 **3. Comando SELECT DATABASE**  
 Informa qual a base de dados está em uso no momento:    
@@ -74,7 +77,8 @@ SELECT DATABASE();
 | db_escola   | 
 
 &nbsp;
-&nbsp;  
+     
+&nbsp;    
 **4. Comando DESCRIBE**  
 Apresenta a estrutura da tabela especificada com seus campos, tipo de dados e demais características: 
 ```mysql
@@ -86,3 +90,9 @@ DESCRIBE tb_aluno;
 | idAluno	  | int(11)	    | NO   | PRI  | NULL    | auto_increment |	
 | nomeAluno   | varchar(50) | NO   |      | NULL    |			     |
 | emailAluno  | varchar(40) | YES  |	  | NULL    |		         |
+
+&nbsp;    
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

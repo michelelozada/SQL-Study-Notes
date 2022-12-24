@@ -135,3 +135,9 @@ SELECT ROUND(AVG(mensalidadeCurso),2) AS Media
 FROM tb_curso;  
 # retorna 587.22 
 ```
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

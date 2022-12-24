@@ -118,3 +118,9 @@ SELECT MAX(idAluno) FROM tb_Aluno;
 ```
 ###### Output:  
 O exemplo acima retornou 204
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>

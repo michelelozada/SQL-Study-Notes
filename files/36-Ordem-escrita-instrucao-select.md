@@ -13,3 +13,9 @@ flowchart TD
 &nbsp;
 &nbsp;    
 **Observação:** É importante saber, porém, que a ordem acima **__não representa__** a ordem com que as consultas MySQL são, de fato, analisadas e processadas - o que é explicado detalhadamente [neste ótimo post aqui](https://towardsdatascience.com/the-6-steps-of-a-sql-select-statement-process-b3696a49a642).
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>
