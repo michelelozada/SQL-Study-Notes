@@ -150,4 +150,7 @@ DROP VIEW vw_catalogo;
 
 <div align="center">
 <a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+
+&nbsp;
+
 </div>
