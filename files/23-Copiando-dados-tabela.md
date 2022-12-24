@@ -52,3 +52,9 @@ Obs: Caso seja necessário copiar os dados para uma nova tabela, só que a ser a
 CREATE TABLE nome_da_database_destino.tb_curso_new 
 LIKE nome_da_database_original.tb_curso;
 ```
+
+&nbsp;
+
+<div align="center">
+<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+</div>
