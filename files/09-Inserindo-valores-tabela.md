@@ -74,5 +74,5 @@ VALUES
 &nbsp;
 
 <div align="center">
-<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+<a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
 </div>

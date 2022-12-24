@@ -9,7 +9,7 @@ Para fins de segurança, os SGBDs oferecem recursos para conceder ou limitar dir
 Para isso são utilizados dois comandos principais: o **`GRANT`** para atribuição de permissões e o **`REVOKE`** para a 
 revogação destes priviégios.  
 &nbsp;  
-Para criar usuários para a posterior atribuição de privilégios, [seguir estes procedimentos](https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos/blob/main/files/32-Gerenciando-usuarios.md). 
+Para criar usuários para a posterior atribuição de privilégios, [seguir estes procedimentos](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/32-Gerenciando-usuarios.md). 
 &nbsp;
      
 &nbsp;  
@@ -97,5 +97,5 @@ FROM 'murilo'@'localhost';
 &nbsp;
 
 <div align="center">
-<a href="https://github.com/michelelozada/Banco-de-Dados-MySQL-Fundamentos">[Voltar à tela inicial do repositório]</a>
+<a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
 </div>
