@@ -3,11 +3,11 @@
 > GitHub: @michelelozada
 &nbsp;
      
-		 &nbsp;  
+&nbsp;  
 **SELECT**  
-- Utilizado para realizar consultas a valores inseridos em uma tabela ou mais tabelas do banco de dados.  
-- Tal consulta pode ser refinada se for utilizada em conjunto com outras cláusulas e operadores, adiante listados.
-- Deve ser utilizado em conjunto com a cláusula `FROM`.
+\- Utilizado para realizar consultas a valores inseridos em uma tabela ou mais tabelas do banco de dados.  
+\- Tal consulta pode ser refinada se for utilizada em conjunto com outras cláusulas e operadores, adiante listados.
+\- Deve ser utilizado em conjunto com a cláusula `FROM`.
      
 &nbsp;  
 
@@ -54,8 +54,7 @@ SELECT * FROM tb_aluno;
   
 **1.b. Consultando registros de apenas uma coluna desta tabela:**  
 ```mysql
-SELECT nomeAluno 
-FROM tb_aluno;
+SELECT nomeAluno FROM tb_aluno;
 ```	
 ###### Output:  
 | Nome aluno        |
@@ -70,8 +69,7 @@ FROM tb_aluno;
   
 **1.c. Consultando registros de duas colunas específicas da tabela:** 
 ```mysql
-SELECT nomeAluno, emailAluno 
-FROM tb_aluno;
+SELECT nomeAluno, emailAluno FROM tb_aluno;
 ```	
 ###### * Output:  
 | Nome aluno        | E-mail                   | 
@@ -91,8 +89,7 @@ FROM tb_aluno;
 Apresenta os valores consultados em ordem sequencial crescente ou decrescente, bastando acrescentar `ASC` ou `DESC`.  
 (Obs: É possível utilizar mais de um critério de ordenação, basta acrescentar uma vírgula e adicionar o respetivo campo).
 ```mysql
-SELECT nomeAluno 
-FROM tb_aluno 
+SELECT nomeAluno FROM tb_aluno 
 ORDER BY nomeAluno DESC;
 ```
 ###### * Output:  	
@@ -111,8 +108,7 @@ ORDER BY nomeAluno DESC;
 
 Por default, a ordenação é em ordem crescente; portanto o uso de `ASC` é opcional.
 ```mysql
-SELECT nomeAluno 
-FROM tb_aluno 
+SELECT nomeAluno FROM tb_aluno 
 ORDER BY nomeAluno;
 ```
 ###### * Output:  
@@ -132,8 +128,7 @@ ORDER BY nomeAluno;
 **3. Utilizando a cláusula WHERE:**  
 Ao incluir esta cláusula, apenas os registros que obedecerem às condições ali especificadas serão retornados.
 ```mysql
-SELECT idAluno, nomeAluno 
-FROM tb_aluno 
+SELECT idAluno, nomeAluno FROM tb_aluno 
 WHERE idAluno = 5;
 ```
 ###### * Output:  
@@ -144,8 +139,7 @@ WHERE idAluno = 5;
 &nbsp;
   
 ```mysql
-SELECT idAluno, nomeAluno 
-FROM tb_aluno 
+SELECT idAluno, nomeAluno FROM tb_aluno 
 WHERE idAluno <= 3 
 ORDER BY nomeAluno DESC;
 ```
@@ -159,8 +153,7 @@ ORDER BY nomeAluno DESC;
 &nbsp;
 
 ```mysql
-SELECT idAluno, nomeAluno 
-FROM tb_aluno 
+SELECT idAluno, nomeAluno FROM tb_aluno 
 WHERE NOT idAluno > 4;
 ```
 ###### * Output:  
@@ -174,8 +167,7 @@ WHERE NOT idAluno > 4;
 &nbsp;
 
 ```mysql
-SELECT idAluno, nomeAluno 
-FROM tb_aluno 
+SELECT idAluno, nomeAluno FROM tb_aluno 
 WHERE (idAluno = 8 AND nomeAluno = "Paulinha") OR (idAluno = 7 AND nomeAluno = "Rodrigo Mattos");
 ```
 ###### * Output:  
@@ -186,9 +178,9 @@ WHERE (idAluno = 8 AND nomeAluno = "Paulinha") OR (idAluno = 7 AND nomeAluno = "
 &nbsp;
 
 **Observações:**
-- Operadores que podem ser utilizados para montar as condições de WHERE: `=`, `!=` ou`<>`, `>`,`<`, `>=`,`<=` 
-- Para números float (devido a não-precisão), as operações de igualdade ou diferença não funcionam - nestes casos, deve-se usar a cláusula `BETWEEN`.
-- Os operadores acima podem se utilizados com strings também: `SELECT * FROM tb_aluno WHERE nomeAluno >= 'Mariana Fernandes';`
+\- Operadores que podem ser utilizados para montar as condições de WHERE: `=`, `!=` ou`<>`, `>`,`<`, `>=`,`<=` 
+\- Para números float (devido a não-precisão), as operações de igualdade ou diferença não funcionam - nestes casos, deve-se usar a cláusula `BETWEEN`.
+\- Os operadores acima podem se utilizados com strings também: `SELECT * FROM tb_aluno WHERE nomeAluno >= 'Mariana Fernandes';`
 
 &nbsp;
 

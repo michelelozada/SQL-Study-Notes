@@ -7,13 +7,13 @@
 **ALTER TABLE**  
 Comando utilizado para modificar as características de uma tabela já existente, através da:  
 	- Inclusão ou exclusão de colunas desta tabela;  
-	- Adição, alteração ou remoção de restrições (ex: `PRIMARY KEY`, `UNIQUE`, `NOT NULL`, etc.) de uma coluna - *[ver mais no arquivo sobre CONSTRAINTS](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/05-Restricoes.md)*;  
-	- Alteração do tipo de dado ou tamanho definidos para uma coluna;
+	- Adição, alteração ou remoção de restrições (ex: `PRIMARY KEY`, `UNIQUE`, `NOT NULL`, etc.) de uma coluna - *[ver mais no arquivo sobre constraits](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/05-Restricoes.md)*;  
+	- Alteração do tipo de dado ou tamanho definidos para uma coluna;  
 	- Alteração do nome de tabelas ou colunas já existentes no banco de dados.
 
 &nbsp;
      
-**As tabelas para o exemplo:**   
+**As tabelas para os exemplos:**   
 
 ```mysql
 CREATE TABLE tb_aluno(
@@ -29,7 +29,7 @@ CREATE TABLE tb_aluno(
 CREATE TABLE tb_contrato(
   idContrato int(11) AUTO_INCREMENT NOT NULL,
   idAluno int(11) NOT NULL,
-	CONSTRAINT idAluno FOREIGN KEY (idAluno_fk),
+  CONSTRAINT idAluno FOREIGN KEY (idAluno_fk),
   PRIMARY KEY(idContrato)
 );
 ```
@@ -56,7 +56,7 @@ AFTER emailAluno;
 **3. Modificando o tipo de dado ou tamanho de uma coluna**  
 ```mysql
 ALTER TABLE tb_aluno
-MODIFY COLUMN foneAluno int(11); -- aqui quis alterar o tipo de dado de varchar para int
+MODIFY COLUMN foneAluno int(11); -- aqui alterei o tipo de dado de varchar para int
 ```
 ```mysql
 ALTER TABLE tb_aluno
@@ -92,7 +92,7 @@ Ou alternativamente:
 ```mysql 
 ALTER TABLE tb_alunos
 CHANGE nomeAluno nome_aluno varchar(50);
--- Após, o CHANGE nome atual da tabela, seguindo ao novo nome com a definição do tipos dos dados
+-- Após o CHANGE, colocar nome atual da tabela, seguindo ao novo nome com a definição do tipos dos dados
 ```
 
 &nbsp;
