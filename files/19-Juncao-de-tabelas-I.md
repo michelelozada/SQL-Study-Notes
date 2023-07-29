@@ -14,9 +14,9 @@
 - O `INNER JOIN` é um tipo de junção que retorna *apenas* registros que possuam correspondência entre duas ou mais tabelas.  
 &nbsp;  
 - Portanto: registros 'excedentes' não são exibidos neste tipo de consulta; esta exibição acontecerá, porém, quando aplicados o `LEFT JOIN` e `RIGHT JOIN`.  
-&nbsp;
      
 &nbsp;  
+
 **A primeira tabela para exemplo - Produtos *(tb_produto):***  
 | idProduto	 | nomeProduto			        | marcaProduto_fk	| categoriaProduto_fk |
 | :---	     | :---			                | :---	            | :---                |
@@ -33,7 +33,6 @@
 
 &nbsp; 
 
-&nbsp;  
 **A segunda tabela - Marcas *(tb_marca):***  
 | idMarca | nomeMarca  | 
 | :---	  | :---       |
@@ -47,7 +46,6 @@
 
 &nbsp;
 
-&nbsp;  
 **A terceira tabela - Categorias *(tb_categoria):*** 
 | idCategoria | nomeCategoria	| 
 | :---	      | :---            |
@@ -60,7 +58,6 @@
 
 &nbsp;
 
-&nbsp;  
 **Aplicando o INNER JOIN nas três tabelas acima:**   
 ```mysql
 SELECT tb_produto.idProduto AS Código, tb_produto.nomeProduto As Produto, tb_marca.nomeMarca AS Marca, tb_categoria.nomeCategoria AS Categoria
@@ -91,7 +88,6 @@ ORDER BY Código ASC;
 
 &nbsp;
 
-&nbsp;  
 **Mesma consulta acima, mas agora utilizando aliases (apelidos) junto aos nomes das colunas para sintetizar o código:**   
 ```mysql
 SELECT p.idProduto AS Código, p.nomeProduto As Produto, m.nomeMarca AS Marca, c.nomeCategoria AS Categoria
@@ -102,9 +98,9 @@ INNER JOIN tb_categoria AS c
 ON p.categoriaProduto_fk = c.idCategoria
 ORDER BY Código ASC;
 ```
+
 &nbsp;
 
-&nbsp;  
 **Utilizando a cláusula `GROUP BY` para descobrir quantos itens de produtos existem em cada tipo de categoria:**   
 ```mysql
 SELECT c.nomeCategoria AS Categorias, COUNT(p.idProduto) AS Itens
@@ -127,7 +123,6 @@ ORDER BY Itens DESC;
 
 &nbsp;
 
-&nbsp;  
 **Utilizando a cláusula `HAVING` para descobrir qual marca possui mais ou ao menos 3 itens de produto:**  
 ```mysql
 SELECT m.nomeMarca AS Marcas, COUNT(p.idProduto) AS Itens

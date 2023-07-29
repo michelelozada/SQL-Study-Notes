@@ -7,9 +7,9 @@
 **PROCEDIMENTO ARMAZENADO (AKA STORE PROCEDURE)**  
 - É uma subrotina, armazenada de maneira persistente no SGBD, organizada para receber parâmetros e executar uma ou mais tarefas.    
 - É o comando `CALL`, que junto ao nome de identificação, invoca o procedimento armazenado.  
-&nbsp;
      
 &nbsp;  
+
 **A tabela para exemplo**  
 | idCurso | nomeCurso 	   | Turno | Mensalidade |
 | :---    | :---      	   | :---  | :---        |
@@ -21,7 +21,7 @@
 | 8       | Design Gráfico | N     | 670.10      |
 
 &nbsp;
-&nbsp;      
+    
 **Declarando um procedimento**
 ```mysql
 CREATE PROCEDURE consultaMensalidade(pesquisaCurso varchar(50))
@@ -29,8 +29,9 @@ SELECT CONCAT('O valor da mensalidade do curso ' , nomeCurso , ' (turno ' , turn
 FROM tb_curso
 WHERE nomeCurso = pesquisaCurso;
 ```
-&nbsp;
+
 &nbsp;    
+
 **Invocando o procedimento**
 ```mysql
 CALL consultaMensalidade('Direito');
@@ -42,7 +43,7 @@ CALL consultaMensalidade('Direito');
 | O valor da mensalidade do curso Direito (turno N) é R$ 950.28. |
 
 &nbsp;
-&nbsp;  
+
 **Invocando o procedimento novamente, usando outro argumento**
 ```mysql
 CALL consultaMensalidade('Design Gráfico');
@@ -54,7 +55,7 @@ CALL consultaMensalidade('Design Gráfico');
 | O valor da mensalidade do curso Design Gráfico (turno N) é R$ 670.10. |
 
 &nbsp;
-&nbsp;    
+
 **Excluindo o procedimento acima**
 ```mysql
 DROP PROCEDURE consultaMensalidade;

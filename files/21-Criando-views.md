@@ -24,9 +24,9 @@ quando evocada, tem como base tabelas reais ou mesmo outras views.
 &nbsp;    
 [^1]: Citações retiradas da página 59 do livro [Sistemas de Banco de Dados](https://www.bvirtual.com.br/NossoAcervo/Publicacao/168492), dos autores Ramez Elmasri e Shamkant B. Navathe.  
 [^2]: Citações retiradas do texto [MySQL – VIEWS: Criando Tabelas Virtuais (Visões)](http://www.bosontreinamentos.com.br/mysql/mysql-views-criando-tabelas-virtuais-visoes-28/), do autor Fábio dos Reis.  
-&nbsp;
      
 &nbsp;  
+
 **As tabelas de exemplo:**  
 &nbsp; 
 *tb_produto:*
@@ -43,7 +43,8 @@ quando evocada, tem como base tabelas reais ou mesmo outras views.
 | 9	         | Mouse Sem Fio M720 Bluetooth	| 2	                | 4                   |
 | 10         | Headphone Com Fio Preto	    | 7	                | 2                   |
 
-&nbsp;    
+&nbsp;  
+
 *tb_marca:*  
 | idMarca | nomeMarca  | 
 | :---	  | :---       |
@@ -55,7 +56,8 @@ quando evocada, tem como base tabelas reais ou mesmo outras views.
 | 6	      | SanDisk    |
 | 7	      | Sony       |
 
-&nbsp;    
+&nbsp;  
+
 *tb_categoria:* 
 | idCategoria | nomeCategoria	| 
 | :---	      | :---            |
@@ -68,7 +70,6 @@ quando evocada, tem como base tabelas reais ou mesmo outras views.
 
 &nbsp;
      
-&nbsp;  
 **1.1. Criando uma view:**  
 ```mysql
 CREATE VIEW vw_catalogo AS 
@@ -79,8 +80,9 @@ ON p.marcaProduto_fk = m.idMarca
 INNER JOIN tb_categoria AS c
 ON p.categoriaProduto_fk = c.idCategoria;
 ```
+
 &nbsp;
-&nbsp;  
+
 **1.2. Evocando a view acima:** 
 ```mysql
 SELECT Produto, Marca
@@ -102,9 +104,8 @@ ORDER BY Produto;
 | Teclado Slim USB Laser TC193  | Multilaser |
 | Webcam HD C270                | Logitech   |
 
-&nbsp;
-
 &nbsp;  
+
 **2.1. Alterando uma view:**  
 *(Foi feita inclusão do campo *nomeCategoria* junto ao `SELECT`)*
 ```mysql
@@ -140,7 +141,6 @@ ORDER BY Produto;
 
 &nbsp;
 
-&nbsp;  
 **3. Excluindo a view:**  
 ```mysql
 DROP VIEW vw_catalogo;
@@ -150,7 +150,4 @@ DROP VIEW vw_catalogo;
 
 <div align="center">
 <a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
-
-&nbsp;
-
 </div>

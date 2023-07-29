@@ -22,7 +22,7 @@ tipos:
 	- Ao fim, este valor pasado ao parâmetro será retornado processado/computado (diferente do que acontece em parâmetros do tipo `IN`);
 	
 &nbsp;
-&nbsp;    
+
 **A tabela a ser utilizada para os exemplos abaixo:**
 | idCurso | nomeCurso      | turnoCurso | mensalidadeCurso |
 | :--     | :--            | :--        | :--              |
@@ -32,7 +32,7 @@ tipos:
 | 4	      | Pedagogia	   | N	        | 278.50           |
 
 &nbsp;
-&nbsp;    
+    
 **1. Aplicação de parâmetro do tipo IN**  
 Objetivo: Criar um procedimento para reduzir o valor da mensalidade de qualquer curso, de acordo com uma taxa informada.
 
@@ -69,7 +69,6 @@ WHERE nomeCurso = 'Direito' AND turnoCurso='M';
 
 &nbsp;
      
-&nbsp;  
 **2- Aplicação de parâmetro do tipo OUT**   
 Objetivo: Criar um procedimento para, tendo sido informada a id do curso, serem retornados seu nome e turno.
 
@@ -98,9 +97,8 @@ SELECT @curso AS Curso,@turno AS Turno;
 | :--     	 | :--        |
 | Pedagogia	 | M		  |
 
-&nbsp;
-     
-&nbsp;  
+&nbsp; 
+
 **3 - Aplicação de parâmetro do tipo INOUT**  
 Objetivo: Criar procedimento para, tendo sido informada a mensalidade, esta ser reduzida de acordo com taxa também informada.
 

@@ -8,9 +8,9 @@
 - Têm visibilidade apenas local, ou seja, são conhecidas apenas dentro das funções ou stored procedures;
 - Somente podem ser declaradas dentro de um bloco `BEGIN ... END`, através da instrução `DECLARE`;
 - São válidas apenas durante a execução do programa em que foram declaradas; após isso são destruídas da memória.
-&nbsp;
      
 &nbsp;   
+
 **A tabela a ser utilizada para os exemplos abaixo:**
 
 | idCurso | nomeCurso      | turnoCurso | mensalidadeCurso |
@@ -19,6 +19,7 @@
 | 2	      | Pedagogia	   | M	        | 249.50           |
 
 &nbsp;     
+
 **A. Criação da função**  
 Objetivo: Criação de uma função para calcular redução da mensalidade, tendo sido informados o código do curso e a taxa de desconto:
 ```mysql
@@ -35,6 +36,7 @@ END //
 DELIMITER ; 
 ```
 &nbsp;    
+
 **B. Chamada da função**  
 *Parâmetros: Curso de código 1 e taxa de desconto de 10%*
 ```mysql
@@ -46,6 +48,7 @@ SELECT reduzirMensalidade(1,10) AS 'Mensalidade com desconto';
 | 788,65		           |
 
 &nbsp;  
+
 **C. Nova chamada da função**     
 *Parâmetros: Curso de código 2 e taxa de desconto de 5%*
 ```mysql

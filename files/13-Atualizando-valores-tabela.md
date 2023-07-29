@@ -7,9 +7,9 @@
 **UPDATE**  
 - Atualiza/altera dados pré-cadastrados em uma tabela do banco de dados;
 - Deve ser utilizado juntamente com a cláusula `SET`, que tem a função de determinar qual o campo será atualizado;
-&nbsp;
      
 &nbsp;  
+
 **1. A tabela de exemplo:**  
 | idAluno  | nomeAluno         | cidadeAluno    | estadoAluno |
 | :---     | :---              | :---           | :---        |
@@ -20,13 +20,12 @@
 
 &nbsp;
 
-&nbsp;
 **2. Atualizando um registro da tabela:**  
 - Deve ser utilizado juntamente com a cláusula `WHERE`, quando for necessária a especificação de qual registro terá seus dados atualizados.
 ```mysql
-UPDATE tb_aluno 
-SET nomeAluno = 'Marcos Góes Filho' 
-WHERE idAluno = 4;  -- foi retificado o nome deste aluno
+UPDATE tb_aluno -- nome da tabela
+SET nomeAluno = 'Marcos Góes Filho'  -- nome da coluna e valor a ser atualizado
+WHERE idAluno = 4;  -- foi retificado o nome deste aluno  -- condição para atualização
 ```
 ###### * Output:  
 | idAluno  | nomeAluno         | cidadeAluno    | estadoAluno |
@@ -37,7 +36,7 @@ WHERE idAluno = 4;  -- foi retificado o nome deste aluno
 | 4        | Marcos Góes Filho | Florianópolis  | SC          |
 
 &nbsp;
-&nbsp;  
+
 * Para  atualização de mais de um campo:
 ```mysql
 UPDATE tb_aluno 
@@ -53,7 +52,7 @@ WHERE idAluno = 4;
 | 4        | Marcos Góes Filho | Porto Alegre   | RS          |
 
 &nbsp;
-&nbsp;  
+  
 * ATT: Caso não seja utilizada a cláusula WHERE, todos os registros da tabela serão atualizados com a mesma informação!
 ```mysql
 UPDATE tb_aluno 

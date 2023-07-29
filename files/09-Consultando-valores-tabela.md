@@ -3,14 +3,14 @@
 > GitHub: @michelelozada
 &nbsp;
      
-&nbsp;  
+		 &nbsp;  
 **SELECT**  
 - Utilizado para realizar consultas a valores inseridos em uma tabela ou mais tabelas do banco de dados.  
 - Tal consulta pode ser refinada se for utilizada em conjunto com outras cláusulas e operadores, adiante listados.
 - Deve ser utilizado em conjunto com a cláusula `FROM`.
-&nbsp;
      
 &nbsp;  
+
 **A tabela de exemplo:**  
 ```mysql
 CREATE TABLE tb_aluno(
@@ -31,13 +31,12 @@ VALUES
 	('Rodrigo Mattos', 'rodrigo.mattos@email.com'),
 	('Paula Souza', 'paula_souza@email.com');
 ```
-&nbsp;
 
-&nbsp;    
+&nbsp;   
+
 **1.a. Consultando todos os registros da tabela acima:**  
 ```mysql
-SELECT * 
-FROM tb_aluno;
+SELECT * FROM tb_aluno;
 ```
 ###### Output:  
 | ID Aluno | Nome aluno        | E-mail                   | 
@@ -47,12 +46,12 @@ FROM tb_aluno;
 | 3        | Cátia Marcondes   | catiamarcondes@email.com |
 | 4        | Marcos Góes       | marcosgoes@email.com     |
 | 5        | Sônia de Morais   | sonia_morais@email.com   |
-| 6		   | Enzo Freitas      | efreitas@email.com	      |
-| 7		   | Rodrigo Mattos    | rodrigo.mattos@email.com |
+| 6		     | Enzo Freitas      | efreitas@email.com	      |
+| 7		     | Rodrigo Mattos    | rodrigo.mattos@email.com |
 | 8        | Paula Souza       | paula_souza@email.com    |
 
 &nbsp;
-&nbsp;    
+  
 **1.b. Consultando registros de apenas uma coluna desta tabela:**  
 ```mysql
 SELECT nomeAluno 
@@ -68,7 +67,7 @@ FROM tb_aluno;
 | Sônia de Morais   |
 
 &nbsp;
-&nbsp;    
+  
 **1.c. Consultando registros de duas colunas específicas da tabela:** 
 ```mysql
 SELECT nomeAluno, emailAluno 
@@ -88,7 +87,6 @@ FROM tb_aluno;
 
 &nbsp;
 
-&nbsp;  
 **2. Utilizando a cláusula ORDER BY:**  
 Apresenta os valores consultados em ordem sequencial crescente ou decrescente, bastando acrescentar `ASC` ou `DESC`.  
 (Obs: É possível utilizar mais de um critério de ordenação, basta acrescentar uma vírgula e adicionar o respetivo campo).
@@ -110,7 +108,7 @@ ORDER BY nomeAluno DESC;
 | Cátia Marcondes   | 
 
 &nbsp;
-&nbsp;  
+
 Por default, a ordenação é em ordem crescente; portanto o uso de `ASC` é opcional.
 ```mysql
 SELECT nomeAluno 
@@ -131,7 +129,6 @@ ORDER BY nomeAluno;
 
 &nbsp;
 
-&nbsp;  
 **3. Utilizando a cláusula WHERE:**  
 Ao incluir esta cláusula, apenas os registros que obedecerem às condições ali especificadas serão retornados.
 ```mysql
@@ -145,7 +142,7 @@ WHERE idAluno = 5;
 | 5     	| Sônia de Morais   |
 
 &nbsp;
-&nbsp;  
+  
 ```mysql
 SELECT idAluno, nomeAluno 
 FROM tb_aluno 
@@ -160,7 +157,7 @@ ORDER BY nomeAluno DESC;
 | 3			| Cátia Marcondes   |
 
 &nbsp;
-&nbsp;  
+
 ```mysql
 SELECT idAluno, nomeAluno 
 FROM tb_aluno 
@@ -175,7 +172,7 @@ WHERE NOT idAluno > 4;
 | 4			| Marcos Góes       |
 
 &nbsp;
-&nbsp;  
+
 ```mysql
 SELECT idAluno, nomeAluno 
 FROM tb_aluno 
@@ -184,11 +181,17 @@ WHERE (idAluno = 8 AND nomeAluno = "Paulinha") OR (idAluno = 7 AND nomeAluno = "
 ###### * Output:  
 | ID Aluno  | Nome aluno        | 
 | :---      | :---              | 
-| 7			| Rodrigo Mattos    |
+| 7			    | Rodrigo Mattos    |
 
 &nbsp;
 
-&nbsp;        
+**Observações:**
+- Operadores que podem ser utilizados para montar as condições de WHERE: `=`, `!=` ou`<>`, `>`,`<`, `>=`,`<=` 
+- Para números float (devido a não-precisão), as operações de igualdade ou diferença não funcionam - nestes casos, deve-se usar a cláusula `BETWEEN`.
+- Os operadores acima podem se utilizados com strings também: `SELECT * FROM tb_aluno WHERE nomeAluno >= 'Mariana Fernandes';`
+
+&nbsp;
+
 **4. Utilizando a cláusula LIMIT:**  
 Ao incluir esta cláusula, o número de registros retornados obedecerá ao número ali especificado.
 ```mysql
@@ -207,7 +210,6 @@ LIMIT 3;
 
 &nbsp;
 
-&nbsp;        
 **5. Utilizando o Operador LIKE:**  
 Ao incluir esta cláusula, junto ao coringa `%`, são realizadas comparações de letras ou palavras de uma string.  
 &nbsp;
@@ -225,7 +227,7 @@ WHERE nomeAluno LIKE '%A';
 | 8        | Paula Souza |
 
 &nbsp;
-&nbsp;   
+
 No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) começa, com a letra 'M'. 
 ```mysql
 SELECT idAluno, nomeAluno 
@@ -239,7 +241,7 @@ WHERE nomeAluno LIKE 'M%';
 | 4        | Marcos Góes       |
 
 &nbsp;
-&nbsp;   
+  
 No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) contêm a letra 'M'. 
 ```mysql
 SELECT idAluno, nomeAluno 
@@ -256,7 +258,7 @@ WHERE nomeAluno LIKE '%M%';
 | 7        | Rodrigo Mattos	   |	
 
 &nbsp;
-&nbsp;   
+  
 No exemplo abaixo: retorna registros presentes na tabela, cuja terceira letra da string (do campo nomeAluno) é a letra 'r'.
 ```mysql
 SELECT idAluno, nomeAluno 
@@ -270,7 +272,7 @@ WHERE nomeAluno LIKE '__R%';
 | 4        | Marcos Góes       |
 
 &nbsp;
-&nbsp;   
+   
 No exemplo abaixo: retorna registros presentes na tabela, cuja string (do campo nomeAluno) termina com 'ndes'. 
 ```mysql
 SELECT idAluno, nomeAluno 
@@ -284,7 +286,7 @@ WHERE nomeAluno LIKE '%NDES';
 | 3        | Cátia Marcondes   | 
 
 &nbsp;
-&nbsp;   
+   
 No exemplo abaixo: retorna registros presentes na tabela, cuja string (do campo nomeAluno) começa com 'm' e termina com 's'. 
 ```mysql
 SELECT idAluno, nomeAluno 
@@ -299,7 +301,6 @@ WHERE nomeAluno LIKE 'm%s';
 
 &nbsp;
 
-&nbsp;    
 **6. Utilizando o Operador NOT LIKE:**  
 No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) **não** contêm a letra 'R'. 
 ```mysql

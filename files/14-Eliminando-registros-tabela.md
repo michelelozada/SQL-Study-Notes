@@ -19,7 +19,6 @@
 
 &nbsp;
      
-&nbsp;  
 **1. O comando DELETE**  
 * Permite apagar os registros de uma tabela.  
 * Se utilizado *com* a cláusula `WHERE`, removerá dados apenas da tupla especificada.  
@@ -30,18 +29,18 @@ DELETE FROM tb_aluno WHERE idAluno = 3; -- apagará registro apenas da aluna Cá
 ```mysql
 DELETE FROM tb_aluno; -- irá apagar os dados de todos os alunos  
 ```
+
 &nbsp;
      
-&nbsp;   
 **2. O comando TRUNCATE**  
 * Elimina completamente os registros de uma tabela.  
 * Não utiliza a cláusula `WHERE`, portanto atuará sobre todos os registros ali inseridos.  
 ```mysql
 TRUNCATE TABLE tb_aluno; -- removerá os dados de todos os alunos   
 ```
+
 &nbsp;
-     
-&nbsp;    
+    
 **3. Qual a diferença entre DELETE e TRUNCATE?**    
 Há várias diferenças entre os dois comandos, sendo que uma delas se refere ao que acontece a campos
 definidos com `AUTO_INCREMENT`, depois que `DELETE` ou `TRUNCATE` são aplicados.  
@@ -57,7 +56,7 @@ no campo *idAluno* quando novos dados são inseridos na tabela:
 | 8        | Paulo Figueiredo	| Erechim	     | RS      |
 
 &nbsp;
-&nbsp;   
+ 
 Agora veja o que acontece com a tabela que teve seus dados eliminados com **`TRUNCATE`** e agora recebe novos 
 dados: 
 | ID Aluno | Nome aluno       | Cidade        | Estado  |
@@ -68,7 +67,7 @@ dados:
 | 4        | Paulo Figueiredo | Erechim	      | RS      |
 
 &nbsp;
-&nbsp;  
+ 
 **Portanto:**  
 * Com o `DELETE`, a tabela não é ‘resetada’ e novos dados têm seus novos índices contados a partir do último 
 índice anteriormente em vigor.  

@@ -7,9 +7,9 @@
 **FUNÇÕES DE AGREGAÇÃO**  
 - Agregam em uma única linha valores dos registros, tais como contagem, média, soma, mínimo ou máximo. 
 - São utilizadas junto às cláusulas `SELECT`.
-&nbsp;
      
 &nbsp;  
+
 **A tabela de exemplo:**  
 | ID Curso | Nome curso 							| Turno | Mensalidade |
 | :---     | :---      							    | :---  | :---        |
@@ -32,7 +32,6 @@
 
 &nbsp;
      
-&nbsp;  
 **1- Função COUNT**  
 Retorna a quantidade de registros de uma tabela.  
 &nbsp;  
@@ -62,9 +61,9 @@ SELECT COUNT(DISTINCT turnoCurso) AS 'Turnos da escola'
 FROM tb_curso;
 # retorna: 2  (Há dois turnos de cursos: Manhã e Tarde)
 ```
+
 &nbsp;
      
-&nbsp;  
 **2 - Função MAX**  
 Retorna o maior valor dentre os elementos de uma coluna:
 ```mysql
@@ -79,9 +78,9 @@ FROM tb_curso
 WHERE mensalidadeCurso> 600.00 AND mensalidadeCurso< 700.00;  
 # retorna 680.00 (mensalidade do curso de Administração - N)
 ```
+
 &nbsp;
      
-&nbsp;  
 **3 - Função MIN**  
 Retorna o menor valor dentre os elementos de uma coluna.
 ```mysql
@@ -102,9 +101,9 @@ SELECT MAX(mensalidadeCurso) AS 'Maior valor de mensalidade', MIN(mensalidadeCur
 FROM tb_curso;   
 # Retorna 950.28 (Maior_valor_mensalidade) e 249.50 (Menor_valor_mensalidade)
 ```
+
 &nbsp;
      
-&nbsp;  
 **4- Função SUM**  
 Retona a soma dos valores de uma coluna
 ```mysql
@@ -119,9 +118,9 @@ FROM tb_curso
 WHERE idCurso <= 5;
 # retona 3534.12 (soma das 5 primeiras mensalidades da tabela)
 ```
+
 &nbsp;
      
-&nbsp;  
 **5 - Função AVG**  
 Retona a média aritmética dos valores de uma coluna
 ```mysql

@@ -7,9 +7,9 @@
 **BLOCO BEGIN ... END**  
 - Utilizado para conter instruções a serem executadas pelos procedimentos e funções armazenados.
 - Estas instruções devem estar dispostas entre as palavras-chave `BEGIN` e `END`, além de serem envolvidas pelo comando `DELIMITER` seguido de caracteres especiais como `$$` ou `//`, conforme exemplos que seguem abaixo.
-&nbsp;
      
 &nbsp;  
+
 **Ex. 1 - A tabela de exemplo:**  
 | idAluno | nomeAluno         | notaObtida1 | notaObtida2 |
 | :---    | :---              | :---        | :---        |
@@ -20,8 +20,8 @@
 | 5	      | Marcos Góes	      | 8.9	        | 9.8         |
 | 6	      | Mariana Fernandes |	5.4	        | 6.2         |
 
-&nbsp;
-&nbsp;    
+&nbsp;   
+
 **Declarando uma função, dentro do bloco BEGIN ... END**
 ```mysql
 DELIMITER $$ 
@@ -32,8 +32,9 @@ BEGIN
 END $$
 DELIMITER ;
 ```
+
 &nbsp;
-&nbsp;  
+
 **Invocando a função**
 ```mysql
 SELECT nomeAluno, notaObtida1, notaObtida2, calcularMedia(notaObtida1,notaobtida2) AS mediaObtida
@@ -49,9 +50,8 @@ FROM tb_aluno;
 | Marcos Góes	    | 8.9	        | 9.8         | 9.4			|
 | Mariana Fernandes | 5.4	        | 6.2         | 5.8			|
 
-&nbsp;
-     
 &nbsp;  
+
 **Ex. 2 - A tabela de exemplo:**  
 | idCurso | nomeCurso 	   | Turno | Mensalidade |
 | :---    | :---      	   | :---  | :---        |
@@ -63,7 +63,7 @@ FROM tb_aluno;
 | 8       | Design Gráfico | N     | 670.10      |
 
 &nbsp;
-&nbsp;    
+  
 **Incluindo duas cláusulas SELECT em um mesmo procedimento dentro do bloco BEGIN ... END**
 ```mysql
 DELIMITER //  
@@ -76,8 +76,9 @@ BEGIN
 END //
 DELIMITER ;  
 ```
-&nbsp;
+
 &nbsp;  
+
 **Invocando o procedimento**
 ```mysql
 CALL consultarMensalidade('Direito');
@@ -93,7 +94,7 @@ CALL consultarMensalidade('Direito');
 | O valor da mensalidade do curso Direito (turno N) é R$ 950.28. |
 
 &nbsp;
-&nbsp;  
+
 **Invocando o procedimento novamente, usando outro argumento**
 ```mysql
 CALL consultaMensalidade('Design Gráfico');
@@ -109,7 +110,7 @@ CALL consultaMensalidade('Design Gráfico');
 | O valor da mensalidade do curso Design Gráfico (turno N) é R$ 670.10. |
 
 &nbsp;
-&nbsp;    
+   
 **Excluindo o procedimento acima**
 ```mysql
 DROP PROCEDURE consultaMensalidade;

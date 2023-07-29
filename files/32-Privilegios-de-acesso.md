@@ -19,8 +19,8 @@ Para criar usuários para a posterior atribuição de privilégios, [seguir este
 SHOW GRANTS FOR 'michele'@'localhost';
 SHOW GRANTS FOR 'enzo'; -- sem @'localhost' significa que usuário também pode acessar o sistema remotamente
 ```
-     
 &nbsp;   
+
 **2 - Criando um usuário com privilégios globais** 
 ```mysql
 
@@ -42,7 +42,8 @@ ON bd_empresa.tb_clientes
 TO 'marcos'@'localhost' ;  -- todos os privilégios, porém relacionados tão somente à tabela especificada
 ```
      
-&nbsp;     
+&nbsp;   
+
 **3 - Atribuindo privilégios específicos para um usuário**
 ```mysql
 
@@ -56,8 +57,9 @@ GRANT SELECT, INSERT, UPDATE, DELETE
 ON bd_empresa.tb_clientes  -- significa que apenas a tabela especificada poderá ser visualizada e ter dados inseridos, atualizados e removidos
 TO 'rogerio';
 ```
-     
-&nbsp;    
+
+&nbsp;   
+
 **4 - Atribuindo privilégios específicos para um usuário em apenas determinados campos de uma tabela**
 ```mysql
 
@@ -66,7 +68,8 @@ ON bd_empresa.tb_clientes
 TO 'rogerio';
 ```
      
-&nbsp;    
+&nbsp;   
+
 **5 - Revogando apenas determinados privilégios de um usuário *(ver exemplo acima, onde quero revogar apenas a permissão para UPDATE)***
 ```mysql
 
@@ -76,6 +79,7 @@ FROM 'rogerio';
 ```
      
 &nbsp;    
+
 **6 - Revogando todos os privilégios concedidos**
 ```mysql
 

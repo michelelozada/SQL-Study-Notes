@@ -18,9 +18,9 @@ independentemente dos registros possuírem ou não correspondência com a(s) out
 - Portanto: tanto no `LEFT JOIN` quanto no `RIGHT JOIN` os registros 'excedentes' são exibidos; o que não acontece quando é aplicado o `INNER JOIN`.  
 &nbsp;  
 - Observação: A utilização do termo `OUTER` é opcional.
-&nbsp;
      
 &nbsp;  
+
 **A primeira tabela para exemplo - Produtos *(tb_produto):***  
 | idProduto | nomeProduto   			   | marcaProduto_fk | categoriaProduto_fk |	
 | :---		| :---		    			   | :---		     | :---					|
@@ -39,7 +39,6 @@ independentemente dos registros possuírem ou não correspondência com a(s) out
 
 &nbsp; 
 
-&nbsp;  
 **A segunda tabela - Categoria *(tb_categoria):***  
 | idCategoria | nomeCategoria   |
 | :---		  |	:---		    |
@@ -54,7 +53,6 @@ independentemente dos registros possuírem ou não correspondência com a(s) out
 
 &nbsp; 
 
-&nbsp;  
 **A terceira tabela - Marcas *(tb_marca):***  
 | idMarca 	  | nomeMarca       |
 | :---		  |	:---		    |
@@ -68,7 +66,6 @@ independentemente dos registros possuírem ou não correspondência com a(s) out
 
 &nbsp;
 
-&nbsp;  
 **1.1. Aplicando o LEFT JOIN em duas das tabelas acima:**   
 ```mysql
 SELECT p.nomeProduto As Produto, m.nomeMarca AS Marca
@@ -95,7 +92,6 @@ ON p.marcaProduto_fk = m.idMarca;
 
 &nbsp;
 
-&nbsp; 
 **1.2. Nova consulta, retornando agora apenas os dados que não possuem correspondência (nulos):**
 ```mysql
 SELECT p.nomeProduto As Produto, m.nomeMarca AS Marca
@@ -113,7 +109,6 @@ WHERE m.idMarca IS NULL;
 
 &nbsp;
 
-&nbsp;  
 **2.1. Aplicando o RIGHT JOIN em duas das tabelas acima:**   
 ```mysql
 SELECT p.nomeProduto As Produto, c.nomeCategoria AS Categoria
@@ -140,7 +135,6 @@ ON p.categoriaProduto_fk = c.idCategoria;
 
 &nbsp;
 
-&nbsp;  
 **2.2. Nova consulta, retornando apenas os dados que não possuem correspondência/nulos:**
 ```mysql
 SELECT p.nomeProduto As Produto, c.nomeCategoria AS Categoria

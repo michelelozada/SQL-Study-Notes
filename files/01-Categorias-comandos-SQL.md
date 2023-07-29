@@ -16,7 +16,7 @@
 | [COMMENT](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/32-Comentando-codigo-SQL.md)       | Para explicar instruções ou evitar a execução de alguma parte do código.        |
 
 &nbsp;
-&nbsp;   
+
 **Comandos DML (Data Manipulation Language ou Linguagem de Manipulação de Dados)**     
 *Dizem respeito à inserção, alteração e exclusão dos dados em uma base/banco de dados*
 | Comandos | Função                                                                    |
@@ -26,7 +26,7 @@
 | [DELETE](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/15-Eliminando-registros-tabela.md) | Para exclusão de registros de uma tabela no banco de dados.               |
 
 &nbsp;
-&nbsp;   
+ 
 **Comando DQL (Data Query Language ou Linguagem de Consulta de Dados Armazenados)**     
 *Diz respeito à consulta aos dados de uma base/banco de dados*
 | Comando | Função                                                       |
@@ -34,7 +34,7 @@
 | [SELECT](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/10-Consultando-valores-tabela.md)  | Para consultar registros pertencentes a uma ou mais tabelas no banco de dados. |
 
 &nbsp;
-&nbsp;   
+ 
 **Comandos DCL (Data Control Language ou Linguagem de Controle de Dados)**  
 *Dizem respeito ao controle de quais usuários podem ter permissão (e quais as suas atribuições) em um banco de dados*
 | Comandos | Função                                                       |

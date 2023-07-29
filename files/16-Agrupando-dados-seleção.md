@@ -7,9 +7,9 @@
 **GROUP BY**  
 - Resume os dados resultantes de uma seleção de 'subgrupos de tuplas' que possuam valores de natureza semelhantes. 
 - Para tanto, a cláusula `SELECT` deverá possuir uma função de agregação para processamento destas informações.
-&nbsp;
      
 &nbsp;  
+
 **A tabela para exemplo:** 
 
 | idVenda  | idVendedor  | valorVenda | tipoCliente |
@@ -27,7 +27,6 @@
 
 &nbsp;
 
-&nbsp;  
 No exemplo abaixo, desejo retornar o valor total das vendas de cada um dos vendedores *(repare que não foi inclusa a clásula `WHERE`)*:
 ```mysql
 SELECT idVendedor AS 'ID Vendedor', SUM(valorVenda) AS 'Valor total das vendas'
@@ -42,7 +41,6 @@ GROUP BY idVendedor;
 
 &nbsp;
 
-&nbsp;  
 No exemplo abaixo, desejo retornar *apenas* o valor total das vendas do vendedor com a Id nº 2 *(aqui inclusa a clásula `WHERE`)*:
 ```mysql
 SELECT idVendedor AS 'ID Vendedor', SUM(valorVenda) AS 'Valor total das vendas'
@@ -56,7 +54,6 @@ GROUP BY idVendedor;
 
 &nbsp;
 
-&nbsp;  
 No exemplo abaixo, desejo retornar quantas vendas foram realizadas apenas pelo vendedor com a Id nº 3:
 ```mysql
 SELECT idVendedor AS 'ID Vendedor', COUNT(idVenda) AS 'Quantidade de Vendas'
@@ -70,7 +67,6 @@ GROUP BY idVendedor;
 
 &nbsp;
 
-&nbsp;  
 No exemplo abaixo, desejo retornar quantas vendas foram realizadas pelos vendedores a clientes do tipo PJ:
 ```mysql
 SELECT idVendedor AS 'ID Vendedor', COUNT(tipoCliente) AS 'Vendas para clientes do tipo PJ'

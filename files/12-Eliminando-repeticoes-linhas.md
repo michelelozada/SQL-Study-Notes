@@ -7,7 +7,6 @@
 **DISTINCT**  
 - O comando `SELECT`, por padrão, é acompanhado implicitamente da cláusula `ALL`, que apresenta todos os resultados retornados, ainda que contenham repetições.
 - Quando se deseja o retono de *apenas* valores únicos de um determinado campo, basta que se utilize o modificador `DISTINCT`, logo após o comando `SELECT`.
-&nbsp;
      
 &nbsp;
 
@@ -27,7 +26,6 @@
 
 &nbsp;
      
-&nbsp;
 **Utilizando a cláusula DISTINCT:**  
 ```mysql
 SELECT DISTINCT nomeAula AS Aulas_ofertadas
@@ -44,7 +42,6 @@ ORDER BY nomeAula;
 
 &nbsp;
      
-&nbsp; 
 **Caso haja a necessidade de contar o número dos registros únicos, basta utilizar a função `COUNT()`**
 ```mysql
 SELECT COUNT(DISTINCT nomeAula) AS Número_Aulas_ofertadas
@@ -58,7 +55,6 @@ ORDER BY nomeAula;
 
 &nbsp;
      
-&nbsp;   
 **É possível também informar mais de um campo, conforme demonstrado abaixo:**
 ```mysql
 SELECT DISTINCT nomeAula, modalidadeAula

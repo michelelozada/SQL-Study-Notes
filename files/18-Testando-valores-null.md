@@ -7,9 +7,9 @@
 **Valores NULL**    
 - São aqueles a que não há nenhum valor associado, ou seja, foi campo deixado vazio/sem preecher.
 - Podem ser testados através dos operadores `IS NULL` e `IS NOT NULL`.  
+
 &nbsp;
      
-&nbsp;
 **A tabela para o exemplo:**   
 | idCliente | nomeCliente 		| scoreCliente |
 | :---      | :---	      		| :---         |
@@ -26,7 +26,6 @@
 
 &nbsp;
      
-&nbsp;
 **1. Utilizando o operador IS NULL:**  
 * Retorna registros com valores vazios da coluna identificada
 ```mysql
@@ -45,7 +44,6 @@ WHERE scoreCliente IS NULL;
 
 &nbsp;
      
-&nbsp;
 **2. Utilizando o operador IS NOT NULL:**  
 * Retorna registros com valores não-vazios da coluna identificada  
 ```mysql

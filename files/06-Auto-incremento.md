@@ -8,9 +8,9 @@
 - Propicia que um número único seja gerado assim que um novo registro é inserido numa tabela.  
 - O valor inicial padrão começa em 1, sendo que o incremento ocorre de 1 em 1 (porém o valor inicial pode ser alterado, conforme explicado abaixo).  
 - Apenas um campo da tabela pode ser auto-incrementado, sendo que ele necessariamente deve vir acompanhado da constraint `NOT NULL`.  
+
 &nbsp;
      
-&nbsp;
 **1. Utilizando o AUTO_INCREMENT:**  
 ```mysql
 CREATE DATABASE db_escola;
@@ -51,7 +51,6 @@ VALUES
 
 &nbsp;
      
-&nbsp;
 **2. Caso haja a necessidade de setar o valor default do AUTO_INCREMENT para começar com um valor diferente:**  
 ```mysql
 CREATE TABLE tb_aluno(
@@ -77,7 +76,6 @@ CREATE TABLE tb_aluno(
 
 &nbsp;
      
-&nbsp;
 **3. Após a tabela já ter sido criada, caso seja necessário que a próxima sequência de registros na tabela comece com um valor de incremento diferente:**  
 ```mysql
 ALTER TABLE tb_Aluno AUTO_INCREMENT = 200;
@@ -111,7 +109,6 @@ VALUES
 
 &nbsp;
      
-&nbsp;
 **4. Para verificação do último valor inserido no campo que utilizou o AUTO_INCREMENT:**  
 ```mysql
 SELECT MAX(idAluno) FROM tb_Aluno;

@@ -7,9 +7,9 @@
 **INSERT**  
 - Utilizado para inserir novo(s) registro(s) de dados em uma tabela já existente.  
 - Deve ser utilizado em conjunto com a cláusula `INTO` e a cláusula `VALUES`.  
-&nbsp;
      
 &nbsp;
+
 **A tabela de exemplo:**  
 ```mysql
 CREATE TABLE tb_aluno(
@@ -20,16 +20,17 @@ CREATE TABLE tb_aluno(
     PRIMARY KEY(idAluno)
 );
 ```
+
 &nbsp;
-     
-&nbsp;
+
 **1. Utilizando o comando INSERT para inclusão de apenas um registro:**  
 ```mysql
 INSERT INTO tb_aluno(idAluno,nomeAluno,foneAluno,emailAluno) 
 VALUES (default, 'Lorenzo Martins', '4199956-xx88','lorenzomartins@gmail.com');
 ```
-&nbsp;
+
 &nbsp;    
+
 Uma vez que a coluna id_aluno é `AUTO_INCREMENT`, a query pode também ser escrita da seguinte forma: 
 ```mysql
 INSERT INTO tb_aluno(nomeAluno,foneAluno,emailAluno) 
@@ -43,7 +44,6 @@ VALUES ('Lorenzo Martins', '4199956-xx88','lorenzomartins@gmail.com');
 
 &nbsp;
      
-&nbsp;
 **2. Para inclusão de mais registros:**  
 ```mysql
 INSERT INTO tb_aluno(idAluno,nomeAluno,foneAluno,emailAluno) 
@@ -52,8 +52,9 @@ VALUES
 	(default, 'Mariana Fernandes','4199652-xx25', 'marifernandes@email.com'),
 	(default, 'Henrique Bormann','4199987-xx45', 'hbormann@email.com');
 ```
-&nbsp;
-&nbsp;    
+
+&nbsp;   
+
 Ou alternativamente: 
 ```mysql
 INSERT INTO tb_aluno(nomeAluno,foneAluno,emailAluno) 

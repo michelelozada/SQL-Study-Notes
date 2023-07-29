@@ -6,9 +6,9 @@
 &nbsp;   
 **FUNÇÃO CONCAT**  
 * Concatena strings de campos diferentes da tabela, através de uma mesma query.
-&nbsp;
      
 &nbsp;
+
 **A tabela para o exemplo:**   
 | idCliente | nomeCliente | sobrenomeCliente | scoreCliente |
 | :---      | :---	      | :---	         | :---         |
@@ -25,7 +25,6 @@
 
 &nbsp;
 
-&nbsp;
 **1. Utilizando a função CONCAT:**  
 ```mysql
 SELECT CONCAT(nomeCliente, ' ',sobrenomeCliente) AS 'Nome do Cliente'
@@ -48,7 +47,7 @@ ORDER BY nomeCliente;
 | Vinícius Motta    |
 
 &nbsp;
-&nbsp;  
+
 **Nova consulta:**  
 ```mysql
 SELECT CONCAT('Score do(a) cliente ', nomeCliente, ' ', sobrenomeCliente, ': ', scoreCliente, ' pontos') AS  'Consulta sobre clientes'
@@ -61,7 +60,7 @@ WHERE idCliente = '2';
 | Score do(a) cliente Mariana Fernandes: 710 pontos. |
 
 &nbsp;
-&nbsp;  
+
 **Agora repare o que acontece ao se fazer a consulta à um registro que contém valor nulo:**  
 ```mysql
 SELECT CONCAT('Score do(a) cliente ', nomeCliente, ' ', sobrenomeCliente, ': ', scoreCliente, ' pontos') AS  'Consulta sobre clientes'
@@ -74,7 +73,7 @@ WHERE idCliente = '10';
 | NULL 					  |	
 
 &nbsp;
-&nbsp;  
+
 **2. Utilizando a função IFNULL:**  
 - Strings concatenadas com campos que contém valores nulos não serão exibidas: será apenas retornada linha com valor NULL, como visto acima.    
 - Portanto, para evitar isto, deve-se utilizar a função `IFNULL`, que contém 2 argumentos: 
