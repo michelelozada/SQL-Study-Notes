@@ -11,7 +11,7 @@
 | [CREATE](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/03-Criando-bd-e-tabelas.md) | Para a criação de banco de dados e tabelas. |
 | [ALTER](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/07-Alterando-estrutura-tabela.md) | Para alterar objetos já existentes, através de adição, modificação ou exclusão. |
 | [DROP](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/04-Excluindo-bd-e-tabelas.md) | Para a exclusão de banco de dados e tabelas. |
-| [TRUNCATE](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/12-Eliminando-registros-tabela.md) | Para eliminar completamente os registros/linhas de uma tabela. |
+| [TRUNCATE](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/14-Eliminando-registros-tabela.md) | Para eliminar completamente os registros/linhas de uma tabela. |
 | RENAME | Para renomear tabelas ou colunas já existentes no banco de dados. |
 | COMMENT | Para explicar instruções ou evitar a execução de alguma parte do código. |
 
