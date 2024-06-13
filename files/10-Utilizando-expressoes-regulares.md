@@ -4,15 +4,18 @@
 &nbsp;
      
 &nbsp;  
-Para pesquisa de banco de dados, o MySQL também suporta operações de correspondência de padrões com base em expressões
-regulares. Para isso, deve ser utilizado o operador `REGEXP`, junto da seguinte notação:
 
-&nbsp;
-     
-`^` - Início da string  
-`$` - Fim da string  
-`[]` - Os caracteres ficam listados entre colchetes   
-`[^]` -	O sinal ^ representa a negação dos caracteres listados entre colchetes  
+## Expressões regulares no MySQL 
+
+```
+Para pesquisa de banco de dados, o MySQL também suporta operações de correspondência de padrões com 
+base em expressões regulares. Para isso, deve ser utilizado o operador `REGEXP`, junto da seguinte 
+notação:
+  ^ - Início da string  
+  $ - Fim da string  
+  [] - Os caracteres ficam listados entre colchetes   
+  [^] -	O sinal ^ representa a negação dos caracteres listados entre colchetes  
+```
 
 &nbsp;  
 

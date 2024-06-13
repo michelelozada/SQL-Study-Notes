@@ -4,7 +4,7 @@
 &nbsp;
      
 &nbsp;      
-**1. Operações matemáticas**
+## Operações matemáticas
      
 &nbsp;           
 
@@ -55,7 +55,7 @@ ORDER BY mediaFinal DESC;
 
 &nbsp;
       
-**2 - Funções matemáticas:**
+## Funções matemáticas
      
 &nbsp;      
 

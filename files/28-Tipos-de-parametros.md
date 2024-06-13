@@ -4,23 +4,31 @@
 &nbsp;
      
 &nbsp;  
-**TIPOS DE PARÂMETROS EM PROCEDIMENTOS ARMAZENADOS**  
+## Tipos de parâmetros em procedimentos armazenados  
 
-O programa chamador passa seus argumentos para os parâmetros do procedimento armazenado, sendo que estes podem ser de três 
-tipos:
-- **Procedimentos com parâmetro IN**
-	- Este é o tipo de parâmetro default para os procedimentos armazenados, portanto sua identificação `IN` pode permanecer implicita;  
-	- Aqui, ao ser feita a chamada, será passado o valor do argumento ao parâmetro, sendo que não haverá nenhuma alteração deste valor dentro do procedimento. 
-&nbsp;      
-- **Procedimentos com parâmetro OUT**
-	- Aqui, o parâmetro é inicialmente passado como NULL, sendo o valor passado ao longo do procedimento;  
-	- Portanto, o valor passado ao parâmetro será diferente ao fim da execução do procedimento.   
-&nbsp;    
-- **Procedimentos com parâmetro INOUT**
-	- É uma combinação dos parâmetros do tipo `IN` e `OUT`;
-	- Aqui, ao ser feita a chamada, será passado o valor do argumento ao parâmetro do procedimento (não será passado valor NULL, como em parâmetros do tipo `OUT`);   
-	- Ao fim, este valor pasado ao parâmetro será retornado processado/computado (diferente do que acontece em parâmetros do tipo `IN`);
-	
+```
+O programa chamador passa seus argumentos para os parâmetros do procedimento armazenado, sendo que estes
+podem ser de três tipos:
+
+Procedimentos com parâmetro IN
+  . Este é o tipo de parâmetro default para os procedimentos armazenados, portanto sua identificação IN
+	pode permanecer implicita  
+  . Aqui, ao ser feita a chamada, será passado o valor do argumento ao parâmetro, sendo que não haverá 
+	nenhuma alteração deste valor dentro do procedimento
+  
+
+Procedimentos com parâmetro OUT
+  . Aqui, o parâmetro é inicialmente passado como NULL, sendo o valor passado ao longo do procedimento
+  . Portanto, o valor passado ao parâmetro será diferente ao fim da execução do procedimento
+
+Procedimentos com parâmetro INOUT
+  . É uma combinação dos parâmetros do tipo IN e OUT
+  . Aqui, ao ser feita a chamada, será passado o valor do argumento ao parâmetro do procedimento (não será 
+	passado valor NULL, como em parâmetros do tipo `OUT`)
+  . Ao fim, este valor pasado ao parâmetro será retornado processado/computado (diferente do que acontece 
+	em parâmetros do tipo IN)
+```
+
 &nbsp;
 
 **A tabela a ser utilizada para os exemplos abaixo:**

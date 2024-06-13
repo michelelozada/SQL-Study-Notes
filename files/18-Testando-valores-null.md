@@ -4,12 +4,15 @@
 &nbsp;
      
 &nbsp;      
-**Valores NULL**    
-- São aqueles a que não há nenhum valor associado, ou seja, foi campo deixado vazio/sem preecher.
-- Podem ser testados através dos operadores `IS NULL` e `IS NOT NULL`.  
+### Valores NULL
+```
+- São aqueles a que não há nenhum valor associado, ou seja, foi campo deixado vazio/sem preecher
+
+- Podem ser testados através dos operadores IS NULL e IS NOT NULL  
+```
 
 &nbsp;
-     
+
 **A tabela para o exemplo:**   
 | idCliente | nomeCliente 		| scoreCliente |
 | :---      | :---	      		| :---         |

@@ -4,10 +4,15 @@
 &nbsp;
      
 &nbsp;  
-**VARIÁVEIS DE ESCOPO LOCAL**  
-- Têm visibilidade apenas local, ou seja, são conhecidas apenas dentro das funções ou stored procedures;
-- Somente podem ser declaradas dentro de um bloco `BEGIN ... END`, através da instrução `DECLARE`;
-- São válidas apenas durante a execução do programa em que foram declaradas; após isso são destruídas da memória.
+## Variáveis de escopo local 
+```
+- Têm visibilidade apenas local, ou seja, são conhecidas apenas dentro das funções ou stored procedures
+
+- Somente podem ser declaradas dentro de um bloco BEGIN ... END, através da instrução DECLARE
+
+- São válidas apenas durante a execução do programa em que foram declaradas; após isso são destruídas 
+da memória
+```
      
 &nbsp;   
 

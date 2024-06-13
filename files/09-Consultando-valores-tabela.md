@@ -4,10 +4,16 @@
 &nbsp;
      
 &nbsp;  
-**SELECT**  
-\- Utilizado para realizar consultas a valores inseridos em uma tabela ou mais tabelas do banco de dados.  
-\- Tal consulta pode ser refinada se for utilizada em conjunto com outras cláusulas e operadores, adiante listados.
-\- Deve ser utilizado em conjunto com a cláusula `FROM`.
+## Comando SELECT
+```
+- Utilizado para realizar consultas a valores inseridos em uma tabela ou mais tabelas do banco 
+de dados.  
+
+- Tal consulta pode ser refinada se for utilizada em conjunto com outras cláusulas e operadores,
+adiante listados.
+
+- Deve ser utilizado em conjunto com a cláusula `FROM`.
+```
      
 &nbsp;  
 

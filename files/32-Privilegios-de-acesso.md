@@ -4,15 +4,20 @@
 &nbsp;
      
 &nbsp;  
-Para fins de segurança, os SGBDs oferecem recursos para conceder ou limitar direitos dos usuários junto a tabelas e visões de um banco de dados.  
-&nbsp;  
-Para isso são utilizados dois comandos principais: o **`GRANT`** para atribuição de permissões e o **`REVOKE`** para a 
-revogação destes priviégios.  
-&nbsp;  
-Para criar usuários para a posterior atribuição de privilégios, [seguir estes procedimentos](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/32-Gerenciando-usuarios.md). 
-&nbsp;
+## Comandos GRANT e Revoke
+```
+- Para fins de segurança, os SGBDs oferecem recursos para conceder ou limitar direitos dos usuários
+junto a tabelas e visões de um banco de dados  
+  
+- Para isso são utilizados dois comandos principais: o GRANT para atribuição de permissões e o REVOKE 
+para a revogação destes priviégios  
+  
+- Para criar usuários para a posterior atribuição de privilégios, seguir os rocedimentos que estão 
+descritos no arquivo 'Gerenciando usuários do sistema', deste repositório  
+```
      
 &nbsp;  
+
 **1- Visualizando os privilégios atuais de um usuário já cadastrado no sistema**
 ```mysql
 

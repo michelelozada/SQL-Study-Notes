@@ -4,26 +4,29 @@
 &nbsp;
      
 &nbsp;  
-**VIEWS**
-- Quando tabelas são criadas através do comando `CREATE TABLE`, "isso significa que a relação e 
-suas tuplas são realmente criadas e armazenadas como um arquivo pelo SGBD", sendo que elas "são
-chamadas de tabelas (ou relações da base)".[^1]  
-&nbsp;  
+## Visões/Views
+```
+- Quando tabelas são criadas através do comando `CREATE TABLE`, "isso significa que a relação e suas 
+tuplas são realmente criadas e armazenadas como um arquivo pelo SGBD", sendo que elas "são chamadas de
+tabelas (ou relações da base)".[1]  
+  
 - Já quando tabelas são criadas através do comando `CREATE VIEW`, isto indica que se tratam de relações
-virtuais, "distintas das relações da base" e que "podem ou não corresponder a um arquivo
-físico real".[^1]    
-&nbsp; 
+virtuais, "distintas das relações da base" e que "podem ou não corresponder a um arquivo físico real".
+ 
 - Portanto, uma view *(ou visão)* é uma tabela virtual - criada com base em declarações `SELECT` - que, 
 quando evocada, tem como base tabelas reais ou mesmo outras views.  
-&nbsp;  
+
 - Outras caracteríticas da VIEW: 
-	- "mostra sempre resultados de dados atualizados, pois o motor do banco de dados recria os dados toda vez que um usuário consulta a visão;
-	- simplifica o acesso a dados que estão armazenados em múltiplas tabelas relacionadas;
-	- implementa segurança nos dados de uma tabela, por exemplo criando uma visão que limite os dados que podem ser acessados, por meio de uma cláusula `WHERE`;
-	- provê isolamento de uma aplicação da estrutura específica de tabelas do banco acessado".[^2]
-&nbsp;    
-[^1]: Citações retiradas da página 59 do livro [Sistemas de Banco de Dados](https://www.bvirtual.com.br/NossoAcervo/Publicacao/168492), dos autores Ramez Elmasri e Shamkant B. Navathe.  
-[^2]: Citações retiradas do texto [MySQL – VIEWS: Criando Tabelas Virtuais (Visões)](http://www.bosontreinamentos.com.br/mysql/mysql-views-criando-tabelas-virtuais-visoes-28/), do autor Fábio dos Reis.  
+	. "mostra sempre resultados de dados atualizados, pois o motor do banco de dados recria os dados toda 
+	vez que um usuário consulta a visão;
+	. simplifica o acesso a dados que estão armazenados em múltiplas tabelas relacionadas;
+	. implementa segurança nos dados de uma tabela, por exemplo criando uma visão que limite os dados que 
+	podem ser acessados, por meio de uma cláusula `WHERE`;
+
+- Referências consultadas:     
+  . Página 59 do livro "Sistemas de Banco de Dados", dos autores Ramez Elmasri e Shamkant B. Navathe.  
+  . "MySQL – VIEWS: Criando Tabelas Virtuais", texto do autor Fábio dos Reis (disponível na internet)
+```
      
 &nbsp;  
 

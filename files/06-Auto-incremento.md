@@ -4,36 +4,43 @@
 &nbsp;
      
 &nbsp;  
-**AUTO_INCREMENT**  
-- Propicia que um número único seja gerado assim que um novo registro é inserido numa tabela.  
-- O valor inicial padrão começa em 1, sendo que o incremento ocorre de 1 em 1 (porém o valor inicial pode ser alterado, conforme explicado abaixo).  
-- Apenas um campo da tabela pode ser auto-incrementado, sendo que ele necessariamente deve vir acompanhado da constraint `NOT NULL`.  
+## Auto-incremento
+```
+- Propicia que um número único seja gerado assim que um novo registro é inserido numa tabela  
+
+- O valor inicial padrão começa em 1, sendo que o incremento ocorre de 1 em 1 (porém o valor 
+inicial pode ser alterado, conforme explicado abaixo)  
+
+- Apenas um campo da tabela pode ser auto-incrementado, sendo que ele necessariamente deve vir
+acompanhado da constraint NOT NULL  
+```
 
 &nbsp;
      
 **1. Utilizando o AUTO_INCREMENT:**  
 ```mysql
+
 CREATE DATABASE db_escola;
 USE db_escola;
 CREATE TABLE tb_aluno(
-	idAluno int(11) AUTO_INCREMENT NOT NULL,
-	nomeAluno varchar(50) NOT NULL,
-	emailAluno varchar(40) NOT NULL,
-	PRIMARY KEY(idAluno)
+  idAluno int(11) AUTO_INCREMENT NOT NULL,
+  nomeAluno varchar(50) NOT NULL,
+  emailAluno varchar(40) NOT NULL,
+  PRIMARY KEY(idAluno)
 );
 
 INSERT INTO tb_aluno(nomeAluno,emailAluno) 
 VALUES 
-	('Luana Borba', 'luanab@email.com'),
-	('Mariana Fernandes', 'marifernandes@email.com'),
-	('Cátia Marcondes', 'catiamarcondes@email.com'),
-	('Marcos Góes', 'marcosgoes@email.com'),
-	('Sônia de Morais', 'sonia_morais@email.com'),
-	('Andréa Santos', 'asantos@email.com'),
-	('Silvio Soares', 'ssoares@email.com'),
-	('Daniele Santana', 'danisantana@email.com'),
-	('Luis Garcia', 'lgarcia@email.com'),
-	('Heloísa Bormann', 'hbormann@email.com');
+  ('Luana Borba', 'luanab@email.com'),
+  ('Mariana Fernandes', 'marifernandes@email.com'),
+  ('Cátia Marcondes', 'catiamarcondes@email.com'),
+  ('Marcos Góes', 'marcosgoes@email.com'),
+  ('Sônia de Morais', 'sonia_morais@email.com'),
+  ('Andréa Santos', 'asantos@email.com'),
+  ('Silvio Soares', 'ssoares@email.com'),
+  ('Daniele Santana', 'danisantana@email.com'),
+  ('Luis Garcia', 'lgarcia@email.com'),
+  ('Heloísa Bormann', 'hbormann@email.com');
 ```
 ###### Output:  
 | ID Aluno | Nome aluno | E-mail aluno |
@@ -53,11 +60,12 @@ VALUES
      
 **2. Caso haja a necessidade de setar o valor default do AUTO_INCREMENT para começar com um valor diferente:**  
 ```mysql
+
 CREATE TABLE tb_aluno(
-	idAluno int(11) AUTO_INCREMENT NOT NULL,
-	nomeAluno varchar(50) NOT NULL,
-	emailAluno varchar(40) NOT NULL,
-	PRIMARY KEY(idAluno)
+  idAluno int(11) AUTO_INCREMENT NOT NULL,
+  nomeAluno varchar(50) NOT NULL,
+  emailAluno varchar(40) NOT NULL,
+  PRIMARY KEY(idAluno)
 ) AUTO_INCREMENT = 100;
 ```
 ###### Output:  
@@ -78,15 +86,16 @@ CREATE TABLE tb_aluno(
      
 **3. Após a tabela já ter sido criada, caso seja necessário que a próxima sequência de registros na tabela comece com um valor de incremento diferente:**  
 ```mysql
+
 ALTER TABLE tb_Aluno AUTO_INCREMENT = 200;
 
 INSERT INTO tb_aluno(nomeAluno,emailAluno) 
 VALUES 
-	('Marianne Marques', 'marim@email.com'),
-	('Renato Passos', 'rpassos@email.com'),
-	('Frederico Fernandes', 'fredfernandes@email.com'),
-	('Marcela Guedes', 'mar_guedes@email.com'),
-	('Lúcia Freitas', 'luciafreitas@email.com');
+  ('Marianne Marques', 'marim@email.com'),
+  ('Renato Passos', 'rpassos@email.com'),
+  ('Frederico Fernandes', 'fredfernandes@email.com'),
+  ('Marcela Guedes', 'mar_guedes@email.com'),
+  ('Lúcia Freitas', 'luciafreitas@email.com');
 ```
 ###### Output:  
 | ID Aluno | Nome aluno | E-mail aluno |
@@ -111,6 +120,7 @@ VALUES
      
 **4. Para verificação do último valor inserido no campo que utilizou o AUTO_INCREMENT:**  
 ```mysql
+
 SELECT MAX(idAluno) FROM tb_Aluno;
 ```
 ###### Output:  

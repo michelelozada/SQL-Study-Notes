@@ -4,9 +4,12 @@
 &nbsp;
      
 &nbsp;  
-**FUNÇÕES DE AGREGAÇÃO**  
-- Agregam em uma única linha valores dos registros, tais como contagem, média, soma, mínimo ou máximo. 
-- São utilizadas junto às cláusulas `SELECT`.
+## Funções de agregação
+```
+- Agregam em uma única linha valores dos registros, tais como contagem, média, soma, mínimo ou máximo 
+
+- São utilizadas junto às cláusulas `SELECT`
+```
      
 &nbsp;  
 

@@ -4,10 +4,13 @@
 &nbsp;
      
 &nbsp;  
-**INSERT**  
-- Utilizado para inserir novo(s) registro(s) de dados em uma tabela já existente.  
-- Deve ser utilizado em conjunto com a cláusula `INTO` e a cláusula `VALUES`.  
-     
+## Comando INSERT
+```
+- Utilizado para inserir novo(s) registro(s) de dados em uma tabela já existente  
+
+- Deve ser utilizado em conjunto com a cláusula `INTO` e a cláusula `VALUES`  
+```
+
 &nbsp;
 
 **A tabela de exemplo:**  

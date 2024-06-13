@@ -4,9 +4,12 @@
 &nbsp;
      
 &nbsp;     
-**GROUP BY**  
+## Cláusula GROUP BY
+```
 - Resume os dados resultantes de uma seleção de 'subgrupos de tuplas' que possuam valores de natureza semelhantes. 
+
 - Para tanto, a cláusula `SELECT` deverá possuir uma função de agregação para processamento destas informações.
+```
      
 &nbsp;  
 

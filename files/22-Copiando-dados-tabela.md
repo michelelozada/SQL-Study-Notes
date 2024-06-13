@@ -4,8 +4,10 @@
 &nbsp;
      
 &nbsp;     
-**Comando INSERT ... SELECT**    
-* Permite copiar dados provenientes de uma tabela para outra, armazenando-os no banco de dados.
+## Comando INSERT ... SELECT  
+```
+Permite copiar dados provenientes de uma tabela para outra, armazenando-os no banco de dados
+```
 
 &nbsp;
      

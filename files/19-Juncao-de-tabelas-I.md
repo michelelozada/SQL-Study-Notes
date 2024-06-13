@@ -4,17 +4,19 @@
 &nbsp;
      
 &nbsp;  
-**INNER JOIN**  
-- As junções (JOINS) permitem que sejam realizadas consultas com informações contidas em duas ou mais tabelas e através de um único `SELECT`.  
-&nbsp;  
-- No MySQL, `INNER JOIN`, `JOIN` e `CROSS JOIN`são equivalentes sintáticos (eles podem substituir um ao outro).  
-&nbsp;  
+## Cláusula INNER JOIN
+```
+- As junções (JOINS) permitem que sejam realizadas consultas com informações contidas em duas ou mais tabelas e através de um único SELECT.  
+  
+- No MySQL, INNER JOIN, JOIN e CROSS JOINsão equivalentes sintáticos (eles podem substituir um ao outro).  
+  
 - As ligações acontecem através da relação da chave primária de uma tabela com a(s) chave(s) estantangeira(s) da(s) outra(s) tabela(s).  
-&nbsp;  
-- O `INNER JOIN` é um tipo de junção que retorna *apenas* registros que possuam correspondência entre duas ou mais tabelas.  
-&nbsp;  
-- Portanto: registros 'excedentes' não são exibidos neste tipo de consulta; esta exibição acontecerá, porém, quando aplicados o `LEFT JOIN` e `RIGHT JOIN`.  
-     
+  
+- O INNER JOIN é um tipo de junção que retorna apenas registros que possuam correspondência entre duas ou mais tabelas.  
+  
+- Portanto: registros 'excedentes' não são exibidos neste tipo de consulta; esta exibição acontecerá, porém, quando aplicados o LEFT JOIN e RIGHT JOIN.  
+```
+
 &nbsp;  
 
 **A primeira tabela para exemplo - Produtos *(tb_produto):***  

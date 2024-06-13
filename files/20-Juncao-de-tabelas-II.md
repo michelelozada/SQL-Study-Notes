@@ -4,20 +4,26 @@
 &nbsp;
      
 &nbsp;  
-**LEFT OUTER JOIN e RIGHT OUTER JOIN**  
-- As junções (JOINS) permitem que sejam realizadas consultas com informações contidas em duas ou mais tabelas e através de um único `SELECT`.  
-&nbsp;  
-- As ligações acontecem através da relação da chave primária de uma tabela com a(s) chave(s) estantangeira(s) da(s) outra(s) tabela(s).  
-&nbsp;  
-- O `LEFT OUTER JOIN` é um tipo de junção que retorna *todos* os registros da tabela colocada à esquerda da junção/termo `LEFT JOIN`, 
-independentemente dos registros possuírem ou não correspondência com a(s) outra(s) tabela(s).   
-&nbsp;  
-- Já o `RIGHT OUTER JOIN` é um tipo de junção que retorna *todos* os registros da tabela colocada à direita da junção/termo `RIGHT JOIN`,
-independentemente dos registros possuírem ou não correspondência com a(s) outra(s) tabela(s).  
-&nbsp;  
-- Portanto: tanto no `LEFT JOIN` quanto no `RIGHT JOIN` os registros 'excedentes' são exibidos; o que não acontece quando é aplicado o `INNER JOIN`.  
-&nbsp;  
-- Observação: A utilização do termo `OUTER` é opcional.
+## Cláusulas LEFT OUTER JOIN e RIGHT OUTER JOIN  
+```
+- As junções (JOINS) permitem que sejam realizadas consultas com informações contidas em duas ou mais tabelas
+e através de um único SELECT.  
+  
+- As ligações acontecem através da relação da chave primária de uma tabela com a(s) chave(s) estantangeira(s)
+da(s) outra(s) tabela(s).  
+  
+- O LEFT OUTER JOIN é um tipo de junção que retorna *todos* os registros da tabela colocada à esquerda da 
+junção/termo LEFT JOIN, independentemente dos registros possuírem ou não correspondência com a(s) outra(s) 
+tabela(s).   
+  
+- Já o RIGHT OUTER JOIN é um tipo de junção que retorna *todos* os registros da tabela colocada à direita da
+junção/termo RIGHT JOIN, independentemente dos registros possuírem ou não correspondência com a(s) outra(s) tabela(s)  
+  
+- Portanto: tanto no LEFT JOIN quanto no RIGHT JOIN, registros 'excedentes' são exibidos; o que não acontece quando 
+é aplicado o INNER JOIN  
+  
+- Observação: A utilização do termo OUTER é opcional
+```
      
 &nbsp;  
 

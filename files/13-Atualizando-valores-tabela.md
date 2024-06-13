@@ -4,11 +4,13 @@
 &nbsp;
      
 &nbsp;  
-**UPDATE**  
-- Atualiza/altera dados pré-cadastrados em uma tabela do banco de dados;
-- Deve ser utilizado juntamente com a cláusula `SET`, que tem a função de determinar qual o campo será atualizado;
+## Comando UPDATE
+```
+- Atualiza/altera dados pré-cadastrados em uma tabela do banco de dados
+- Deve ser utilizado juntamente com a cláusula `SET`, que tem a função de determinar qual o campo será atualizado
+```
      
-&nbsp;  
+		 &nbsp;  
 
 **1. A tabela de exemplo:**  
 | idAluno  | nomeAluno         | cidadeAluno    | estadoAluno |

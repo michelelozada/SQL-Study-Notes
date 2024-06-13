@@ -4,10 +4,15 @@
 &nbsp;
      
 &nbsp;  
-**DISTINCT**  
-- O comando `SELECT`, por padrão, é acompanhado implicitamente da cláusula `ALL`, que apresenta todos os resultados retornados, ainda que contenham repetições.
-- Quando se deseja o retono de *apenas* valores únicos de um determinado campo, basta que se utilize o modificador `DISTINCT`, logo após o comando `SELECT`.
-     
+## Cláusula DISTINCT
+```
+- O comando SELECT, por padrão, é acompanhado implicitamente da cláusula ALL, que apresenta todos
+os resultados retornados, ainda que contenham repetições
+
+- Quando se deseja o retono de apenas valores únicos de um determinado campo, basta que se utilize o 
+modificador DISTINCT, logo após o comando SELECT
+```
+
 &nbsp;
 
 **A tabela de exemplo:**  

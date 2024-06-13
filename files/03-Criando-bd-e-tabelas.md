@@ -4,90 +4,104 @@
 &nbsp;
      
 &nbsp;     
-**CREATE**  
-* Comando para a criação de objetos: banco de dados e tabelas.
-* A inclusão da cláusula `IF NOT EXISTS` é opcional.  
+## Comando CREATE
+```
+- Comando para a criação de objetos: banco de dados e tabelas
+
+- A inclusão da cláusula `IF NOT EXISTS` é opcional  
+```
 
 &nbsp;
     
-**1. Criando um banco de dados:**
+### • Criando um banco de dados
 ```mysql
+
 CREATE DATABASE IF NOT EXISTS db_escola;
 ```
 
 &nbsp; 
 
-**2. Criando uma tabela:**
+### • Criando uma tabela
 ```mysql
+
 CREATE TABLE IF NOT EXISTS tb_aluno(
-	idAluno int(11) AUTO_INCREMENT NOT NULL,
-	nomeAluno varchar(50) NOT NULL,
-	emailAluno varchar(40), 
-	PRIMARY KEY (idAluno)
+  idAluno int(11) AUTO_INCREMENT NOT NULL,
+  nomeAluno varchar(50) NOT NULL,
+  emailAluno varchar(40), 
+  PRIMARY KEY (idAluno)
 );
 ```
 
 &nbsp;
      
-**OUTROS COMANDOS ÚTEIS**  
+## OUTROS COMANDOS ÚTEIS
 Seguem abaixo alguns comandos úteis relacionados à criação da base de dados e das tabelas:  
      
 &nbsp;   
 
-**1. Comando USE**  
+### • Comando USE  
 Após ter sido criado, é imprescindível indicar ao servidor qual banco de dados será utilizado:    
 ```mysql
+
 USE db_escola;
 ```
 
 &nbsp;
      
-**2. Comando SHOW**  
-2.1. Lista quais as bases de dados existentes no servidor:        
+### • Comando SHOW  
+1 - Lista quais as bases de dados existentes no servidor:        
 ```mysql
+
 SHOW DATABASES;
 ```
-###### >> Output:  
+• Saída:
+
 | Database  |
 | :---      |
 | db_escola | 
 
 &nbsp;
  
-2.2 Exibe todas as tabelas existentes na base de dados em uso:     
+2 - Exibe todas as tabelas existentes na base de dados em uso:     
 ```mysql
+
 SHOW TABLES;
 ```
-###### >> Output:  
+• Saída:  
+
 | Tables_in_db_escola  |
 | :---    		         |
 | tb_aluno             | 
 
 &nbsp;
      
-**3. Comando SELECT DATABASE**  
+### • Comando SELECT DATABASE  
 Informa qual a base de dados está em uso no momento:    
 ```mysql
+
 SELECT DATABASE();
 ```
-###### >> Output:  
+• Saída: 
+
 | DATABASE()  |
 | :---        |
 | db_escola   | 
 
 &nbsp;
      
-**4. Comando DESCRIBE**  
+### • Comando DESCRIBE  
 Apresenta a estrutura da tabela especificada com seus campos, tipo de dados e demais características: 
 ```mysql
+
 DESCRIBE tb_aluno;
 ```
-###### >> Output:  
+• Saída: 
+
 | Field       | Type        | Null | Key  | Default | Extra          |
 | :---        | :--         | :--- | :--- | :---    | :---           |
 | idAluno	    | int(11)	    | NO   | PRI  | NULL    | auto_increment |	
-| nomeAluno   | varchar(50) | NO   |      | NULL    |			       |
-| emailAluno  | varchar(40) | YES  |	    | NULL    |		         |
+| nomeAluno   | varchar(50) | NO   |      | NULL    |			           |
+| emailAluno  | varchar(40) | YES  |	    | NULL    |		             |
 
 &nbsp;    
 

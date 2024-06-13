@@ -20,8 +20,10 @@
 
 &nbsp;
 
-**1. Operadores AND, OR e NOT**  
+## Operadores AND, OR e NOT
+```
 São operadores lógicos que - utilizados juntamente com a cláusula `WHERE` - filtram registros, através da comparação de duas ou mais condições.
+```
 
 &nbsp;
      
@@ -41,8 +43,11 @@ WHERE idAluno > 2 AND sexoAluno = 'F' AND estadoAluno='PR';
 
 &nbsp;
      
-**1.2. Operador OR ('OU' lógico)**  
+## Operador OR ('OU' lógico)
+```
 Retorna registro(s), desde que alguma das condições comparadas seja verdadeira
+```
+
 ```mysql
 SELECT idAluno, nomeAluno, sexoAluno, estadoAluno 
 FROM tb_aluno 
@@ -61,8 +66,11 @@ WHERE estadoAluno='PR' OR sexoAluno = 'F';
 
 &nbsp;
      
-**1.3. Operador NOT (Negação lógica)**  
+## Operador NOT (Negação lógica)
+```
 Nega o filtro aplicado, conforme demonstrado no exemplo abaixo.
+```
+
 ```mysql
 SELECT nomeAluno, sexoAluno 
 FROM tb_aluno 

@@ -4,12 +4,15 @@
 &nbsp;
      
 &nbsp;     
-**ALTER TABLE**  
-Comando utilizado para modificar as características de uma tabela já existente, através da:  
-	- Inclusão ou exclusão de colunas desta tabela;  
-	- Adição, alteração ou remoção de restrições (ex: `PRIMARY KEY`, `UNIQUE`, `NOT NULL`, etc.) de uma coluna - *[ver mais no arquivo sobre constraits](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/05-Restricoes.md)*;  
-	- Alteração do tipo de dado ou tamanho definidos para uma coluna;  
-	- Alteração do nome de tabelas ou colunas já existentes no banco de dados.
+## Comando ALTER TABLE
+```
+- Comando utilizado para modificar as características de uma tabela já existente, através da:  
+  . Inclusão ou exclusão de colunas desta tabela  
+  . Adição, alteração ou remoção de restrições (ex: PRIMARY KEY, UNIQUE, NOT NULL, etc.) de uma
+  coluna - ver mais no arquivo sobre constraits deste repositório  
+  . Alteração do tipo de dado ou tamanho definidos para uma coluna  
+  . Alteração do nome de tabelas ou colunas já existentes no banco de dados
+```	
 
 &nbsp;
      

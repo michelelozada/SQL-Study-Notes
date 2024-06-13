@@ -4,10 +4,15 @@
 &nbsp;
      
 &nbsp;  
-**FUNÇÕES**  
-- São rotinas ou subprogramas, armazenadas de maneira persistente no SGBD, que executam uma determinada tarefa.   
-- São identificadas por um nome, pelo qual são invocadas.  
-- Uma função recebe parâmetros e retorna algum valor, confome o exemplo abaixo.  
+## Funções
+```
+- São rotinas ou subprogramas, armazenadas de maneira persistente no SGBD, que executam uma determinada 
+tarefa   
+
+- São identificadas por um nome, pelo qual são invocadas
+
+- Uma função recebe parâmetros e retorna algum valor, confome o exemplo abaixo
+```
      
 &nbsp;  
 

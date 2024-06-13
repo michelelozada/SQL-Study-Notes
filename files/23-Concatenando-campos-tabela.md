@@ -4,8 +4,10 @@
 &nbsp;
      
 &nbsp;   
-**FUNÇÃO CONCAT**  
-* Concatena strings de campos diferentes da tabela, através de uma mesma query.
+## Função CONCAT
+```
+Concatena strings de campos diferentes da tabela, através de uma mesma query
+```
      
 &nbsp;
 

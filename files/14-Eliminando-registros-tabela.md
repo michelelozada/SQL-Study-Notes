@@ -4,8 +4,10 @@
 &nbsp;
      
 &nbsp;  
-**DELETE e TRUNCATE**  
-- Comandos que removem linhas de dados de uma tabela no banco de dados.
+## Comandos DELETE e TRUNCATE
+```
+Comandos que removem linhas de dados de uma tabela no banco de dados
+```
 &nbsp;
      
 &nbsp;  
@@ -20,8 +22,8 @@
 &nbsp;
      
 **1. O comando DELETE**  
-* Permite apagar os registros de uma tabela.  
-* Se utilizado *com* a cláusula `WHERE`, removerá dados apenas da tupla especificada.  
+- Permite apagar os registros de uma tabela.  
+- Se utilizado *com* a cláusula `WHERE`, removerá dados apenas da tupla especificada.  
 ```mysql
 DELETE FROM tb_aluno WHERE idAluno = 3; -- apagará registro apenas da aluna Cátia
 ```

@@ -4,11 +4,13 @@
 &nbsp;
      
 &nbsp;   
+```
 A lista completa abrange vários tipos; seguem abaixo apenas os básicos/mais utilizados:    
+```
 
 &nbsp;   
 
-**1. Tipos alfanuméricos:**  
+## Tipos alfanuméricos  
 
 Nome 		| Observação  	| Exemplo |
 :--- 		| :---			    | :---    |
@@ -19,7 +21,7 @@ CHAR	 	| Tipo de dado string de comprimento fixo | estado CHAR(2) |
 
 &nbsp;   
 
-**2. Tipos numéricos:**  
+## Tipos numéricos  
 
 Nome 		| Observação  	| Exemplo |
 :--- 		| :---			| :---	|
@@ -31,7 +33,7 @@ DECIMAL	| Númros reais - para precisão/exatidão de valores | precoProduto DEC
 
 &nbsp;
    
-**3. Tipos com data e hora:**  
+## Tipos com data e hora  
 
 Nome 		| Observação  	| Exemplo |
 :--- 		| :---			| :--- |

@@ -4,9 +4,13 @@
 &nbsp;
      
 &nbsp;  
-**BLOCO BEGIN ... END**  
-- Utilizado para conter instruções a serem executadas pelos procedimentos e funções armazenados.
-- Estas instruções devem estar dispostas entre as palavras-chave `BEGIN` e `END`, além de serem envolvidas pelo comando `DELIMITER` seguido de caracteres especiais como `$$` ou `//`, conforme exemplos que seguem abaixo.
+## Bloco BEGIN ... END
+```
+- Utilizado para conter instruções a serem executadas pelos procedimentos e funções armazenados
+
+- Estas instruções devem estar dispostas entre as palavras-chave BEGIN e END, além de serem envolvidas 
+pelo comando DELIMITER seguido de caracteres especiais como $$ ou //, conforme exemplos que seguem abaixo
+```
      
 &nbsp;  
 

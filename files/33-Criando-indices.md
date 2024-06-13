@@ -4,10 +4,11 @@
 &nbsp;
 
 &nbsp;    
-**Índices**  
-&nbsp;  
-São estruturas associadas às tabelas que, uma vez aplicadas, podem ajudar a melhorar a performance na execução de consultas em um 
-banco de dados.   
+## Índices
+```  
+São estruturas associadas às tabelas que, uma vez aplicadas, podem ajudar a melhorar a performance
+na execução de consultas em um banco de dados   
+```  
 
 &nbsp;
     

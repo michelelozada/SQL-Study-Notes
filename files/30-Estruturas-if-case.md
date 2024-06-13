@@ -4,8 +4,10 @@
 &nbsp;
      
 &nbsp;  
-**Estrutura condicionais IF e CASE**  
-- As estruturas `IF` e `CASE`, em procedimentos armazenados e funções, implementam construções condicionais.  
+## Estrutura condicionais IF e CASE
+```
+As estruturas `IF` e `CASE`, em procedimentos armazenados e funções, implementam construções condicionais  
+```
      
 &nbsp;  
 
