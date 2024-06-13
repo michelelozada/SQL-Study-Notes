@@ -17,7 +17,8 @@ acompanhado da constraint NOT NULL
 
 &nbsp;
      
-**1. Utilizando o AUTO_INCREMENT:**  
+## Utilizando o AUTO_INCREMENT
+
 ```mysql
 
 CREATE DATABASE db_escola;
@@ -42,7 +43,8 @@ VALUES
   ('Luis Garcia', 'lgarcia@email.com'),
   ('Heloísa Bormann', 'hbormann@email.com');
 ```
-###### Output:  
+
+Saída gerada:  
 | ID Aluno | Nome aluno | E-mail aluno |
 | ------   | -----      | -----        |
 | 1 |	Luana Borba | luanab@email.com |
@@ -58,7 +60,8 @@ VALUES
 
 &nbsp;
      
-**2. Caso haja a necessidade de setar o valor default do AUTO_INCREMENT para começar com um valor diferente:**  
+> Caso haja a necessidade de setar o valor default do AUTO_INCREMENT para começar com um valor diferente:
+
 ```mysql
 
 CREATE TABLE tb_aluno(
@@ -68,7 +71,8 @@ CREATE TABLE tb_aluno(
   PRIMARY KEY(idAluno)
 ) AUTO_INCREMENT = 100;
 ```
-###### Output:  
+
+Saída gerada:  
 | ID Aluno | Nome aluno        | E-mail aluno             |
 | ------   | -----             | -----                    |
 | 100      | Luana Borba       | luanab@email.com         |
@@ -84,7 +88,7 @@ CREATE TABLE tb_aluno(
 
 &nbsp;
      
-**3. Após a tabela já ter sido criada, caso seja necessário que a próxima sequência de registros na tabela comece com um valor de incremento diferente:**  
+> Após a tabela já ter sido criada, caso seja necessário que a próxima sequência de registros na tabela comece com um valor de incremento diferente:
 ```mysql
 
 ALTER TABLE tb_Aluno AUTO_INCREMENT = 200;
@@ -97,7 +101,8 @@ VALUES
   ('Marcela Guedes', 'mar_guedes@email.com'),
   ('Lúcia Freitas', 'luciafreitas@email.com');
 ```
-###### Output:  
+
+Saída gerada:  
 | ID Aluno | Nome aluno | E-mail aluno |
 | ------   | -----      | -----        |
 | 100 |	Luana Borba | luanab@email.com
@@ -118,13 +123,14 @@ VALUES
 
 &nbsp;
      
-**4. Para verificação do último valor inserido no campo que utilizou o AUTO_INCREMENT:**  
+> Para verificação do último valor inserido no campo que utilizou o `AUTO_INCREMENT`
 ```mysql
 
 SELECT MAX(idAluno) FROM tb_Aluno;
 ```
-###### Output:  
-O exemplo acima retornou 204
+
+Saída gerada:  
+204
 
 &nbsp;
 

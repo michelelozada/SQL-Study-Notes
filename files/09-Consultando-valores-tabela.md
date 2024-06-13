@@ -17,34 +17,39 @@ adiante listados.
      
 &nbsp;  
 
-**A tabela de exemplo:**  
+> A tabela de exemplo:
+
 ```mysql
+
 CREATE TABLE tb_aluno(
-    idAluno int(11) NOT NULL AUTO_INCREMENT,
-    nomeAluno varchar(50) NOT NULL,
-    emailAluno varchar(40) NOT NULL,
-    PRIMARY KEY(idAluno)
+  idAluno int(11) NOT NULL AUTO_INCREMENT,
+  nomeAluno varchar(50) NOT NULL,
+  emailAluno varchar(40) NOT NULL,
+  PRIMARY KEY(idAluno)
 );
 
 INSERT INTO tb_aluno(nomeAluno,emailAluno) 
 VALUES 
-	('Luana Borba', 'luanab@email.com'),
-	('Mariana Fernandes', 'marifernandes@email.com'),
-	('Cátia Marcondes', 'catiamarcondes@email.com'),
-	('Marcos Góes', 'marcosgoes@email.com'),
-	('Sônia de Morais', 'sonia_morais@email.com'),
-	('Enzo Freitas', 'efreitas@email.com'),
-	('Rodrigo Mattos', 'rodrigo.mattos@email.com'),
-	('Paula Souza', 'paula_souza@email.com');
+  ('Luana Borba', 'luanab@email.com'),
+  ('Mariana Fernandes', 'marifernandes@email.com'),
+  ('Cátia Marcondes', 'catiamarcondes@email.com'),
+  ('Marcos Góes', 'marcosgoes@email.com'),
+  ('Sônia de Morais', 'sonia_morais@email.com'),
+  ('Enzo Freitas', 'efreitas@email.com'),
+  ('Rodrigo Mattos', 'rodrigo.mattos@email.com'),
+  ('Paula Souza', 'paula_souza@email.com');
 ```
 
 &nbsp;   
 
-**1.a. Consultando todos os registros da tabela acima:**  
+### • Consultando todos os registros de uma tabela
+
 ```mysql
+
 SELECT * FROM tb_aluno;
 ```
-###### Output:  
+
+Saída gerada: 
 | ID Aluno | Nome aluno        | E-mail                   | 
 | :---     | :---              | :---                     | 
 | 1        | Luana Borba       | luanab@email.com         |
@@ -58,11 +63,13 @@ SELECT * FROM tb_aluno;
 
 &nbsp;
   
-**1.b. Consultando registros de apenas uma coluna desta tabela:**  
+> Consultando registros de apenas uma coluna desta tabela:
 ```mysql
+
 SELECT nomeAluno FROM tb_aluno;
 ```	
-###### Output:  
+
+Saída gerada: 
 | Nome aluno        |
 | :---              |
 | Luana Borba       | 
@@ -73,11 +80,13 @@ SELECT nomeAluno FROM tb_aluno;
 
 &nbsp;
   
-**1.c. Consultando registros de duas colunas específicas da tabela:** 
+> Consultando registros de duas colunas específicas da tabela:
 ```mysql
+
 SELECT nomeAluno, emailAluno FROM tb_aluno;
 ```	
-###### * Output:  
+
+Saída gerada: 
 | Nome aluno        | E-mail                   | 
 | :---              | :---                     | 
 | Luana Borba       | luanab@email.com         |
@@ -91,14 +100,17 @@ SELECT nomeAluno, emailAluno FROM tb_aluno;
 
 &nbsp;
 
-**2. Utilizando a cláusula ORDER BY:**  
+### • Utilizando a cláusula ORDER BY
 Apresenta os valores consultados em ordem sequencial crescente ou decrescente, bastando acrescentar `ASC` ou `DESC`.  
-(Obs: É possível utilizar mais de um critério de ordenação, basta acrescentar uma vírgula e adicionar o respetivo campo).
+(Obs: É possível utilizar mais de um critério de ordenação, basta acrescentar uma vírgula e adicionar o respetivo campo).  
+
 ```mysql
+
 SELECT nomeAluno FROM tb_aluno 
 ORDER BY nomeAluno DESC;
 ```
-###### * Output:  	
+
+Saída gerada: 
 | Nome aluno        | 
 | :---              | 
 | Sônia de Morais   | 
@@ -114,10 +126,12 @@ ORDER BY nomeAluno DESC;
 
 Por default, a ordenação é em ordem crescente; portanto o uso de `ASC` é opcional.
 ```mysql
+
 SELECT nomeAluno FROM tb_aluno 
 ORDER BY nomeAluno;
 ```
-###### * Output:  
+
+Saída gerada: 
 | Nome aluno        | 
 | :---              | 
 | Cátia Marcondes   | 
@@ -131,13 +145,16 @@ ORDER BY nomeAluno;
 
 &nbsp;
 
-**3. Utilizando a cláusula WHERE:**  
+### • Utilizando a cláusula WHERE
 Ao incluir esta cláusula, apenas os registros que obedecerem às condições ali especificadas serão retornados.
+
 ```mysql
+
 SELECT idAluno, nomeAluno FROM tb_aluno 
 WHERE idAluno = 5;
 ```
-###### * Output:  
+
+Saída gerada: 
 | ID Aluno  | Nome aluno        | 
 | :---      | :---   			| 
 | 5     	| Sônia de Morais   |
@@ -145,13 +162,15 @@ WHERE idAluno = 5;
 &nbsp;
   
 ```mysql
+
 SELECT idAluno, nomeAluno FROM tb_aluno 
 WHERE idAluno <= 3 
 ORDER BY nomeAluno DESC;
 ```
-###### * Output:  
-| ID Aluno  | Nome aluno        | 
-| :---      | :---              | 
+
+Saída gerada: 
+| ID Aluno  | Nome aluno    | 
+| :---      | :---          | 
 | 2			| Mariana Fernandes |
 | 1			| Luana Borba       |
 | 3			| Cátia Marcondes   |
@@ -159,12 +178,14 @@ ORDER BY nomeAluno DESC;
 &nbsp;
 
 ```mysql
+
 SELECT idAluno, nomeAluno FROM tb_aluno 
 WHERE NOT idAluno > 4;
 ```
-###### * Output:  
-| ID Aluno  | Nome aluno        | 
-| :---      | :---              | 
+
+Saída gerada: 
+| ID Aluno  | Nome aluno    | 
+| :---      | :---          | 
 | 1			| Luana Borba       |
 | 2			| Mariana Fernandes |
 | 3			| Cátia Marcondes   |
@@ -173,10 +194,12 @@ WHERE NOT idAluno > 4;
 &nbsp;
 
 ```mysql
+
 SELECT idAluno, nomeAluno FROM tb_aluno 
 WHERE (idAluno = 8 AND nomeAluno = "Paulinha") OR (idAluno = 7 AND nomeAluno = "Rodrigo Mattos");
 ```
-###### * Output:  
+
+Saída gerada: 
 | ID Aluno  | Nome aluno        | 
 | :---      | :---              | 
 | 7			    | Rodrigo Mattos    |
@@ -184,22 +207,25 @@ WHERE (idAluno = 8 AND nomeAluno = "Paulinha") OR (idAluno = 7 AND nomeAluno = "
 &nbsp;
 
 **Observações:**
-\- Operadores que podem ser utilizados para montar as condições de WHERE: `=`, `!=` ou`<>`, `>`,`<`, `>=`,`<=` 
-\- Para números float (devido a não-precisão), as operações de igualdade ou diferença não funcionam - nestes casos, deve-se usar a cláusula `BETWEEN`.
-\- Os operadores acima podem se utilizados com strings também: `SELECT * FROM tb_aluno WHERE nomeAluno >= 'Mariana Fernandes';`
+&nbsp;&nbsp; . Operadores que podem ser utilizados para montar as condições de WHERE: `=`, `!=` ou`<>`, `>`,`<`, `>=`,`<=` 
+&nbsp;&nbsp; . Para números float (devido a não-precisão), as operações de igualdade ou diferença não funcionam - nestes casos, deve-se usar a cláusula `BETWEEN`.
+&nbsp;&nbsp; . Os operadores acima podem se utilizados com strings também: `SELECT * FROM tb_aluno WHERE nomeAluno >= 'Mariana Fernandes';`
 
 &nbsp;
 
-**4. Utilizando a cláusula LIMIT:**  
+### • Utilizando a cláusula LIMIT
 Ao incluir esta cláusula, o número de registros retornados obedecerá ao número ali especificado.
+
 ```mysql
+
 SELECT nomeAluno   
 FROM tb_aluno 
 WHERE sexoAluno = 'F';
 ORDER BY nomeAluno   
 LIMIT 3;
 ```
-###### * Output:  
+
+Saída gerada: 
 | Nome aluno        |
 | :---              |
 | Cátia Marcondes   |
@@ -208,17 +234,18 @@ LIMIT 3;
 
 &nbsp;
 
-**5. Utilizando o Operador LIKE:**  
+### • Utilizando o Operador LIKE
 Ao incluir esta cláusula, junto ao coringa `%`, são realizadas comparações de letras ou palavras de uma string.  
-&nbsp;
-&nbsp;  
-No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) terminam com a letra 'A'.
+
+> No exemplo abaixo: retorno dos registros presentes na tabela, cujas strings (do campo nomeAluno) terminam com a letra 'A'.
 ```mysql
+
 SELECT idAluno, nomeAluno 
 FROM tb_aluno 
 WHERE nomeAluno LIKE '%A';
 ```
-###### * Output:  	
+
+Saída gerada: 
 | ID Aluno | Nome aluno  | 
 | :---     | :---        | 
 | 1        | Luana Borba |
@@ -226,13 +253,15 @@ WHERE nomeAluno LIKE '%A';
 
 &nbsp;
 
-No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) começa, com a letra 'M'. 
+> No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) começa, com a letra 'M'. 
 ```mysql
+
 SELECT idAluno, nomeAluno 
 FROM b_aluno 
 WHERE nomeAluno LIKE 'M%';  
 ```
-###### * Output:  	
+
+Saída gerada: 
 | ID Aluno | Nome aluno        | 
 | :---     | :---              |
 | 2        | Mariana Fernandes |
@@ -240,13 +269,15 @@ WHERE nomeAluno LIKE 'M%';
 
 &nbsp;
   
-No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) contêm a letra 'M'. 
+> No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) contêm a letra 'M'. 
 ```mysql
+
 SELECT idAluno, nomeAluno 
 FROM tb_aluno 
 WHERE nomeAluno LIKE '%M%'; 
 ```
-###### * Output:  	
+
+Saída gerada: 
 | ID Aluno | Nome aluno        |  
 | :---     | :---              |  
 | 2        | Mariana Fernandes | 
@@ -257,13 +288,15 @@ WHERE nomeAluno LIKE '%M%';
 
 &nbsp;
   
-No exemplo abaixo: retorna registros presentes na tabela, cuja terceira letra da string (do campo nomeAluno) é a letra 'r'.
+> No exemplo abaixo: retorna registros presentes na tabela, cuja terceira letra da string (do campo nomeAluno) é a letra 'r'.
 ```mysql
+
 SELECT idAluno, nomeAluno 
 FROM tb_aluno 
 WHERE nomeAluno LIKE '__R%'; 
 ```
-###### * Output:  	
+
+Saída gerada: 	
 | ID Aluno | Nome aluno        |  
 | :---     | :---              |  
 | 2        | Mariana Fernandes | 
@@ -271,13 +304,15 @@ WHERE nomeAluno LIKE '__R%';
 
 &nbsp;
    
-No exemplo abaixo: retorna registros presentes na tabela, cuja string (do campo nomeAluno) termina com 'ndes'. 
+> No exemplo abaixo: retorna registros presentes na tabela, cuja string (do campo nomeAluno) termina com 'ndes'. 
 ```mysql
+
 SELECT idAluno, nomeAluno 
 FROMtb_aluno 
 WHERE nomeAluno LIKE '%NDES'; 
 ```
-###### * Output:  	
+
+Saída gerada: 
 | ID Aluno | Nome aluno        |  
 | :---     | :---              |  
 | 2        | Mariana Fernandes | 
@@ -285,13 +320,15 @@ WHERE nomeAluno LIKE '%NDES';
 
 &nbsp;
    
-No exemplo abaixo: retorna registros presentes na tabela, cuja string (do campo nomeAluno) começa com 'm' e termina com 's'. 
+> No exemplo abaixo: retorna registros presentes na tabela, cuja string (do campo nomeAluno) começa com 'm' e termina com 's'. 
 ```mysql
+
 SELECT idAluno, nomeAluno 
 FROM tb_aluno 
 WHERE nomeAluno LIKE 'm%s'; 
 ```
-###### * Output:  	
+
+Saída gerada: 
 | ID Aluno | Nome aluno        |  
 | :---     | :---              |  
 | 2        | Mariana Fernandes | 
@@ -299,14 +336,17 @@ WHERE nomeAluno LIKE 'm%s';
 
 &nbsp;
 
-**6. Utilizando o Operador NOT LIKE:**  
+### •  Utilizando o Operador NOT LIKE
 No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) **não** contêm a letra 'R'. 
+
 ```mysql
+
 SELECT idAluno, nomeAluno 
 FROM tb_aluno 
 WHERE nomeAluno NOT LIKE '%R%'; 
 ```
-###### * Output:  	
+
+Saída gerada: 
 | ID Aluno | Nome aluno  | 
 | :---     | :---        | 
 | 8        | Paula Souza |

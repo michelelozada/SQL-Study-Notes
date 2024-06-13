@@ -16,9 +16,10 @@
 
 &nbsp;
      
-**As tabelas para os exemplos:**   
+> As tabelas para os exemplos:
 
 ```mysql
+
 CREATE TABLE tb_aluno(
   idAluno int(11) AUTO_INCREMENT NOT NULL,
   nomeAluno varchar(40),
@@ -29,6 +30,7 @@ CREATE TABLE tb_aluno(
 );
 ```
 ```mysql
+
 CREATE TABLE tb_contrato(
   idContrato int(11) AUTO_INCREMENT NOT NULL,
   idAluno int(11) NOT NULL,
@@ -39,16 +41,18 @@ CREATE TABLE tb_contrato(
 
 &nbsp;
      
-**1. 'Dropando' uma das colunas da tabela**  
+> 'Dropando' uma das colunas da tabela:
 ```mysql
+
 ALTER TABLE tb_aluno
 DROP COLUMN foneAluno;
 ```
 
 &nbsp;
 
-**2. Adicionando uma coluna à tabela**  
+> Adicionando uma coluna à tabela
 ```mysql
+
 ALTER TABLE tb_aluno
 ADD COLUMN foneAluno varchar(11) 
 AFTER emailAluno;
@@ -56,47 +60,56 @@ AFTER emailAluno;
      
 &nbsp;
 
-**3. Modificando o tipo de dado ou tamanho de uma coluna**  
+> Modificando o tipo de dado ou tamanho de uma coluna
 ```mysql
+
 ALTER TABLE tb_aluno
 MODIFY COLUMN foneAluno int(11); -- aqui alterei o tipo de dado de varchar para int
 ```
 ```mysql
+
 ALTER TABLE tb_aluno
 MODIFY COLUMN nomeAluno varchar(60); -- aqui aumentei o tamano da coluna
 ```
 
 &nbsp;
 
-**4. Alterando o nome de uma tabela**  
+> Alterando o nome de uma tabela
 ```mysql
+
 ALTER TABLE tb_aluno RENAME TO tbAluno; 
 ```
-Ou alternativamente:
+
+> Ou alternativamente:
 ```mysql
+
 RENAME TABLE tb_aluno TO tbAluno;
 ```
-Para alterar vários nomes de tabelas ao mesmo tempo:
+
+> Para alterar vários nomes de tabelas ao mesmo tempo:
 ```mysql
+
 RENAME TABLE 
-	tb_aluno TO tbAluno, 
-	tb_professor TO tbProfessor, 
-	tb_departamento TO tbDepartamento; 
+  tb_aluno TO tbAluno, 
+  tb_professor TO tbProfessor, 
+  tb_departamento TO tbDepartamento; 
 ```
      
 &nbsp;  
 
-**5. Alterando o nome da coluna de uma tabela**  
+> Alterando o nome da coluna de uma tabela
 ```mysql
+
 ALTER TABLE tb_aluno
 RENAME COLUMN nomeAluno TO nome_aluno; 
 ```
-Ou alternativamente:
+> Ou alternativamente:
 ```mysql 
+
 ALTER TABLE tb_alunos
 CHANGE nomeAluno nome_aluno varchar(50);
--- Após o CHANGE, colocar nome atual da tabela, seguindo ao novo nome com a definição do tipos dos dados
 ```
+Obs: Após o CHANGE, colocar nome atual da tabela, seguindo ao novo nome com a definição do tipos dos dados  
 
 &nbsp;
 

@@ -7,12 +7,13 @@
 ## Comando UPDATE
 ```
 - Atualiza/altera dados pré-cadastrados em uma tabela do banco de dados
+
 - Deve ser utilizado juntamente com a cláusula `SET`, que tem a função de determinar qual o campo será atualizado
 ```
   
 &nbsp;
 
-**1. A tabela de exemplo:**  
+> A tabela de exemplo:
 | idAluno  | nomeAluno         | cidadeAluno    | estadoAluno |
 | :---     | :---              | :---           | :---        |
 | 1        | Luana Borba       | Curitiba       | PR          |
@@ -22,14 +23,17 @@
 
 &nbsp;
 
-**2. Atualizando um registro da tabela:**  
-- Deve ser utilizado juntamente com a cláusula `WHERE`, quando for necessária a especificação de qual registro terá seus dados atualizados.
+## Atualizando um registro da tabela:
+O comando `UPDATE` deve ser utilizado juntamente com a cláusula `WHERE`, quando for necessária a especificação de qual registro terá seus dados atualizados
+
 ```mysql
+
 UPDATE tb_aluno -- nome da tabela
 SET nomeAluno = 'Marcos Góes Filho'  -- nome da coluna e valor a ser atualizado
 WHERE idAluno = 4;  -- foi retificado o nome deste aluno  -- condição para atualização
 ```
-###### * Output:  
+
+Saída gerada: 
 | idAluno  | nomeAluno         | cidadeAluno    | estadoAluno |
 | :---     | :---              | :---           | :---        |
 | 1        | Luana Borba       | Curitiba       | PR          |
@@ -39,13 +43,16 @@ WHERE idAluno = 4;  -- foi retificado o nome deste aluno  -- condição para atu
 
 &nbsp;
 
-* Para  atualização de mais de um campo:
+## Atualizando mais de um campo:
+
 ```mysql
+
 UPDATE tb_aluno 
 SET cidadeAluno = 'Porto Alegre', estadoAluno='RS' 
 WHERE idAluno = 4; 
 ```
-###### * Output:  
+
+Saída gerada: 
 | idAluno  | nomeAluno         | cidadeAluno    | estadoAluno |
 | :---     | :---              | :---           | :---        |
 | 1        | Luana Borba       | Curitiba       | PR          |
@@ -55,12 +62,15 @@ WHERE idAluno = 4;
 
 &nbsp;
   
-* ATT: Caso não seja utilizada a cláusula WHERE, todos os registros da tabela serão atualizados com a mesma informação!
+> **ATT: Caso não seja utilizada a cláusula `WHERE`, todos os registros da tabela serão atualizados com a mesma informação!**
+
 ```mysql
+
 UPDATE tb_aluno 
 SET cidadeAluno = 'Curitiba', estadoAluno="PR";
 ```
-###### * Output:  
+
+Saída gerada: 
 | idAluno  | nomeAluno          | cidadeAluno | estadoAluno |
 | :---     | :---               | :---        | :---        |
 | 1        | Luana Borba        | Curitiba    | PR          |

@@ -22,19 +22,23 @@
 
 ## Operadores AND, OR e NOT
 ```
-São operadores lógicos que - utilizados juntamente com a cláusula `WHERE` - filtram registros, através da comparação de duas ou mais condições.
+São operadores lógicos que - utilizados juntamente com a cláusula `WHERE` - filtram registros, 
+através da comparação de duas ou mais condições.
 ```
 
 &nbsp;
      
-**1.1. Operador AND ('E' lógico)**  
+### • Operador AND 
 Retorna registro(s), apenas se ambas as condições comparadas forem verdadeiras
+
 ```mysql
+
 SELECT idAluno, nomeAluno, sexoAluno, estadoAluno 
 FROM tb_aluno 
 WHERE idAluno > 2 AND sexoAluno = 'F' AND estadoAluno='PR';
 ```
-###### * Output:  
+
+Saída gerada:
 | idAluno | nomeAluno         |	sexoAluno | estado Aluno |
 | :---    | :---              | :---      | :---         |
 | 3	      | Cátia Marcondes   |	F         |	PR           |
@@ -43,17 +47,17 @@ WHERE idAluno > 2 AND sexoAluno = 'F' AND estadoAluno='PR';
 
 &nbsp;
      
-## Operador OR ('OU' lógico)
-```
+### • Operador OR 
 Retorna registro(s), desde que alguma das condições comparadas seja verdadeira
-```
 
 ```mysql
+
 SELECT idAluno, nomeAluno, sexoAluno, estadoAluno 
 FROM tb_aluno 
 WHERE estadoAluno='PR' OR sexoAluno = 'F';
 ```
-###### * Output:  
+
+Saída gerada:
 | idAluno | nomeAluno         |	sexoAluno | estado Aluno |
 | :---    | :---              | :---      | :---         |
 | 1       | Luana Borba       |	F         |	PR           |
@@ -66,17 +70,17 @@ WHERE estadoAluno='PR' OR sexoAluno = 'F';
 
 &nbsp;
      
-## Operador NOT (Negação lógica)
-```
-Nega o filtro aplicado, conforme demonstrado no exemplo abaixo.
-```
+### • Operador NOT 
+Nega o filtro aplicado, conforme demonstrado no exemplo abaixo
 
 ```mysql
+
 SELECT nomeAluno, sexoAluno 
 FROM tb_aluno 
 WHERE idAluno > 2 AND NOT sexoAluno = 'F';
 ```
-###### * Output:  
+
+Saída gerada:
 | idAluno | nomeAluno         |	sexoAluno | 
 | :---    | :---              | :---      |
 | 4	      | Marcos Góes       |	M         |	
@@ -86,20 +90,27 @@ WHERE idAluno > 2 AND NOT sexoAluno = 'F';
 
 &nbsp;
      
-**2. Operadores IN e NOT IN**  
-São operadores - utilizados juntamente com a cláusula `WHERE` - que retornam (ou não) elementos contidos em um determinado conjunto de dados.
+##  Operadores IN e NOT IN
+```
+São operadores - utilizados juntamente com a cláusula `WHERE` - que retornam (ou não) elementos contidos 
+em um determinado conjunto de dados.
+```
 
 &nbsp;     
     
-**2.1. OPERADOR IN**  
-- Retorna um valor (ou conjunto de valores) pertencente(s) ao conjunto de dados. 
-- Neste exemplo, desejo filtrar alunos cadastrados que sejam de apenas duas cidades parananeses abaixo informadas.
+### • OPERADOR IN  
+Retorna um valor (ou conjunto de valores) pertencente(s) ao conjunto de dados. 
+
+> Neste exemplo, desejo filtrar alunos cadastrados que sejam de apenas duas cidades parananeses abaixo informadas:
+
 ```mysql
+
 SELECT nomeAluno, cidadeAluno 
 FROM tb_aluno
 WHERE cidadeAluno IN ('Curitiba','Pato Branco');
 ```
-###### * Output:  
+
+Saída gerada:
 | nomeAluno         | cidadeAluno    |
 | :---              | :---    	     |
 | Luana Borba       | Curitiba       |
@@ -109,15 +120,19 @@ WHERE cidadeAluno IN ('Curitiba','Pato Branco');
 
 &nbsp;
      
-**2.2. OPERADOR NOT IN**  
-- Retorna um valor (ou conjunto de valores) *não* pertencente(s) ao conjunto de dados.
-- Neste exemplo, desejo filtrar alunos cadastrados que *não* estejam baseados em nenhum dos três estados do sul do Brasil.
+### • OPERADOR NOT IN  
+- Retorna um valor (ou conjunto de valores) *não* pertencente(s) ao conjunto de dados
+
+> Neste exemplo, desejo filtrar alunos cadastrados que *não* estejam baseados em nenhum dos três estados do sul do Brasil:
+
 ```mysql
+
 SELECT nomeAluno, estadoAluno 
 FROM tb_aluno
 WHERE estadoAluno NOT IN ('PR','RS','SC');
 ```
-###### * Output:  
+
+Saída gerada:
 | nomeAluno         | estado Aluno |
 | :---              | :---         |
 | Mariana Fernandes | RJ           |
@@ -125,15 +140,18 @@ WHERE estadoAluno NOT IN ('PR','RS','SC');
 
 &nbsp;
      
-**3. OPERADOR BETWEEN**  
-- Especifica uma faixa de valores a serem retornados.
+### • OPERADOR BETWEEN  
+Especifica uma faixa de valores a serem retornados
+
 ```mysql
+
 SELECT nomeAluno, dNascimentoAluno 
 FROM tb_aluno
 WHERE dNascimentoAluno BETWEEN '2000-01-01' AND '2004-12-31' 
 ORDER BY dNascimentoAluno DESC; 
 ```
-###### * Output: 
+
+Saída gerada:
 | nomeAluno         | dNascimentoAluno | 
 | :---              | :---             |  
 | Luana Borba		| 2004-02-10       |

@@ -13,61 +13,68 @@
 
 &nbsp;
 
-**A tabela de exemplo:**  
+> A tabela de exemplo:
+
 ```mysql
+
 CREATE TABLE tb_aluno(
-    idAluno int(11) NOT NULL AUTO_INCREMENT,
-    nomeAluno varchar(40),
-    foneAluno varchar(15),
-    emailAluno varchar(50),
-    PRIMARY KEY(idAluno)
+  idAluno int(11) NOT NULL AUTO_INCREMENT,
+  nomeAluno varchar(40),
+  foneAluno varchar(15),
+  emailAluno varchar(50),
+  PRIMARY KEY(idAluno)
 );
 ```
 
 &nbsp;
 
-**1. Utilizando o comando INSERT para inclusão de apenas um registro:**  
+### • Utilizando o comando `INSERT` para inclusão de apenas um registro
 ```mysql
+
 INSERT INTO tb_aluno(idAluno,nomeAluno,foneAluno,emailAluno) 
 VALUES (default, 'Lorenzo Martins', '4199956-xx88','lorenzomartins@gmail.com');
 ```
 
 &nbsp;    
 
-Uma vez que a coluna id_aluno é `AUTO_INCREMENT`, a query pode também ser escrita da seguinte forma: 
+> Uma vez que a coluna id_aluno é `AUTO_INCREMENT`, a query pode também ser escrita da seguinte forma: 
 ```mysql
+
 INSERT INTO tb_aluno(nomeAluno,foneAluno,emailAluno) 
 VALUES ('Lorenzo Martins', '4199956-xx88','lorenzomartins@gmail.com');
 ```
 
-###### * Output:  
+Saída gerada:  
 | ID Aluno | Nome aluno         | Telefone      | E-mail                   |
 | :---     | :---               | :---          | :---                     |
 | 1	       | Lorenzo Martins    | 4199956-xx88  | lorenzomartins@gmail.com |
 
 &nbsp;
      
-**2. Para inclusão de mais registros:**  
+### • Para inclusão de mais registros
 ```mysql
+
 INSERT INTO tb_aluno(idAluno,nomeAluno,foneAluno,emailAluno) 
 VALUES 
-	(default, 'Luana Borba','4199956-xx56', 'luanab@email.com'),
-	(default, 'Mariana Fernandes','4199652-xx25', 'marifernandes@email.com'),
-	(default, 'Henrique Bormann','4199987-xx45', 'hbormann@email.com');
+  (default, 'Luana Borba','4199956-xx56', 'luanab@email.com'),
+  (default, 'Mariana Fernandes','4199652-xx25', 'marifernandes@email.com'),
+  (default, 'Henrique Bormann','4199987-xx45', 'hbormann@email.com');
 ```
 
 &nbsp;   
 
-Ou alternativamente: 
+> Ou alternativamente: 
+
 ```mysql
+
 INSERT INTO tb_aluno(nomeAluno,foneAluno,emailAluno) 
 VALUES 
-	('Luana Borba','4199956-xx56', 'luanab@email.com'),
-	('Mariana Fernandes','4199652-xx25', 'marifernandes@email.com'),
-	('Henrique Bormann','4199987-xx45', 'hbormann@email.com');
+  ('Luana Borba','4199956-xx56', 'luanab@email.com'),
+  ('Mariana Fernandes','4199652-xx25', 'marifernandes@email.com'),
+  ('Henrique Bormann','4199987-xx45', 'hbormann@email.com');
 ```
 
-###### * Output:  
+Saída gerada:  
 | ID Aluno | Nome aluno         | Telefone      | E-mail                   |
 | :---     | :---               | :---          | :---                     |
 | 1	       | Lorenzo Martins    | 4199956-xx88  | lorenzomartins@gmail.com |

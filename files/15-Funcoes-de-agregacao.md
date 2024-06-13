@@ -14,129 +14,173 @@
 &nbsp;  
 
 **A tabela de exemplo:**  
-| ID Curso | Nome curso 							| Turno | Mensalidade |
-| :---     | :---      							    | :---  | :---        |
-| 1        | Direito                               	| M     | 876.28      |
-| 2	       | Direito	                            | N     | 950.28      |
-| 3	       | Análise e Desenvolvimento de Sistemas 	| M     | 503.20      |
-| 4	       | Análise e Desenvolvimento de Sistemas 	| N     | 550.20      |
-| 5	       | Administração	                     	| M     | 654.16      |
-| 6	       | Administração	                        | N     | 680.00      |
-| 7	       | Farmácia	                            | M     | 814.64      |
-| 8	       | Sistemas de Informação                 | M     | 560.32      |
-| 9	       | Gestao de TI	                        | M     | 477.36      |
-| 10       | Gestao de TI	                        | N     | 500.00      |
-| 11       | Pedagogia	                         	| M     | 249.50      |
-| 12       | Pedagogia	                         	| N     | 278.50      |
-| 13       | Nutrição                              	| M     | 495.00      |
-| 14       | Ciência de Dados                      	| M     | 514.00      |
-| 15       | Design Gráfico                        	| M     | 622.05      |
-| 16       | Design Gráfico                        	| N     | 670.10      |
+```
++----------+---------------------------------------+-------+-------------+
+| ID Curso |              Nome curso               | Turno | Mensalidade |
++----------+---------------------------------------+-------+-------------+
+|        1 | Direito                               | M     |      876.28 |
+|        2 | Direito                               | N     |      950.28 |
+|        3 | Análise e Desenvolvimento de Sistemas | M     |      503.20 |
+|        4 | Análise e Desenvolvimento de Sistemas | N     |      550.20 |
+|        5 | Administração                         | M     |      654.16 |
+|        6 | Administração                         | N     |      680.00 |
+|        7 | Farmácia                              | M     |      814.64 |
+|        8 | Sistemas de Informação                | M     |      560.32 |
+|        9 | Gestao de TI                          | M     |      477.36 |
+|       10 | Gestao de TI                          | N     |      500.00 |
+|       11 | Pedagogia                             | M     |      249.50 |
+|       12 | Pedagogia                             | N     |      278.50 |
+|       13 | Nutrição                              | M     |      495.00 |
+|       14 | Ciência de Dados                      | M     |      514.00 |
+|       15 | Design Gráfico                        | M     |      622.05 |
+|       16 | Design Gráfico                        | N     |      670.10 |
++----------+---------------------------------------+-------+-------------+
+```
 
 &nbsp;
      
-**1- Função COUNT**  
+### • Função COUNT
 Retorna a quantidade de registros de uma tabela.  
+
 &nbsp;  
-Fazendo a contagem dos cursos registrados na tabela:
+
+> Fazendo a contagem dos cursos registrados na tabela (o uso de ALL é opcional, também poderia ter sido usada acima a seguinte sintaxe: SELECT COUNT(*) AS 'Número de Cursos'):  
 ```mysql
+
 SELECT COUNT(ALL nomeCurso) AS 'Número de Cursos'  
 FROM tb_curso;  
-# retorna: 16 (Há 16 cursos registrados na tabela)
-# O uso de ALL é opcional. Também poderia ter sido usada acima a seguinte sintaxe: SELECT COUNT(*) AS 'Número de Cursos'  
 ```
-Fazendo a contagem dos cursos, porém agora sem contar o nome dos cursos que se repetem na tabela:
+Retorna: 16 (Há 16 cursos registrados na tabela)
+
+&nbsp;  
+
+> Fazendo a contagem dos cursos, porém agora sem contar o nome dos cursos que se repetem na tabela:
 ```mysql
+
 SELECT COUNT(DISTINCT nomeCurso) AS 'Nomes dos Cursos'
 FROM tb_curso;  
-# retorna: 10 (Há 10 cursos registrados na tabela - sem repetições)
 ```
-Fazendo a contagem de cursos, baseada em uma condição especificada:
+Retorna: 10 (Há 10 cursos registrados na tabela - sem repetições)
+
+&nbsp;  
+
+> Fazendo a contagem de cursos, baseada em uma condição especificada:
 ```mysql
+
 SELECT COUNT(nomeCurso) AS 'Número de Cursos' 
 FROM tb_curso 
 WHERE mensalidadeCurso < 300.00;  
-# retorna: 2  (Há 2 cursos com mensalidade inferior a R$ 300,00)
 ```
-Fazendo a contagem dos turnos dos cursos:
+Retorna: 2  (Há 2 cursos com mensalidade inferior a R$ 300,00)
+
+&nbsp;  
+
+> Fazendo a contagem dos turnos dos cursos:
 ```mysql
+
 SELECT COUNT(DISTINCT turnoCurso) AS 'Turnos da escola' 
 FROM tb_curso;
-# retorna: 2  (Há dois turnos de cursos: Manhã e Tarde)
 ```
+Retorna: 2  (Há dois turnos de cursos: Manhã e Tarde)
 
 &nbsp;
      
-**2 - Função MAX**  
+### • Função MAX
 Retorna o maior valor dentre os elementos de uma coluna:
+
 ```mysql
+
 SELECT MAX(mensalidadeCurso) AS 'Maior valor de mensalidade'
 FROM tb_curso; 
-# retorna 950.28  (mensalidade do curso de Direito - N)
 ```
-Retornando o maior valor de mensalidade dentre uma faixa estipulada:
+Retorna: 950.28 (mensalidade do curso de Direito - N)
+
+&nbsp;
+
+> Retornando o maior valor de mensalidade dentre uma faixa estipulada:
 ```mysql
+
 SELECT MAX(mensalidadeCurso) AS 'Maior valor de mensalidade'
 FROM tb_curso 
 WHERE mensalidadeCurso> 600.00 AND mensalidadeCurso< 700.00;  
-# retorna 680.00 (mensalidade do curso de Administração - N)
 ```
+Retorna: 680.00 (mensalidade do curso de Administração - N)
 
 &nbsp;
      
-**3 - Função MIN**  
+### • Função MIN
 Retorna o menor valor dentre os elementos de uma coluna.
 ```mysql
+
 SELECT MIN(mensalidadeCurso) AS 'Menor valor de mensalidade'
 FROM tb_curso; 
-# retorna 249.50 (mensalidade do curso de Pedagogia - M)
 ```
-Retornando o menor valor de mensalidade dentre uma faixa estipulada:
+Retorna: 249.50 (mensalidade do curso de Pedagogia - M)
+
+&nbsp;
+
+> Retornando o menor valor de mensalidade dentre uma faixa estipulada:
 ```mysql
+
 SELECT MIN(mensalidadeCurso) AS 'Menor valor de mensalidade'
 FROM tb_curso 
 WHERE mensalidadeCurso> 600.00 AND mensalidadeCurso< 700.00;  
-# retorna 622.05 (mensalidade do curso de Design Gráfico - N)
 ```
-Consulta com o retorno dos dois valores:
+Retorna: 622.05 (mensalidade do curso de Design Gráfico - N)
+
+&nbsp;
+
+> Consulta com o retorno dos dois valores:
 ```mysql
+
 SELECT MAX(mensalidadeCurso) AS 'Maior valor de mensalidade', MIN(mensalidadeCurso) AS 'Menor valor de mensalidade'
 FROM tb_curso;   
-# Retorna 950.28 (Maior_valor_mensalidade) e 249.50 (Menor_valor_mensalidade)
 ```
+Retorna: 950.28 (Maior_valor_mensalidade) e 249.50 (Menor_valor_mensalidade)
 
 &nbsp;
      
-**4- Função SUM**  
+### • Função SUM
 Retona a soma dos valores de uma coluna
 ```mysql
+
 SELECT SUM(mensalidadeCurso) AS 'Soma das mensalidades'
 FROM tb_curso; 
-# retona 9395.59 (soma de todas as mensalidades)
 ```
-No exemplo abaixo, realizando a soma apenas dos cursos com ID menor ou igual a 5:
+Retorna: 9395.59 (soma de todas as mensalidades)
+
+&nbsp;  
+
+> No exemplo abaixo, realizando a soma apenas dos cursos com ID menor ou igual a 5:
 ```mysql
+
 SELECT SUM(mensalidadeCurso) AS 'Soma das mensalidades'
 FROM tb_curso 
 WHERE idCurso <= 5;
-# retona 3534.12 (soma das 5 primeiras mensalidades da tabela)
 ```
+Retorna: 3534.12 (soma das 5 primeiras mensalidades da tabela)
 
 &nbsp;
      
-**5 - Função AVG**  
-Retona a média aritmética dos valores de uma coluna
+### • Função AVG
+Retorna a média aritmética dos valores de uma coluna
+
 ```mysql
+
 SELECT AVG(mensalidadeCurso) AS Media
 FROM tb_curso; 
-# retorna 587.224375 (média das mensalidades dos cursos)
 ```
+Retorna: 587.224375 (média das mensalidades dos cursos)
+
+&nbsp;
+
 ```mysql
+
 # Usando a função ROUND() para retornar número com duas casas decimais
 SELECT ROUND(AVG(mensalidadeCurso),2) AS Media
 FROM tb_curso;  
-# retorna 587.22 
 ```
+Retorna: 587.22 
 
 &nbsp;
 

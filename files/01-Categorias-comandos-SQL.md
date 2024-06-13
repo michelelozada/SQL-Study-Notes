@@ -5,7 +5,8 @@
      
 &nbsp;   
 ## Comandos DDL (Data Definition Language ou Linguagem de Definição dos Dados)
-*Para criação, alteração e exclusão do banco de dados, das tabelas e/ou das suas colunas*
+Para criação, alteração e exclusão do banco de dados, das tabelas e/ou das suas colunas
+
 | Comandos | Função                                                                          |
 | :---     | :---                                                                            |
 | [CREATE](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/03-Criando-bd-e-tabelas.md) | Para a criação de banco de dados e tabelas |
@@ -18,7 +19,8 @@
 &nbsp;
 
 ## Comandos DML (Data Manipulation Language ou Linguagem de Manipulação de Dados)
-*Para inserção, alteração e exclusão dos dados em uma base/banco de dados*
+Para inserção, alteração e exclusão dos dados em uma base/banco de dados
+
 | Comandos | Função                                                                    |
 | :--      | :---                                                                      |
 | [INSERT](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/08-Inserindo-valores-tabela.md)    | Para inserção de dados em uma tabela do banco de dados |
@@ -28,7 +30,8 @@
 &nbsp;
  
 ## Comando DQL (Data Query Language ou Linguagem de Consulta de Dados Armazenados)
-*Para consulta aos dados de uma base/banco de dados*
+Para consulta aos dados de uma base/banco de dados
+
 | Comando | Função                                                       |
 | :---    | :---                                                         |
 | [SELECT](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/09-Consultando-valores-tabela.md)  | Para consulta de registros pertencentes a uma ou mais tabelas no banco de dados |
@@ -36,7 +39,8 @@
 &nbsp;
  
 ## Comandos DCL (Data Control Language ou Linguagem de Controle de Dados)  
-*Para controle de quais usuários podem ter permissão (e quais as suas atribuições) em um banco de dados*
+Para controle de quais usuários podem ter permissão (e quais as suas atribuições) em um banco de dados
+
 | Comandos | Função                                                       |
 | :---     | :---    
 | [GRANT](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/32-Privilegios-de-acesso.md) | Para permitir que usuários especificados realizem tarefas especificadas |
