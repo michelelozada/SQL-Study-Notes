@@ -1,4 +1,4 @@
-> **Copiando dados de uma tabela para outra (comando INSERT ... SELECT)**     
+> **Copiando dados de uma tabela para outra (comando INSERT...SELECT)**     
 > Repositório: Banco de Dados MySQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;

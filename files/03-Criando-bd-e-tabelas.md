@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS tb_aluno(
 
 &nbsp;
      
-## OUTROS COMANDOS ÚTEIS
+## Outros comandos úteis
 Seguem abaixo alguns comandos úteis relacionados à criação da base de dados e das tabelas:  
      
 &nbsp;   

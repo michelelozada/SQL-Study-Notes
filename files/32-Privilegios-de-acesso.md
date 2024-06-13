@@ -1,10 +1,10 @@
-> **Atribuindo e revogando privilégios de acesso (comandos GRANT e REVOKE)**  
+> **Gerenciando privilégios de acesso (comandos GRANT e REVOKE)**  
 > Repositório: Banco de Dados MySQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;
      
 &nbsp;  
-## Comandos GRANT e Revoke
+## Comandos GRANT e REVOKE
 ```
 - Para fins de segurança, os SGBDs oferecem recursos para conceder ou limitar direitos dos usuários
 junto a tabelas e visões de um banco de dados  

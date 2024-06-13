@@ -1,4 +1,4 @@
-> **Eliminando registros de uma tabela (comandos DELETE e TRUNCATE)**     
+> **Eliminando registros em tabelas (comandos DELETE e TRUNCATE)**     
 > Repositório: Banco de Dados MySQL - Fundamentos    
 > GitHub: @michelelozada
 &nbsp;

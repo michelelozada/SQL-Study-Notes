@@ -1,4 +1,4 @@
-> **Delimitando funções e procedimentos armazenados (bloco BEGIN ... END)**  
+> **Delimitando funções e procedimentos armazenados (bloco BEGIN...END)**  
 > Repositório: Banco de Dados MySQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;

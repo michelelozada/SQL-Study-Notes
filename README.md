@@ -6,7 +6,7 @@
 &nbsp;
 
 | Link   | Tópico    |
-| :---:  | :--:		   |
+| :---:  | ---		   |
 | [01](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/01-Categorias-comandos-SQL.md) | Categorias de comandos SQL |
 | [02](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/02-Tipos-de-dados.md)| Tipos de dados no MySQL |
 | [03](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/03-Criando-bd-e-tabelas.md)| Criando banco de dados e tabelas (comando CREATE) |
@@ -15,7 +15,7 @@
 | [06](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/06-Auto-incremento.md) | Auto-incremento |
 | [07](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/07-Alterando-estrutura-tabela.md) | Alterando estruturas de tabelas (comando ALTER TABLE) |
 | [08](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/08-Inserindo-valores-tabela.md) | Inserindo valores em tabelas (comando INSERT) |
-| [09](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/09-Consultando-valores-tabela.md) | Consultando valores em tabelas (comando SELECT e cláusulas ORDER BY, WHERE, LIMIT e LIKE) |
+| [09](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/09-Consultando-valores-tabela.md) | Consultando valores em tabelas (comando SELECT e suas principais cláusulas) |
 | [10](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/10-Utilizando-expressoes-regulares.md) | Utilizando expressões regulares (operador REGEXP) |
 | [11](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/11-Adicionando-filtros-consultas.md) | Adicionando filtros às consultas (operadores AND, OR, NOT, IN, NOT IN e BETWEEN) |
 | [12](https://github.com/michelelozada/MySQL-Study-Notes/blob/main/files/12-Eliminando-repeticoes-linhas.md) | Eliminando repetições de linhas em uma seleção (cláusula DISTINCT) |

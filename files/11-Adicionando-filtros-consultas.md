@@ -1,4 +1,4 @@
-> **Utilizando os operadores AND, OR, NOT, IN, NOT IN e BETWEEN**     
+> **Adicionando filtros às consultas (operadores AND, OR, NOT, IN, NOT IN e BETWEEN)**     
 > Repositório: Banco de Dados MySQL - Fundamentos    
 > GitHub: @michelelozada
 &nbsp;

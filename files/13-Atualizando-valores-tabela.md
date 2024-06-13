@@ -1,4 +1,4 @@
-> **Atualizando valores em uma tabela (comando UPDATE)**     
+> **Atualizando valores em tabelas (comando UPDATE)**     
 > Repositório: Banco de Dados MySQL - Fundamentos    
 > GitHub: @michelelozada
 &nbsp;
@@ -9,8 +9,8 @@
 - Atualiza/altera dados pré-cadastrados em uma tabela do banco de dados
 - Deve ser utilizado juntamente com a cláusula `SET`, que tem a função de determinar qual o campo será atualizado
 ```
-     
-		 &nbsp;  
+  
+&nbsp;
 
 **1. A tabela de exemplo:**  
 | idAluno  | nomeAluno         | cidadeAluno    | estadoAluno |

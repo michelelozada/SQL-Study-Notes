@@ -1,4 +1,4 @@
-> **Inserindo valores em uma tabela (comando INSERT)**  
+> **Inserindo valores em tabelas (comando INSERT)**  
 > Repositório: Banco de Dados MySQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;
