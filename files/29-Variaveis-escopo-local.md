@@ -16,7 +16,7 @@ da memória
      
 &nbsp;   
 
-**A tabela a ser utilizada para os exemplos abaixo:**
+> A tabela a ser utilizada para os exemplos abaixo:
 
 | idCurso | nomeCurso      | turnoCurso | mensalidadeCurso |
 | :--     | :--            | :--        | :--              |
@@ -25,41 +25,47 @@ da memória
 
 &nbsp;     
 
-**A. Criação da função**  
+> A. Criação da função  
 Objetivo: Criação de uma função para calcular redução da mensalidade, tendo sido informados o código do curso e a taxa de desconto:
+
 ```mysql
+
 DELIMITER //  
 CREATE FUNCTION reduzirMensalidade(codigoCurso INT, taxaDesconto DECIMAL(10,2))
 RETURNS DECIMAL(10,2)
 BEGIN
-    DECLARE mensalidade DECIMAL(10,2);
-    SELECT mensalidadeCurso INTO mensalidade
-    FROM tb_curso
-    WHERE idCurso = codigoCurso;
-    RETURN mensalidade - mensalidade * taxaDesconto/100;
+  DECLARE mensalidade DECIMAL(10,2);
+  SELECT mensalidadeCurso INTO mensalidade
+  FROM tb_curso
+  WHERE idCurso = codigoCurso;
+  RETURN mensalidade - mensalidade * taxaDesconto/100;
 END //
 DELIMITER ; 
 ```
 &nbsp;    
 
-**B. Chamada da função**  
-*Parâmetros: Curso de código 1 e taxa de desconto de 10%*
+> B. Chamada da função  
+Parâmetros: Curso de código 1 e taxa de desconto de 10%  
 ```mysql
+
 SELECT reduzirMensalidade(1,10) AS 'Mensalidade com desconto';
 ```
-###### * Output: 
+
+Saída gerada: 
 | Mensalidade com desconto |
 | :---					   |					
 | 788,65		           |
 
 &nbsp;  
 
-**C. Nova chamada da função**     
-*Parâmetros: Curso de código 2 e taxa de desconto de 5%*
+> C. Nova chamada da função  
+Parâmetros: Curso de código 2 e taxa de desconto de 5%  
 ```mysql
+
 SELECT reduzirMensalidade(2,5) AS 'Mensalidade com desconto';
 ```
-###### * Output: 
+
+Saída gerada: 
 | Mensalidade com desconto |
 | :---					   |					
 | 237,03				   |

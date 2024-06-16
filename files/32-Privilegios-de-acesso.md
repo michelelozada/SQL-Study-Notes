@@ -18,7 +18,7 @@ descritos no arquivo 'Gerenciando usuários do sistema', deste repositório
      
 &nbsp;  
 
-**1- Visualizando os privilégios atuais de um usuário já cadastrado no sistema**
+> A. Visualizando os privilégios atuais de um usuário já cadastrado no sistema
 ```mysql
 
 SHOW GRANTS FOR 'michele'@'localhost';
@@ -26,13 +26,14 @@ SHOW GRANTS FOR 'enzo'; -- sem @'localhost' significa que usuário também pode 
 ```
 &nbsp;   
 
-**2 - Criando um usuário com privilégios globais** 
+> B. Criando um usuário com privilégios globais
 ```mysql
 
 GRANT ALL PRIVILEGES -- ou seja, representa todos os direitos
 ON *.*     -- notação *.* representa todas as bases de dados e todas as suas tabelas/visões
 TO 'daniel'@'localhost'; 
 ```
+
 ```mysql
 
 GRANT ALL PRIVILEGES
@@ -40,6 +41,7 @@ ON *.*
 TO 'murilo'@'localhost' 
 WITH GRANT OPTION;  -- permite que este usuário conceda ou revogue privilégios de outros usuários (iguais aos usuário root)
 ```
+
 ```mysql
 
 GRANT ALL PRIVILEGES
@@ -49,13 +51,14 @@ TO 'marcos'@'localhost' ;  -- todos os privilégios, porém relacionados tão so
      
 &nbsp;   
 
-**3 - Atribuindo privilégios específicos para um usuário**
+> C. Atribuindo privilégios específicos para um usuário
 ```mysql
 
 GRANT SELECT, UPDATE
 ON bd_empresa.*  -- notação * significa que todas as tabelas deste banco de dados poderão ser visualizadas e atualizadas pelo usuário
 TO 'rogerio';
 ```
+
 ```mysql
 
 GRANT SELECT, INSERT, UPDATE, DELETE
@@ -65,7 +68,7 @@ TO 'rogerio';
 
 &nbsp;   
 
-**4 - Atribuindo privilégios específicos para um usuário em apenas determinados campos de uma tabela**
+> D. Atribuindo privilégios específicos para um usuário em apenas determinados campos de uma tabela
 ```mysql
 
 GRANT SELECT(nome_cliente, telefone_cliente), UPDATE(telefone_cliente)
@@ -75,7 +78,7 @@ TO 'rogerio';
      
 &nbsp;   
 
-**5 - Revogando apenas determinados privilégios de um usuário *(ver exemplo acima, onde quero revogar apenas a permissão para UPDATE)***
+> E. Revogando apenas determinados privilégios de um usuário (ver exemplo acima, onde quero revogar apenas a permissão para UPDATE)
 ```mysql
 
 REVOKE UPDATE
@@ -85,18 +88,20 @@ FROM 'rogerio';
      
 &nbsp;    
 
-**6 - Revogando todos os privilégios concedidos**
+> F. Revogando todos os privilégios concedidos
 ```mysql
 
 REVOKE ALL
 FROM 'daniel'@'localhost';
 ```
+
 ```mysql
 
 REVOKE ALL PRIVILEGES
 on bd_empresa.tb_clientes  -- revogando privégios apenas em uma tabela da base de dados
 FROM 'marcos'@'localhost';
 ```
+
 ```mysql
 
 REVOKE ALL PRIVILEGES, GRANT OPTION  -- use esta opção para usuários a quem foi concedido o privilégio WITH GRANT OPTION

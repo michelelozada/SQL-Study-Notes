@@ -30,8 +30,10 @@ quando evocada, tem como base tabelas reais ou mesmo outras views.
      
 &nbsp;  
 
-**As tabelas de exemplo:**  
+> As tabelas de exemplo:
+
 &nbsp; 
+
 *tb_produto:*
 | idProduto	 | nomeProduto			        | marcaProduto_fk	| categoriaProduto_fk |
 | :---	     | :---			                | :---	            | :---                |
@@ -73,8 +75,9 @@ quando evocada, tem como base tabelas reais ou mesmo outras views.
 
 &nbsp;
      
-**1.1. Criando uma view:**  
+> Criando uma view:
 ```mysql
+
 CREATE VIEW vw_catalogo AS 
 SELECT p.nomeProduto As Produto, m.nomeMarca AS Marca
 FROM tb_produto AS p
@@ -86,14 +89,15 @@ ON p.categoriaProduto_fk = c.idCategoria;
 
 &nbsp;
 
-**1.2. Evocando a view acima:** 
+> Evocando a view acima:
 ```mysql
+
 SELECT Produto, Marca
 FROM vw_catalogo
 ORDER BY Produto;
 ```
 
-##### * Output:
+Saída gerada:
 | Produto	    				| Marca      |
 | :---	    					| :---     	 |
 | Caixa de Som Bluetooth	    | JBL        |
@@ -109,9 +113,10 @@ ORDER BY Produto;
 
 &nbsp;  
 
-**2.1. Alterando uma view:**  
-*(Foi feita inclusão do campo *nomeCategoria* junto ao `SELECT`)*
+> Alterando uma view:    
+*Foi feita inclusão do campo *nomeCategoria* junto ao SELECT
 ```mysql
+
 ALTER VIEW vw_catalogo AS 
 SELECT p.nomeProduto As Produto, m.nomeMarca AS Marca, c.nomeCategoria AS Categoria
 FROM tb_produto AS p
@@ -121,14 +126,17 @@ INNER JOIN tb_categoria AS c
 ON p.categoriaProduto_fk = c.idCategoria;
 ```
 
-**2.2. Evocando a view:** 
+&nbsp;  
+
+> Evocando a view:
 ```mysql
+
 SELECT Produto, Marca, Categoria
 FROM vw_catalogo
 ORDER BY Produto;
 ```
 
-##### * Output:
+Saída gerada:
 | Produto	    				| Marca      | Categoria       |
 | :--	    					| :---     	 | :---            |
 | Caixa de Som Bluetooth	    | JBL        | Caixas de Som   |
@@ -144,8 +152,9 @@ ORDER BY Produto;
 
 &nbsp;
 
-**3. Excluindo a view:**  
+> Excluindo a view:
 ```mysql
+
 DROP VIEW vw_catalogo;
 ```
 

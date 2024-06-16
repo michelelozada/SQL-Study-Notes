@@ -14,7 +14,7 @@ pelo comando DELIMITER seguido de caracteres especiais como $$ ou //, conforme e
      
 &nbsp;  
 
-**Ex. 1 - A tabela de exemplo:**  
+> Exemplo 1 -  A tabela de exemplo:
 | idAluno | nomeAluno         | notaObtida1 | notaObtida2 |
 | :---    | :---              | :---        | :---        |
 | 1	      | Carla Santana	  | 5.5	        | 7.1         |
@@ -26,25 +26,27 @@ pelo comando DELIMITER seguido de caracteres especiais como $$ ou //, conforme e
 
 &nbsp;   
 
-**Declarando uma função, dentro do bloco BEGIN ... END**
+> A. Declarando uma função, dentro do bloco BEGIN ... END
 ```mysql
+
 DELIMITER $$ 
 CREATE FUNCTION calcularMedia(notaObtida1 DECIMAL(2,1), notaObtida2 DECIMAL(2,1))
 RETURNS DECIMAL(2,1)
 BEGIN   
-	RETURN (notaObtida1 + notaObtida2) / 2;
+  RETURN (notaObtida1 + notaObtida2) / 2;
 END $$
 DELIMITER ;
 ```
 
 &nbsp;
 
-**Invocando a função**
+> B. Invocando a função
 ```mysql
+
 SELECT nomeAluno, notaObtida1, notaObtida2, calcularMedia(notaObtida1,notaobtida2) AS mediaObtida
 FROM tb_aluno;
 ````
-###### * Output:  
+Saída gerada:  
 | nomeAluno         | notaObtida1   | notaObtida2 | mediaObtida |
 | :---              | :---          | :---        | :---        |
 | Carla Santana	    | 5.5	        | 7.1         | 6.3			|
@@ -55,8 +57,10 @@ FROM tb_aluno;
 | Mariana Fernandes | 5.4	        | 6.2         | 5.8			|
 
 &nbsp;  
+----
+&nbsp; 
 
-**Ex. 2 - A tabela de exemplo:**  
+> Exemplo 2 - A tabela de exemplo:
 | idCurso | nomeCurso 	   | Turno | Mensalidade |
 | :---    | :---      	   | :---  | :---        |
 | 1       | Direito        | M     | 876.28      |
@@ -68,26 +72,28 @@ FROM tb_aluno;
 
 &nbsp;
   
-**Incluindo duas cláusulas SELECT em um mesmo procedimento dentro do bloco BEGIN ... END**
+> A. Incluindo duas cláusulas SELECT em um mesmo procedimento dentro do bloco BEGIN ... END
 ```mysql
+
 DELIMITER //  
 CREATE PROCEDURE consultarMensalidade(pesquisaCurso varchar(50))
 BEGIN
-	SELECT CONCAT('O valor da mensalidade do curso ' , nomeCurso , ' (turno ' , turnoCurso , ') é R$ ', mensalidadeCurso , '.') AS Consulta_mensalidade
-	FROM tb_curso
-	WHERE nomeCurso = pesquisaCurso;
-	SELECT 'Consulta gerada com sucesso!' AS 'Status_consulta';
+  SELECT CONCAT('O valor da mensalidade do curso ' , nomeCurso , ' (turno ' , turnoCurso , ') é R$ ', mensalidadeCurso , '.') AS Consulta_mensalidade
+  FROM tb_curso
+  WHERE nomeCurso = pesquisaCurso;
+  SELECT 'Consulta gerada com sucesso!' AS 'Status_consulta';
 END //
 DELIMITER ;  
 ```
 
 &nbsp;  
 
-**Invocando o procedimento**
+> B. Invocando o procedimento
 ```mysql
+
 CALL consultarMensalidade('Direito');
 ```
-###### * Output:  
+Saída gerada:  
 | Status_consulta              |
 | :---                         |
 | Consulta gerada com sucesso! |
@@ -99,11 +105,12 @@ CALL consultarMensalidade('Direito');
 
 &nbsp;
 
-**Invocando o procedimento novamente, usando outro argumento**
+> C. Invocando o procedimento novamente, usando outro argumento
 ```mysql
+
 CALL consultaMensalidade('Design Gráfico');
 ```
-###### * Output:  
+Saída gerada:  
 | Status_consulta              |
 | :---                         |
 | Consulta gerada com sucesso! |
@@ -115,8 +122,9 @@ CALL consultaMensalidade('Design Gráfico');
 
 &nbsp;
    
-**Excluindo o procedimento acima**
+> D. Excluindo o procedimento acima
 ```mysql
+
 DROP PROCEDURE consultaMensalidade;
 ```
 

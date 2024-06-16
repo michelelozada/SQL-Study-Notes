@@ -23,7 +23,7 @@ quando aplicados o LEFT JOIN e RIGHT JOIN
 
 &nbsp;  
 
-**A primeira tabela para exemplo - Produtos *(tb_produto):***  
+> A primeira tabela para exemplo - Produtos (tb_produto):
 | idProduto	 | nomeProduto			        | marcaProduto_fk	| categoriaProduto_fk |
 | :---	     | :---			                | :---	            | :---                |
 | 1	         | Webcam HD C270				| 2	                | 1                   |
@@ -39,7 +39,7 @@ quando aplicados o LEFT JOIN e RIGHT JOIN
 
 &nbsp; 
 
-**A segunda tabela - Marcas *(tb_marca):***  
+> A segunda tabela - Marcas (tb_marca):
 | idMarca | nomeMarca  | 
 | :---	  | :---       |
 | 1	      | JBL        |
@@ -52,7 +52,7 @@ quando aplicados o LEFT JOIN e RIGHT JOIN
 
 &nbsp;
 
-**A terceira tabela - Categorias *(tb_categoria):*** 
+> A terceira tabela - Categorias (tb_categoria):
 | idCategoria | nomeCategoria	| 
 | :---	      | :---            |
 | 1	          | Webcams		    |
@@ -64,8 +64,9 @@ quando aplicados o LEFT JOIN e RIGHT JOIN
 
 &nbsp;
 
-**Aplicando o INNER JOIN nas três tabelas acima:**   
+> Aplicando o INNER JOIN nas três tabelas acima:
 ```mysql
+
 SELECT tb_produto.idProduto AS Código, tb_produto.nomeProduto As Produto, tb_marca.nomeMarca AS Marca, tb_categoria.nomeCategoria AS Categoria
 -- acima estão os campos que desejo que sejam exibidos na consulta
 FROM tb_produto
@@ -78,7 +79,8 @@ ON tb_produto.categoriaProduto_fk = tb_categoria.idCategoria
 ORDER BY Código ASC;
 ```
 
-##### * Output:
+Saída gerada: 
+
 | Código | Produto                      | Marca      | Categoria       |
 | :---	 | :---                         | :---	     | :---            |
 | 1	     | Webcam HD C270	            | Logitech   | Webcams         |
@@ -94,8 +96,9 @@ ORDER BY Código ASC;
 
 &nbsp;
 
-**Mesma consulta acima, mas agora utilizando aliases (apelidos) junto aos nomes das colunas para sintetizar o código:**   
+> Mesma consulta acima, mas agora utilizando aliases (apelidos) junto aos nomes das colunas para sintetizar o código:
 ```mysql
+
 SELECT p.idProduto AS Código, p.nomeProduto As Produto, m.nomeMarca AS Marca, c.nomeCategoria AS Categoria
 FROM tb_produto AS p
 INNER JOIN tb_marca AS m
@@ -107,8 +110,9 @@ ORDER BY Código ASC;
 
 &nbsp;
 
-**Utilizando a cláusula `GROUP BY` para descobrir quantos itens de produtos existem em cada tipo de categoria:**   
+> Utilizando a cláusula GROUP BY para descobrir quantos itens de produtos existem em cada tipo de categoria:
 ```mysql
+
 SELECT c.nomeCategoria AS Categorias, COUNT(p.idProduto) AS Itens
 FROM tb_produto AS p
 INNER JOIN tb_categoria AS c
@@ -117,7 +121,8 @@ GROUP BY nomeCategoria
 ORDER BY Itens DESC;
 ```
 
-##### * Output:
+Saída gerada: 
+
 | Categorias      | Itens | 
 | :---            | :---  | 
 | Mouses          | 3     |
@@ -129,8 +134,9 @@ ORDER BY Itens DESC;
 
 &nbsp;
 
-**Utilizando a cláusula `HAVING` para descobrir qual marca possui mais ou ao menos 3 itens de produto:**  
+> Utilizando a cláusula HAVING para descobrir qual marca possui mais ou ao menos 3 itens de produto:
 ```mysql
+
 SELECT m.nomeMarca AS Marcas, COUNT(p.idProduto) AS Itens
 FROM tb_produto AS p
 INNER JOIN tb_marca AS m
@@ -139,7 +145,7 @@ GROUP BY Marcas
 HAVING COUNT(Itens) >= 3;
 ```
 
-##### * Output:
+Saída gerada: 
 | Marcas     | Itens | 
 | :---       | :---  | 
 | Multilaser | 3     |

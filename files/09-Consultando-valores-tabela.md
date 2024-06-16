@@ -18,7 +18,6 @@ adiante listados.
 &nbsp;  
 
 > A tabela de exemplo:
-
 ```mysql
 
 CREATE TABLE tb_aluno(
@@ -50,16 +49,20 @@ SELECT * FROM tb_aluno;
 ```
 
 Saída gerada: 
-| ID Aluno | Nome aluno        | E-mail                   | 
-| :---     | :---              | :---                     | 
-| 1        | Luana Borba       | luanab@email.com         |
-| 2        | Mariana Fernandes | marifernandes@email.com  |
-| 3        | Cátia Marcondes   | catiamarcondes@email.com |
-| 4        | Marcos Góes       | marcosgoes@email.com     |
-| 5        | Sônia de Morais   | sonia_morais@email.com   |
-| 6		     | Enzo Freitas      | efreitas@email.com	      |
-| 7		     | Rodrigo Mattos    | rodrigo.mattos@email.com |
-| 8        | Paula Souza       | paula_souza@email.com    |
+```
++----------+--------------------+--------------------------+
+| ID Aluno |     Nome aluno     |          E-mail          |
++----------+--------------------+--------------------------+
+|        1 | Luana Borba        | luanab@email.com         |
+|        2 | Mariana Fernandes  | marifernandes@email.com  |
+|        3 | Cátia Marcondes    | catiamarcondes@email.com |
+|        4 | Marcos Góes        | marcosgoes@email.com     |
+|        5 | Sônia de Morais    | sonia_morais@email.com   |
+|        6 | Enzo Freitas       | efreitas@email.com       |
+|        7 | Rodrigo Mattos     | rodrigo.mattos@email.com |
+|        8 | Paula Souza        | paula_souza@email.com    |
++----------+--------------------+--------------------------+
+```
 
 &nbsp;
   
@@ -70,13 +73,17 @@ SELECT nomeAluno FROM tb_aluno;
 ```	
 
 Saída gerada: 
-| Nome aluno        |
-| :---              |
-| Luana Borba       | 
+```
++-------------------+
+|    Nome aluno     |
++-------------------+
+| Luana Borba       |
 | Mariana Fernandes |
 | Cátia Marcondes   |
 | Marcos Góes       |
 | Sônia de Morais   |
++-------------------+
+```
 
 &nbsp;
   
@@ -87,16 +94,20 @@ SELECT nomeAluno, emailAluno FROM tb_aluno;
 ```	
 
 Saída gerada: 
-| Nome aluno        | E-mail                   | 
-| :---              | :---                     | 
+```
++-------------------+--------------------------+
+|    Nome aluno     |          E-mail          |
++-------------------+--------------------------+
 | Luana Borba       | luanab@email.com         |
 | Mariana Fernandes | marifernandes@email.com  |
 | Cátia Marcondes   | catiamarcondes@email.com |
 | Marcos Góes       | marcosgoes@email.com     |
 | Sônia de Morais   | sonia_morais@email.com   |
-| Enzo Freitas      | efreitas@email.com	   |
+| Enzo Freitas      | efreitas@email.com       |
 | Rodrigo Mattos    | rodrigo.mattos@email.com |
 | Paula Souza       | paula_souza@email.com    |
++-------------------+--------------------------+
+```
 
 &nbsp;
 
@@ -111,16 +122,20 @@ ORDER BY nomeAluno DESC;
 ```
 
 Saída gerada: 
-| Nome aluno        | 
-| :---              | 
-| Sônia de Morais   | 
-| Rodrigo Mattos    | 
-| Paula Souza       | 
-| Mariana Fernandes | 
-| Marcos Góes       | 
-| Luana Borba       | 
-| Enzo Freitas      | 
-| Cátia Marcondes   | 
+```
++-------------------+
+|    Nome aluno     |
++-------------------+
+| Sônia de Morais   |
+| Rodrigo Mattos    |
+| Paula Souza       |
+| Mariana Fernandes |
+| Marcos Góes       |
+| Luana Borba       |
+| Enzo Freitas      |
+| Cátia Marcondes   |
++-------------------+
+```
 
 &nbsp;
 
@@ -132,16 +147,20 @@ ORDER BY nomeAluno;
 ```
 
 Saída gerada: 
-| Nome aluno        | 
-| :---              | 
-| Cátia Marcondes   | 
+```
++-------------------+
+|    Nome aluno     |
++-------------------+
+| Cátia Marcondes   |
 | Enzo Freitas      |
-| Luana Borba       | 
-| Marcos Góes       | 
-| Mariana Fernandes | 
-| Paula Souza       | 
-| Rodrigo Mattos    | 
-| Sônia de Morais   | 
+| Luana Borba       |
+| Marcos Góes       |
+| Mariana Fernandes |
+| Paula Souza       |
+| Rodrigo Mattos    |
+| Sônia de Morais   |
++-------------------+
+```
 
 &nbsp;
 
@@ -155,9 +174,13 @@ WHERE idAluno = 5;
 ```
 
 Saída gerada: 
-| ID Aluno  | Nome aluno        | 
-| :---      | :---   			| 
-| 5     	| Sônia de Morais   |
+```
++----------+-----------------+
+| ID Aluno |   Nome aluno    |
++----------+-----------------+
+|        5 | Sônia de Morais |
++----------+-----------------+
+```
 
 &nbsp;
   
@@ -169,12 +192,15 @@ ORDER BY nomeAluno DESC;
 ```
 
 Saída gerada: 
-| ID Aluno  | Nome aluno    | 
-| :---      | :---          | 
-| 2			| Mariana Fernandes |
-| 1			| Luana Borba       |
-| 3			| Cátia Marcondes   |
-
+```
++----------+-------------------+
+| ID Aluno |    Nome aluno     |
++----------+-------------------+
+|       2  | Mariana Fernandes |
+|       1  | Luana Borba       |
+|       3  | Cátia Marcondes   |
++----------+-------------------+
+```
 &nbsp;
 
 ```mysql
@@ -184,12 +210,16 @@ WHERE NOT idAluno > 4;
 ```
 
 Saída gerada: 
-| ID Aluno  | Nome aluno    | 
-| :---      | :---          | 
-| 1			| Luana Borba       |
-| 2			| Mariana Fernandes |
-| 3			| Cátia Marcondes   |
-| 4			| Marcos Góes       |
+```
++----------+-------------------+
+| ID Aluno |    Nome aluno     |
++----------+-------------------+
+|        1 | Luana Borba       |
+|        2 | Mariana Fernandes |
+|        3 | Cátia Marcondes   |
+|        4 | Marcos Góes       |
++----------+-------------------+
+```
 
 &nbsp;
 
@@ -200,9 +230,13 @@ WHERE (idAluno = 8 AND nomeAluno = "Paulinha") OR (idAluno = 7 AND nomeAluno = "
 ```
 
 Saída gerada: 
-| ID Aluno  | Nome aluno        | 
-| :---      | :---              | 
-| 7			    | Rodrigo Mattos    |
+```
++----------+----------------+
+| ID Aluno |   Nome aluno   |
++----------+----------------+
+|        7 | Rodrigo Mattos |
++----------+----------------+
+```
 
 &nbsp;
 
@@ -226,11 +260,15 @@ LIMIT 3;
 ```
 
 Saída gerada: 
-| Nome aluno        |
-| :---              |
+```
++-------------------+
+|    Nome aluno     |
++-------------------+
 | Cátia Marcondes   |
 | Luana Borba       |
 | Mariana Fernandes |
++-------------------+
+```
 
 &nbsp;
 
@@ -246,10 +284,14 @@ WHERE nomeAluno LIKE '%A';
 ```
 
 Saída gerada: 
-| ID Aluno | Nome aluno  | 
-| :---     | :---        | 
-| 1        | Luana Borba |
-| 8        | Paula Souza |
+```
++----------+-------------+
+| ID Aluno | Nome aluno  |
++----------+-------------+
+|        1 | Luana Borba |
+|        8 | Paula Souza |
++----------+-------------+
+```
 
 &nbsp;
 
@@ -262,11 +304,14 @@ WHERE nomeAluno LIKE 'M%';
 ```
 
 Saída gerada: 
-| ID Aluno | Nome aluno        | 
-| :---     | :---              |
-| 2        | Mariana Fernandes |
-| 4        | Marcos Góes       |
-
+```
++----------+-------------------+
+| ID Aluno |    Nome aluno     |
++----------+-------------------+
+|       2  | Mariana Fernandes |
+|       4  | Marcos Góes       |
++----------+-------------------+
+```
 &nbsp;
   
 > No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) contêm a letra 'M'. 
@@ -278,13 +323,17 @@ WHERE nomeAluno LIKE '%M%';
 ```
 
 Saída gerada: 
-| ID Aluno | Nome aluno        |  
-| :---     | :---              |  
-| 2        | Mariana Fernandes | 
-| 3        | Cátia Marcondes   | 
-| 4        | Marcos Góes       | 
-| 5        | Sonia Morais      | 
-| 7        | Rodrigo Mattos	   |	
+```
++----------+-------------------+
+| ID Aluno |    Nome aluno     |
++----------+-------------------+
+|       2  | Mariana Fernandes |
+|       3  | Cátia Marcondes   |
+|       4  | Marcos Góes       |
+|       5  | Sonia Morais      |
+|       7  | Rodrigo Mattos    |
++----------+-------------------+
+```
 
 &nbsp;
   
@@ -297,10 +346,14 @@ WHERE nomeAluno LIKE '__R%';
 ```
 
 Saída gerada: 	
-| ID Aluno | Nome aluno        |  
-| :---     | :---              |  
-| 2        | Mariana Fernandes | 
-| 4        | Marcos Góes       |
+```
++----------+-------------------+
+| ID Aluno |    Nome aluno     |
++----------+-------------------+
+|        2 | Mariana Fernandes |
+|        4 | Marcos Góes       |
++----------+-------------------+
+```
 
 &nbsp;
    
@@ -313,10 +366,14 @@ WHERE nomeAluno LIKE '%NDES';
 ```
 
 Saída gerada: 
-| ID Aluno | Nome aluno        |  
-| :---     | :---              |  
-| 2        | Mariana Fernandes | 
-| 3        | Cátia Marcondes   | 
+```
++----------+-------------------+
+| ID Aluno |    Nome aluno     |
++----------+-------------------+
+|       2  | Mariana Fernandes |
+|       3  | Cátia Marcondes   |
++----------+-------------------+
+```
 
 &nbsp;
    
@@ -329,10 +386,14 @@ WHERE nomeAluno LIKE 'm%s';
 ```
 
 Saída gerada: 
-| ID Aluno | Nome aluno        |  
-| :---     | :---              |  
-| 2        | Mariana Fernandes | 
-| 4        | Marcos Góes       |
+```
++----------+-------------------+
+| ID Aluno |    Nome aluno     |
++----------+-------------------+
+|        2 | Mariana Fernandes |
+|        4 | Marcos Góes       |
++----------+-------------------+
+```
 
 &nbsp;
 
@@ -347,9 +408,13 @@ WHERE nomeAluno NOT LIKE '%R%';
 ```
 
 Saída gerada: 
-| ID Aluno | Nome aluno  | 
-| :---     | :---        | 
-| 8        | Paula Souza |
+```
++----------+-------------+
+| ID Aluno | Nome aluno  |
++----------+-------------+
+|        8 | Paula Souza |
++----------+-------------+
+```
 
 &nbsp;
 

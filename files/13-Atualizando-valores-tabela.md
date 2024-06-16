@@ -14,13 +14,17 @@
 &nbsp;
 
 > A tabela de exemplo:
-| idAluno  | nomeAluno         | cidadeAluno    | estadoAluno |
-| :---     | :---              | :---           | :---        |
-| 1        | Luana Borba       | Curitiba       | PR          |
-| 2        | Mariana Fernandes | Rio de Janeiro | RJ          |
-| 3        | Cátia Marcondes   | Santo André    | SP          |
-| 4        | Marcos Góes       | Florianópolis  | SC          |
+```
++---------+-------------------+----------------+-------------+
+| idAluno |     nomeAluno     |  cidadeAluno   | estadoAluno |
++---------+-------------------+----------------+-------------+
+|       1 | Luana Borba       | Curitiba       | PR          |
+|       2 | Mariana Fernandes | Rio de Janeiro | RJ          |
+|       3 | Cátia Marcondes   | Santo André    | SP          |
+|       4 | Marcos Góes       | Florianópolis  | SC          |
++---------+-------------------+----------------+-------------+
 
+```
 &nbsp;
 
 ## Atualizando um registro da tabela:
@@ -34,13 +38,16 @@ WHERE idAluno = 4;  -- foi retificado o nome deste aluno  -- condição para atu
 ```
 
 Saída gerada: 
-| idAluno  | nomeAluno         | cidadeAluno    | estadoAluno |
-| :---     | :---              | :---           | :---        |
-| 1        | Luana Borba       | Curitiba       | PR          |
-| 2        | Mariana Fernandes | Rio de Janeiro | RJ          |
-| 3        | Cátia Marcondes   | Santo André    | SP          |
-| 4        | Marcos Góes Filho | Florianópolis  | SC          |
-
+```
++---------+-------------------+----------------+-------------+
+| idAluno |     nomeAluno     |  cidadeAluno   | estadoAluno |
++---------+-------------------+----------------+-------------+
+|       1 | Luana Borba       | Curitiba       | PR          |
+|       2 | Mariana Fernandes | Rio de Janeiro | RJ          |
+|       3 | Cátia Marcondes   | Santo André    | SP          |
+|       4 | Marcos Góes Filho | Florianópolis  | SC          |
++---------+-------------------+----------------+-------------+
+```
 &nbsp;
 
 ## Atualizando mais de um campo:
@@ -53,13 +60,17 @@ WHERE idAluno = 4;
 ```
 
 Saída gerada: 
-| idAluno  | nomeAluno         | cidadeAluno    | estadoAluno |
-| :---     | :---              | :---           | :---        |
-| 1        | Luana Borba       | Curitiba       | PR          |
-| 2        | Mariana Fernandes | Rio de Janeiro | RJ          |
-| 3        | Cátia Marcondes   | Santo André    | SP          |
-| 4        | Marcos Góes Filho | Porto Alegre   | RS          |
+```
++---------+--------------------+----------------+-------------+
+| idAluno |     nomeAluno      |  cidadeAluno   | estadoAluno |
++---------+--------------------+----------------+-------------+
+|      1  | Luana Borba        | Curitiba       | PR          |
+|      2  | Mariana Fernandes  | Rio de Janeiro | RJ          |
+|      3  | Cátia Marcondes    | Santo André    | SP          |
+|      4  | Marcos Góes Filho  | Porto Alegre   | RS          |
++---------+--------------------+----------------+-------------+
 
+```
 &nbsp;
   
 > **ATT: Caso não seja utilizada a cláusula `WHERE`, todos os registros da tabela serão atualizados com a mesma informação!**
@@ -71,12 +82,16 @@ SET cidadeAluno = 'Curitiba', estadoAluno="PR";
 ```
 
 Saída gerada: 
-| idAluno  | nomeAluno          | cidadeAluno | estadoAluno |
-| :---     | :---               | :---        | :---        |
-| 1        | Luana Borba        | Curitiba    | PR          |
-| 2        | Mariana Fernandes  | Curitiba    | PR          |
-| 3        | Cátia Marcondes    | Curitiba    | PR          |
-| 4        | Marcos Góes Filho	| Curitiba    | PR          |
+```
++---------+-------------------+-------------+-------------+
+| idAluno |     nomeAluno     | cidadeAluno | estadoAluno |
++---------+-------------------+-------------+-------------+
+|       1 | Luana Borba       | Curitiba    | PR          |
+|       2 | Mariana Fernandes | Curitiba    | PR          |
+|       3 | Cátia Marcondes   | Curitiba    | PR          |
+|       4 | Marcos Góes Filho | Curitiba    | PR          |
++---------+-------------------+-------------+-------------+
+```
 
 &nbsp;
 

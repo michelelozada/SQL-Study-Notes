@@ -59,6 +59,9 @@ CREATE TABLE tb_contrato(
   REFERENCES tb_aluno(idAluno)
 );
 ```
+
+&nbsp;   
+
 > Aplicando chave estrangeira numa tabela já criada:
 ```mysql
 
@@ -66,12 +69,18 @@ ALTER TABLE tb_contrato
 ADD CONSTRAINT idAluno FOREIGN KEY (idAluno_fk) 
 REFERENCES tb_aluno(idAluno);
 ```
+
+&nbsp;   
+
 > Exclusão de uma chave estrangeira:
 ```mysql
 
 ALTER TABLE tb_contrato 
 DROP CONSTRAINT idAluno;
 ```
+
+&nbsp;   
+
 > Ou alternativamente:
 ```mysql
 
@@ -91,6 +100,9 @@ CREATE TABLE tb_aluno(
   cpfAluno varchar(15) UNIQUE
 );
 ```
+
+&nbsp;   
+
 > Adicionando restrição UNIQUE a coluna de tabela já criada:
 ```mysql
 
@@ -110,7 +122,10 @@ CREATE TABLE tb_aluno(
   nomeAluno varchar(40),
   PRIMARY KEY(idAluno)
 );
+
 ```
+
+&nbsp;   
 
 > Caso a restrição não tenha sido definida no momento da criação da tabela:
 ```mysql
@@ -118,6 +133,8 @@ CREATE TABLE tb_aluno(
 ALTER TABLE tb_aluno 
 MODIFY nomeAluno varchar(40) NOT NULL;
 ```
+
+&nbsp;   
 
 > Caso seja necessária a reversão:
 ```mysql
@@ -139,6 +156,9 @@ CREATE TABLE tb_aluno(
   estadoAluno char(2) DEFAULT 'PR'
 );
 ```
+
+&nbsp;   
+
 > Caso a restrição não tenha sido definida no momento da criação da tabela:
 ```mysql
 

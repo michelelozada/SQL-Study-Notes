@@ -17,8 +17,7 @@ de funções de agregação.
 
 &nbsp;  
 
-**A tabela para exemplo:** 
-
+> A tabela para exemplo:
 | idVenda  | idVendedor  | valorVenda | tipoCliente |
 | :---     | :---   	   | :---       | :---        | 
 | 1		     | 3			     |  760.00 	  | PJ          |
@@ -34,8 +33,9 @@ de funções de agregação.
 
 &nbsp;
 
-No exemplo abaixo, desejo retornar o valor total das vendas de cada um dos vendedores *(repare que aqui não foi inclusa a clásula `HAVING`)*:
+> No exemplo abaixo, desejo retornar o valor total das vendas de cada um dos vendedores (repare que aqui não foi inclusa a clásula HAVING):
 ```mysql
+
 SELECT idVendedor AS 'Id Vendedor', SUM(valorVenda) AS 'Valor total das vendas'
 FROM tb_venda
 GROUP BY idVendedor;
@@ -48,8 +48,9 @@ GROUP BY idVendedor;
 
 &nbsp;
 
-Aqui, desejo retornar os vendendores que fizeram vendas superiores a R$ 5.000,00 *(aqui é utilizada a clásula `HAVING`)*:
+> Aqui, desejo retornar os vendendores que fizeram vendas superiores a R$ 5.000,00 *(aqui é utilizada a clásula HAVING)*:
 ```mysql
+
 SELECT idVendedor AS 'Id Vendedor', SUM(valorVenda) AS 'Valor total das vendas'
 FROM tb_venda
 GROUP BY idVendedor
@@ -61,8 +62,9 @@ HAVING SUM(valorVenda) > 5000.00;
 
 &nbsp;
 
-No exemplo abaixo, desejo retornar quantas vendas cada vendedor realizou *(repare que não foi inclusa a clásula `HAVING`)*:
+> No exemplo abaixo, desejo retornar quantas vendas cada vendedor realizou (repare que não foi inclusa a clásula HAVING):
 ```mysql
+
 SELECT idVendedor AS 'Id Vendedor', COUNT(idVenda) AS 'Quantidade de Vendas'
 FROM tb_venda
 GROUP BY idVendedor;
@@ -75,8 +77,9 @@ GROUP BY idVendedor;
 
 &nbsp;
 
-No exemplo abaixo, desejo saber se algum vendedor realizou 4 (ou mais) vendas até esse momento *(aqui utilizada a clásula `HAVING`)*:
+> No exemplo abaixo, desejo saber se algum vendedor realizou 4 (ou mais) vendas até esse momento (aqui utilizada a clásula HAVING):
 ```mysql
+
 SELECT idVendedor AS 'Id Vendedor', COUNT(idVenda) AS 'Quantidade de Vendas'
 FROM tb_venda
 GROUP BY idVendedor
@@ -88,8 +91,9 @@ HAVING COUNT(idVenda) >= 4;
 
 &nbsp;
 
-No exemplo abaixo, desejo saber se algum vendedor realizou mais que 3 vendas para clientes do tipo PJ até esse momento:
+> No exemplo abaixo, desejo saber se algum vendedor realizou mais que 3 vendas para clientes do tipo PJ até esse momento:
 ```mysql
+
 SELECT idVendedor AS 'Id Vendedor', COUNT(tipoCliente) AS 'Vendas para clientes do tipo PJ'
 FROM tb_venda
 WHERE tipoCliente = 'PJ'

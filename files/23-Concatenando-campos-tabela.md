@@ -11,7 +11,7 @@ Concatena strings de campos diferentes da tabela, através de uma mesma query
      
 &nbsp;
 
-**A tabela para o exemplo:**   
+> A tabela para o exemplo:
 | idCliente | nomeCliente | sobrenomeCliente | scoreCliente |
 | :---      | :---	      | :---	         | :---         |
 | 1         | Luana	      | Borba	         | 300          |
@@ -27,14 +27,15 @@ Concatena strings de campos diferentes da tabela, através de uma mesma query
 
 &nbsp;
 
-**1. Utilizando a função CONCAT:**  
+### • Utilizando a função CONCAT:
 ```mysql
+
 SELECT CONCAT(nomeCliente, ' ',sobrenomeCliente) AS 'Nome do Cliente'
 FROM tb_cliente
 ORDER BY nomeCliente;
 ```
-###### * Output:  
 
+Saída gerada:
 | Nome do Cliente   |
 | :---              |
 | Carla Santana     |
@@ -50,43 +51,49 @@ ORDER BY nomeCliente;
 
 &nbsp;
 
-**Nova consulta:**  
+> Nova consulta:
 ```mysql
+
 SELECT CONCAT('Score do(a) cliente ', nomeCliente, ' ', sobrenomeCliente, ': ', scoreCliente, ' pontos') AS  'Consulta sobre clientes'
 FROM tb_cliente
 WHERE idCliente = '2';
 ```
-###### * Output:  
+Saída gerada:
 | Consulta sobre clientes                            |
 | :---                                               |
 | Score do(a) cliente Mariana Fernandes: 710 pontos. |
 
 &nbsp;
 
-**Agora repare o que acontece ao se fazer a consulta à um registro que contém valor nulo:**  
+> Agora repare o que acontece ao se fazer a consulta a um registro que contém valor nulo:  
 ```mysql
+
 SELECT CONCAT('Score do(a) cliente ', nomeCliente, ' ', sobrenomeCliente, ': ', scoreCliente, ' pontos') AS  'Consulta sobre clientes'
 FROM tb_cliente
 WHERE idCliente = '10';
 ```
-###### * Output:  
+Saída gerada:
 | Consulta sobre clientes |
 | :---                    |
 | NULL 					  |	
 
 &nbsp;
 
-**2. Utilizando a função IFNULL:**  
-- Strings concatenadas com campos que contém valores nulos não serão exibidas: será apenas retornada linha com valor NULL, como visto acima.    
-- Portanto, para evitar isto, deve-se utilizar a função `IFNULL`, que contém 2 argumentos: 
-	- no primeiro argumento, é colocado o campo a ser concatenado (que pode ter valor NULL); 
-	- e no segundo argumento, coloca-se a mensagem que se deseja que substitua o termo NULL, quando houver. 
+### • Utilizando a função IFNULL:
+Strings concatenadas com campos que contém valores nulos não serão exibidas: será apenas retornada linha com valor NULL, como visto acima.
+
+&nbsp;
+
+Para evitar isto, deve ser utilizada a função `IFNULL`, que contém 2 argumentos: 
+&nbsp;&nbsp;. no primeiro argumento, é colocado o campo a ser concatenado (que pode ter valor NULL); 
+&nbsp;&nbsp;. e no segundo argumento, coloca-se a mensagem que se deseja que substitua o termo NULL, quando houver. 
 ```mysql
+
 SELECT CONCAT('Score do(a) cliente ', nomeCliente, ' ', sobrenomeCliente, ': ', IFNULL(scoreCliente,'ainda não computado'),'.') AS  'Consulta sobre clientes'
 FROM tb_cliente
 WHERE idCliente = '10';
 ```
-###### * Output:  
+Saída gerada:
 | Consulta sobre clientes 									|
 | :---                    									|
 | Score do(a) cliente Vinícius Motta: ainda não computado.  |

@@ -4,19 +4,23 @@
 &nbsp;
      
 &nbsp;   
-**A tabela para exemplo:** 
-| idAluno | nomeAluno         |	sexoAluno | dNascimentoAluno | cidadeAluno    | estado Aluno |
-| :---    | :---              | :---      | :---             | :---  	      | :---         |
-| 1       | Luana Borba       |	F         | 2004-02-10		 | Curitiba       | PR           |
-| 2	      | Mariana Fernandes | F         | 1991-03-23		 | Rio de Janeiro | RJ           |
-| 3	      | Cátia Marcondes   |	F         |	2000-01-05		 | Pato Branco    | PR           |
-| 4	      | Marcos Góes       |	M         |	1987-03-18		 | Florianópolis  | SC           |
-| 5	      | Enzo Marques      | M         | 2002-05-14 		 | Curitiba       | PR           |
-| 6	      | Carla Santana     | F         | 1986-01-24 		 | Santo André    | SP           |
-| 7	      | Sandra de Paula   | F         | 1997-02-12		 | Curitiba       | PR           |
-| 8	      | Paulo Figueiredo  | M         | 1999-06-02  	 | Erechim        | RS           |
-| 9	      | Larissa Torres    | F         |	2003-04-07		 | Paranaguá      | PR           |
-| 10      |	Vinícius Motta    | M         | 1994-02-13		 | Porto Alegre   | RS           |
+> A tabelas ára exemplo:  
+```
++---------+-------------------+-----------+------------------+----------------+--------------+
+| idAluno |     nomeAluno     | sexoAluno | dNascimentoAluno |  cidadeAluno   | estado Aluno |
++---------+-------------------+-----------+------------------+----------------+--------------+
+|       1 | Luana Borba       | F         | 2004-02-10       | Curitiba       | PR           |
+|       2 | Mariana Fernandes | F         | 1991-03-23       | Rio de Janeiro | RJ           |
+|       3 | Cátia Marcondes   | F         | 2000-01-05       | Pato Branco    | PR           |
+|       4 | Marcos Góes       | M         | 1987-03-18       | Florianópolis  | SC           |
+|       5 | Enzo Marques      | M         | 2002-05-14       | Curitiba       | PR           |
+|       6 | Carla Santana     | F         | 1986-01-24       | Santo André    | SP           |
+|       7 | Sandra de Paula   | F         | 1997-02-12       | Curitiba       | PR           |
+|       8 | Paulo Figueiredo  | M         | 1999-06-02       | Erechim        | RS           |
+|       9 | Larissa Torres    | F         | 2003-04-07       | Paranaguá      | PR           |
+|      10 | Vinícius Motta    | M         | 1994-02-13       | Porto Alegre   | RS           |
++---------+-------------------+-----------+------------------+----------------+--------------+
+```
 
 &nbsp;
 
@@ -39,11 +43,15 @@ WHERE idAluno > 2 AND sexoAluno = 'F' AND estadoAluno='PR';
 ```
 
 Saída gerada:
-| idAluno | nomeAluno         |	sexoAluno | estado Aluno |
-| :---    | :---              | :---      | :---         |
-| 3	      | Cátia Marcondes   |	F         |	PR           |
-| 7	      | Sandra de Paula   | F         |	PR           |
-| 9	      | Larissa Torres    | F         | PR           |
+```
++---------+-----------------+-----------+--------------+
+| idAluno |    nomeAluno    | sexoAluno | estado Aluno |
++---------+-----------------+-----------+--------------+
+|       3 | Cátia Marcondes | F         | PR           |
+|       7 | Sandra de Paula | F         | PR           |
+|       9 | Larissa Torres  | F         | PR           |
++---------+-----------------+-----------+--------------+
+```
 
 &nbsp;
      
@@ -58,15 +66,19 @@ WHERE estadoAluno='PR' OR sexoAluno = 'F';
 ```
 
 Saída gerada:
-| idAluno | nomeAluno         |	sexoAluno | estado Aluno |
-| :---    | :---              | :---      | :---         |
-| 1       | Luana Borba       |	F         |	PR           |
-| 2	      | Mariana Fernandes | F         | RJ           |
-| 3	      | Cátia Marcondes   |	F         |	PR           |
-| 5	      | Enzo Marques      | M         | PR           |
-| 6	      | Carla Santana     | F         | SP           |
-| 7	      | Sandra de Paula   | F         |	PR           |
-| 9	      | Larissa Torres    | F         | PR           |
+```
++---------+-------------------+-----------+-------------+
+| idAluno |     nomeAluno     | sexoAluno | estadoAluno |
++---------+-------------------+-----------+-------------+
+|       1 | Luana Borba       | F         | PR          |
+|       2 | Mariana Fernandes | F         | RJ          |
+|       3 | Cátia Marcondes   | F         | PR          |
+|       5 | Enzo Marques      | M         | PR          |
+|       6 | Carla Santana     | F         | SP          |
+|       7 | Sandra de Paula   | F         | PR          |
+|       9 | Larissa Torres    | F         | PR          |
++---------+-------------------+-----------+-------------+
+```
 
 &nbsp;
      
@@ -81,12 +93,16 @@ WHERE idAluno > 2 AND NOT sexoAluno = 'F';
 ```
 
 Saída gerada:
-| idAluno | nomeAluno         |	sexoAluno | 
-| :---    | :---              | :---      |
-| 4	      | Marcos Góes       |	M         |	
-| 5	      | Enzo Marques      | M         | 
-| 8	      | Paulo Figueiredo  | M         | 
-| 10      |	Vinícius Motta    | M         | 
+```
++---------+------------------+-----------+
+| idAluno |    nomeAluno     | sexoAluno |
++---------+------------------+-----------+
+|       4 | Marcos Góes      | M         |
+|       5 | Enzo Marques     | M         |
+|       8 | Paulo Figueiredo | M         |
+|      10 | Vinícius Motta   | M         |
++---------+------------------+-----------+
+```
 
 &nbsp;
      
@@ -111,12 +127,16 @@ WHERE cidadeAluno IN ('Curitiba','Pato Branco');
 ```
 
 Saída gerada:
-| nomeAluno         | cidadeAluno    |
-| :---              | :---    	     |
-| Luana Borba       | Curitiba       |
-| Cátia Marcondes   | Pato Branco    |
-| Enzo Marques      | Curitiba       |
-| Sandra de Paula   | Curitiba       |
+```
++-----------------+-------------+
+|    nomeAluno    | cidadeAluno |
++-----------------+-------------+
+| Luana Borba     | Curitiba    |
+| Cátia Marcondes | Pato Branco |
+| Enzo Marques    | Curitiba    |
+| Sandra de Paula | Curitiba    |
++-----------------+-------------+
+```
 
 &nbsp;
      
@@ -133,14 +153,18 @@ WHERE estadoAluno NOT IN ('PR','RS','SC');
 ```
 
 Saída gerada:
-| nomeAluno         | estado Aluno |
-| :---              | :---         |
-| Mariana Fernandes | RJ           |
-| Carla Santana     | SP           |
+```
++-------------------+-------------+
+|     nomeAluno     | estadoAluno |
++-------------------+-------------+
+| Mariana Fernandes | RJ          |
+| Carla Santana     | SP          |
++-------------------+-------------+
+```
 
 &nbsp;
      
-### • OPERADOR BETWEEN  
+## OPERADOR BETWEEN  
 Especifica uma faixa de valores a serem retornados
 
 ```mysql
@@ -152,12 +176,16 @@ ORDER BY dNascimentoAluno DESC;
 ```
 
 Saída gerada:
-| nomeAluno         | dNascimentoAluno | 
-| :---              | :---             |  
-| Luana Borba		| 2004-02-10       |
-| Larissa Torres	| 2003-04-07       |
-| Enzo Marques		| 2002-05-14       |
-| Cátia Marcondes	| 2000-01-05       |
+```
++-----------------+------------------+
+|    nomeAluno    | dNascimentoAluno |
++-----------------+------------------+
+| Luana Borba     | 2004-02-10       |
+| Larissa Torres  | 2003-04-07       |
+| Enzo Marques    | 2002-05-14       |
+| Cátia Marcondes | 2000-01-05       |
++-----------------+------------------+
+```
 
 &nbsp;
 

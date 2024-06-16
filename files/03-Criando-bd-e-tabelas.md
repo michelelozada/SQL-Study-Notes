@@ -52,7 +52,6 @@ USE db_escola;
 ### • Comando SHOW  
 
 > Listando quais as bases de dados existentes no servidor:        
-
 ```mysql
 
 SHOW DATABASES;
@@ -70,7 +69,6 @@ Saída gerada:
 &nbsp;
  
 > Exibindo todas as tabelas existentes na base de dados em uso:     
-
 ```mysql
 
 SHOW TABLES;

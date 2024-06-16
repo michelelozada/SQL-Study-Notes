@@ -17,7 +17,6 @@
 &nbsp;
      
 > As tabelas para os exemplos:
-
 ```mysql
 
 CREATE TABLE tb_aluno(
@@ -29,6 +28,7 @@ CREATE TABLE tb_aluno(
   PRIMARY KEY(idAluno)
 );
 ```
+
 ```mysql
 
 CREATE TABLE tb_contrato(
@@ -109,7 +109,7 @@ RENAME COLUMN nomeAluno TO nome_aluno;
 ALTER TABLE tb_alunos
 CHANGE nomeAluno nome_aluno varchar(50);
 ```
-Obs: Após o CHANGE, colocar nome atual da tabela, seguindo ao novo nome com a definição do tipos dos dados  
+Obs: Após o `CHANGE`, colocar nome atual da tabela, seguindo ao novo nome com a definição do tipos dos dados  
 
 &nbsp;
 

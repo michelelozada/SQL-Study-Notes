@@ -14,7 +14,7 @@ executar uma ou mais tarefas
 
 &nbsp;  
 
-**A tabela para exemplo**  
+> A tabela para exemplo:
 | idCurso | nomeCurso 	   | Turno | Mensalidade |
 | :---    | :---      	   | :---  | :---        |
 | 1       | Direito        | M     | 876.28      |
@@ -26,8 +26,9 @@ executar uma ou mais tarefas
 
 &nbsp;
     
-**Declarando um procedimento**
+> Declarando um procedimento:
 ```mysql
+
 CREATE PROCEDURE consultaMensalidade(pesquisaCurso varchar(50))
 SELECT CONCAT('O valor da mensalidade do curso ' , nomeCurso , ' (turno ' , turnoCurso , ') é R$ ', mensalidadeCurso , '.') AS Consulta_Mensalidade
 FROM tb_curso
@@ -36,11 +37,13 @@ WHERE nomeCurso = pesquisaCurso;
 
 &nbsp;    
 
-**Invocando o procedimento**
+> Invocando o procedimento:
 ```mysql
+
 CALL consultaMensalidade('Direito');
 ```
-###### * Output:  
+
+Saída gerada:
 | Consulta_Mensalidade                                           |
 | :---                                                           |
 | O valor da mensalidade do curso Direito (turno M) é R$ 876.28. |
@@ -48,11 +51,12 @@ CALL consultaMensalidade('Direito');
 
 &nbsp;
 
-**Invocando o procedimento novamente, usando outro argumento**
+> Invocando o procedimento novamente, usando outro argumento:
 ```mysql
+
 CALL consultaMensalidade('Design Gráfico');
 ```
-###### * Output:  
+Saída gerada:
 | Consulta_Mensalidade                                                  |
 | :---                                                                  |
 | O valor da mensalidade do curso Design Gráfico (turno M) é R$ 622.05. |
@@ -60,8 +64,9 @@ CALL consultaMensalidade('Design Gráfico');
 
 &nbsp;
 
-**Excluindo o procedimento acima**
+> Excluindo o procedimento acima:
 ```mysql
+
 DROP PROCEDURE consultaMensalidade;
 ```
 

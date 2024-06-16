@@ -13,7 +13,7 @@
 
 &nbsp;
 
-**A tabela para o exemplo:**   
+> A tabela para o exemplo:   
 | idCliente | nomeCliente 		| scoreCliente |
 | :---      | :---	      		| :---         |
 | 1         | Luana Borba	    | 300          |
@@ -29,14 +29,18 @@
 
 &nbsp;
      
-**1. Utilizando o operador IS NULL:**  
-* Retorna registros com valores vazios da coluna identificada
+### • Utilizando o operador IS NULL:  
+Retorna registros com valores vazios da coluna identificada  
+
 ```mysql
+
 SELECT * 
 FROM tb_cliente 
 WHERE scoreCliente IS NULL;
 ```
-###### * Output:  
+
+Saída gerada:
+
 | idCliente | nomeCliente 		| scoreCliente |
 | :---      | :---	      		| :---         |
 | 3	        | Cátia Marcondes	| NULL         |
@@ -47,15 +51,18 @@ WHERE scoreCliente IS NULL;
 
 &nbsp;
      
-**2. Utilizando o operador IS NOT NULL:**  
-* Retorna registros com valores não-vazios da coluna identificada  
+### • Utilizando o operador IS NOT NULL:
+Retorna registros com valores não-vazios da coluna identificada  
+
 ```mysql
+
 SELECT * 
 FROM tb_cliente 
 WHERE scoreCliente IS NOT NULL
 ORDER BY scoreCliente DESC;
 ```
-###### * Output:  
+Saída gerada:
+
 | idCliente | nomeCliente 		| scoreCliente |
 | :---      | :---	      		| :---         |
 | 6	        | Carla Santana	    | 800          |

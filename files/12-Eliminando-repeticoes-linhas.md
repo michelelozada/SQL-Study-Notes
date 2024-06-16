@@ -2,7 +2,7 @@
 > Repositório: Banco de Dados MySQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;
-     
+
 &nbsp;  
 ## Cláusula DISTINCT
 ```
@@ -16,19 +16,22 @@ modificador DISTINCT, logo após o comando SELECT
 &nbsp;
 
 > A tabela de exemplo:
-
-| idAula | nomeAula      | turnoAula | modalidadeAula |
-| :---   | :---          | :---      | :---           |
-| 1		 | Yoga		     | M	     | online         |
-| 2	     | Yoga		     | M	     | presencial	  | 	
-| 3	     | Yoga		     | N	     | online		  |	
-| 4	     | Tai chi chuan | M	     | presencial     |
-| 5	     | Tai chi chuan | T	     | presencial     |
-| 6	     | Tai chi chuan | T	     | online         | 
-| 7	     | Alongamento	 | M	     | presencial     |
-| 8	     | Alongamento	 | M	     | online         |
-| 9	     | Pilates	     | M	     | presencial     |
-| 10     | Pilates	     | T	     | presencial     |
+```
++--------+---------------+-----------+----------------+
+| idAula |   nomeAula    | turnoAula | modalidadeAula |
++--------+---------------+-----------+----------------+
+|      1 | Yoga          | M         | online         |
+|      2 | Yoga          | M         | presencial     |
+|      3 | Yoga          | N         | online         |
+|      4 | Tai chi chuan | M         | presencial     |
+|      5 | Tai chi chuan | T         | presencial     |
+|      6 | Tai chi chuan | T         | online         |
+|      7 | Alongamento   | M         | presencial     |
+|      8 | Alongamento   | M         | online         |
+|      9 | Pilates       | M         | presencial     |
+|     10 | Pilates       | T         | presencial     |
++--------+---------------+-----------+----------------+
+```
 
 &nbsp;
      
@@ -42,12 +45,16 @@ ORDER BY nomeAula;
 ```
 
 Saída gerada:
+```
++-----------------+
 | Aulas_ofertadas |
-| ----            |
++-----------------+
 | Alongamento     |
 | Pilates         |
 | Tai chi chuan   |
 | Yoga            |
++-----------------+
+```
 
 &nbsp;
      
@@ -60,9 +67,13 @@ ORDER BY nomeAula;
 ```
 
 Saída gerada:
-| Número_Aulas_ofertadas | 
-| ----                   |
-| 4                      |
+```
++------------------------+
+| Número_Aulas_ofertadas |
++------------------------+
+|                      4 |
++------------------------+
+```
 
 &nbsp;
      
@@ -75,15 +86,20 @@ FROM tb_aulas
 ORDER BY nomeAula;
 ```
 Saída gerada:
-|nomeAula        | modalidadeAula |
-| ----           | ----           |
-| Alongamento    | online         |
-| Alongamento    | presencial     |
-| Pilates        | presencial     |
-| Tai chi chuan  | online         |
-| Tai chi chuan	 | presencial     |
-| Yoga	         | online         |
-| Yoga	         | presencial     |
+```
++---------------+----------------+
+|   nomeAula    | modalidadeAula |
++---------------+----------------+
+| Alongamento   | online         |
+| Alongamento   | presencial     |
+| Pilates       | presencial     |
+| Tai chi chuan | online         |
+| Tai chi chuan | presencial     |
+| Yoga          | online         |
+| Yoga          | presencial     |
++---------------+----------------+
+
+```
 
 &nbsp;
 

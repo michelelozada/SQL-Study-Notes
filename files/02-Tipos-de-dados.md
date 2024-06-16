@@ -13,7 +13,7 @@ A lista completa abrange vários tipos; seguem abaixo apenas os básicos/mais ut
 ## Tipos alfanuméricos  
 
 Nome 		| Observação  	| Exemplo |
-:--- 		| :---			    | :---    |
+ ----   |  ---- 			  |  ----     |
 VARCHAR	| Tipo de dado string de comprimento variável | nomeCliente VARCHAR(50) |
 CHAR	 	| Tipo de dado string de comprimento fixo | estado CHAR(2) |
 
@@ -24,7 +24,7 @@ Obs: CHAR tem tamamho fixo e armazena também os espaços vazios; já o VARCHAR 
 ## Tipos numéricos  
 
 Nome 		| Observação  	| Exemplo |
-:--- 		| :---			| :---	|
+ ---- 	|  ---- 		    |  ---- 	|
 INT		 	| Números inteiros | idProduto INT(11) |
 FLOAT	 	| Números reais - trabalha com arredondamento de valores | estimativaValores FLOAT(10,2) |
 DECIMAL	| Númros reais - para precisão/exatidão de valores | precoProduto DECIMAL(10,2) |
@@ -36,7 +36,7 @@ Obs: FLOAT(10,2) ou DECIMAL(10,2) significa que dos 10 dígitos, 2 serão reserv
 ## Tipos com data e hora  
 
 Nome 		| Observação  	| Exemplo |
-:--- 		| :---			| :--- |
+ ---- 	|  ---- 	    	|  ----  |
 DATE	 	| Armazena a data. Formato: YYYY-MM-DD		| dataNascimento DATE |
 DATETIME 	| Armazena data e hora. Formato: YYYY-MM-DD HH:MM:SS	| dataProtocolada DATETIME |
 TIMESTAMP | Armazena data e hora, inclui fuso horário. Formato: YYYY-MM-DD HH:MM:SS | ultimoLogin TIMESTAMP |

@@ -14,7 +14,6 @@
 &nbsp;
 
 > A tabela de exemplo:
-
 ```mysql
 
 CREATE TABLE tb_aluno(
@@ -45,10 +44,13 @@ VALUES ('Lorenzo Martins', '4199956-xx88','lorenzomartins@gmail.com');
 ```
 
 Saída gerada:  
-| ID Aluno | Nome aluno         | Telefone      | E-mail                   |
-| :---     | :---               | :---          | :---                     |
-| 1	       | Lorenzo Martins    | 4199956-xx88  | lorenzomartins@gmail.com |
-
+```
++----------+-------------------+--------------+--------------------------+
+| ID Aluno |    Nome aluno     |   Telefone   |          E-mail          |
++----------+-------------------+--------------+--------------------------+
+|        1 |   Lorenzo Martins | 4199956-xx88 | lorenzomartins@gmail.com |
++----------+-------------------+--------------+--------------------------+
+```
 &nbsp;
      
 ### • Para inclusão de mais registros
@@ -64,7 +66,6 @@ VALUES
 &nbsp;   
 
 > Ou alternativamente: 
-
 ```mysql
 
 INSERT INTO tb_aluno(nomeAluno,foneAluno,emailAluno) 
@@ -75,12 +76,16 @@ VALUES
 ```
 
 Saída gerada:  
-| ID Aluno | Nome aluno         | Telefone      | E-mail                   |
-| :---     | :---               | :---          | :---                     |
-| 1	       | Lorenzo Martins    | 4199956-xx88  | lorenzomartins@gmail.com |
-| 2	       | Luana Borba	      | 4199956-xx56	| luanab@email.com     |
-| 3	       | Mariana Fernandes	| 4199652-xx25	| marifernandes@email.com  | 
-| 4	       | Henrique Bormann  	| 4199987-xx45	| hbormann@email.com       |
+```
++----------+-------------------+--------------+--------------------------+
+| ID Aluno |    Nome aluno     |   Telefone   |          E-mail          |
++----------+-------------------+--------------+--------------------------+
+|        1 | Lorenzo Martins   | 4199956-xx88 | lorenzomartins@gmail.com |
+|        2 | Luana Borba       | 4199956-xx56 | luanab@email.com         |
+|        3 | Mariana Fernandes | 4199652-xx25 | marifernandes@email.com  |
+|        4 | Henrique Bormann  | 4199987-xx45 | hbormann@email.com       |
++----------+-------------------+--------------+--------------------------+
+```
 
 &nbsp;
 

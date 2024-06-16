@@ -7,6 +7,7 @@
 A instrução `SELECT` deve ser escrita com suas cláusulas obedecendo à seguinte ordem:
 
 ```mermaid
+
 flowchart TD
     SELECT --> FROM --> JOIN --> ON --> WHERE --> id1(GROUP BY) --> HAVING --> id2(ORDER BY) --> LIMIT
 ```

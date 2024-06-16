@@ -27,7 +27,7 @@ junção/termo RIGHT JOIN, independentemente dos registros possuírem ou não co
      
 &nbsp;  
 
-**A primeira tabela para exemplo - Produtos *(tb_produto):***  
+> A primeira tabela para exemplo - Produtos (tb_produto):
 | idProduto | nomeProduto   			   | marcaProduto_fk | categoriaProduto_fk |	
 | :---		| :---		    			   | :---		     | :---					|
 | 1			| Webcam HD C270			   | 2				 |	1					|
@@ -45,7 +45,7 @@ junção/termo RIGHT JOIN, independentemente dos registros possuírem ou não co
 
 &nbsp; 
 
-**A segunda tabela - Categoria *(tb_categoria):***  
+> A segunda tabela - Categoria (tb_categoria):
 | idCategoria | nomeCategoria   |
 | :---		  |	:---		    |
 | 1			  |	Webcams			|
@@ -59,7 +59,7 @@ junção/termo RIGHT JOIN, independentemente dos registros possuírem ou não co
 
 &nbsp; 
 
-**A terceira tabela - Marcas *(tb_marca):***  
+> A terceira tabela - Marcas (tb_marca):
 | idMarca 	  | nomeMarca       |
 | :---		  |	:---		    |
 | 1			  |	JBL	            |
@@ -72,15 +72,16 @@ junção/termo RIGHT JOIN, independentemente dos registros possuírem ou não co
 
 &nbsp;
 
-**1.1. Aplicando o LEFT JOIN em duas das tabelas acima:**   
+> Aplicando o LEFT JOIN em duas das tabelas acima:
 ```mysql
+
 SELECT p.nomeProduto As Produto, m.nomeMarca AS Marca
 FROM tb_produto AS p
 LEFT JOIN tb_marca AS m
 ON p.marcaProduto_fk = m.idMarca;
 ```
 
-##### * Output:
+Saída gerada: 
 | Produto 			           | Marca 			 |
 | ----		                   | ----            |
 | Webcam HD C270			   | Logitech        |
@@ -98,8 +99,9 @@ ON p.marcaProduto_fk = m.idMarca;
 
 &nbsp;
 
-**1.2. Nova consulta, retornando agora apenas os dados que não possuem correspondência (nulos):**
+> Nova consulta, retornando agora apenas os dados que não possuem correspondência (nulos):
 ```mysql
+
 SELECT p.nomeProduto As Produto, m.nomeMarca AS Marca
 FROM tb_produto AS p
 LEFT JOIN tb_marca AS m
@@ -107,7 +109,7 @@ ON p.marcaProduto_fk = m.idMarca
 WHERE m.idMarca IS NULL; 
 ```
 
-##### * Output:
+Saída gerada: 
 | Produto 			       | Marca |
 | ----		               | ----  |
 | HD Externo 1TB USB 3.0   | NULL  |   	
@@ -115,15 +117,16 @@ WHERE m.idMarca IS NULL;
 
 &nbsp;
 
-**2.1. Aplicando o RIGHT JOIN em duas das tabelas acima:**   
+> Aplicando o RIGHT JOIN em duas das tabelas acima:
 ```mysql
+
 SELECT p.nomeProduto As Produto, c.nomeCategoria AS Categoria
 FROM tb_produto AS p
 RIGHT JOIN tb_categoria AS c
 ON p.categoriaProduto_fk = c.idCategoria;
 ```
 
-##### * Output:
+Saída gerada: 
 | Produto 			           | Categoria		 |
 | ----		                   | ----            |
 | Webcam HD C270			   | Webcams         |
@@ -141,8 +144,9 @@ ON p.categoriaProduto_fk = c.idCategoria;
 
 &nbsp;
 
-**2.2. Nova consulta, retornando apenas os dados que não possuem correspondência/nulos:**
+> Nova consulta, retornando apenas os dados que não possuem correspondência/nulos:
 ```mysql
+
 SELECT p.nomeProduto As Produto, c.nomeCategoria AS Categoria
 FROM tb_produto as p
 RIGHT JOIN tb_categoria as c
@@ -150,7 +154,7 @@ ON p.categoriaProduto_fk = c.idCategoria
 WHERE p.idProduto IS NULL; -- irá excluir correspondências
 ```
 
-##### * Output:
+Saída gerada: 
 | Produto | Categoria |
 | ----	  | ----      |
 | NULL 	  | Tablet	  |   	

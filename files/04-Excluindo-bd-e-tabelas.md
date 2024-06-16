@@ -19,7 +19,7 @@ tabelas e dados existentes nelas.
 
 DROP DATABASE nome_do_banco_de_dados;
 ````
-**Obs:** Podem ser inclusas as palavras-chaves `IF EXISTS` (porém é opcional).  
+Obs: Podem ser inclusas as palavras-chaves `IF EXISTS` (porém é opcional).  
 
 &nbsp;
 

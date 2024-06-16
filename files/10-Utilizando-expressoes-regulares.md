@@ -46,9 +46,9 @@ notação:
 
 SELECT * FROM tb_curso 
 WHERE nomeCurso REGEXP '^[d]';
-```
 
-Saída gerada: Design, Direito
+-- Saída gerada: Design, Direito
+```
 
 &nbsp;
 
@@ -57,9 +57,9 @@ Saída gerada: Design, Direito
 
 SELECT * FROM tb_curso 
 WHERE nomeCurso REGEXP '^[dp]';
-```
 
-Saída gerada: Design, Direito, Pedagogia, Psicologia
+-- Saída gerada: Design, Direito, Pedagogia, Psicologia
+```
 
 &nbsp;
 
@@ -70,9 +70,9 @@ Saída gerada: Design, Direito, Pedagogia, Psicologia
 
 SELECT * FROM tb_curso 
 WHERE nomeCurso REGEXP '[n]$';
-```
 
-Saída gerada: Design
+-- Saída gerada: Design
+```
 
 &nbsp;
 
@@ -81,9 +81,9 @@ Saída gerada: Design
 
 SELECT * FROM tb_curso 
 WHERE nomeCurso REGEXP '[a|n]$';
-```
 
-Saída gerada: Design, Moda, Pedagogia, Psicologia
+-- Saída gerada: Design, Moda, Pedagogia, Psicologia
+```
 
 &nbsp;
   
@@ -94,9 +94,9 @@ Saída gerada: Design, Moda, Pedagogia, Psicologia
 
 SELECT * FROM tb_curso 
 WHERE nomeCurso REGEXP '[t]';
-```
 
-Saída gerada: Direito, Engenharia da Computação
+-- Saída gerada: Direito, Engenharia da Computação
+```
 
 &nbsp;  
 
@@ -107,9 +107,9 @@ Saída gerada: Direito, Engenharia da Computação
 
 SELECT * FROM tb_curso 
 WHERE nomeCurso REGEXP '^[^dep]';
-```
 
-Saída gerada: Jornalismo, Moda
+-- Saída gerada: Jornalismo, Moda
+```
 
 &nbsp;  
 
@@ -120,9 +120,9 @@ Saída gerada: Jornalismo, Moda
 
 SELECT * FROM tb_curso 
 WHERE nomeCurso REGEXP 'enge?';
-```
 
-Saída gerada: Engenharia Civil, Engenharia da Computação
+-- Saída gerada: Engenharia Civil, Engenharia da Computação
+```
 
 &nbsp;  
 
@@ -131,9 +131,9 @@ Saída gerada: Engenharia Civil, Engenharia da Computação
 
 SELECT * FROM tb_curso 
 WHERE nomeCurso REGEXP 'gia|ria';
-```
 
-Saída gerada: Engenharia Civil, Engenharia da Computação, Pedagogia, Psicologia
+-- Saída gerada: Engenharia Civil, Engenharia da Computação, Pedagogia, Psicologia
+```
 
 &nbsp;  
 
@@ -142,9 +142,9 @@ Saída gerada: Engenharia Civil, Engenharia da Computação, Pedagogia, Psicolog
 
 SELECT * FROM tb_curso 
 WHERE nomeCurso REGEXP 'gia[[:>:]]';
-```
 
-Saída gerada: Pedagogia, Psicologia
+-- Saída gerada: Pedagogia, Psicologia
+```
 
 &nbsp;  
 
@@ -153,9 +153,9 @@ Saída gerada: Pedagogia, Psicologia
 
 SELECT * FROM tb_curso 
 WHERE nomeCurso REGEXP '[[:<:]]enge'; 
-```
 
-Saída gerada: Engenharia Civil, Engenharia da Computação
+-- Saída gerada: Engenharia Civil, Engenharia da Computação
+```
 
 &nbsp;
 
