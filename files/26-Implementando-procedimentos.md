@@ -15,14 +15,18 @@ executar uma ou mais tarefas
 &nbsp;  
 
 > A tabela para exemplo:
-| idCurso | nomeCurso 	   | Turno | Mensalidade |
-| :---    | :---      	   | :---  | :---        |
-| 1       | Direito        | M     | 876.28      |
-| 2       | Direito        | N     | 950.28      |
-| 5       | Pedagogia      | M     | 249.50      |
-| 6       | Pedagogia      | N     | 278.50      |
-| 7       | Design Gráfico | M     | 622.05      |
-| 8       | Design Gráfico | N     | 670.10      |
+```
++---------+----------------+-------+-------------+
+| idCurso |   nomeCurso    | Turno | Mensalidade |
++---------+----------------+-------+-------------+
+|       1 | Direito        | M     |      876.28 |
+|       2 | Direito        | N     |      950.28 |
+|       5 | Pedagogia      | M     |      249.50 |
+|       6 | Pedagogia      | N     |      278.50 |
+|       7 | Design Gráfico | M     |      622.05 |
+|       8 | Design Gráfico | N     |      670.10 |
++---------+----------------+-------+-------------+
+```
 
 &nbsp;
     
@@ -44,10 +48,14 @@ CALL consultaMensalidade('Direito');
 ```
 
 Saída gerada:
-| Consulta_Mensalidade                                           |
-| :---                                                           |
+```
++----------------------------------------------------------------+
+|                      Consulta_Mensalidade                      |
++----------------------------------------------------------------+
 | O valor da mensalidade do curso Direito (turno M) é R$ 876.28. |
 | O valor da mensalidade do curso Direito (turno N) é R$ 950.28. |
++----------------------------------------------------------------+
+```
 
 &nbsp;
 
@@ -57,10 +65,14 @@ Saída gerada:
 CALL consultaMensalidade('Design Gráfico');
 ```
 Saída gerada:
-| Consulta_Mensalidade                                                  |
-| :---                                                                  |
+```
++-----------------------------------------------------------------------+
+|                         Consulta_Mensalidade                          |
++-----------------------------------------------------------------------+
 | O valor da mensalidade do curso Design Gráfico (turno M) é R$ 622.05. |
 | O valor da mensalidade do curso Design Gráfico (turno N) é R$ 670.10. |
++-----------------------------------------------------------------------+
+```
 
 &nbsp;
 

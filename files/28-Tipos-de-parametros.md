@@ -16,7 +16,7 @@ Procedimentos com parâmetro IN
   . Aqui, ao ser feita a chamada, será passado o valor do argumento ao parâmetro, sendo que não haverá 
 	nenhuma alteração deste valor dentro do procedimento
   
-
+  
 Procedimentos com parâmetro OUT
   . Aqui, o parâmetro é inicialmente passado como NULL, sendo o valor passado ao longo do procedimento
   . Portanto, o valor passado ao parâmetro será diferente ao fim da execução do procedimento
@@ -32,12 +32,16 @@ Procedimentos com parâmetro INOUT
 &nbsp;
 
 > A tabela a ser utilizada para os exemplos abaixo:
-| idCurso | nomeCurso      | turnoCurso | mensalidadeCurso |
-| :--     | :--            | :--        | :--              |
-| 1       | Direito		   | M          | 876.28           |
-| 2  	  | Direito	       | N	        | 950.28           |
-| 3	      | Pedagogia	   | M	        | 249.50           |
-| 4	      | Pedagogia	   | N	        | 278.50           |
+```
++---------+-----------+------------+------------------+
+| idCurso | nomeCurso | turnoCurso | mensalidadeCurso |
++---------+-----------+------------+------------------+
+|       1 | Direito   | M          |           876.28 |
+|       2 | Direito   | N          |           950.28 |
+|       3 | Pedagogia | M          |           249.50 |
+|       4 | Pedagogia | N          |           278.50 |
++---------+-----------+------------+------------------+
+```
 
 &nbsp;
     
@@ -71,6 +75,7 @@ SET @taxa = 10;
 
 > C. Chamando o procedimento:
 ```mysql
+
 CALL reduzirMensalidade(@nome,@turno,@taxa);
 ```
 
@@ -84,14 +89,20 @@ WHERE nomeCurso = 'Direito' AND turnoCurso='M';
 ```
 
 Saída gerada:  
-| idCurso | nomeCurso      | turnoCurso | mensalidadeCurso |
-| :--     | :--            | :--        | :--              |
-| 1		  | Direito	       | M			| 788.65  		   |
+```
++---------+-----------+------------+------------------+
+| idCurso | nomeCurso | turnoCurso | mensalidadeCurso |
++---------+-----------+------------+------------------+
+|       1 | Direito   | M          |           788.65 |
++---------+-----------+------------+------------------+
+```
 
 &nbsp;
      
 ### • Aplicação de parâmetro do tipo OUT
 Objetivo: Criar um procedimento para, tendo sido informada a id do curso, serem retornados seu nome e turno
+
+&nbsp;
 
 > A. Declarando o procedimento:
 ```mysql
@@ -106,11 +117,17 @@ BEGIN
 END //
 DELIMITER ; 
 ```
+
+&nbsp;
+
 > B. Chamando o procedimento:
 ```mysql
 
 CALL informarCurso(3,@curso,@turno);
 ```
+
+&nbsp;
+
 > C. Realizando a consulta:
 ```mysql
 
@@ -118,14 +135,20 @@ SELECT @curso AS Curso,@turno AS Turno;
 ```
 
 Saída gerada:  
-| Curso      | Turno 	  |
-| :--     	 | :--        |
-| Pedagogia	 | M		  |
+```
++-------------+
+| Curso Turno |
++-------------+
+| Pedagogia M |
++-------------+
+```
 
 &nbsp; 
 
 ### • Aplicação de parâmetro do tipo INOUT
 Objetivo: Criar procedimento para, tendo sido informada a mensalidade, esta ser reduzida de acordo com taxa também informada
+
+&nbsp;
 
 > A. Declarando o procedimento:
 ```mysql
@@ -163,9 +186,13 @@ SELECT @valor AS 'Mensalidade com desconto';
 ```
 
 Saída gerada:  
-| Mensalidade com desconto  |
-| :--     	 			    |
-| 250.65 				    | 
+```
++--------------------------+
+| Mensalidade com desconto |
++--------------------------+
+|                   250.65 |
++--------------------------+
+```
 
 &nbsp;
 

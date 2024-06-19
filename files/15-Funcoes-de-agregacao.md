@@ -49,8 +49,9 @@ Retorna a quantidade de registros de uma tabela.
 
 SELECT COUNT(ALL nomeCurso) AS 'Número de Cursos'  
 FROM tb_curso;  
+
+-- Retorna: 16 (Há 16 cursos registrados na tabela)
 ```
-Retorna: 16 (Há 16 cursos registrados na tabela)
 
 &nbsp;  
 
@@ -59,8 +60,9 @@ Retorna: 16 (Há 16 cursos registrados na tabela)
 
 SELECT COUNT(DISTINCT nomeCurso) AS 'Nomes dos Cursos'
 FROM tb_curso;  
+
+-- Retorna: 10 (Há 10 cursos registrados na tabela - sem repetições)
 ```
-Retorna: 10 (Há 10 cursos registrados na tabela - sem repetições)
 
 &nbsp;  
 
@@ -70,8 +72,9 @@ Retorna: 10 (Há 10 cursos registrados na tabela - sem repetições)
 SELECT COUNT(nomeCurso) AS 'Número de Cursos' 
 FROM tb_curso 
 WHERE mensalidadeCurso < 300.00;  
+
+-- Retorna: 2  (Há 2 cursos com mensalidade inferior a R$ 300,00)
 ```
-Retorna: 2  (Há 2 cursos com mensalidade inferior a R$ 300,00)
 
 &nbsp;  
 
@@ -80,8 +83,9 @@ Retorna: 2  (Há 2 cursos com mensalidade inferior a R$ 300,00)
 
 SELECT COUNT(DISTINCT turnoCurso) AS 'Turnos da escola' 
 FROM tb_curso;
+
+-- Retorna: 2  (Há dois turnos de cursos: Manhã e Tarde)
 ```
-Retorna: 2  (Há dois turnos de cursos: Manhã e Tarde)
 
 &nbsp;
      
@@ -92,8 +96,9 @@ Retorna o maior valor dentre os elementos de uma coluna:
 
 SELECT MAX(mensalidadeCurso) AS 'Maior valor de mensalidade'
 FROM tb_curso; 
+
+-- Retorna: 950.28 (mensalidade do curso de Direito - N)
 ```
-Retorna: 950.28 (mensalidade do curso de Direito - N)
 
 &nbsp;
 
@@ -103,8 +108,9 @@ Retorna: 950.28 (mensalidade do curso de Direito - N)
 SELECT MAX(mensalidadeCurso) AS 'Maior valor de mensalidade'
 FROM tb_curso 
 WHERE mensalidadeCurso> 600.00 AND mensalidadeCurso< 700.00;  
+
+-- Retorna: 680.00 (mensalidade do curso de Administração - N)
 ```
-Retorna: 680.00 (mensalidade do curso de Administração - N)
 
 &nbsp;
      
@@ -114,8 +120,9 @@ Retorna o menor valor dentre os elementos de uma coluna.
 
 SELECT MIN(mensalidadeCurso) AS 'Menor valor de mensalidade'
 FROM tb_curso; 
+
+-- Retorna: 249.50 (mensalidade do curso de Pedagogia - M)
 ```
-Retorna: 249.50 (mensalidade do curso de Pedagogia - M)
 
 &nbsp;
 
@@ -125,8 +132,9 @@ Retorna: 249.50 (mensalidade do curso de Pedagogia - M)
 SELECT MIN(mensalidadeCurso) AS 'Menor valor de mensalidade'
 FROM tb_curso 
 WHERE mensalidadeCurso> 600.00 AND mensalidadeCurso< 700.00;  
+
+-- Retorna: 622.05 (mensalidade do curso de Design Gráfico - N)
 ```
-Retorna: 622.05 (mensalidade do curso de Design Gráfico - N)
 
 &nbsp;
 
@@ -135,8 +143,9 @@ Retorna: 622.05 (mensalidade do curso de Design Gráfico - N)
 
 SELECT MAX(mensalidadeCurso) AS 'Maior valor de mensalidade', MIN(mensalidadeCurso) AS 'Menor valor de mensalidade'
 FROM tb_curso;   
+
+-- Retorna: 950.28 (Maior_valor_mensalidade) e 249.50 (Menor_valor_mensalidade)
 ```
-Retorna: 950.28 (Maior_valor_mensalidade) e 249.50 (Menor_valor_mensalidade)
 
 &nbsp;
      
@@ -146,8 +155,9 @@ Retona a soma dos valores de uma coluna
 
 SELECT SUM(mensalidadeCurso) AS 'Soma das mensalidades'
 FROM tb_curso; 
+
+-- Retorna: 9395.59 (soma de todas as mensalidades)
 ```
-Retorna: 9395.59 (soma de todas as mensalidades)
 
 &nbsp;  
 
@@ -157,8 +167,9 @@ Retorna: 9395.59 (soma de todas as mensalidades)
 SELECT SUM(mensalidadeCurso) AS 'Soma das mensalidades'
 FROM tb_curso 
 WHERE idCurso <= 5;
+
+-- Retorna: 3534.12 (soma das 5 primeiras mensalidades da tabela)
 ```
-Retorna: 3534.12 (soma das 5 primeiras mensalidades da tabela)
 
 &nbsp;
      
@@ -169,8 +180,9 @@ Retorna a média aritmética dos valores de uma coluna
 
 SELECT AVG(mensalidadeCurso) AS Media
 FROM tb_curso; 
+
+-- Retorna: 587.224375 (média das mensalidades dos cursos)
 ```
-Retorna: 587.224375 (média das mensalidades dos cursos)
 
 &nbsp;
 
@@ -179,8 +191,9 @@ Retorna: 587.224375 (média das mensalidades dos cursos)
 # Usando a função ROUND() para retornar número com duas casas decimais
 SELECT ROUND(AVG(mensalidadeCurso),2) AS Media
 FROM tb_curso;  
+
+-- Retorna: 587.22 
 ```
-Retorna: 587.22 
 
 &nbsp;
 

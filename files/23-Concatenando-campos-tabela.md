@@ -12,18 +12,22 @@ Concatena strings de campos diferentes da tabela, através de uma mesma query
 &nbsp;
 
 > A tabela para o exemplo:
+```
++-----------+-------------+------------------+--------------+
 | idCliente | nomeCliente | sobrenomeCliente | scoreCliente |
-| :---      | :---	      | :---	         | :---         |
-| 1         | Luana	      | Borba	         | 300          |
-| 2	        | Mariana	  | Fernandes        | 710          |
-| 3	        | Cátia	      | Marcondes	     | NULL         |
-| 4	        | Marcos	  | Góes	         | NULL         |
-| 5	        | Enzo	      | Marques	         | 500          |
-| 6	        | Carla	      | Santana	         | 800          |
-| 7	        | Sandra	  | de Paula	     | NULL         |
-| 8	        | Paulo	      | Figueiredo       | NULL         |
-| 9	        | Larissa	  | Torres	         | 520          |
-| 10        | Vinícius    | Motta	         | NULL         |
++-----------+-------------+------------------+--------------+
+|         1 | Luana       | Borba            | 300          |
+|         2 | Mariana     | Fernandes        | 710          |
+|         3 | Cátia       | Marcondes        | NULL         |
+|         4 | Marcos      | Góes             | NULL         |
+|         5 | Enzo        | Marques          | 500          |
+|         6 | Carla       | Santana          | 800          |
+|         7 | Sandra      | de Paula         | NULL         |
+|         8 | Paulo       | Figueiredo       | NULL         |
+|         9 | Larissa     | Torres           | 520          |
+|        10 | Vinícius    | Motta            | NULL         |
++-----------+-------------+------------------+--------------+
+```
 
 &nbsp;
 
@@ -36,8 +40,10 @@ ORDER BY nomeCliente;
 ```
 
 Saída gerada:
-| Nome do Cliente   |
-| :---              |
+```
++-------------------+
+|  Nome do Cliente  |
++-------------------+
 | Carla Santana     |
 | Cátia Marcondes   |
 | Enzo Marques      |
@@ -48,6 +54,8 @@ Saída gerada:
 | Paulo Figueiredo  |
 | Sandra de Paula   |
 | Vinícius Motta    |
++-------------------+
+```
 
 &nbsp;
 
@@ -58,10 +66,16 @@ SELECT CONCAT('Score do(a) cliente ', nomeCliente, ' ', sobrenomeCliente, ': ', 
 FROM tb_cliente
 WHERE idCliente = '2';
 ```
+
 Saída gerada:
-| Consulta sobre clientes                            |
-| :---                                               |
+
+```
++----------------------------------------------------+
+|              Consulta sobre clientes               |
++----------------------------------------------------+
 | Score do(a) cliente Mariana Fernandes: 710 pontos. |
++----------------------------------------------------+
+```
 
 &nbsp;
 
@@ -73,9 +87,13 @@ FROM tb_cliente
 WHERE idCliente = '10';
 ```
 Saída gerada:
+```
++-------------------------+
 | Consulta sobre clientes |
-| :---                    |
-| NULL 					  |	
++-------------------------+
+| NULL                    |
++-------------------------+
+```
 
 &nbsp;
 
@@ -93,10 +111,15 @@ SELECT CONCAT('Score do(a) cliente ', nomeCliente, ' ', sobrenomeCliente, ': ', 
 FROM tb_cliente
 WHERE idCliente = '10';
 ```
+
 Saída gerada:
-| Consulta sobre clientes 									|
-| :---                    									|
-| Score do(a) cliente Vinícius Motta: ainda não computado.  |
+```
++----------------------------------------------------------+
+|                 Consulta sobre clientes                  |
++----------------------------------------------------------+
+| Score do(a) cliente Vinícius Motta: ainda não computado. |
++----------------------------------------------------------+
+```
 
 &nbsp;
 

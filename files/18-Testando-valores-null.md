@@ -14,18 +14,22 @@
 &nbsp;
 
 > A tabela para o exemplo:   
-| idCliente | nomeCliente 		| scoreCliente |
-| :---      | :---	      		| :---         |
-| 1         | Luana Borba	    | 300          |
-| 2	        | Mariana Fernandes | 710          |
-| 3	        | Cátia Marcondes	| NULL         |
-| 4	        | Marcos Góes	    | NULL         |
-| 5	        | Enzo Marques	    | 500          |
-| 6	        | Carla Santana	    | 800          |
-| 7	        | Sandra de Paula	| NULL         |
-| 8	        | Paulo Figueiredo  | NULL         |
-| 9	        | Larissa Torres	| 520          |
-| 10        | Vinícius Motta	| NULL         |
+```
++-----------+-------------------+--------------+
+| idCliente |    nomeCliente    | scoreCliente |
++-----------+-------------------+--------------+
+|         1 | Luana Borba       | 300          |
+|         2 | Mariana Fernandes | 710          |
+|         3 | Cátia Marcondes   | NULL         |
+|         4 | Marcos Góes       | NULL         |
+|         5 | Enzo Marques      | 500          |
+|         6 | Carla Santana     | 800          |
+|         7 | Sandra de Paula   | NULL         |
+|         8 | Paulo Figueiredo  | NULL         |
+|         9 | Larissa Torres    |  520         |
+|        10 | Vinícius Motta    |  NULL        |
++-----------+-------------------+--------------+
+```
 
 &nbsp;
      
@@ -40,14 +44,17 @@ WHERE scoreCliente IS NULL;
 ```
 
 Saída gerada:
-
-| idCliente | nomeCliente 		| scoreCliente |
-| :---      | :---	      		| :---         |
-| 3	        | Cátia Marcondes	| NULL         |
-| 4	        | Marcos Góes	    | NULL         |
-| 7	        | Sandra de Paula	| NULL         |
-| 8	        | Paulo Figueiredo  | NULL         |
-| 10        | Vinícius Motta	| NULL         |
+```
++-----------+------------------+--------------+
+| idCliente |   nomeCliente    | scoreCliente |
++-----------+------------------+--------------+
+|         3 | Cátia Marcondes  | NULL         |
+|         4 | Marcos Góes      | NULL         |
+|         7 | Sandra de Paula  | NULL         |
+|         8 | Paulo Figueiredo | NULL         |
+|        10 | Vinícius Motta   | NULL         |
++-----------+------------------+--------------+
+```
 
 &nbsp;
      
@@ -62,14 +69,17 @@ WHERE scoreCliente IS NOT NULL
 ORDER BY scoreCliente DESC;
 ```
 Saída gerada:
-
-| idCliente | nomeCliente 		| scoreCliente |
-| :---      | :---	      		| :---         |
-| 6	        | Carla Santana	    | 800          |
-| 2	        | Mariana Fernandes | 710          |
-| 9	        | Larissa Torres	| 520          |
-| 5	        | Enzo Marques	    | 500          |
-| 1         | Luana Borba	    | 300          |
+```
++-----------+-------------------+--------------+
+| idCliente |    nomeCliente    | scoreCliente |
++-----------+-------------------+--------------+
+|         6 | Carla Santana     |          800 |
+|         2 | Mariana Fernandes |          710 |
+|         9 | Larissa Torres    |          520 |
+|         5 | Enzo Marques      |          500 |
+|         1 | Luana Borba       |          300 |
++-----------+-------------------+--------------+
+```
 
 &nbsp;
 

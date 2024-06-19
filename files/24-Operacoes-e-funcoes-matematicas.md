@@ -37,14 +37,18 @@ SELECT 14 DIV 2;
 ### • Operações aritméticas com os dados dos campos de uma tabela 
 
 > A tabela de exemplo:
-| idAluno | nomeAluno         | notaObtida1 | notaObtida2 |
-| :---    | :---              | :---        | :---        |
-| 1	      | Luana Borba	      | 75          | 85          | 
-| 2	      | Mariana Fernandes |	54          | 62          |
-| 3	      | Cátia Marcondes	  | 68          | 74          |
-| 4	      | Marcos Góes	      | 89          | 98          |
-| 5	      | Enzo Marques	  | 78	        | 87          |
-| 6	      | Carla Santana	  | 55          | 71          |
+```
++---------+-------------------+-------------+-------------+
+| idAluno |     nomeAluno     | notaObtida1 | notaObtida2 |
++---------+-------------------+-------------+-------------+
+|       1 | Luana Borba       |          75 |          85 |
+|       2 | Mariana Fernandes |          54 |          62 |
+|       3 | Cátia Marcondes   |          68 |          74 |
+|       4 | Marcos Góes       |          89 |          98 |
+|       5 | Enzo Marques      |          78 |          87 |
+|       6 | Carla Santana     |          55 |          71 |
++---------+-------------------+-------------+-------------+
+```
 
 &nbsp;
        
@@ -56,14 +60,18 @@ FROM tb_aluno
 ORDER BY mediaFinal DESC;
 ```
 Saída gerada: 
-| nomeAluno  	    | mediaFinal |
-| :---              | :---       |
-| Marcos Góes	    | 93         |
-| Enzo Marques	    | 82         |
-| Luana Borba	    | 80         |
-| Cátia Marcondes   | 71         |
-| Carla Santana	    | 63         |
-| Mariana Fernandes | 58         |
+```
++-------------------+------------+
+|     nomeAluno     | mediaFinal |
++-------------------+------------+
+| Marcos Góes       |         93 |
+| Enzo Marques      |         82 |
+| Luana Borba       |         80 |
+| Cátia Marcondes   |         71 |
+| Carla Santana     |         63 |
+| Mariana Fernandes |         58 |
++-------------------+------------+
+```
 
 &nbsp;
       

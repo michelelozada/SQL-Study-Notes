@@ -15,14 +15,18 @@ pelo comando DELIMITER seguido de caracteres especiais como $$ ou //, conforme e
 &nbsp;  
 
 > Exemplo 1 -  A tabela de exemplo:
-| idAluno | nomeAluno         | notaObtida1 | notaObtida2 |
-| :---    | :---              | :---        | :---        |
-| 1	      | Carla Santana	  | 5.5	        | 7.1         |
-| 2	      | Cátia Marcondes	  | 6.8	        | 7.4         |
-| 3	      | Enzo Marques	  | 7.8	        | 8.7         |
-| 4	      | Luana Borba	      | 7.5	        | 8.5         | 
-| 5	      | Marcos Góes	      | 8.9	        | 9.8         |
-| 6	      | Mariana Fernandes |	5.4	        | 6.2         |
+```
++---------+-------------------+-------------+-------------+
+| idAluno |     nomeAluno     | notaObtida1 | notaObtida2 |
++---------+-------------------+-------------+-------------+
+|       1 | Carla Santana     |         5.5 |         7.1 |
+|       2 | Cátia Marcondes   |         6.8 |         7.4 |
+|       3 | Enzo Marques      |         7.8 |         8.7 |
+|       4 | Luana Borba       |         7.5 |         8.5 |
+|       5 | Marcos Góes       |         8.9 |         9.8 |
+|       6 | Mariana Fernandes |         5.4 |         6.2 |
++---------+-------------------+-------------+-------------+
+```
 
 &nbsp;   
 
@@ -47,28 +51,36 @@ SELECT nomeAluno, notaObtida1, notaObtida2, calcularMedia(notaObtida1,notaobtida
 FROM tb_aluno;
 ````
 Saída gerada:  
-| nomeAluno         | notaObtida1   | notaObtida2 | mediaObtida |
-| :---              | :---          | :---        | :---        |
-| Carla Santana	    | 5.5	        | 7.1         | 6.3			|
-| Cátia Marcondes   | 6.8	        | 7.4         | 7.1			|
-| Enzo Marques	    | 7.8	        | 8.7         | 8.3			|
-| Luana Borba	    | 7.5	        | 8.5         | 8.0			|
-| Marcos Góes	    | 8.9	        | 9.8         | 9.4			|
-| Mariana Fernandes | 5.4	        | 6.2         | 5.8			|
+```
++-------------------+-------------+-------------+-------------+
+|     nomeAluno     | notaObtida1 | notaObtida2 | mediaObtida |
++-------------------+-------------+-------------+-------------+
+| Carla Santana     |         5.5 |         7.1 |         6.3 |
+| Cátia Marcondes   |         6.8 |         7.4 |         7.1 |
+| Enzo Marques      |         7.8 |         8.7 |         8.3 |
+| Luana Borba       |         7.5 |         8.5 |         8.0 |
+| Marcos Góes       |         8.9 |         9.8 |         9.4 |
+| Mariana Fernandes |         5.4 |         6.2 |         5.8 |
++-------------------+-------------+-------------+-------------+
+```
 
 &nbsp;  
 ----
 &nbsp; 
 
 > Exemplo 2 - A tabela de exemplo:
-| idCurso | nomeCurso 	   | Turno | Mensalidade |
-| :---    | :---      	   | :---  | :---        |
-| 1       | Direito        | M     | 876.28      |
-| 2       | Direito        | N     | 950.28      |
-| 5       | Pedagogia      | M     | 249.50      |
-| 6       | Pedagogia      | N     | 278.50      |
-| 7       | Design Gráfico | M     | 622.05      |
-| 8       | Design Gráfico | N     | 670.10      |
+```
++---------+----------------+-------+-------------+
+| idCurso |   nomeCurso    | Turno | Mensalidade |
++---------+----------------+-------+-------------+
+|       1 | Direito        | M     |      876.28 |
+|       2 | Direito        | N     |      950.28 |
+|       5 | Pedagogia      | M     |      249.50 |
+|       6 | Pedagogia      | N     |      278.50 |
+|       7 | Design Gráfico | M     |      622.05 |
+|       8 | Design Gráfico | N     |      670.10 |
++---------+----------------+-------+-------------+
+```
 
 &nbsp;
   
@@ -94,14 +106,21 @@ DELIMITER ;
 CALL consultarMensalidade('Direito');
 ```
 Saída gerada:  
-| Status_consulta              |
-| :---                         |
+```
++------------------------------+
+|       Status_consulta        |
++------------------------------+
 | Consulta gerada com sucesso! |
++------------------------------+
 
-| Consulta_mensalidade                                           |
-| :---                                                           |
+
++----------------------------------------------------------------+
+|                      Consulta_mensalidade                      |
++----------------------------------------------------------------+
 | O valor da mensalidade do curso Direito (turno M) é R$ 876.28. |
 | O valor da mensalidade do curso Direito (turno N) é R$ 950.28. |
++----------------------------------------------------------------+
+```
 
 &nbsp;
 
@@ -111,14 +130,20 @@ Saída gerada:
 CALL consultaMensalidade('Design Gráfico');
 ```
 Saída gerada:  
-| Status_consulta              |
-| :---                         |
+```
++------------------------------+
+|       Status_consulta        |
++------------------------------+
 | Consulta gerada com sucesso! |
++------------------------------+
 
-| Consulta_mensalidade                                                  |
-| :---                                                                  |
++-----------------------------------------------------------------------+
+|                         Consulta_mensalidade                          |
++-----------------------------------------------------------------------+
 | O valor da mensalidade do curso Design Gráfico (turno M) é R$ 622.05. |
 | O valor da mensalidade do curso Design Gráfico (turno N) é R$ 670.10. |
++-----------------------------------------------------------------------+
+```
 
 &nbsp;
    

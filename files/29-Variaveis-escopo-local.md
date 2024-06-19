@@ -18,10 +18,14 @@ da memória
 
 > A tabela a ser utilizada para os exemplos abaixo:
 
-| idCurso | nomeCurso      | turnoCurso | mensalidadeCurso |
-| :--     | :--            | :--        | :--              |
-| 1       | Direito		   | M          | 876.28           |
-| 2	      | Pedagogia	   | M	        | 249.50           |
+```
++---------+-----------+------------+------------------+
+| idCurso | nomeCurso | turnoCurso | mensalidadeCurso |
++---------+-----------+------------+------------------+
+|       1 | Direito   | M          |           876.28 |
+|       2 | Pedagogia | M          |           249.50 |
++---------+-----------+------------+------------------+
+```
 
 &nbsp;     
 
@@ -52,9 +56,13 @@ SELECT reduzirMensalidade(1,10) AS 'Mensalidade com desconto';
 ```
 
 Saída gerada: 
+```
++--------------------------+
 | Mensalidade com desconto |
-| :---					   |					
-| 788,65		           |
++--------------------------+
+|                   788,65 |
++--------------------------+
+```
 
 &nbsp;  
 
@@ -66,9 +74,13 @@ SELECT reduzirMensalidade(2,5) AS 'Mensalidade com desconto';
 ```
 
 Saída gerada: 
+```
++--------------------------+
 | Mensalidade com desconto |
-| :---					   |					
-| 237,03				   |
++--------------------------+
+|                   237,03 |
++--------------------------+
+```
 
 &nbsp;
 
