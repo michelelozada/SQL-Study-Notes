@@ -13,7 +13,7 @@
   
 &nbsp;
 
-> A tabela de exemplo:
+↳ A tabela a ser utilizada para os exemplos abaixo:
 ```
 +---------+-------------------+----------------+-------------+
 | idAluno |     nomeAluno     |  cidadeAluno   | estadoAluno |
@@ -37,7 +37,7 @@ SET nomeAluno = 'Marcos Góes Filho'  -- nome da coluna e valor a ser atualizado
 WHERE idAluno = 4;  -- foi retificado o nome deste aluno  -- condição para atualização
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +---------+-------------------+----------------+-------------+
 | idAluno |     nomeAluno     |  cidadeAluno   | estadoAluno |
@@ -59,7 +59,7 @@ SET cidadeAluno = 'Porto Alegre', estadoAluno='RS'
 WHERE idAluno = 4; 
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +---------+--------------------+----------------+-------------+
 | idAluno |     nomeAluno      |  cidadeAluno   | estadoAluno |
@@ -73,7 +73,7 @@ Saída gerada:
 ```
 &nbsp;
   
-> **ATT: Caso não seja utilizada a cláusula `WHERE`, todos os registros da tabela serão atualizados com a mesma informação!**
+**Caso não seja utilizada a cláusula `WHERE`, todos os registros da tabela serão atualizados com a mesma informação!**
 
 ```mysql
 
@@ -81,7 +81,7 @@ UPDATE tb_aluno
 SET cidadeAluno = 'Curitiba', estadoAluno="PR";
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +---------+-------------------+-------------+-------------+
 | idAluno |     nomeAluno     | cidadeAluno | estadoAluno |

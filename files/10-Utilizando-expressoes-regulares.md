@@ -19,7 +19,7 @@ notação:
 
 &nbsp;  
 
-> A tabela a ser usada para os exemplos abaixo:
+↳ A tabela a ser utilizada para os exemplos abaixo:
 ```
 +---------+--------------------------+
 | idCurso |        nomeCurso         |
@@ -41,7 +41,7 @@ notação:
 ### • Correspondências no início da string (`^`)
 
  
-> Retornando os registros que começam com a letra 'd'
+Retornando os registros que começam com a letra 'd'
 ```mysql
 
 SELECT * FROM tb_curso 
@@ -52,7 +52,7 @@ WHERE nomeCurso REGEXP '^[d]';
 
 &nbsp;
 
-> Retornando os registros que começam com as letras 'd' ou 'p'
+Retornando os registros que começam com as letras 'd' ou 'p'
 ```mysql
 
 SELECT * FROM tb_curso 
@@ -65,7 +65,7 @@ WHERE nomeCurso REGEXP '^[dp]';
 
 ### • Correspondências no final da string (`$`)
 
-> Retornando os registros que terminam com a letra 'n'
+Retornando os registros que terminam com a letra 'n'
 ```mysql
 
 SELECT * FROM tb_curso 
@@ -76,7 +76,7 @@ WHERE nomeCurso REGEXP '[n]$';
 
 &nbsp;
 
-> Retornando os registros que terminam com as letras 'a' ou 'n'
+Retornando os registros que terminam com as letras 'a' ou 'n'
 ```mysql
 
 SELECT * FROM tb_curso 
@@ -89,7 +89,7 @@ WHERE nomeCurso REGEXP '[a|n]$';
   
 ### • Correspondências no  meio da string
 
-> Retornando registros que terminam contenham a letra 't'
+Retornando registros que terminam contenham a letra 't'
 ```mysql
 
 SELECT * FROM tb_curso 
@@ -102,7 +102,7 @@ WHERE nomeCurso REGEXP '[t]';
 
 ### • Não-correspondência com os caracteres indicados entre os colchetes
 
-> Retornando os registros que não comecem com as letras 'd', 'e' ou 'p'
+Retornando os registros que não comecem com as letras 'd', 'e' ou 'p'
 ```mysql
 
 SELECT * FROM tb_curso 
@@ -115,7 +115,7 @@ WHERE nomeCurso REGEXP '^[^dep]';
 
 ### • Correspondência com sequências de uma string
 
-> Retornando os registros que contenham a sequência 'enge'
+Retornando os registros que contenham a sequência 'enge'
 ```mysql
 
 SELECT * FROM tb_curso 
@@ -126,7 +126,7 @@ WHERE nomeCurso REGEXP 'enge?';
 
 &nbsp;  
 
-> Retornando os registros que contenham as sequências 'gia' ou 'ria'
+Retornando os registros que contenham as sequências 'gia' ou 'ria'
 ```mysql
 
 SELECT * FROM tb_curso 
@@ -137,7 +137,7 @@ WHERE nomeCurso REGEXP 'gia|ria';
 
 &nbsp;  
 
-> Retornando os registros que terminem com a sequência 'gia'
+Retornando os registros que terminem com a sequência 'gia'
 ```mysql
 
 SELECT * FROM tb_curso 
@@ -148,7 +148,7 @@ WHERE nomeCurso REGEXP 'gia[[:>:]]';
 
 &nbsp;  
 
-> Retornando os registros que comecem com as sequência 'enge'
+Retornando os registros que comecem com as sequência 'enge'
 ```mysql
 
 SELECT * FROM tb_curso 

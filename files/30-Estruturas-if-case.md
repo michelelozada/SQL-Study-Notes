@@ -16,7 +16,7 @@ Objetivo: Criar uma função que informe o valor do desconto a ser concedido (ou
 
 &nbsp;  
 
-> A. Declarando a função
+A. Declarando a função
 ```mysql
 
 DELIMITER //
@@ -40,7 +40,7 @@ DELIMITER ;
 
 &nbsp;  
 
-> B. Chamadas da função
+B. Chamadas da função
 ```mysql
 
 SELECT informaDesconto(150.00) AS 'Valor do desconto (R$)';  -- Retorna => Valor do desconto (R$): 0.00
@@ -67,7 +67,7 @@ Objetivo: Criar uma função que informe o valor final de uma compra, após cál
 
 &nbsp;  
 
-> A. Declarando a função
+A. Declarando a função
 ```mysql
 
 DELIMITER //
@@ -92,7 +92,7 @@ DELIMITER ;
 
 &nbsp;
 
-> B. Chamadas da função
+B. Chamadas da função
 ```mysql
 
 SELECT aplicaDesconto(180.00) AS 'Valor final da compra (R$)'; -- Retorna => Valor final da compra (R$): 180.00

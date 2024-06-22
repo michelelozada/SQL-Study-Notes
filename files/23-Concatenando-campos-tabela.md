@@ -11,7 +11,7 @@ Concatena strings de campos diferentes da tabela, através de uma mesma query
      
 &nbsp;
 
-> A tabela para o exemplo:
+↳ A tabela a ser utilizada para os exemplos abaixo:
 ```
 +-----------+-------------+------------------+--------------+
 | idCliente | nomeCliente | sobrenomeCliente | scoreCliente |
@@ -39,7 +39,7 @@ FROM tb_cliente
 ORDER BY nomeCliente;
 ```
 
-Saída gerada:
+↳ Saída gerada:
 ```
 +-------------------+
 |  Nome do Cliente  |
@@ -59,7 +59,7 @@ Saída gerada:
 
 &nbsp;
 
-> Nova consulta:
+Nova consulta:
 ```mysql
 
 SELECT CONCAT('Score do(a) cliente ', nomeCliente, ' ', sobrenomeCliente, ': ', scoreCliente, ' pontos') AS  'Consulta sobre clientes'
@@ -67,7 +67,7 @@ FROM tb_cliente
 WHERE idCliente = '2';
 ```
 
-Saída gerada:
+↳ Saída gerada:
 
 ```
 +----------------------------------------------------+
@@ -79,14 +79,15 @@ Saída gerada:
 
 &nbsp;
 
-> Agora repare o que acontece ao se fazer a consulta a um registro que contém valor nulo:  
+Agora repare o que acontece ao se fazer a consulta a um registro que contém valor nulo:  
 ```mysql
 
 SELECT CONCAT('Score do(a) cliente ', nomeCliente, ' ', sobrenomeCliente, ': ', scoreCliente, ' pontos') AS  'Consulta sobre clientes'
 FROM tb_cliente
 WHERE idCliente = '10';
 ```
-Saída gerada:
+
+↳ Saída gerada:
 ```
 +-------------------------+
 | Consulta sobre clientes |
@@ -103,8 +104,8 @@ Strings concatenadas com campos que contém valores nulos não serão exibidas: 
 &nbsp;
 
 Para evitar isto, deve ser utilizada a função `IFNULL`, que contém 2 argumentos: 
-&nbsp;&nbsp;. no primeiro argumento, é colocado o campo a ser concatenado (que pode ter valor NULL); 
-&nbsp;&nbsp;. e no segundo argumento, coloca-se a mensagem que se deseja que substitua o termo NULL, quando houver. 
+&nbsp;&nbsp;◦ no primeiro argumento, é colocado o campo a ser concatenado (que pode ter valor NULL); 
+&nbsp;&nbsp;◦ e no segundo argumento, coloca-se a mensagem que se deseja que substitua o termo NULL, quando houver. 
 ```mysql
 
 SELECT CONCAT('Score do(a) cliente ', nomeCliente, ' ', sobrenomeCliente, ': ', IFNULL(scoreCliente,'ainda não computado'),'.') AS  'Consulta sobre clientes'
@@ -112,7 +113,7 @@ FROM tb_cliente
 WHERE idCliente = '10';
 ```
 
-Saída gerada:
+↳ Saída gerada:
 ```
 +----------------------------------------------------------+
 |                 Consulta sobre clientes                  |

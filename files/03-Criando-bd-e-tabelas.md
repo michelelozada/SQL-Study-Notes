@@ -13,7 +13,7 @@
 
 &nbsp;
     
-> Criando um banco de dados:
+↳ Criando um banco de dados:
 ```mysql
 
 CREATE DATABASE IF NOT EXISTS db_escola;
@@ -21,7 +21,7 @@ CREATE DATABASE IF NOT EXISTS db_escola;
 
 &nbsp; 
 
-> Criando uma tabela:
+Criando uma tabela:
 ```mysql
 
 CREATE TABLE IF NOT EXISTS tb_aluno(
@@ -40,7 +40,7 @@ Seguem abaixo alguns comandos úteis relacionados à criação da base de dados 
 &nbsp;   
 
 ### • Comando USE  
-Após ter sido criado, é imprescindível indicar ao servidor qual banco de dados será utilizado    
+Após ter sido criado, indica ao servidor qual banco de dados será utilizado    
 
 ```mysql
 
@@ -51,7 +51,7 @@ USE db_escola;
      
 ### • Comando SHOW  
 
-> Listando quais as bases de dados existentes no servidor:        
+Lista quais as bases de dados existentes no servidor:        
 ```mysql
 
 SHOW DATABASES;
@@ -68,7 +68,7 @@ Saída gerada:
 
 &nbsp;
  
-> Exibindo todas as tabelas existentes na base de dados em uso:     
+Exibe todas as tabelas existentes na base de dados em uso:     
 ```mysql
 
 SHOW TABLES;

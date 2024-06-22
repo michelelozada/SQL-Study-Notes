@@ -11,7 +11,7 @@ Comandos que removem linhas de dados de uma tabela no banco de dados
     
 &nbsp;  
 
-> A tabela de exemplo:
+↳ A tabela a ser utilizada para os exemplos abaixo:
 ```
 +----------+-------------------+----------------+--------+
 | ID Aluno |    Nome aluno     |     Cidade     | Estado |
@@ -32,16 +32,16 @@ Permite apagar os registros de uma tabela. Se utilizado *com* a cláusula `WHERE
 
 DELETE FROM tb_aluno WHERE idAluno = 3; 
 ```
-Resultado: apagará registro apenas da aluna Cátia
+↳ Resultado: apagará registro apenas da aluna Cátia
 
 &nbsp;
 
-> Se utilizado *sem* o filtro `WHERE`, apagará todos os registros da tabela:  
+Se utilizado *sem* o filtro `WHERE`, apagará todos os registros da tabela:  
 ```mysql
 
 DELETE FROM tb_aluno; 
 ```
-Resultado: irá apagar os dados de todos os alunos  
+↳ Resultado: irá apagar os dados de todos os alunos  
 
 &nbsp;
      
@@ -60,7 +60,7 @@ Há várias diferenças entre os dois comandos, sendo que uma delas se refere ao
 
 &nbsp;  
 
-> Depois de todos os registros de uma tabela terem sido apagados com **`DELETE`**, veja o que acontece no campo *idAluno* quando novos dados são inseridos na tabela: 
+Depois de todos os registros de uma tabela terem sido apagados com **`DELETE`**, veja o que acontece no campo *idAluno* quando novos dados são inseridos na tabela: 
 ```
 +----------+------------------+---------------+--------+
 | ID Aluno |    Nome aluno    |    Cidade     | Estado |
@@ -74,7 +74,7 @@ Há várias diferenças entre os dois comandos, sendo que uma delas se refere ao
 
 &nbsp;
  
-> Agora veja o que acontece com a tabela que teve seus dados eliminados com **`TRUNCATE`** e agora recebe novos: 
+Agora veja o que acontece com a tabela que teve seus dados eliminados com **`TRUNCATE`** e agora recebe novos: 
 dados: 
 ```
 +----------+------------------+---------------+--------+

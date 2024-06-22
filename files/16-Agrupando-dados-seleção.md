@@ -15,7 +15,7 @@ destas informações
      
 &nbsp;  
 
-> A tabela para exemplo:
+↳ A tabela a ser utilizada para os exemplos abaixo:
 ```
 +---------+------------+------------+-------------+
 | idVenda | idVendedor | valorVenda | tipoCliente |
@@ -35,7 +35,7 @@ destas informações
 
 &nbsp;
 
-> No exemplo abaixo, desejo retornar o valor total das vendas de cada um dos vendedores (repare que não foi inclusa a clásula `WHERE`):
+Abaixo, desejo retornar o valor total das vendas de cada um dos vendedores (repare que não foi inclusa a clásula `WHERE`):
 ```mysql
 
 SELECT idVendedor AS 'ID Vendedor', SUM(valorVenda) AS 'Valor total das vendas'
@@ -43,7 +43,7 @@ FROM tb_venda
 GROUP BY idVendedor;
 ```
 
-Saída gerada:
+↳ Saída gerada:
 ```
 +-------------+------------------------+
 | ID Vendedor | Valor total das vendas |
@@ -57,7 +57,7 @@ Saída gerada:
 
 &nbsp;
 
-> No exemplo abaixo, desejo retornar *apenas* o valor total das vendas do vendedor com a Id nº 2 *(aqui inclusa a clásula `WHERE`)*:
+No exemplo abaixo, desejo retornar *apenas* o valor total das vendas do vendedor com a Id nº 2 *(aqui inclusa a clásula `WHERE`)*:
 ```mysql
 
 SELECT idVendedor AS 'ID Vendedor', SUM(valorVenda) AS 'Valor total das vendas'
@@ -66,7 +66,7 @@ WHERE idVendedor = '2'
 GROUP BY idVendedor;
 ```
 
-Saída gerada:
+↳ Saída gerada:
 ```
 +-------------+------------------------+
 | ID Vendedor | Valor total das vendas |
@@ -77,7 +77,7 @@ Saída gerada:
 
 &nbsp;
 
-> No exemplo abaixo, desejo retornar quantas vendas foram realizadas apenas pelo vendedor com a Id nº 3:
+No exemplo abaixo, desejo retornar quantas vendas foram realizadas apenas pelo vendedor com a Id nº 3:
 ```mysql
 
 SELECT idVendedor AS 'ID Vendedor', COUNT(idVenda) AS 'Quantidade de Vendas'
@@ -86,7 +86,7 @@ WHERE idVendedor = '3'
 GROUP BY idVendedor;
 ```
 
-Saída gerada:
+↳ Saída gerada:
 
 ```
 +-------------+----------------------+
@@ -98,7 +98,7 @@ Saída gerada:
 
 &nbsp;
 
-> No exemplo abaixo, desejo retornar quantas vendas foram realizadas pelos vendedores a clientes do tipo PJ:
+No exemplo abaixo, desejo retornar quantas vendas foram realizadas pelos vendedores a clientes do tipo PJ:
 ```mysql
 
 SELECT idVendedor AS 'ID Vendedor', COUNT(tipoCliente) AS 'Vendas para clientes do tipo PJ'
@@ -107,8 +107,7 @@ WHERE tipoCliente = 'PJ'
 GROUP BY idVendedor;
 ```
 
-Saída gerada:
-
+↳ Saída gerada:
 ```
 +-------------+---------------------------------+
 | ID Vendedor | Vendas para clientes do tipo PJ |

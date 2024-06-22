@@ -4,7 +4,7 @@
 &nbsp;
      
 &nbsp;   
-> A tabelas ára exemplo:  
+↳ A tabela a ser utilizada para os exemplos abaixo:
 ```
 +---------+-------------------+-----------+------------------+----------------+--------------+
 | idAluno |     nomeAluno     | sexoAluno | dNascimentoAluno |  cidadeAluno   | estado Aluno |
@@ -42,7 +42,7 @@ FROM tb_aluno
 WHERE idAluno > 2 AND sexoAluno = 'F' AND estadoAluno='PR';
 ```
 
-Saída gerada:
+↳ Saída gerada:
 ```
 +---------+-----------------+-----------+--------------+
 | idAluno |    nomeAluno    | sexoAluno | estado Aluno |
@@ -65,7 +65,7 @@ FROM tb_aluno
 WHERE estadoAluno='PR' OR sexoAluno = 'F';
 ```
 
-Saída gerada:
+↳ Saída gerada:
 ```
 +---------+-------------------+-----------+-------------+
 | idAluno |     nomeAluno     | sexoAluno | estadoAluno |
@@ -92,7 +92,7 @@ FROM tb_aluno
 WHERE idAluno > 2 AND NOT sexoAluno = 'F';
 ```
 
-Saída gerada:
+↳ Saída gerada:
 ```
 +---------+------------------+-----------+
 | idAluno |    nomeAluno     | sexoAluno |
@@ -117,7 +117,9 @@ em um determinado conjunto de dados.
 ### • OPERADOR IN  
 Retorna um valor (ou conjunto de valores) pertencente(s) ao conjunto de dados. 
 
-> Neste exemplo, desejo filtrar alunos cadastrados que sejam de apenas duas cidades parananeses abaixo informadas:
+&nbsp;     
+
+Neste exemplo, desejo filtrar alunos cadastrados que sejam de apenas duas cidades parananeses abaixo informadas:
 
 ```mysql
 
@@ -126,7 +128,7 @@ FROM tb_aluno
 WHERE cidadeAluno IN ('Curitiba','Pato Branco');
 ```
 
-Saída gerada:
+↳ Saída gerada:
 ```
 +-----------------+-------------+
 |    nomeAluno    | cidadeAluno |
@@ -141,9 +143,11 @@ Saída gerada:
 &nbsp;
      
 ### • OPERADOR NOT IN  
-- Retorna um valor (ou conjunto de valores) *não* pertencente(s) ao conjunto de dados
+Retorna um valor (ou conjunto de valores) *não* pertencente(s) ao conjunto de dados
 
-> Neste exemplo, desejo filtrar alunos cadastrados que *não* estejam baseados em nenhum dos três estados do sul do Brasil:
+&nbsp;
+
+Neste exemplo, desejo filtrar alunos cadastrados que *não* estejam baseados em nenhum dos três estados do sul do Brasil:
 
 ```mysql
 
@@ -152,7 +156,7 @@ FROM tb_aluno
 WHERE estadoAluno NOT IN ('PR','RS','SC');
 ```
 
-Saída gerada:
+↳ Saída gerada:
 ```
 +-------------------+-------------+
 |     nomeAluno     | estadoAluno |
@@ -175,7 +179,7 @@ WHERE dNascimentoAluno BETWEEN '2000-01-01' AND '2004-12-31'
 ORDER BY dNascimentoAluno DESC; 
 ```
 
-Saída gerada:
+↳ Saída gerada:
 ```
 +-----------------+------------------+
 |    nomeAluno    | dNascimentoAluno |

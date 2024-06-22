@@ -13,7 +13,7 @@
 
 &nbsp;
 
-> A tabela de exemplo:
+↳ A tabela a ser utilizada para os exemplos abaixo:
 ```mysql
 
 CREATE TABLE tb_aluno(
@@ -36,14 +36,14 @@ VALUES (default, 'Lorenzo Martins', '4199956-xx88','lorenzomartins@gmail.com');
 
 &nbsp;    
 
-> Uma vez que a coluna id_aluno é `AUTO_INCREMENT`, a query pode também ser escrita da seguinte forma: 
+Uma vez que a coluna id_aluno é `AUTO_INCREMENT`, a query pode também ser escrita da seguinte forma: 
 ```mysql
 
 INSERT INTO tb_aluno(nomeAluno,foneAluno,emailAluno) 
 VALUES ('Lorenzo Martins', '4199956-xx88','lorenzomartins@gmail.com');
 ```
 
-Saída gerada:  
+↳ Saída gerada:  
 ```
 +----------+-------------------+--------------+--------------------------+
 | ID Aluno |    Nome aluno     |   Telefone   |          E-mail          |
@@ -65,7 +65,7 @@ VALUES
 
 &nbsp;   
 
-> Ou alternativamente: 
+Ou alternativamente: 
 ```mysql
 
 INSERT INTO tb_aluno(nomeAluno,foneAluno,emailAluno) 
@@ -75,7 +75,7 @@ VALUES
   ('Henrique Bormann','4199987-xx45', 'hbormann@email.com');
 ```
 
-Saída gerada:  
+↳ Saída gerada:  
 ```
 +----------+-------------------+--------------+--------------------------+
 | ID Aluno |    Nome aluno     |   Telefone   |          E-mail          |

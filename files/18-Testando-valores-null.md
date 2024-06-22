@@ -13,7 +13,7 @@
 
 &nbsp;
 
-> A tabela para o exemplo:   
+↳ A tabela a ser utilizada para os exemplos abaixo:
 ```
 +-----------+-------------------+--------------+
 | idCliente |    nomeCliente    | scoreCliente |
@@ -43,7 +43,7 @@ FROM tb_cliente
 WHERE scoreCliente IS NULL;
 ```
 
-Saída gerada:
+↳ Saída gerada:
 ```
 +-----------+------------------+--------------+
 | idCliente |   nomeCliente    | scoreCliente |
@@ -68,7 +68,8 @@ FROM tb_cliente
 WHERE scoreCliente IS NOT NULL
 ORDER BY scoreCliente DESC;
 ```
-Saída gerada:
+
+↳ Saída gerada:
 ```
 +-----------+-------------------+--------------+
 | idCliente |    nomeCliente    | scoreCliente |

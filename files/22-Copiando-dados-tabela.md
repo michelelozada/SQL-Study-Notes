@@ -11,7 +11,7 @@ Permite copiar dados provenientes de uma tabela para outra, armazenando-os no ba
 
 &nbsp;
      
-> A tabela para exemplo, a tb_curso:
+↳ A tabela a ser utilizada para os exemplos abaixo, a tb_curso:
 ```
 +---------+-----------+------------+------------+
 | idCurso | nomeCurso | turnoCurso | valorCurso |
@@ -27,7 +27,7 @@ Permite copiar dados provenientes de uma tabela para outra, armazenando-os no ba
 
 &nbsp;
 
-> Primeiro é preciso criar a tabela de destino - vou chamá-la de tb_curso_new - baseada na tabela original:
+Primeiro é preciso criar a tabela de destino - vou chamá-la de tb_curso_new - baseada na tabela original:
 ```mysql
 
 CREATE TABLE tb_curso_new LIKE tb_curso;
@@ -35,7 +35,7 @@ CREATE TABLE tb_curso_new LIKE tb_curso;
 
 &nbsp;    
 
-> Feito isso, utiliza-se a sintaxe a seguir para determinar que haja a cópia dos dados de tb_curso para tb_curso_new. Criei um filtro para que elas fiquem diferentes.
+Feito isso, utiliza-se a sintaxe a seguir para determinar que haja a cópia dos dados de tb_curso para tb_curso_new. Criei um filtro para que elas fiquem diferentes.
 ```mysql
 
 INSERT INTO tb_curso_new
@@ -45,7 +45,7 @@ WHERE nomeCurso='Direito' OR nomeCurso='Pedagogia';
 
 &nbsp;  
 
-> Tendo sido executada a instrução acima, esta será a saída de tb_curso_new, que já está armazenada no banco de dados da tabela original:
+Tendo sido executada a instrução acima, esta será a saída de tb_curso_new, que já está armazenada no banco de dados da tabela original:
 
 ```
 +---------+-----------+------------+------------+
@@ -60,7 +60,7 @@ WHERE nomeCurso='Direito' OR nomeCurso='Pedagogia';
 
 &nbsp;
  
-> Caso seja necessário copiar os dados para uma nova tabela, só que a ser armazenada em um outro banco de dados, basta fazer a seguinte adaptação no momento da criação da nova tabela:
+Caso seja necessário copiar os dados para uma nova tabela, só que a ser armazenada em um outro banco de dados, basta fazer a seguinte adaptação no momento da criação da nova tabela:
 ```mysql
 
 CREATE TABLE nome_da_database_destino.tb_curso_new 

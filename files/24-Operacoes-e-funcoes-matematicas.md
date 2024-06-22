@@ -36,7 +36,7 @@ SELECT 14 DIV 2;
    
 ### • Operações aritméticas com os dados dos campos de uma tabela 
 
-> A tabela de exemplo:
+↳ A tabela a ser utilizada para os exemplos abaixo:
 ```
 +---------+-------------------+-------------+-------------+
 | idAluno |     nomeAluno     | notaObtida1 | notaObtida2 |
@@ -52,14 +52,15 @@ SELECT 14 DIV 2;
 
 &nbsp;
        
-> Abaixo, a criação de uma consulta que calcula o valor da média final dos alunos com base nas notas previamente obtidas:  
+Abaixo, a criação de uma consulta que calcula o valor da média final dos alunos com base nas notas previamente obtidas:  
 ```mysql
 
 SELECT nomeAluno, (notaObtida1 + notaObtida2) DIV 2 AS mediaFinal 
 FROM tb_aluno 
 ORDER BY mediaFinal DESC;
 ```
-Saída gerada: 
+
+↳ Saída gerada: 
 ```
 +-------------------+------------+
 |     nomeAluno     | mediaFinal |

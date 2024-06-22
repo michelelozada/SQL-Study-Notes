@@ -28,7 +28,11 @@ quando é aplicado o INNER JOIN
      
 &nbsp;  
 
-> A primeira tabela para exemplo - Produtos (tb_produto):
+As tabelas a serem utilizadas para os exemplos abaixo:
+
+&nbsp;  
+
+↳ tb_produto:
 
 ```
 +-----------+------------------------------+-----------------+---------------------+
@@ -51,7 +55,7 @@ quando é aplicado o INNER JOIN
 
 &nbsp; 
 
-> A segunda tabela - Categoria (tb_categoria):
+↳ tb_categoria:
 ```
 +-------------+-----------------+
 | idCategoria |  nomeCategoria  |
@@ -69,7 +73,7 @@ quando é aplicado o INNER JOIN
 
 &nbsp; 
 
-> A terceira tabela - Marcas (tb_marca):
+↳ tb_marca:
 ```
 +---------+------------+
 | idMarca | nomeMarca  |
@@ -86,7 +90,7 @@ quando é aplicado o INNER JOIN
 
 &nbsp;
 
-> Aplicando o LEFT JOIN em duas das tabelas acima:
+Aplicando o LEFT JOIN em duas das tabelas acima:
 ```mysql
 
 SELECT p.nomeProduto As Produto, m.nomeMarca AS Marca
@@ -95,7 +99,7 @@ LEFT JOIN tb_marca AS m
 ON p.marcaProduto_fk = m.idMarca;
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +------------------------------+------------+
 |           Produto            |   Marca    |
@@ -117,7 +121,7 @@ Saída gerada:
 
 &nbsp;
 
-> Nova consulta, retornando agora apenas os dados que não possuem correspondência (nulos):
+Nova consulta, retornando agora apenas os dados que não possuem correspondência (nulos):
 ```mysql
 
 SELECT p.nomeProduto As Produto, m.nomeMarca AS Marca
@@ -127,7 +131,7 @@ ON p.marcaProduto_fk = m.idMarca
 WHERE m.idMarca IS NULL; 
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +--------------------------+-------+
 |         Produto          | Marca |
@@ -139,7 +143,7 @@ Saída gerada:
 
 &nbsp;
 
-> Aplicando o RIGHT JOIN em duas das tabelas acima:
+Aplicando o RIGHT JOIN em duas das tabelas acima:
 ```mysql
 
 SELECT p.nomeProduto As Produto, c.nomeCategoria AS Categoria
@@ -148,7 +152,7 @@ RIGHT JOIN tb_categoria AS c
 ON p.categoriaProduto_fk = c.idCategoria;
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +------------------------------+-----------------+
 |           Produto            |    Categoria    |
@@ -170,7 +174,7 @@ Saída gerada:
 
 &nbsp;
 
-> Nova consulta, retornando apenas os dados que não possuem correspondência/nulos:
+Nova consulta, retornando apenas os dados que não possuem correspondência/nulos:
 ```mysql
 
 SELECT p.nomeProduto As Produto, c.nomeCategoria AS Categoria
@@ -180,7 +184,7 @@ ON p.categoriaProduto_fk = c.idCategoria
 WHERE p.idProduto IS NULL; -- irá excluir correspondências
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +---------+-----------+
 | Produto | Categoria |

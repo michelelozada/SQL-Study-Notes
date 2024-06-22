@@ -44,7 +44,7 @@ VALUES
   ('Heloísa Bormann', 'hbormann@email.com');
 ```
 
-Saída gerada:  
+↳ Saída gerada:  
 ```
 +-----+--------------------+--------------------------+
 | ID  | Aluno  Nome aluno  |       E-mail aluno       |
@@ -64,7 +64,7 @@ Saída gerada:
 
 &nbsp;
      
-> Caso haja a necessidade de setar o valor default do AUTO_INCREMENT para começar com um valor diferente:
+Caso haja a necessidade de setar o valor default do AUTO_INCREMENT para começar com um valor diferente:
 ```mysql
 
 CREATE TABLE tb_aluno(
@@ -75,7 +75,7 @@ CREATE TABLE tb_aluno(
 ) AUTO_INCREMENT = 100;
 ```
 
-Saída gerada:  
+↳ Saída gerada:  
 ```
 +----------+--------------------+--------------------------+
 | ID Aluno |    Nome aluno      |       E-mail aluno       |
@@ -95,7 +95,7 @@ Saída gerada:
 
 &nbsp;
      
-> Após a tabela já ter sido criada, caso seja necessário que a próxima sequência de registros na tabela comece com um valor de incremento diferente:
+Após a tabela já ter sido criada, caso seja necessário que a próxima sequência de registros na tabela comece com um valor de incremento diferente:
 ```mysql
 
 ALTER TABLE tb_Aluno AUTO_INCREMENT = 200;
@@ -109,7 +109,7 @@ VALUES
   ('Lúcia Freitas', 'luciafreitas@email.com');
 ```
 
-Saída gerada:  
+↳ Saída gerada:  
 ```
 +----------+----------------------+--------------------------+
 | ID Aluno |      Nome aluno      |       E-mail aluno       |
@@ -134,13 +134,13 @@ Saída gerada:
 
 &nbsp;
      
-> Para verificação do último valor inserido no campo que utilizou o `AUTO_INCREMENT`
+Para verificação do último valor inserido no campo que utilizou o `AUTO_INCREMENT`
 ```mysql
 
 SELECT MAX(idAluno) FROM tb_Aluno;
 ```
 
-Saída gerada:  
+↳ Saída gerada:  
 204
 
 &nbsp;

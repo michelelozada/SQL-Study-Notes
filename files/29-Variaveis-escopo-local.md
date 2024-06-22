@@ -16,7 +16,7 @@ da memória
      
 &nbsp;   
 
-> A tabela a ser utilizada para os exemplos abaixo:
+↳ A tabela a ser utilizada para os exemplos abaixo:
 
 ```
 +---------+-----------+------------+------------------+
@@ -29,7 +29,7 @@ da memória
 
 &nbsp;     
 
-> A. Criação da função  
+A. Criação da função  
 Objetivo: Criação de uma função para calcular redução da mensalidade, tendo sido informados o código do curso e a taxa de desconto:
 
 ```mysql
@@ -48,14 +48,15 @@ DELIMITER ;
 ```
 &nbsp;    
 
-> B. Chamada da função  
+B. Chamada da função  
 Parâmetros: Curso de código 1 e taxa de desconto de 10%  
+
 ```mysql
 
 SELECT reduzirMensalidade(1,10) AS 'Mensalidade com desconto';
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +--------------------------+
 | Mensalidade com desconto |
@@ -66,14 +67,15 @@ Saída gerada:
 
 &nbsp;  
 
-> C. Nova chamada da função  
+C. Nova chamada da função  
 Parâmetros: Curso de código 2 e taxa de desconto de 5%  
+
 ```mysql
 
 SELECT reduzirMensalidade(2,5) AS 'Mensalidade com desconto';
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +--------------------------+
 | Mensalidade com desconto |

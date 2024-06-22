@@ -17,9 +17,9 @@ registros, etc.
 
 ### • Primary Key _(aka Chave Primária)_
 Define o atributo (ou conjunto de atributos) que identificará de forma única cada registro/linha de uma tabela de um banco de dados, sendo que:    
-&nbsp; &nbsp; . Só pode haver uma chave primária por tabela  
-&nbsp; &nbsp; . Quando aplicada, não podem ocorer valores duplicados  
-&nbsp; &nbsp; . É necessário ser declarada em conjunto com a cláusula `NOT NULL`, já que chaves primárias não podem receber valores nulos  
+&nbsp; ◦ Só pode haver uma chave primária por tabela  
+&nbsp; ◦ Quando aplicada, não podem ocorer valores duplicados  
+&nbsp; ◦ É necessário ser declarada em conjunto com a cláusula `NOT NULL`, já que chaves primárias não podem receber valores nulos  
 
 ```mysql
 
@@ -30,14 +30,18 @@ CREATE TABLE tb_aluno(
 );
 ```
 
-> Aplicando chave primária numa tabela já existente:
+&nbsp;  
+
+Aplicando chave primária numa tabela já existente:
 ```mysql
 
 ALTER TABLE tb_aluno
 ADD PRIMARY KEY (idAluno);
 ```  
 
-> Removendo a chave primária:
+&nbsp;  
+
+Removendo a chave primária:
 ```mysql
 
 ALTER TABLE tb_aluno
@@ -49,7 +53,9 @@ DROP PRIMARY KEY;
 ### • Foreign Key (aka Chave Estrangeira)  
 Campo de uma tabela que aponta para o campo primário de uma outra tabela que contém a chave primária.  
 
-> Considerando uma tabela chamada Contrato, cujo campo `idAluno` deve estar vinculado ao campo primário da tabela Aluno, seria assim criada uma chave estrangeira:
+&nbsp;  
+
+Considerando uma tabela chamada Contrato, cujo campo `idAluno` deve estar vinculado ao campo primário da tabela Aluno, seria assim criada uma chave estrangeira:
 ```mysql
 
 CREATE TABLE tb_contrato(
@@ -62,7 +68,7 @@ CREATE TABLE tb_contrato(
 
 &nbsp;   
 
-> Aplicando chave estrangeira numa tabela já criada:
+Aplicando chave estrangeira numa tabela já criada:
 ```mysql
 
 ALTER TABLE tb_contrato 
@@ -72,7 +78,7 @@ REFERENCES tb_aluno(idAluno);
 
 &nbsp;   
 
-> Exclusão de uma chave estrangeira:
+Exclusão de uma chave estrangeira:
 ```mysql
 
 ALTER TABLE tb_contrato 
@@ -81,7 +87,7 @@ DROP CONSTRAINT idAluno;
 
 &nbsp;   
 
-> Ou alternativamente:
+Ou alternativamente:
 ```mysql
 
 ALTER TABLE tb_contrato
@@ -103,7 +109,7 @@ CREATE TABLE tb_aluno(
 
 &nbsp;   
 
-> Adicionando restrição UNIQUE a coluna de tabela já criada:
+Adicionando restrição UNIQUE a coluna de tabela já criada:
 ```mysql
 
 ALTER TABLE tb_aluno
@@ -127,7 +133,7 @@ CREATE TABLE tb_aluno(
 
 &nbsp;   
 
-> Caso a restrição não tenha sido definida no momento da criação da tabela:
+Caso a restrição não tenha sido definida no momento da criação da tabela:
 ```mysql
 
 ALTER TABLE tb_aluno 
@@ -136,7 +142,7 @@ MODIFY nomeAluno varchar(40) NOT NULL;
 
 &nbsp;   
 
-> Caso seja necessária a reversão:
+Caso seja necessária a reversão:
 ```mysql
 
 ALTER TABLE tb_aluno 
@@ -159,7 +165,7 @@ CREATE TABLE tb_aluno(
 
 &nbsp;   
 
-> Caso a restrição não tenha sido definida no momento da criação da tabela:
+Caso a restrição não tenha sido definida no momento da criação da tabela:
 ```mysql
 
 ALTER TABLE tb_aluno 

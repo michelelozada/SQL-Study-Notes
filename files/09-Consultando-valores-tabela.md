@@ -17,7 +17,7 @@ adiante listados.
      
 &nbsp;  
 
-> A tabela de exemplo:
+Criando a tabela a ser utilizada para os exemplos abaixo:
 ```mysql
 
 CREATE TABLE tb_aluno(
@@ -48,7 +48,7 @@ VALUES
 SELECT * FROM tb_aluno;
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +----------+--------------------+--------------------------+
 | ID Aluno |     Nome aluno     |          E-mail          |
@@ -66,13 +66,13 @@ Saída gerada:
 
 &nbsp;
   
-> Consultando registros de apenas uma coluna desta tabela:
+Consultando registros de apenas uma coluna desta tabela:
 ```mysql
 
 SELECT nomeAluno FROM tb_aluno;
 ```	
 
-Saída gerada: 
+↳  Saída gerada: 
 ```
 +-------------------+
 |    Nome aluno     |
@@ -87,13 +87,13 @@ Saída gerada:
 
 &nbsp;
   
-> Consultando registros de duas colunas específicas da tabela:
+Consultando registros de duas colunas específicas da tabela:
 ```mysql
 
 SELECT nomeAluno, emailAluno FROM tb_aluno;
 ```	
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +-------------------+--------------------------+
 |    Nome aluno     |          E-mail          |
@@ -121,7 +121,7 @@ SELECT nomeAluno FROM tb_aluno
 ORDER BY nomeAluno DESC;
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +-------------------+
 |    Nome aluno     |
@@ -146,7 +146,7 @@ SELECT nomeAluno FROM tb_aluno
 ORDER BY nomeAluno;
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +-------------------+
 |    Nome aluno     |
@@ -173,7 +173,7 @@ SELECT idAluno, nomeAluno FROM tb_aluno
 WHERE idAluno = 5;
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +----------+-----------------+
 | ID Aluno |   Nome aluno    |
@@ -191,7 +191,7 @@ WHERE idAluno <= 3
 ORDER BY nomeAluno DESC;
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +----------+-------------------+
 | ID Aluno |    Nome aluno     |
@@ -209,7 +209,7 @@ SELECT idAluno, nomeAluno FROM tb_aluno
 WHERE NOT idAluno > 4;
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +----------+-------------------+
 | ID Aluno |    Nome aluno     |
@@ -229,7 +229,7 @@ SELECT idAluno, nomeAluno FROM tb_aluno
 WHERE (idAluno = 8 AND nomeAluno = "Paulinha") OR (idAluno = 7 AND nomeAluno = "Rodrigo Mattos");
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +----------+----------------+
 | ID Aluno |   Nome aluno   |
@@ -241,10 +241,9 @@ Saída gerada:
 &nbsp;
 
 **Observações:**
-&nbsp;&nbsp; . Operadores que podem ser utilizados para montar as condições de WHERE: `=`, `!=` ou`<>`, `>`,`<`, `>=`,`<=` 
-&nbsp;&nbsp; . Para números float (devido a não-precisão), as operações de igualdade ou diferença não funcionam - nestes casos, deve-se usar a cláusula `BETWEEN`.
-&nbsp;&nbsp; . Os operadores acima podem se utilizados com strings também: `SELECT * FROM tb_aluno WHERE nomeAluno >= 'Mariana Fernandes';`
-
+&nbsp;&nbsp; ◦ Operadores que podem ser utilizados para montar as condições de WHERE: `=`, `!=` ou`<>`, `>`,`<`, `>=`,`<=`  
+&nbsp;&nbsp; ◦ Para números float (devido a não-precisão), as operações de igualdade ou diferença não funcionam - nestes casos, deve-se usar a cláusula `BETWEEN`  
+&nbsp;&nbsp; ◦ Os operadores acima podem se utilizados com strings também: `SELECT * FROM tb_aluno WHERE nomeAluno >= 'Mariana Fernandes';`  
 &nbsp;
 
 ### • Utilizando a cláusula LIMIT
@@ -259,7 +258,7 @@ ORDER BY nomeAluno
 LIMIT 3;
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +-------------------+
 |    Nome aluno     |
@@ -275,7 +274,7 @@ Saída gerada:
 ### • Utilizando o Operador LIKE
 Ao incluir esta cláusula, junto ao coringa `%`, são realizadas comparações de letras ou palavras de uma string.  
 
-> No exemplo abaixo: retorno dos registros presentes na tabela, cujas strings (do campo nomeAluno) terminam com a letra 'A'.
+No exemplo abaixo: retorno dos registros presentes na tabela, cujas strings (do campo nomeAluno) terminam com a letra 'A'.
 ```mysql
 
 SELECT idAluno, nomeAluno 
@@ -283,7 +282,7 @@ FROM tb_aluno
 WHERE nomeAluno LIKE '%A';
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +----------+-------------+
 | ID Aluno | Nome aluno  |
@@ -295,7 +294,7 @@ Saída gerada:
 
 &nbsp;
 
-> No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) começa, com a letra 'M'. 
+No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) começa, com a letra 'M'. 
 ```mysql
 
 SELECT idAluno, nomeAluno 
@@ -303,7 +302,7 @@ FROM b_aluno
 WHERE nomeAluno LIKE 'M%';  
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +----------+-------------------+
 | ID Aluno |    Nome aluno     |
@@ -314,7 +313,7 @@ Saída gerada:
 ```
 &nbsp;
   
-> No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) contêm a letra 'M'. 
+No exemplo abaixo: retorna registros presentes na tabela, cujas strings (do campo nomeAluno) contêm a letra 'M'. 
 ```mysql
 
 SELECT idAluno, nomeAluno 
@@ -322,7 +321,7 @@ FROM tb_aluno
 WHERE nomeAluno LIKE '%M%'; 
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +----------+-------------------+
 | ID Aluno |    Nome aluno     |
@@ -337,7 +336,7 @@ Saída gerada:
 
 &nbsp;
   
-> No exemplo abaixo: retorna registros presentes na tabela, cuja terceira letra da string (do campo nomeAluno) é a letra 'r'.
+No exemplo abaixo: retorna registros presentes na tabela, cuja terceira letra da string (do campo nomeAluno) é a letra 'r'.
 ```mysql
 
 SELECT idAluno, nomeAluno 
@@ -345,7 +344,7 @@ FROM tb_aluno
 WHERE nomeAluno LIKE '__R%'; 
 ```
 
-Saída gerada: 	
+↳ Saída gerada: 	
 ```
 +----------+-------------------+
 | ID Aluno |    Nome aluno     |
@@ -357,7 +356,7 @@ Saída gerada:
 
 &nbsp;
    
-> No exemplo abaixo: retorna registros presentes na tabela, cuja string (do campo nomeAluno) termina com 'ndes'. 
+No exemplo abaixo: retorna registros presentes na tabela, cuja string (do campo nomeAluno) termina com 'ndes'. 
 ```mysql
 
 SELECT idAluno, nomeAluno 
@@ -365,7 +364,7 @@ FROMtb_aluno
 WHERE nomeAluno LIKE '%NDES'; 
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +----------+-------------------+
 | ID Aluno |    Nome aluno     |
@@ -377,7 +376,7 @@ Saída gerada:
 
 &nbsp;
    
-> No exemplo abaixo: retorna registros presentes na tabela, cuja string (do campo nomeAluno) começa com 'm' e termina com 's'. 
+No exemplo abaixo: retorna registros presentes na tabela, cuja string (do campo nomeAluno) começa com 'm' e termina com 's'. 
 ```mysql
 
 SELECT idAluno, nomeAluno 
@@ -385,7 +384,7 @@ FROM tb_aluno
 WHERE nomeAluno LIKE 'm%s'; 
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +----------+-------------------+
 | ID Aluno |    Nome aluno     |
@@ -407,7 +406,7 @@ FROM tb_aluno
 WHERE nomeAluno NOT LIKE '%R%'; 
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +----------+-------------+
 | ID Aluno | Nome aluno  |

@@ -30,7 +30,7 @@ pelo comando DELIMITER seguido de caracteres especiais como $$ ou //, conforme e
 
 &nbsp;   
 
-> A. Declarando uma função, dentro do bloco BEGIN ... END
+A. Declarando uma função, dentro do bloco BEGIN ... END
 ```mysql
 
 DELIMITER $$ 
@@ -44,13 +44,14 @@ DELIMITER ;
 
 &nbsp;
 
-> B. Invocando a função
+B. Invocando a função
 ```mysql
 
 SELECT nomeAluno, notaObtida1, notaObtida2, calcularMedia(notaObtida1,notaobtida2) AS mediaObtida
 FROM tb_aluno;
 ````
-Saída gerada:  
+
+↳ Saída gerada:  
 ```
 +-------------------+-------------+-------------+-------------+
 |     nomeAluno     | notaObtida1 | notaObtida2 | mediaObtida |
@@ -84,7 +85,7 @@ Saída gerada:
 
 &nbsp;
   
-> A. Incluindo duas cláusulas SELECT em um mesmo procedimento dentro do bloco BEGIN ... END
+A. Incluindo duas cláusulas SELECT em um mesmo procedimento dentro do bloco BEGIN ... END
 ```mysql
 
 DELIMITER //  
@@ -100,7 +101,7 @@ DELIMITER ;
 
 &nbsp;  
 
-> B. Invocando o procedimento
+B. Invocando o procedimento
 ```mysql
 
 CALL consultarMensalidade('Direito');
@@ -124,7 +125,7 @@ Saída gerada:
 
 &nbsp;
 
-> C. Invocando o procedimento novamente, usando outro argumento
+C. Invocando o procedimento novamente, usando outro argumento
 ```mysql
 
 CALL consultaMensalidade('Design Gráfico');
@@ -147,7 +148,7 @@ Saída gerada:
 
 &nbsp;
    
-> D. Excluindo o procedimento acima
+D. Excluindo o procedimento acima
 ```mysql
 
 DROP PROCEDURE consultaMensalidade;

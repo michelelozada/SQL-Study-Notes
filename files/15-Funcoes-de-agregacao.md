@@ -13,7 +13,7 @@
      
 &nbsp;  
 
-**A tabela de exemplo:**  
+↳ A tabela a ser utilizada para os exemplos abaixo:
 ```
 +----------+---------------------------------------+-------+-------------+
 | ID Curso |              Nome curso               | Turno | Mensalidade |
@@ -44,7 +44,7 @@ Retorna a quantidade de registros de uma tabela.
 
 &nbsp;  
 
-> Fazendo a contagem dos cursos registrados na tabela (o uso de ALL é opcional, também poderia ter sido usada acima a seguinte sintaxe: SELECT COUNT(*) AS 'Número de Cursos'):  
+Fazendo a contagem dos cursos registrados na tabela (o uso de ALL é opcional, também poderia ter sido usada acima a seguinte sintaxe: SELECT COUNT(*) AS 'Número de Cursos'):  
 ```mysql
 
 SELECT COUNT(ALL nomeCurso) AS 'Número de Cursos'  
@@ -55,7 +55,7 @@ FROM tb_curso;
 
 &nbsp;  
 
-> Fazendo a contagem dos cursos, porém agora sem contar o nome dos cursos que se repetem na tabela:
+Fazendo a contagem dos cursos, porém agora sem contar o nome dos cursos que se repetem na tabela:
 ```mysql
 
 SELECT COUNT(DISTINCT nomeCurso) AS 'Nomes dos Cursos'
@@ -66,7 +66,7 @@ FROM tb_curso;
 
 &nbsp;  
 
-> Fazendo a contagem de cursos, baseada em uma condição especificada:
+Fazendo a contagem de cursos, baseada em uma condição especificada:
 ```mysql
 
 SELECT COUNT(nomeCurso) AS 'Número de Cursos' 
@@ -78,7 +78,7 @@ WHERE mensalidadeCurso < 300.00;
 
 &nbsp;  
 
-> Fazendo a contagem dos turnos dos cursos:
+Fazendo a contagem dos turnos dos cursos:
 ```mysql
 
 SELECT COUNT(DISTINCT turnoCurso) AS 'Turnos da escola' 
@@ -102,7 +102,7 @@ FROM tb_curso;
 
 &nbsp;
 
-> Retornando o maior valor de mensalidade dentre uma faixa estipulada:
+Retornando o maior valor de mensalidade dentre uma faixa estipulada:
 ```mysql
 
 SELECT MAX(mensalidadeCurso) AS 'Maior valor de mensalidade'
@@ -126,7 +126,7 @@ FROM tb_curso;
 
 &nbsp;
 
-> Retornando o menor valor de mensalidade dentre uma faixa estipulada:
+Retornando o menor valor de mensalidade dentre uma faixa estipulada:
 ```mysql
 
 SELECT MIN(mensalidadeCurso) AS 'Menor valor de mensalidade'
@@ -138,7 +138,7 @@ WHERE mensalidadeCurso> 600.00 AND mensalidadeCurso< 700.00;
 
 &nbsp;
 
-> Consulta com o retorno dos dois valores:
+Consulta com o retorno dos dois valores:
 ```mysql
 
 SELECT MAX(mensalidadeCurso) AS 'Maior valor de mensalidade', MIN(mensalidadeCurso) AS 'Menor valor de mensalidade'
@@ -161,7 +161,7 @@ FROM tb_curso;
 
 &nbsp;  
 
-> No exemplo abaixo, realizando a soma apenas dos cursos com ID menor ou igual a 5:
+No exemplo abaixo, realizando a soma apenas dos cursos com ID menor ou igual a 5:
 ```mysql
 
 SELECT SUM(mensalidadeCurso) AS 'Soma das mensalidades'

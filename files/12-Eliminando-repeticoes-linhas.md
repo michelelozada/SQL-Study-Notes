@@ -15,7 +15,7 @@ modificador DISTINCT, logo após o comando SELECT
 
 &nbsp;
 
-> A tabela de exemplo:
+↳ A tabela a ser utilizada para os exemplos abaixo:
 ```
 +--------+---------------+-----------+----------------+
 | idAula |   nomeAula    | turnoAula | modalidadeAula |
@@ -44,7 +44,7 @@ FROM tb_aulas
 ORDER BY nomeAula;
 ```
 
-Saída gerada:
+↳ Saída gerada:
 ```
 +-----------------+
 | Aulas_ofertadas |
@@ -58,7 +58,7 @@ Saída gerada:
 
 &nbsp;
      
-> Caso haja a necessidade de contar o número dos registros únicos, basta utilizar a função `COUNT()`
+Caso haja a necessidade de contar o número dos registros únicos, basta utilizar a função `COUNT()`
 ```mysql
 
 SELECT COUNT(DISTINCT nomeAula) AS Número_Aulas_ofertadas
@@ -66,7 +66,7 @@ FROM tb_aulas
 ORDER BY nomeAula;
 ```
 
-Saída gerada:
+↳ Saída gerada:
 ```
 +------------------------+
 | Número_Aulas_ofertadas |
@@ -77,7 +77,7 @@ Saída gerada:
 
 &nbsp;
      
-> É possível também informar mais de um campo, conforme demonstrado abaixo:
+É possível também informar mais de um campo, conforme demonstrado abaixo:
 
 ```mysql
 
@@ -85,7 +85,8 @@ SELECT DISTINCT nomeAula, modalidadeAula
 FROM tb_aulas
 ORDER BY nomeAula;
 ```
-Saída gerada:
+
+↳ Saída gerada:
 ```
 +---------------+----------------+
 |   nomeAula    | modalidadeAula |

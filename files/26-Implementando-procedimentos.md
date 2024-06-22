@@ -14,7 +14,7 @@ executar uma ou mais tarefas
 
 &nbsp;  
 
-> A tabela para exemplo:
+↳ A tabela a ser utilizada para os exemplos abaixo:
 ```
 +---------+----------------+-------+-------------+
 | idCurso |   nomeCurso    | Turno | Mensalidade |
@@ -30,7 +30,7 @@ executar uma ou mais tarefas
 
 &nbsp;
     
-> Declarando um procedimento:
+Declarando um procedimento:
 ```mysql
 
 CREATE PROCEDURE consultaMensalidade(pesquisaCurso varchar(50))
@@ -41,13 +41,13 @@ WHERE nomeCurso = pesquisaCurso;
 
 &nbsp;    
 
-> Invocando o procedimento:
+Invocando o procedimento:
 ```mysql
 
 CALL consultaMensalidade('Direito');
 ```
 
-Saída gerada:
+↳ Saída gerada:
 ```
 +----------------------------------------------------------------+
 |                      Consulta_Mensalidade                      |
@@ -59,12 +59,13 @@ Saída gerada:
 
 &nbsp;
 
-> Invocando o procedimento novamente, usando outro argumento:
+Invocando o procedimento novamente, usando outro argumento:
 ```mysql
 
 CALL consultaMensalidade('Design Gráfico');
 ```
-Saída gerada:
+
+↳ Saída gerada:
 ```
 +-----------------------------------------------------------------------+
 |                         Consulta_Mensalidade                          |
@@ -76,7 +77,7 @@ Saída gerada:
 
 &nbsp;
 
-> Excluindo o procedimento acima:
+Excluindo o procedimento acima:
 ```mysql
 
 DROP PROCEDURE consultaMensalidade;

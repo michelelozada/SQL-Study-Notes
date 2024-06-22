@@ -16,7 +16,7 @@
 
 &nbsp;
      
-> As tabelas para os exemplos:
+Criando as tabelas para serem utilizadas para os exemplos abaixo:
 ```mysql
 
 CREATE TABLE tb_aluno(
@@ -41,7 +41,7 @@ CREATE TABLE tb_contrato(
 
 &nbsp;
      
-> 'Dropando' uma das colunas da tabela:
+'Dropando' uma das colunas da tabela:
 ```mysql
 
 ALTER TABLE tb_aluno
@@ -50,7 +50,7 @@ DROP COLUMN foneAluno;
 
 &nbsp;
 
-> Adicionando uma coluna à tabela
+Adicionando uma coluna à tabela
 ```mysql
 
 ALTER TABLE tb_aluno
@@ -60,7 +60,7 @@ AFTER emailAluno;
      
 &nbsp;
 
-> Modificando o tipo de dado ou tamanho de uma coluna
+Modificando o tipo de dado ou tamanho de uma coluna
 ```mysql
 
 ALTER TABLE tb_aluno
@@ -74,19 +74,19 @@ MODIFY COLUMN nomeAluno varchar(60); -- aqui aumentei o tamano da coluna
 
 &nbsp;
 
-> Alterando o nome de uma tabela
+Alterando o nome de uma tabela
 ```mysql
 
 ALTER TABLE tb_aluno RENAME TO tbAluno; 
 ```
 
-> Ou alternativamente:
+Ou alternativamente:
 ```mysql
 
 RENAME TABLE tb_aluno TO tbAluno;
 ```
 
-> Para alterar vários nomes de tabelas ao mesmo tempo:
+Para alterar vários nomes de tabelas ao mesmo tempo:
 ```mysql
 
 RENAME TABLE 
@@ -97,19 +97,19 @@ RENAME TABLE
      
 &nbsp;  
 
-> Alterando o nome da coluna de uma tabela
+Alterando o nome da coluna de uma tabela
 ```mysql
 
 ALTER TABLE tb_aluno
 RENAME COLUMN nomeAluno TO nome_aluno; 
 ```
-> Ou alternativamente:
+Ou alternativamente:
 ```mysql 
 
 ALTER TABLE tb_alunos
 CHANGE nomeAluno nome_aluno varchar(50);
 ```
-Obs: Após o `CHANGE`, colocar nome atual da tabela, seguindo ao novo nome com a definição do tipos dos dados  
+**Obs:** Após o `CHANGE`, colocar nome atual da tabela, seguindo ao novo nome com a definição do tipos dos dados  
 
 &nbsp;
 

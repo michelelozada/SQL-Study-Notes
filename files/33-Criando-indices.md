@@ -12,7 +12,7 @@ na execução de consultas em um banco de dados
 
 &nbsp;
     
-> A. Criando um índice em uma tabela, no momento da sua criação: 
+A. Criando um índice em uma tabela, no momento da sua criação: 
 ```mysql
 
 CREATE TABLE tb_aluno(
@@ -27,7 +27,7 @@ CREATE TABLE tb_aluno(
 
 &nbsp;      
 
-> B.Criando um índice em uma tabela, após a mesma já ter sido criada:
+B. Criando um índice em uma tabela, após a mesma já ter sido criada:
 ```mysql
 
 CREATE INDEX idx_nome_aluno
@@ -36,7 +36,7 @@ ON tb_aluno(nome_aluno);
 
 &nbsp;     
 
-> Ou, alternativamente:
+↳ Ou, alternativamente:
 ```mysql
 
 ALTER TABLE tb_aluno
@@ -45,7 +45,7 @@ ADD INDEX idx_nome_aluno(nome_aluno);
 
 &nbsp;  
 
-> C.  Criando um índice multicoluna
+C. Criando um índice multicoluna
 ```mysql
 
 CREATE INDEX idx_nome_completo
@@ -54,7 +54,7 @@ ON tb_aluno(sobrenome_aluno,nome_aluno);
 
 &nbsp;  
 
-> D. Exibindo os índices já criados nas tabelas do banco de dados:
+D. Exibindo os índices já criados nas tabelas do banco de dados:
 ```mysql
 
 SHOW INDEX FROM tb_aluno;
@@ -62,7 +62,7 @@ SHOW INDEX FROM tb_aluno;
 
 &nbsp;     
 
-> E. Excluindo o índice de uma coluna da tabela:
+E. Excluindo o índice de uma coluna da tabela:
 ```mysql
 
 DROP INDEX idx_nome_aluno
@@ -73,7 +73,7 @@ ON tb_aluno;
 ----
 &nbsp;   
 
-> Considerando-se a tabela do exemplo acima, populada da seguinte forma:
+↳ Considerando-se a tabela do exemplo acima, populada da seguinte forma:
 ```
 +----------+------------+----------------+
 | id_aluno | nome_aluno | telefone_aluno |
@@ -88,7 +88,7 @@ ON tb_aluno;
 
 &nbsp;
 
-Se antes da aplicação do índice, for executado o comando `EXPLAIN SELECT`: 
+↳ Se antes da aplicação do índice, for executado o comando `EXPLAIN SELECT`: 
 ```mysql 
 
 EXPLAIN SELECT * FROM tb_aluno
@@ -97,7 +97,7 @@ WHERE nome_aluno = "Elaine";
 
 &nbsp;
   
-É informado que para encontrar a informação solicitada (ou seja, a aluna de nome *Elaine*), foi preciso percorrer 5 linhas.
+É informado que, para encontrar a informação solicitada (ou seja, a aluna de nome *Elaine*), foi preciso percorrer 5 linhas.
 
 &nbsp;    
 

@@ -31,7 +31,8 @@ Procedimentos com parâmetro INOUT
 
 &nbsp;
 
-> A tabela a ser utilizada para os exemplos abaixo:
+↳ A tabela a ser utilizada para os exemplos abaixo:
+↳ A tabela a ser utilizada para os exemplos abaixo:
 ```
 +---------+-----------+------------+------------------+
 | idCurso | nomeCurso | turnoCurso | mensalidadeCurso |
@@ -48,7 +49,9 @@ Procedimentos com parâmetro INOUT
 ### • Aplicação de parâmetro do tipo IN
 Objetivo: Criar um procedimento para reduzir o valor da mensalidade de qualquer curso, de acordo com uma taxa informada
 
-> A. Declarando o procedimento:
+&nbsp;
+
+A. Declarando o procedimento:
 ```mysql
 
 DELIMITER //  
@@ -63,7 +66,7 @@ DELIMITER ;
 
 &nbsp;
 
-> B. Criando as variáveis e atribuindo valores a elas:
+B. Criando as variáveis e atribuindo valores a elas:
 ```mysql
 
 SET @nome = 'Direito';
@@ -73,7 +76,7 @@ SET @taxa = 10;
 
 &nbsp;
 
-> C. Chamando o procedimento:
+C. Chamando o procedimento:
 ```mysql
 
 CALL reduzirMensalidade(@nome,@turno,@taxa);
@@ -81,14 +84,14 @@ CALL reduzirMensalidade(@nome,@turno,@taxa);
 
 &nbsp;
 
-> D. Realizando a consulta:
+D. Realizando a consulta:
 ```mysql
 
 SELECT * from tb_curso
 WHERE nomeCurso = 'Direito' AND turnoCurso='M';
 ```
 
-Saída gerada:  
+↳ Saída gerada:  
 ```
 +---------+-----------+------------+------------------+
 | idCurso | nomeCurso | turnoCurso | mensalidadeCurso |
@@ -104,7 +107,7 @@ Objetivo: Criar um procedimento para, tendo sido informada a id do curso, serem 
 
 &nbsp;
 
-> A. Declarando o procedimento:
+A. Declarando o procedimento:
 ```mysql
 
 DELIMITER //  
@@ -120,7 +123,7 @@ DELIMITER ;
 
 &nbsp;
 
-> B. Chamando o procedimento:
+B. Chamando o procedimento:
 ```mysql
 
 CALL informarCurso(3,@curso,@turno);
@@ -128,13 +131,13 @@ CALL informarCurso(3,@curso,@turno);
 
 &nbsp;
 
-> C. Realizando a consulta:
+C. Realizando a consulta:
 ```mysql
 
 SELECT @curso AS Curso,@turno AS Turno;
 ```
 
-Saída gerada:  
+↳ Saída gerada:  
 ```
 +-------------+
 | Curso Turno |
@@ -150,7 +153,7 @@ Objetivo: Criar procedimento para, tendo sido informada a mensalidade, esta ser 
 
 &nbsp;
 
-> A. Declarando o procedimento:
+A. Declarando o procedimento:
 ```mysql
 
 DELIMITER //  
@@ -163,7 +166,7 @@ DELIMITER ;
 
 &nbsp; 
 
-> B. Criando a variável com o valor da mensalidade (a ser reduzida) e atribuindo valores a ela:
+B. Criando a variável com o valor da mensalidade (a ser reduzida) e atribuindo valores a ela:
 ```mysql
 
 SET @valor = 278.50;
@@ -171,7 +174,7 @@ SET @valor = 278.50;
 
 &nbsp; 
 
-> C. Chamando o procedimento:
+C. Chamando o procedimento:
 ```mysql
 
 CALL aplicarDesconto(@valor,10.00); -- quero reduzir o valor em 10%
@@ -179,13 +182,13 @@ CALL aplicarDesconto(@valor,10.00); -- quero reduzir o valor em 10%
 
 &nbsp; 
 
-> D. Realizando a consulta:
+D. Realizando a consulta:
 ```mysql
 
 SELECT @valor AS 'Mensalidade com desconto';
 ```
 
-Saída gerada:  
+↳ Saída gerada:  
 ```
 +--------------------------+
 | Mensalidade com desconto |

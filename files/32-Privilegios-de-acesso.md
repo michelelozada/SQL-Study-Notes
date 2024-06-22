@@ -18,7 +18,7 @@ descritos no arquivo 'Gerenciando usuários do sistema', deste repositório
      
 &nbsp;  
 
-> A. Visualizando os privilégios atuais de um usuário já cadastrado no sistema
+A. Visualizando os privilégios atuais de um usuário já cadastrado no sistema
 ```mysql
 
 SHOW GRANTS FOR 'michele'@'localhost';
@@ -26,7 +26,7 @@ SHOW GRANTS FOR 'enzo'; -- sem @'localhost' significa que usuário também pode 
 ```
 &nbsp;   
 
-> B. Criando um usuário com privilégios globais
+B. Criando um usuário com privilégios globais
 ```mysql
 
 GRANT ALL PRIVILEGES -- ou seja, representa todos os direitos
@@ -51,7 +51,7 @@ TO 'marcos'@'localhost' ;  -- todos os privilégios, porém relacionados tão so
      
 &nbsp;   
 
-> C. Atribuindo privilégios específicos para um usuário
+C. Atribuindo privilégios específicos para um usuário
 ```mysql
 
 GRANT SELECT, UPDATE
@@ -68,7 +68,7 @@ TO 'rogerio';
 
 &nbsp;   
 
-> D. Atribuindo privilégios específicos para um usuário em apenas determinados campos de uma tabela
+D. Atribuindo privilégios específicos para um usuário em apenas determinados campos de uma tabela
 ```mysql
 
 GRANT SELECT(nome_cliente, telefone_cliente), UPDATE(telefone_cliente)
@@ -78,7 +78,7 @@ TO 'rogerio';
      
 &nbsp;   
 
-> E. Revogando apenas determinados privilégios de um usuário (ver exemplo acima, onde quero revogar apenas a permissão para UPDATE)
+E. Revogando apenas determinados privilégios de um usuário (ver exemplo acima, onde quero revogar apenas a permissão para UPDATE)
 ```mysql
 
 REVOKE UPDATE
@@ -88,7 +88,7 @@ FROM 'rogerio';
      
 &nbsp;    
 
-> F. Revogando todos os privilégios concedidos
+F. Revogando todos os privilégios concedidos
 ```mysql
 
 REVOKE ALL
