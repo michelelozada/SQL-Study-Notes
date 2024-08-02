@@ -20,11 +20,11 @@ Criando as tabelas para serem utilizadas para os exemplos abaixo:
 ```mysql
 
 CREATE TABLE tb_aluno(
-  idAluno int(11) AUTO_INCREMENT NOT NULL,
-  nomeAluno varchar(40),
-  cpfAluno varchar(15),
-  foneAluno varchar(11),
-  emailAluno varchar(50),
+  idAluno INT(11) AUTO_INCREMENT NOT NULL,
+  nomeAluno VARCHAR(40),
+  cpfAluno VARCHAR(15),
+  foneAluno VARCHAR(11),
+  emailAluno VARCHAR(50),
   PRIMARY KEY(idAluno)
 );
 ```
@@ -32,8 +32,8 @@ CREATE TABLE tb_aluno(
 ```mysql
 
 CREATE TABLE tb_contrato(
-  idContrato int(11) AUTO_INCREMENT NOT NULL,
-  idAluno int(11) NOT NULL,
+  idContrato INT(11) AUTO_INCREMENT NOT NULL,
+  idAluno INT(11) NOT NULL,
   CONSTRAINT idAluno FOREIGN KEY (idAluno_fk),
   PRIMARY KEY(idContrato)
 );

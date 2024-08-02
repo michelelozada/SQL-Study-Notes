@@ -52,6 +52,7 @@
 [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)   
 [MySQL - Curso Completo (Fábio dos Reis)](http://www.bosontreinamentos.com.br/curso-completo-de-mysql/)  
 [Sistemas de Banco de Dados (Ramez Elmasri e Shamkant B. Navathe)](https://www.bvirtual.com.br/NossoAcervo/Publicacao/168492)  
+[SQL Style Guide](https://www.sqlstyle.guide/)  
 
 </details>
    

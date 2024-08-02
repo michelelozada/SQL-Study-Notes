@@ -150,7 +150,7 @@ FROM tb_curso;
 &nbsp;
      
 ### • Função SUM
-Retona a soma dos valores de uma coluna
+Retorna a soma dos valores de uma coluna
 ```mysql
 
 SELECT SUM(mensalidadeCurso) AS 'Soma das mensalidades'

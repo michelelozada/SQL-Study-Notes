@@ -5,7 +5,9 @@
      
 &nbsp;   
 ## Comandos DDL (Data Definition Language)
-Para criação, alteração e exclusão do banco de dados, das tabelas e/ou das suas colunas
+*Para criação, alteração e exclusão do banco de dados, das tabelas e/ou das suas colunas*
+
+&nbsp;
 
 | Comandos | Função                                                                          |
 | :---     | :---                                                                            |
@@ -19,7 +21,9 @@ Para criação, alteração e exclusão do banco de dados, das tabelas e/ou das 
 &nbsp;
 
 ## Comandos DML (Data Manipulation Language)
-Para inserção, alteração e exclusão dos dados em uma base/banco de dados
+*Para inserção, alteração e exclusão dos dados em uma base/banco de dados*
+
+&nbsp;
 
 | Comandos | Função                                                                    |
 | :--      | :---                                                                      |
@@ -30,7 +34,9 @@ Para inserção, alteração e exclusão dos dados em uma base/banco de dados
 &nbsp;
  
 ## Comando DQL (Data Query Language)
-Para consulta aos dados de uma base/banco de dados
+*Para consulta aos dados de uma base/banco de dados*
+
+&nbsp;
 
 | Comando | Função                                                       |
 | :---    | :---                                                         |
@@ -40,6 +46,8 @@ Para consulta aos dados de uma base/banco de dados
  
 ## Comandos DCL (Data Control Language)  
 Para controle de quais usuários podem ter permissão (e quais as suas atribuições) em um banco de dados
+
+&nbsp;
 
 | Comandos | Função                                                       |
 | :---     | :---    

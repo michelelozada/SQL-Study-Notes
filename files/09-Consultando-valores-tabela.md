@@ -21,22 +21,21 @@ Criando a tabela a ser utilizada para os exemplos abaixo:
 ```mysql
 
 CREATE TABLE tb_aluno(
-  idAluno int(11) NOT NULL AUTO_INCREMENT,
-  nomeAluno varchar(50) NOT NULL,
-  emailAluno varchar(40) NOT NULL,
+  idAluno INT(11) NOT NULL AUTO_INCREMENT,
+  nomeAluno VARCHAR(50) NOT NULL,
+  emailAluno VARCHAR(40) NOT NULL,
   PRIMARY KEY(idAluno)
 );
 
 INSERT INTO tb_aluno(nomeAluno,emailAluno) 
-VALUES 
-  ('Luana Borba', 'luanab@email.com'),
-  ('Mariana Fernandes', 'marifernandes@email.com'),
-  ('Cátia Marcondes', 'catiamarcondes@email.com'),
-  ('Marcos Góes', 'marcosgoes@email.com'),
-  ('Sônia de Morais', 'sonia_morais@email.com'),
-  ('Enzo Freitas', 'efreitas@email.com'),
-  ('Rodrigo Mattos', 'rodrigo.mattos@email.com'),
-  ('Paula Souza', 'paula_souza@email.com');
+VALUES ('Luana Borba', 'luanab@email.com'),
+       ('Mariana Fernandes', 'marifernandes@email.com'),
+       ('Cátia Marcondes', 'catiamarcondes@email.com'),
+       ('Marcos Góes', 'marcosgoes@email.com'),
+       ('Sônia de Morais', 'sonia_morais@email.com'),
+       ('Enzo Freitas', 'efreitas@email.com'),
+       ('Rodrigo Mattos', 'rodrigo.mattos@email.com'),
+       ('Paula Souza', 'paula_souza@email.com');
 ```
 
 &nbsp;   
@@ -45,7 +44,8 @@ VALUES
 
 ```mysql
 
-SELECT * FROM tb_aluno;
+SELECT * 
+FROM tb_aluno;
 ```
 
 ↳ Saída gerada: 
@@ -69,7 +69,8 @@ SELECT * FROM tb_aluno;
 Consultando registros de apenas uma coluna desta tabela:
 ```mysql
 
-SELECT nomeAluno FROM tb_aluno;
+SELECT nomeAluno 
+FROM tb_aluno;
 ```	
 
 ↳  Saída gerada: 
@@ -90,7 +91,8 @@ SELECT nomeAluno FROM tb_aluno;
 Consultando registros de duas colunas específicas da tabela:
 ```mysql
 
-SELECT nomeAluno, emailAluno FROM tb_aluno;
+SELECT nomeAluno, emailAluno 
+FROM tb_aluno;
 ```	
 
 ↳ Saída gerada: 
@@ -117,7 +119,8 @@ Apresenta os valores consultados em ordem sequencial crescente ou decrescente, b
 
 ```mysql
 
-SELECT nomeAluno FROM tb_aluno 
+SELECT nomeAluno 
+FROM tb_aluno 
 ORDER BY nomeAluno DESC;
 ```
 
@@ -142,7 +145,8 @@ ORDER BY nomeAluno DESC;
 Por default, a ordenação é em ordem crescente; portanto o uso de `ASC` é opcional.
 ```mysql
 
-SELECT nomeAluno FROM tb_aluno 
+SELECT nomeAluno 
+FROM tb_aluno 
 ORDER BY nomeAluno;
 ```
 
@@ -169,7 +173,8 @@ Ao incluir esta cláusula, apenas os registros que obedecerem às condições al
 
 ```mysql
 
-SELECT idAluno, nomeAluno FROM tb_aluno 
+SELECT idAluno, nomeAluno 
+FROM tb_aluno 
 WHERE idAluno = 5;
 ```
 
@@ -186,7 +191,8 @@ WHERE idAluno = 5;
   
 ```mysql
 
-SELECT idAluno, nomeAluno FROM tb_aluno 
+SELECT idAluno, nomeAluno 
+FROM tb_aluno 
 WHERE idAluno <= 3 
 ORDER BY nomeAluno DESC;
 ```
@@ -205,7 +211,8 @@ ORDER BY nomeAluno DESC;
 
 ```mysql
 
-SELECT idAluno, nomeAluno FROM tb_aluno 
+SELECT idAluno, nomeAluno 
+FROM tb_aluno 
 WHERE NOT idAluno > 4;
 ```
 
@@ -225,7 +232,8 @@ WHERE NOT idAluno > 4;
 
 ```mysql
 
-SELECT idAluno, nomeAluno FROM tb_aluno 
+SELECT idAluno, nomeAluno 
+FROM tb_aluno 
 WHERE (idAluno = 8 AND nomeAluno = "Paulinha") OR (idAluno = 7 AND nomeAluno = "Rodrigo Mattos");
 ```
 
@@ -360,7 +368,7 @@ No exemplo abaixo: retorna registros presentes na tabela, cuja string (do campo 
 ```mysql
 
 SELECT idAluno, nomeAluno 
-FROMtb_aluno 
+FROM tb_aluno 
 WHERE nomeAluno LIKE '%NDES'; 
 ```
 

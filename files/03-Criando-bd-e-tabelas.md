@@ -21,13 +21,13 @@ CREATE DATABASE IF NOT EXISTS db_escola;
 
 &nbsp; 
 
-Criando uma tabela:
+↳ Criando uma tabela:
 ```mysql
 
 CREATE TABLE IF NOT EXISTS tb_aluno(
-  idAluno int(11) AUTO_INCREMENT NOT NULL,
-  nomeAluno varchar(50) NOT NULL,
-  emailAluno varchar(40), 
+  idAluno INT(11) AUTO_INCREMENT NOT NULL,
+  nomeAluno VARCHAR(50) NOT NULL,
+  emailAluno VARCHAR(40), 
   PRIMARY KEY (idAluno)
 );
 ```
@@ -57,7 +57,7 @@ Lista quais as bases de dados existentes no servidor:
 SHOW DATABASES;
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +-----------+
 | Database  |
@@ -74,7 +74,7 @@ Exibe todas as tabelas existentes na base de dados em uso:
 SHOW TABLES;
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +---------------------+
 | Tables_in_db_escola |
@@ -93,7 +93,7 @@ Informa qual a base de dados está em uso no momento
 SELECT DATABASE();
 ```
 
-Saída gerada:  
+↳ Saída gerada:  
 ```
 +------------+
 | DATABASE() |
@@ -112,7 +112,7 @@ Apresenta a estrutura da tabela especificada com seus campos, tipo de dados e de
 DESCRIBE tb_aluno;
 ```
 
-Saída gerada: 
+↳ Saída gerada: 
 ```
 +------------+--------------+------+-----+---------+----------------+
 |   Field    |     Type     | Null | Key | Default |     Extra      |

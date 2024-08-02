@@ -24,9 +24,9 @@ acompanhado da constraint NOT NULL
 CREATE DATABASE db_escola;
 USE db_escola;
 CREATE TABLE tb_aluno(
-  idAluno int(11) AUTO_INCREMENT NOT NULL,
-  nomeAluno varchar(50) NOT NULL,
-  emailAluno varchar(40) NOT NULL,
+  idAluno INT(11) AUTO_INCREMENT NOT NULL,
+  nomeAluno VARCHAR(50) NOT NULL,
+  emailAluno VARCHAR(40) NOT NULL,
   PRIMARY KEY(idAluno)
 );
 
@@ -68,9 +68,9 @@ Caso haja a necessidade de setar o valor default do AUTO_INCREMENT para começar
 ```mysql
 
 CREATE TABLE tb_aluno(
-  idAluno int(11) AUTO_INCREMENT NOT NULL,
-  nomeAluno varchar(50) NOT NULL,
-  emailAluno varchar(40) NOT NULL,
+  idAluno INT(11) AUTO_INCREMENT NOT NULL,
+  nomeAluno VARCHAR(50) NOT NULL,
+  emailAluno VARCHAR(40) NOT NULL,
   PRIMARY KEY(idAluno)
 ) AUTO_INCREMENT = 100;
 ```
@@ -101,12 +101,11 @@ Após a tabela já ter sido criada, caso seja necessário que a próxima sequên
 ALTER TABLE tb_Aluno AUTO_INCREMENT = 200;
 
 INSERT INTO tb_aluno(nomeAluno,emailAluno) 
-VALUES 
-  ('Marianne Marques', 'marim@email.com'),
-  ('Renato Passos', 'rpassos@email.com'),
-  ('Frederico Fernandes', 'fredfernandes@email.com'),
-  ('Marcela Guedes', 'mar_guedes@email.com'),
-  ('Lúcia Freitas', 'luciafreitas@email.com');
+VALUES ('Marianne Marques', 'marim@email.com'),
+       ('Renato Passos', 'rpassos@email.com'),
+       ('Frederico Fernandes', 'fredfernandes@email.com'),
+       ('Marcela Guedes', 'mar_guedes@email.com'),
+       ('Lúcia Freitas', 'luciafreitas@email.com');
 ```
 
 ↳ Saída gerada:  
@@ -137,7 +136,8 @@ VALUES
 Para verificação do último valor inserido no campo que utilizou o `AUTO_INCREMENT`
 ```mysql
 
-SELECT MAX(idAluno) FROM tb_Aluno;
+SELECT MAX(idAluno) 
+FROM tb_Aluno;
 ```
 
 ↳ Saída gerada:  

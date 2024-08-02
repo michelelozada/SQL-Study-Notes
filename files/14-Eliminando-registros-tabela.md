@@ -30,7 +30,8 @@ Permite apagar os registros de uma tabela. Se utilizado *com* a cláusula `WHERE
 
 ```mysql
 
-DELETE FROM tb_aluno WHERE idAluno = 3; 
+DELETE FROM tb_aluno 
+WHERE idAluno = 3; 
 ```
 ↳ Resultado: apagará registro apenas da aluna Cátia
 

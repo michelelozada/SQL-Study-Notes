@@ -24,8 +24,8 @@ Define o atributo (ou conjunto de atributos) que identificará de forma única c
 ```mysql
 
 CREATE TABLE tb_aluno(
-  idAluno int(11) AUTO_INCREMENT NOT NULL,
-  nomeAluno varchar(40),
+  idAluno INT(11) AUTO_INCREMENT NOT NULL,
+  nomeAluno VARCHAR(40),
   PRIMARY KEY (idAluno)
 );
 ```
@@ -59,8 +59,8 @@ Considerando uma tabela chamada Contrato, cujo campo `idAluno` deve estar vincul
 ```mysql
 
 CREATE TABLE tb_contrato(
-  idContrato int(11) PRIMARY KEY NOT NULL,
-  idAluno_fk int(11),
+  idContrato INT(11) PRIMARY KEY NOT NULL,
+  idAluno_fk INT(11),
   CONSTRAINT idAluno FOREIGN KEY (idAluno_fk) 
   REFERENCES tb_aluno(idAluno)
 );
@@ -102,8 +102,8 @@ Define que valores em uma dada coluna não poderão se repetir.
 ```mysql
 
 CREATE TABLE tb_aluno(
-  idAluno int(11),
-  cpfAluno varchar(15) UNIQUE
+  idAluno INT(11),
+  cpfAluno VARCHAR(15) UNIQUE
 );
 ```
 
@@ -113,7 +113,7 @@ Adicionando restrição UNIQUE a coluna de tabela já criada:
 ```mysql
 
 ALTER TABLE tb_aluno
-MODIFY COLUMN cpfAluno varchar(15) UNIQUE; -- aqui foi adicionada uma constraint à coluna     
+MODIFY COLUMN cpfAluno VARCHAR(15) UNIQUE; -- aqui foi adicionada uma constraint à coluna     
 ```
 
 &nbsp;    
@@ -124,8 +124,8 @@ Define que não serão admitidos valores nulos/dados vazios na coluna (lembrando
 ```mysql
 
 CREATE TABLE tb_aluno(
-  idAluno int(11) AUTO_INCREMENT NOT NULL,
-  nomeAluno varchar(40),
+  idAluno INT(11) AUTO_INCREMENT NOT NULL,
+  nomeAluno VARCHAR(40),
   PRIMARY KEY(idAluno)
 );
 
@@ -137,7 +137,7 @@ Caso a restrição não tenha sido definida no momento da criação da tabela:
 ```mysql
 
 ALTER TABLE tb_aluno 
-MODIFY nomeAluno varchar(40) NOT NULL;
+MODIFY nomeAluno VARCHAR(40) NOT NULL;
 ```
 
 &nbsp;   
@@ -146,7 +146,7 @@ Caso seja necessária a reversão:
 ```mysql
 
 ALTER TABLE tb_aluno 
-MODIFY nomeAluno varchar(40) NULL;
+MODIFY nomeAluno VARCHAR(40) NULL;
 ```
 
 &nbsp;
@@ -157,9 +157,9 @@ Define que - caso não seja especificado um valor pelo usuário - será associad
 ```mysql
 
 CREATE TABLE tb_aluno(
-  idAluno int(11),
-  cidadeAluno varchar(40) DEFAULT 'Curitiba',
-  estadoAluno char(2) DEFAULT 'PR'
+  idAluno INT(11),
+  cidadeAluno VARCHAR(40) DEFAULT 'Curitiba',
+  estadoAluno CHAR(2) DEFAULT 'PR'
 );
 ```
 
@@ -181,8 +181,8 @@ Define a validação dos dados inseridos em uma coluna, através da especificaç
 ```mysql
 
 CREATE TABLE tb_aluno(
-  idAluno int(11),
-  idadeAluno int(2) NOT NULL CHECK(idadeAluno >= 0 AND idadeAluno <= 99)
+  idAluno INT(11),
+  idadeAluno INT(2) NOT NULL CHECK(idadeAluno >= 0 AND idadeAluno <= 99)
 );
 ```
 
