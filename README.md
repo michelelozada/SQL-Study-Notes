@@ -1,5 +1,4 @@
 <div align="center">
-<img src="./assets/mysql.png">
 <h2>SQL - Notas de Estudo</h2>
 <h3>⬝&nbsp; Tela Inicial &nbsp;⬝</h3>
 &nbsp;
