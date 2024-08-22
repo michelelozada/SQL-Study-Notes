@@ -1,5 +1,5 @@
 > **Trabalhando com variáveis de escopo local**     
-> Repositório: Banco de Dados MySQL - Fundamentos    
+> Repositório: Banco de Dados SQL - Fundamentos    
 > GitHub: @michelelozada
 &nbsp;
      
@@ -87,5 +87,5 @@ SELECT reduzirMensalidade(2,5) AS 'Mensalidade com desconto';
 &nbsp;
 
 <div align="center">
-<a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
+<a href="https://github.com/michelelozada/SQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
 </div>

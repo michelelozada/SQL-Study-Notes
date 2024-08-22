@@ -1,5 +1,5 @@
 > **Eliminando repetições de linhas em uma seleção (cláusula DISTINCT)**     
-> Repositório: Banco de Dados MySQL - Fundamentos  
+> Repositório: Banco de Dados SQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;
 
@@ -105,5 +105,5 @@ ORDER BY nomeAula;
 &nbsp;
 
 <div align="center">
-<a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
+<a href="https://github.com/michelelozada/SQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
 </div>

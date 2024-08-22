@@ -1,5 +1,5 @@
 > **Adicionando filtros às consultas (operadores AND, OR, NOT, IN, NOT IN e BETWEEN)**     
-> Repositório: Banco de Dados MySQL - Fundamentos    
+> Repositório: Banco de Dados SQL - Fundamentos    
 > GitHub: @michelelozada
 &nbsp;
      
@@ -194,5 +194,5 @@ ORDER BY dNascimentoAluno DESC;
 &nbsp;
 
 <div align="center">
-<a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
+<a href="https://github.com/michelelozada/SQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
 </div>

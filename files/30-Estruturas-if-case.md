@@ -1,5 +1,5 @@
 > **Estruturas condicionais IF e CASE**  
-> Repositório: Banco de Dados MySQL - Fundamentos  
+> Repositório: Banco de Dados SQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;
      
@@ -113,5 +113,5 @@ SELECT aplicaDesconto(650.00) AS 'Valor final da compra (R$)'; -- Retorna => Val
 &nbsp;
 
 <div align="center">
-<a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
+<a href="https://github.com/michelelozada/SQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
 </div>

@@ -1,5 +1,5 @@
 > **Criando visões ou 'tabelas virtuais' (comando CREATE VIEW)**     
-> Repositório: Banco de Dados MySQL - Fundamentos    
+> Repositório: Banco de Dados SQL - Fundamentos    
 > GitHub: @michelelozada
 &nbsp;
      
@@ -181,5 +181,5 @@ DROP VIEW vw_catalogo;
 &nbsp;
 
 <div align="center">
-<a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
+<a href="https://github.com/michelelozada/SQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
 </div>

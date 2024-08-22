@@ -1,5 +1,5 @@
 > **Junção de duas ou mais tabelas (cláusula INNER JOIN)**     
-> Repositório: Banco de Dados MySQL - Fundamentos    
+> Repositório: Banco de Dados SQL - Fundamentos    
 > GitHub: @michelelozada
 &nbsp;
      
@@ -9,7 +9,7 @@
 - As junções (JOINS) permitem que sejam realizadas consultas com informações contidas em duas ou mais 
 tabelas e através de um único SELECT
   
-- No MySQL, INNER JOIN, JOIN e CROSS JOINsão equivalentes sintáticos (eles podem substituir um ao outro)  
+- No MySQL, INNER JOIN, JOIN e CROSS JOIN são equivalentes sintáticos (eles podem substituir um ao outro)  
   
 - As ligações acontecem através da relação da chave primária de uma tabela com a(s) chave(s) estantangeira(s)
 da(s) outra(s) tabela(s)  
@@ -182,5 +182,5 @@ HAVING COUNT(Itens) >= 3;
 &nbsp;
 
 <div align="center">
-<a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
+<a href="https://github.com/michelelozada/SQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
 </div>

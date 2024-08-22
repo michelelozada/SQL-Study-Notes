@@ -1,5 +1,5 @@
 > **Junção de duas ou mais tabelas (cláusulas LEFT JOIN e RIGHT JOIN)**     
-> Repositório: Banco de Dados MySQL - Fundamentos    
+> Repositório: Banco de Dados SQL - Fundamentos    
 > GitHub: @michelelozada
 &nbsp;
      
@@ -197,5 +197,5 @@ WHERE p.idProduto IS NULL; -- irá excluir correspondências
 &nbsp;
 
 <div align="center">
-<a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
+<a href="https://github.com/michelelozada/SQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
 </div>

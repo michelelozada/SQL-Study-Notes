@@ -1,5 +1,5 @@
 > **Tipos de parâmetros em procedimentos armazenados (IN, OUT e INOUT)**  
-> Repositório: Banco de Dados MySQL - Fundamentos  
+> Repositório: Banco de Dados SQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;
      
@@ -200,5 +200,5 @@ SELECT @valor AS 'Mensalidade com desconto';
 &nbsp;
 
 <div align="center">
-<a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
+<a href="https://github.com/michelelozada/SQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
 </div>

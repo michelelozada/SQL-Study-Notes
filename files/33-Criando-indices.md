@@ -1,5 +1,5 @@
-> **Criando índices no MySQL**  
-> Repositório: Banco de Dados MySQL - Fundamentos  
+> **Criando índices no SQL**  
+> Repositório: Banco de Dados SQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;
 
@@ -108,5 +108,5 @@ solicitada.
 &nbsp;
 
 <div align="center">
-<a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
+<a href="https://github.com/michelelozada/SQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
 </div>

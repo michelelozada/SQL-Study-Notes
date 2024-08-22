@@ -1,5 +1,5 @@
 > **Copiando dados de uma tabela para outra (comando INSERT...SELECT)**     
-> Repositório: Banco de Dados MySQL - Fundamentos  
+> Repositório: Banco de Dados SQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;
      
@@ -70,5 +70,5 @@ LIKE nome_da_database_original.tb_curso;
 &nbsp;
 
 <div align="center">
-<a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
+<a href="https://github.com/michelelozada/SQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
 </div>

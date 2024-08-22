@@ -1,5 +1,5 @@
 > **Alterando estruturas de tabelas (comando ALTER TABLE)**    
-> Repositório: Banco de Dados MySQL - Fundamentos  
+> Repositório: Banco de Dados SQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;
      
@@ -114,5 +114,5 @@ CHANGE nomeAluno nome_aluno varchar(50);
 &nbsp;
 
 <div align="center">
-<a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
+<a href="https://github.com/michelelozada/SQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
 </div>

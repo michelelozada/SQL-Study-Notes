@@ -1,5 +1,5 @@
-> **Tipos de dados no MySQL**  
-> Repositório: Banco de Dados MySQL - Fundamentos   
+> **Tipos de dados no SQL**  
+> Repositório: Banco de Dados SQL - Fundamentos   
 > GitHub: @michelelozada
 &nbsp;
      
@@ -47,5 +47,5 @@ YEAR		| Armazena anos. Formato: YYYY | anoNascimento YEAR |
 &nbsp;
 
 <div align="center">
-<a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
+<a href="https://github.com/michelelozada/SQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
 </div>

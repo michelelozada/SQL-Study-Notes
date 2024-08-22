@@ -1,14 +1,14 @@
-> **Utilizando expressões regulares no MySQL (operador REGEXP)**  
-> Repositório: Banco de Dados MySQL - Fundamentos  
+> **Utilizando expressões regulares no SQL (operador REGEXP)**  
+> Repositório: Banco de Dados SQL - Fundamentos  
 > GitHub: @michelelozada
 &nbsp;
      
 &nbsp;  
 
-## Expressões regulares no MySQL 
+## Expressões regulares no SQL 
 
 ```
-Para pesquisa de banco de dados, o MySQL também suporta operações de correspondência de padrões com 
+Para pesquisa de banco de dados, o SQL também suporta operações de correspondência de padrões com 
 base em expressões regulares. Para isso, deve ser utilizado o operador `REGEXP`, junto da seguinte 
 notação:
   ^ - Início da string  
@@ -170,5 +170,5 @@ WHERE nomeCurso REGEXP '[[:<:]]enge';
 &nbsp;
 
 <div align="center">
-<a href="https://github.com/michelelozada/MySQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
+<a href="https://github.com/michelelozada/SQL-Study-Notes">[Voltar à tela inicial do repositório]</a>
 </div>
